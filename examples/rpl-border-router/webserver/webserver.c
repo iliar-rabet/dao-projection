@@ -35,13 +35,21 @@
 #include "net/ipv6/uip-ds6-nbr.h"
 #include "net/ipv6/uip-ds6-route.h"
 #include "net/ipv6/uip-sr.h"
+#include "net/routing/rpl-lite/rpl-types.h"
+#include "net/routing/rpl-lite/rpl-icmp6.h"
+
+#include "sys/log.h"
+#define LOG_MODULE "RPL BR"
+#define LOG_LEVEL LOG_LEVEL_INFO
+
+
 
 #include <stdio.h>
 #include <string.h>
 
 /*---------------------------------------------------------------------------*/
-static const char *TOP = "<html>\n  <head>\n    <title>Contiki-NG</title>\n  </head>\n<body>\n";
-static const char *BOTTOM = "\n</body>\n</html>\n";
+static const char *TOP = "";
+static const char *BOTTOM = "";
 static char buf[256];
 static int blen;
 #define ADD(...) do {                                                   \
@@ -64,21 +72,48 @@ ipaddr_add(const uip_ipaddr_t *addr)
 {
   uint16_t a;
   int i, f;
-  for(i = 0, f = 0; i < sizeof(uip_ipaddr_t); i += 2) {
-    a = (addr->u8[i] << 8) + addr->u8[i + 1];
-    if(a == 0 && f >= 0) {
-      if(f++ == 0) {
-        ADD("::");
-      }
-    } else {
-      if(f > 0) {
-        f = -1;
-      } else if(i > 0) {
-        ADD(":");
-      }
-      ADD("%x", a);
-    }
-  }
+  i=sizeof(uip_ipaddr_t)-2;
+  a = (addr->u8[i] << 8) + addr->u8[i + 1];
+  ADD("%x",a);
+  // for(i = 0, f = 0; i < sizeof(uip_ipaddr_t); i += 2) {
+  //   a = (addr->u8[i] << 8) + addr->u8[i + 1];
+  //   if(a == 0 && f >= 0) {
+  //     if(f++ == 0) {
+  //       ADD("::");
+  //     }
+  //   } else {
+  //     if(f > 0) {
+  //       f = -1;
+  //     } else if(i > 0) {
+  //       ADD(":");
+  //     }
+  //     ADD("%x", a);
+  //   }
+  // }
+}
+/*---------------------------------------------------------------------------*/
+static
+PT_THREAD(set_routes(struct httpd_state *s))
+{
+  // FILE *fp;
+  // char dst[20];
+  // char via[20];
+  // uip_ipaddr_t * dst_addr = malloc(sizeof(uip_ipaddr_t));
+  // printf("Thread started\n");
+  // fp=fopen("pdao.json", "r");
+
+  // PSOCK_BEGIN(&s->sout);
+  // SEND_STRING(&s->sout, "sending PDAO");
+
+  // fscanf(fp,"%s via %s",dst,via);
+  // printf(dst);
+  // uiplib_ipaddrconv(dst,dst_addr);
+  // printf(via);
+  // fclose(fp);
+  // LOG_INFO_6ADDR(dst_addr);
+  // rpl_icmp6_pdao_output(dst_addr,100);
+
+  // PSOCK_END(&s->sout);
 }
 /*---------------------------------------------------------------------------*/
 static
@@ -89,23 +124,26 @@ PT_THREAD(generate_routes(struct httpd_state *s))
   PSOCK_BEGIN(&s->sout);
   SEND_STRING(&s->sout, TOP);
 
-  ADD("  Neighbors\n  <ul>\n");
-  SEND(&s->sout);
-  for(nbr = uip_ds6_nbr_head();
-      nbr != NULL;
-      nbr = uip_ds6_nbr_next(nbr)) {
-    ADD("    <li>");
-    ipaddr_add(&nbr->ipaddr);
-    ADD("</li>\n");
-    SEND(&s->sout);
-  }
-  ADD("  </ul>\n");
-  SEND(&s->sout);
+  // ADD("{\"nodes\": [\n");
+  // SEND(&s->sout);
+  // for(nbr = uip_ds6_nbr_head();
+  //     nbr != NULL;
+  //     nbr = uip_ds6_nbr_next(nbr)) {
+  //   ADD("    {\"id\":\"");
+  //   ipaddr_add(&nbr->ipaddr);
+  //   ADD("\",\"group\":1}");
+  //   if(uip_ds6_nbr_next(nbr)!=NULL)
+  //     ADD(",");
+  //   ADD("\n");
+  //   SEND(&s->sout);
+  // }
+  // ADD("  ],\n");
+  // SEND(&s->sout);
 
 #if (UIP_MAX_ROUTES != 0)
   {
     static uip_ds6_route_t *r;
-    ADD("  Routes\n  <ul>\n");
+  ADD("{\"routes\": [\n");
     SEND(&s->sout);
     for(r = uip_ds6_route_head(); r != NULL; r = uip_ds6_route_next(r)) {
       ADD("    <li>");
@@ -124,7 +162,7 @@ PT_THREAD(generate_routes(struct httpd_state *s))
 #if (UIP_SR_LINK_NUM != 0)
   if(uip_sr_num_nodes() > 0) {
     static uip_sr_node_t *link;
-    ADD("  Routing links\n  <ul>\n");
+    ADD("{\"links\": [\n");
     SEND(&s->sout);
     for(link = uip_sr_node_head(); link != NULL; link = uip_sr_node_next(link)) {
       if(link->parent != NULL) {
@@ -134,18 +172,22 @@ PT_THREAD(generate_routes(struct httpd_state *s))
         NETSTACK_ROUTING.get_sr_node_ipaddr(&child_ipaddr, link);
         NETSTACK_ROUTING.get_sr_node_ipaddr(&parent_ipaddr, link->parent);
 
-        ADD("    <li>");
+        ADD("{\"source\":\"");
         ipaddr_add(&child_ipaddr);
 
-        ADD(" (parent: ");
+        ADD("\",\"target\":\"");
         ipaddr_add(&parent_ipaddr);
-        ADD(") %us", (unsigned int)link->lifetime);
+        // ADD("\", \"value\":%u", (unsigned int)link->lifetime);
+        ADD("\", \"value\":1" );
 
-        ADD("</li>\n");
+        ADD("}");
+        if(uip_sr_node_next(link)!=NULL)
+          ADD(",");
+        ADD("\n");
         SEND(&s->sout);
       }
     }
-    ADD("  </ul>");
+    ADD("  ]\n}");
     SEND(&s->sout);
   }
 #endif /* UIP_SR_LINK_NUM != 0 */
@@ -173,6 +215,48 @@ PROCESS_THREAD(webserver_nogui_process, ev, data)
 httpd_simple_script_t
 httpd_simple_get_script(const char *name)
 {
-  return generate_routes;
+  if(strcmp(name, "s") == 0) {
+    return set_routes;
+  }
+  else
+    return generate_routes;
 }
 /*---------------------------------------------------------------------------*/
+PROCESS(controller, "Controller");
+PROCESS_THREAD(controller, ev, data)
+{
+  PROCESS_BEGIN();
+
+  static struct etimer periodic_timer;
+  FILE *fp;
+  char via2_str[20];
+  char via1_str[20];
+  char dst_str[20];
+
+
+  etimer_set(&periodic_timer, CLOCK_SECOND);
+  while(1) {
+    PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
+
+  uip_ipaddr_t * dst_addr = malloc(sizeof(uip_ipaddr_t));
+  uip_ipaddr_t * via1_addr = malloc(sizeof(uip_ipaddr_t));
+  uip_ipaddr_t * via2_addr = malloc(sizeof(uip_ipaddr_t));
+  printf("Thread started\n");
+  fp=fopen("pdao.json", "r");
+  while(fscanf(fp,"%s via %s in %s",via2_str,via1_str,dst_str)>0){
+    
+    uiplib_ipaddrconv(dst_str,dst_addr);
+    uiplib_ipaddrconv(via2_str,via2_addr);
+    uiplib_ipaddrconv(via1_str,via1_addr);
+    
+    LOG_INFO("SENDING to:");
+    LOG_INFO_6ADDR(dst_addr);
+    LOG_INFO("\n");
+    rpl_icmp6_pdao_output(dst_addr,via1_addr,via2_addr);
+  }
+  fclose(fp);
+  etimer_set(&periodic_timer, 10*CLOCK_SECOND);
+  }
+
+  PROCESS_END();
+}

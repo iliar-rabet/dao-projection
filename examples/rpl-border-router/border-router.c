@@ -49,6 +49,8 @@ PROCESS_THREAD(contiki_ng_br, ev, data)
 #if BORDER_ROUTER_CONF_WEBSERVER
   PROCESS_NAME(webserver_nogui_process);
   process_start(&webserver_nogui_process, NULL);
+  PROCESS_NAME(controller);
+  process_start(&controller, NULL);
 #endif /* BORDER_ROUTER_CONF_WEBSERVER */
 
   LOG_INFO("Contiki-NG Border Router started\n");

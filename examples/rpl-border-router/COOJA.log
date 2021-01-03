@@ -1,0 +1,8 @@
+[13:40:03 - main] [Cooja.java:3173] [WARN] - JAVA_HOME environment variable not set, Cooja motes may not compile
+[13:40:03 - main] [Cooja.java:1351] [INFO] - > Starting Cooja
+[13:40:03 - main] [Cooja.java:2857] [INFO] - External tools default settings: /external_tools_linux_64.config
+[13:40:03 - main] [Cooja.java:2887] [INFO] - External tools user settings: /home/iliar/.cooja.user.properties
+[13:40:04 - main] [Cooja.java:1357] [INFO] - > Creating simulation
+[13:40:10 - AWT-EventQueue-1] [Simulation.java:422] [INFO] - Simulation random seed: 123456
+[13:40:10 - main] [Visualizer.java:256] [INFO] - Registered external visualizer: org.contikios.cooja.plugins.skins.DGRMVisualizerSkin
+[13:40:11 - main] [Cooja.java:1367] [INFO] - > Creating mote type

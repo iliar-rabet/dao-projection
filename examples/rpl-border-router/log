@@ -1,0 +1,304 @@
+[INFO: TCP/IP    ] input: received 48 bytes
+Thread started
+[INFO: RPL BR    ] SENDING to:fd00::212:7402:2:202[INFO: RPL BR    ] 
+SIZE=16
+sending PDAO
+[INFO: TCP/IP    ] output: processing 76 bytes packet from fd00::302:304:506:708 to fd00::212:7402:2:202
+[INFO: TCP/IP    ] output: no route found, using default route: fd00::1
+[INFO: TCP/IP    ] output: sending to 0200.0000.0000.0001
+[INFO: RPL BR    ] SENDING to:fd00::212:7403:3:303[INFO: RPL BR    ] 
+SIZE=16
+sending PDAO
+[INFO: TCP/IP    ] output: processing 76 bytes packet from fd00::302:304:506:708 to fd00::212:7403:3:303
+[INFO: TCP/IP    ] output: no route found, using default route: fd00::1
+[INFO: TCP/IP    ] output: sending to 0200.0000.0000.0001
+[INFO: RPL BR    ] SENDING to:fd00::212:7404:4:404[INFO: RPL BR    ] 
+SIZE=16
+sending PDAO
+[INFO: TCP/IP    ] output: processing 76 bytes packet from fd00::302:304:506:708 to fd00::212:7404:4:404
+[INFO: TCP/IP    ] output: no route found, using default route: fd00::1
+[INFO: TCP/IP    ] output: sending to 0200.0000.0000.0001
+[INFO: Main      ] Starting Contiki-NG-release/v4.4-107-g352e130a1-dirty
+[INFO: Main      ] - Routing: nullrouting
+[INFO: Main      ] - Net: slipnet
+[INFO: Main      ] - MAC: CSMA
+[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+[INFO: Main      ] - 802.15.4 Default channel: 26
+[INFO: Main      ] Node ID: 1
+[INFO: Main      ] Link-layer address: 0012.7401.0001.0101
+[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7401:1:101
+[INFO: Sky       ] CC2420 CCA threshold -45
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: BR        ] Setting prefix fd00::1
+[INFO: BR        ] Server IPv6 addresses:
+[INFO: BR        ]   fd00::212:7401:1:101
+[INFO: BR        ]   fe80::212:7401:1:101
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 48 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 2::2
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 68 bytes
+[INFO: TCP/IP    ] input: received 68 bytes
+[INFO: TCP/IP    ] input: received 40 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 40 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 68 bytes
+[INFO: TCP/IP    ] input: received 68 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 2::2
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 68 bytes
+[INFO: TCP/IP    ] input: received 68 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 48 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 48 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: processing 25 bytes packet from 909:9:7412:7a:3b3a:1a9b:e7:f300 to 74:1200:7a3b:3a1a:9b01:16fe:f0:80
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] input: received 46 bytes
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] output: processing 100 bytes packet from 1:7412:9:909:9:7412:7a:333a to 9b01:98ec:f0:ffff:8f0::fd00:0
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 112 bytes
+
+from:rec SIO_nbr: 1
+[INFO: TCP/IP    ] output: processing 56 bytes packet from fd00::212:7401:1:101 to fd00::212:7409:9:909
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7409:9:909
+[INFO: TCP/IP    ] output: sending to 0012.7409.0009.0909
+[INFO: TCP/IP    ] input: received 112 bytes
+
+from:rec SIO_nbr: 1
+[INFO: TCP/IP    ] output: processing 56 bytes packet from fd00::212:7401:1:101 to fd00::212:7408:8:808
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7408:8:808
+[INFO: TCP/IP    ] output: sending to 0012.7408.0008.0808
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 112 bytes
+
+from:rec SIO_nbr: 1
+[INFO: TCP/IP    ] output: processing 64 bytes packet from fd00::212:7401:1:101 to fd00::212:7409:9:909
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7409:9:909
+[INFO: TCP/IP    ] output: sending to 0012.7409.0009.0909
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 112 bytes
+
+from:rec SIO_nbr: 1
+[INFO: TCP/IP    ] output: processing 64 bytes packet from fd00::212:7401:1:101 to fd00::212:7408:8:808
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7408:8:808
+[INFO: TCP/IP    ] output: sending to 0012.7408.0008.0808
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 112 bytes
+
+from:rec SIO_nbr: 1
+[INFO: TCP/IP    ] output: processing 72 bytes packet from fd00::212:7401:1:101 to fd00::212:7409:9:909
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7409:9:909
+[INFO: TCP/IP    ] output: sending to 0012.7409.0009.0909
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] input: received 112 bytes
+
+from:rec SIO_nbr: 1
+[INFO: TCP/IP    ] output: processing 72 bytes packet from fd00::212:7401:1:101 to fd00::212:7408:8:808
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7408:8:808
+[INFO: TCP/IP    ] output: sending to 0012.7408.0008.0808
+[INFO: TCP/IP    ] input: received 112 bytes
+
+from:rec SIO_nbr: 1
+[INFO: TCP/IP    ] output: processing 72 bytes packet from fd00::212:7401:1:101 to fd00::212:7409:9:909
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7409:9:909
+[INFO: TCP/IP    ] output: sending to 0012.7409.0009.0909
+[INFO: TCP/IP    ] input: received 112 bytes
+
+from:rec SIO_nbr: 1
+[INFO: TCP/IP    ] output: processing 72 bytes packet from fd00::212:7401:1:101 to fd00::212:7409:9:909
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7409:9:909
+[INFO: TCP/IP    ] output: sending to 0012.7409.0009.0909
+[INFO: TCP/IP    ] input: received 112 bytes
+
+from:rec SIO_nbr: 1
+[INFO: TCP/IP    ] output: processing 72 bytes packet from fd00::212:7401:1:101 to fd00::212:7408:8:808
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7408:8:808
+[INFO: TCP/IP    ] output: sending to 0012.7408.0008.0808
+[INFO: TCP/IP    ] input: received 112 bytes
+
+from:rec SIO_nbr: 1
+[INFO: TCP/IP    ] output: processing 72 bytes packet from fd00::212:7401:1:101 to fd00::212:7408:8:808
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7408:8:808
+[INFO: TCP/IP    ] output: sending to 0012.7408.0008.0808
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] output: processing 95 bytes packet from 808:8:7412:7a:3b3a:1a9b:10f:5b00 to f001:e08:f000:fd::2
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] output: processing 95 bytes packet from 808:8:7412:7a:3b3a:1a9b:10f:5b00 to f001:e08:f000:fd::2
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] output: processing 95 bytes packet from 909:9:7412:7a:3b3a:1a9b:10e:6600 to f001:8:f000:fd::2
+[ERR : TCP/IP    ] output: destination off-link and no default route
+Thread started
+[INFO: RPL BR    ] SENDING to:fd00::212:7402:2:202[INFO: RPL BR    ] 
+SIZE=16
+sending PDAO
+[INFO: TCP/IP    ] output: processing 100 bytes packet from fd00::212:7401:1:101 to fd00::212:7409:9:909
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7409:9:909
+[INFO: TCP/IP    ] output: sending to 0012.7409.0009.0909
+[INFO: RPL BR    ] SENDING to:fd00::212:7403:3:303[INFO: RPL BR    ] 
+SIZE=16
+sending PDAO
+[INFO: TCP/IP    ] output: processing 100 bytes packet from fd00::212:7401:1:101 to fd00::212:7409:9:909
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7409:9:909
+[INFO: TCP/IP    ] output: sending to 0012.7409.0009.0909
+[INFO: RPL BR    ] SENDING to:fd00::212:7404:4:404[INFO: RPL BR    ] 
+SIZE=16
+sending PDAO
+[INFO: TCP/IP    ] output: processing 100 bytes packet from fd00::212:7401:1:101 to fd00::212:7408:8:808
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7408:8:808
+[INFO: TCP/IP    ] output: sending to 0012.7408.0008.0808
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] output: processing 95 bytes packet from 909:9:7412:7a:3b3a:1a9b:10e:6600 to f001:8:f000:fd::2
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 48 bytes
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] output: processing 95 bytes packet from 808:8:7412:7a:3b3a:1a9b:10f:5b00 to f001:e08:f000:fd::2
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] output: processing 95 bytes packet from 909:9:7412:7a:3b3a:1a9b:10e:6600 to f001:8:f000:fd::2
+[ERR : TCP/IP    ] output: destination off-link and no default route
+[INFO: TCP/IP    ] input: received 116 bytes
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+Thread started
+[INFO: RPL BR    ] SENDING to:fd00::212:7402:2:202[INFO: RPL BR    ] 
+SIZE=16
+sending PDAO
+[INFO: TCP/IP    ] output: processing 100 bytes packet from fd00::212:7401:1:101 to fd00::212:7409:9:909
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7409:9:909
+[INFO: TCP/IP    ] output: sending to 0012.7409.0009.0909
+[INFO: RPL BR    ] SENDING to:fd00::212:7403:3:303[INFO: RPL BR    ] 
+SIZE=16
+sending PDAO
+[INFO: TCP/IP    ] output: processing 100 bytes packet from fd00::212:7401:1:101 to fd00::212:7409:9:909
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7409:9:909
+[INFO: TCP/IP    ] output: sending to 0012.7409.0009.0909
+[INFO: RPL BR    ] SENDING to:fd00::212:7404:4:404[INFO: RPL BR    ] 
+SIZE=16
+sending PDAO
+[INFO: TCP/IP    ] output: processing 100 bytes packet from fd00::212:7401:1:101 to fd00::212:7408:8:808
+[INFO: TCP/IP    ] output: selected next hop from SRH: fe80::212:7408:8:808
+[INFO: TCP/IP    ] output: sending to 0012.7408.0008.0808
+[INFO: TCP/IP    ] input: received 48 bytes
