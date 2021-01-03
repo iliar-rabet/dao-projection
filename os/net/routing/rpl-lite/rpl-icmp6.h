@@ -138,4 +138,15 @@ void rpl_icmp6_init(void);
 
  /** @} */
 
+void rpl_icmp6_pdao_output(uip_ipaddr_t * addr, uip_ipaddr_t * dst, uip_ipaddr_t * via);
+
+uip_ipaddr_t VIA1;
+uip_ipaddr_t VIA2;
+int PDAO_SET;
+
+void pdao_set();
+
+int pdao_check();
+int projected_route(uip_ipaddr_t *);
+
 #endif /* RPL_ICMP6_H_ */

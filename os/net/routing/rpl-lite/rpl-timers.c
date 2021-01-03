@@ -293,6 +293,7 @@ send_new_dao(void *ptr)
   RPL_LOLLIPOP_INCREMENT(curr_instance.dag.dao_last_seqno);
   /* Send a DAO with own prefix as target and default lifetime */
   rpl_icmp6_dao_output(curr_instance.default_lifetime);
+  // rpl_icmp6_pdao_output(curr_instance.default_lifetime);
 }
 #if RPL_WITH_DAO_ACK
 /*---------------------------------------------------------------------------*/

@@ -10,7 +10,7 @@
 
 #define WITH_SERVER_REPLY  1
 #define UDP_CLIENT_PORT	8765
-#define UDP_SERVER_PORT	5678
+// #define UDP_SERVER_PORT	5678
 
 #define SEND_INTERVAL		  (60 * CLOCK_SECOND)
 
@@ -50,19 +50,20 @@ PROCESS_THREAD(udp_client_process, ev, data)
 
   /* Initialize UDP connection */
   simple_udp_register(&udp_conn, UDP_CLIENT_PORT, NULL,
-                      UDP_SERVER_PORT, udp_rx_callback);
+                      UDP_CLIENT_PORT, udp_rx_callback);
 
   etimer_set(&periodic_timer, random_rand() % SEND_INTERVAL);
   while(1) {
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
 
     if(NETSTACK_ROUTING.node_is_reachable() && NETSTACK_ROUTING.get_root_ipaddr(&dest_ipaddr)) {
+      // uiplib_ip6addrconv("fd00:0:0:0:212:7406:6:606",&dest_ipaddr);
       /* Send to DAG root */
-      LOG_INFO("Sending request %u to ", count);
-      LOG_INFO_6ADDR(&dest_ipaddr);
-      LOG_INFO_("\n");
-      snprintf(str, sizeof(str), "hello %d", count);
-      simple_udp_sendto(&udp_conn, str, strlen(str), &dest_ipaddr);
+      // LOG_INFO("Sending request %u to ", count);
+      // LOG_INFO_6ADDR(&dest_ipaddr);
+      // LOG_INFO_("\n");
+      // snprintf(str, sizeof(str), "hello %d", count);
+      // simple_udp_sendto(&udp_conn, str, strlen(str), &dest_ipaddr);
       count++;
     } else {
       LOG_INFO("Not reachable yet\n");

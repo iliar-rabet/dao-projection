@@ -48,6 +48,8 @@
 #include "net/ipv6/uip-icmp6.h"
 #include "net/packetbuf.h"
 #include "lib/random.h"
+#include "net/ipv6/uiplib.h"
+#include "net/routing/rpl-lite/pdao.h"
 
 #include <limits.h>
 
@@ -66,12 +68,14 @@
 static void dis_input(void);
 static void dio_input(void);
 static void dao_input(void);
+static void pdao_input(void);
 
 /*---------------------------------------------------------------------------*/
 /* Initialize RPL ICMPv6 message handlers */
 UIP_ICMP6_HANDLER(dis_handler, ICMP6_RPL, RPL_CODE_DIS, dis_input);
 UIP_ICMP6_HANDLER(dio_handler, ICMP6_RPL, RPL_CODE_DIO, dio_input);
 UIP_ICMP6_HANDLER(dao_handler, ICMP6_RPL, RPL_CODE_DAO, dao_input);
+UIP_ICMP6_HANDLER(pdao_handler, ICMP6_RPL, RPL_CODE_PDAO, pdao_input);
 
 #if RPL_WITH_DAO_ACK
 static void dao_ack_input(void);
@@ -504,6 +508,17 @@ dao_input(void)
       /* The option consists of a two-byte header and a payload. */
       len = 2 + buffer[i + 1];
     }
+    uint8_t num_nbr;
+    uip_ipaddr_t nbr;
+    uint8_t j;
+    char str_from[40];
+    char str_nbr[40];
+    #ifdef CONTIKI_TARGET_NATIVE
+      uint16_t a;
+      int ind, f;
+      FILE *fp;
+      ind=sizeof(uip_ipaddr_t)-10;
+    #endif
 
     switch(subopt_type) {
       case RPL_OPTION_TARGET:
@@ -520,6 +535,29 @@ dao_input(void)
         if(len >= 20) {
           memcpy(&dao.parent_addr, buffer + i + 6, 16);
         }
+        break;
+      case RPL_OPTION_SIO:
+        printf("\nfrom:");
+        LOG_INFO_6ADDR(&from);
+        num_nbr = buffer[i + 5];
+        #ifdef CONTIKI_TARGET_NATIVE
+        printf("rec SIO_nbr: %d\n",num_nbr);
+        fp=fopen("list","a");
+        uiplib_ipaddr_snprint(str_from,40,&from);
+        fprintf(fp,"%s\n",str_from);
+        fclose(fp);
+        fp=fopen(str_from,"w");
+        for(j=0;j<num_nbr;j++){
+            memcpy(&nbr, buffer + i + 6 + (16*j), 16);
+            uiplib_ipaddr_snprint(str_nbr,40,&nbr);
+
+            a = (nbr.u8[ind] << 8) + nbr.u8[ind + 1];
+            fprintf(fp,"%x\n",a);
+            LOG_INFO_6ADDR(&nbr);
+            // printf("\n");
+        }
+        fclose(fp);
+        #endif
         break;
     }
   }
@@ -539,12 +577,74 @@ dao_input(void)
     uipbuf_clear();
 }
 /*---------------------------------------------------------------------------*/
+//iliar
+void
+rpl_icmp6_pdao_output(uip_ipaddr_t * addr, uip_ipaddr_t * via1, uip_ipaddr_t * via2 )
+{
+  unsigned char *buffer;
+  uint8_t prefixlen;
+  int pos;
+  pos=0;
+  buffer = UIP_ICMP_PAYLOAD;
+
+  printf("SIZE=%d\n",sizeof(uip_ipaddr_t));
+  memcpy(buffer + pos, ((const unsigned char *)via1), 16); /* Prefix */
+  pos += 16;
+  memcpy(buffer + pos, ((const unsigned char *)via2), 16); /* Interface identifier */
+  pos += 16;
+
+
+  /* Send DAO to root (IPv6 address is DAG ID) */
+  printf("sending PDAO\n");
+  // LOG_INFO_6ADDR(&addr);
+  uip_icmp6_send(addr, ICMP6_RPL, RPL_CODE_PDAO, pos);
+}
+
+void pdao_set(){
+    PDAO_SET=1;
+}
+
+int pdao_check(){
+    if(PDAO_SET==1)
+        return 1;
+    else
+        return 0;
+}
+
+void
+pdao_input(void)
+{
+  unsigned char *buffer;
+  uint8_t buffer_length;
+  int pos=0;
+
+  buffer = UIP_ICMP_PAYLOAD;
+  buffer_length = uip_len - uip_l3_icmp_hdr_len;
+
+  printf("received a PDAO from \n");
+  LOG_INFO("VIA: ");
+  LOG_INFO_6ADDR((uip_ipaddr_t *)&buffer[pos]);
+  uip_ipaddr_copy(&VIA1,(uip_ipaddr_t *)&buffer[pos]);
+  LOG_INFO("\n");
+  pos+=16;
+  LOG_INFO("DST: ");
+  LOG_INFO_6ADDR((uip_ipaddr_t *)&buffer[pos]);
+  uip_ipaddr_copy(&VIA2,(uip_ipaddr_t *)&buffer[pos]);
+  LOG_INFO("\n");
+
+  pdao_set();
+  discard:
+    uipbuf_clear();
+}
+/*---------------------------------------------------------------------------*/
 void
 rpl_icmp6_dao_output(uint8_t lifetime)
 {
   unsigned char *buffer;
   uint8_t prefixlen;
   int pos;
+  static uip_ds6_nbr_t *nbr;
+
   const uip_ipaddr_t *prefix = rpl_get_global_address();
   uip_ipaddr_t *parent_ipaddr = rpl_neighbor_get_ipaddr(curr_instance.dag.preferred_parent);
 
@@ -614,6 +714,25 @@ rpl_icmp6_dao_output(uint8_t lifetime)
   LOG_INFO_6ADDR(parent_ipaddr);
   LOG_INFO_("\n");
 
+  /* Create a transit information sub-option. */
+  buffer[pos++] = RPL_OPTION_SIO;
+  uint8_t nbr_num=(uint8_t)uip_ds6_nbr_num();
+  printf("sending num_nbr:%d",nbr_num);
+  buffer[pos++] = 20;
+  buffer[pos++] = 0; /* flags - ignored */
+  buffer[pos++] = 0; /* path control - ignored */
+  buffer[pos++] = 0; /* path seq - ignored */
+  buffer[pos++] = nbr_num;
+
+  for(nbr = uip_ds6_nbr_head();
+      nbr != NULL;
+      nbr = uip_ds6_nbr_next(nbr)) {
+    // printf("    {\"id\":\"");
+    memcpy(buffer + pos, ((const unsigned char *)&(nbr->ipaddr)) + 8, 8); /* Interface identifier */
+    pos += 8;
+  }
+
+  
   /* Send DAO to root (IPv6 address is DAG ID) */
   uip_icmp6_send(&curr_instance.dag.dag_id, ICMP6_RPL, RPL_CODE_DAO, pos);
 }
@@ -679,6 +798,7 @@ rpl_icmp6_init()
   uip_icmp6_register_input_handler(&dis_handler);
   uip_icmp6_register_input_handler(&dio_handler);
   uip_icmp6_register_input_handler(&dao_handler);
+  uip_icmp6_register_input_handler(&pdao_handler);
 #if RPL_WITH_DAO_ACK
   uip_icmp6_register_input_handler(&dao_ack_handler);
 #endif /* RPL_WITH_DAO_ACK */

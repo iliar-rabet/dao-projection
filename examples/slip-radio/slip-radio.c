@@ -47,6 +47,7 @@
 #include "packetutils.h"
 #include "os/sys/log.h"
 
+
 #include <stdio.h>
 
 #define LOG_MODULE "slip-radio"
@@ -260,7 +261,6 @@ PROCESS_THREAD(slip_radio_process, ev, data)
 
   while(1) {
     PROCESS_YIELD();
-
     if(etimer_expired(&et)) {
       etimer_reset(&et);
 #ifdef SLIP_RADIO_CONF_SENSORS

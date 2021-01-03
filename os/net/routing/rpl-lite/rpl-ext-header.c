@@ -51,7 +51,7 @@
 /* Log configuration */
 #include "sys/log.h"
 #define LOG_MODULE "RPL"
-#define LOG_LEVEL LOG_LEVEL_RPL
+#define LOG_LEVEL LOG_LEVEL_TCPIP
 
 /*---------------------------------------------------------------------------*/
 int
@@ -61,6 +61,26 @@ rpl_ext_header_srh_get_next_hop(uip_ipaddr_t *ipaddr)
   uip_sr_node_t *dest_node;
   uip_sr_node_t *root_node;
 
+  if(pdao_check()==1){
+    LOG_INFO("PDAO_SET\n");
+    LOG_INFO_6ADDR(&VIA2);
+    LOG_INFO("\n");
+    if(uip_ip6addr_cmp(&UIP_IP_BUF->destipaddr,&VIA2)){
+      uip_ipaddr_copy(ipaddr,&VIA1);
+      LOG_INFO("VIA:");
+      LOG_INFO_6ADDR(&VIA1);
+      LOG_INFO("\n");
+      LOG_INFO("ipaddr:");
+      LOG_INFO_6ADDR(ipaddr);
+      LOG_INFO("\n");
+      uip_create_linklocal_prefix(ipaddr);
+      LOG_INFO("link local ipaddr:");
+      LOG_INFO_6ADDR(ipaddr);
+      LOG_INFO("\n");
+      return 1;
+    }
+  }
+    
   /* Look for routing ext header */
   rh_header = (struct uip_routing_hdr *)uipbuf_search_header(uip_buf, uip_len, UIP_PROTO_ROUTING);
 

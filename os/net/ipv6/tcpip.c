@@ -47,6 +47,7 @@
 #include "net/ipv6/uip-ds6-nbr.h"
 #include "net/linkaddr.h"
 #include "net/routing/routing.h"
+#include "net/routing/rpl-lite/pdao.h"
 
 #include <string.h>
 
@@ -490,12 +491,19 @@ annotate_transmission(const uip_ipaddr_t *nexthop)
 #endif /* TCPIP_CONF_ANNOTATE_TRANSMISSIONS */
 }
 /*---------------------------------------------------------------------------*/
-static const uip_ipaddr_t*
+const static uip_ipaddr_t*
 get_nexthop(uip_ipaddr_t *addr)
 {
   const uip_ipaddr_t *nexthop;
   uip_ds6_route_t *route;
 
+
+  // if(strstr(packetbuf_dataptr(),"hello")!=NULL){
+  //   LOG_INFO("IFFFFFF\n");
+  // }
+  // else{
+  //   LOG_INFO("data:%s",packetbuf_dataptr());
+  // }
   LOG_INFO("output: processing %u bytes packet from ", uip_len);
   LOG_INFO_6ADDR(&UIP_IP_BUF->srcipaddr);
   LOG_INFO_(" to ");

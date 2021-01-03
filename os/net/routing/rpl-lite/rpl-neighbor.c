@@ -157,7 +157,7 @@ rpl_neighbor_print_list(const char *str)
     while(nbr != NULL) {
       char buf[120];
       rpl_neighbor_snprint(buf, sizeof(buf), nbr);
-      LOG_INFO("nbr: %s\n", buf);
+      printf("nbr: %s\n", buf);
       nbr = nbr_table_next(rpl_neighbors, nbr);
     }
     LOG_INFO("nbr: end of list\n");

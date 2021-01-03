@@ -96,10 +96,12 @@
 #define RPL_CODE_DIO                   0x01   /* DAG Information Option */
 #define RPL_CODE_DAO                   0x02   /* Destination Advertisement Option */
 #define RPL_CODE_DAO_ACK               0x03   /* DAO acknowledgment */
-#define RPL_CODE_SEC_DIS               0x80   /* Secure DIS */
+#define RPL_CODE_PDAO                  0x80   /* Projected DAO  iliar*/
+// #define RPL_CODE_SEC_DIS               0x80   /* Secure DIS */
 #define RPL_CODE_SEC_DIO               0x81   /* Secure DIO */
 #define RPL_CODE_SEC_DAO               0x82   /* Secure DAO */
 #define RPL_CODE_SEC_DAO_ACK           0x83   /* Secure DAO-ACK */
+
 
 /* RPL control message options. */
 #define RPL_OPTION_PAD1                  0
@@ -112,6 +114,9 @@
 #define RPL_OPTION_SOLICITED_INFO        7
 #define RPL_OPTION_PREFIX_INFO           8
 #define RPL_OPTION_TARGET_DESC           9
+#define RPL_OPTION_VIO                   10 /*iliar*/
+#define RPL_OPTION_SIO                   11 /*iliar*/
+
 
 #define RPL_DAO_K_FLAG                   0x80 /* DAO-ACK requested */
 #define RPL_DAO_D_FLAG                   0x40 /* DODAG ID present */
@@ -151,6 +156,7 @@
 #define RPL_MOP_NON_STORING             1
 #define RPL_MOP_STORING_NO_MULTICAST    2
 #define RPL_MOP_STORING_MULTICAST       3
+// #define RPL_MOP_NONSTORING_PROJECTED    4 /*iliar*/
 
  /** @} */
 

@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "sstream": "c",
+        "export": "c",
+        "string_view": "c"
+    }
+}
