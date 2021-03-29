@@ -1,35 +1,3 @@
-/*
- * Copyright (c) 2017, RISE SICS
- * All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions
- * are met:
- * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer.
- * 2. Redistributions in binary form must reproduce the above copyright
- *    notice, this list of conditions and the following disclaimer in the
- *    documentation and/or other materials provided with the distribution.
- * 3. Neither the name of the Institute nor the names of its contributors
- *    may be used to endorse or promote products derived from this software
- *    without specific prior written permission.
- *
- * THIS SOFTWARE IS PROVIDED BY THE INSTITUTE AND CONTRIBUTORS ``AS IS'' AND
- * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
- * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
- * ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE
- * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
- * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
- * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
- * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
- * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
- * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
- * SUCH DAMAGE.
- *
- * This file is part of the Contiki operating system.
- *
- */
-
 #include "contiki.h"
 #include "net/routing/routing.h"
 #include "net/ipv6/uip-ds6-nbr.h"
@@ -47,6 +15,7 @@
 #include <stdio.h>
 #include <string.h>
 
+static struct simple_udp_connection flow_conn;
 /*---------------------------------------------------------------------------*/
 static const char *TOP = "";
 static const char *BOTTOM = "";
@@ -75,45 +44,21 @@ ipaddr_add(const uip_ipaddr_t *addr)
   i=sizeof(uip_ipaddr_t)-2;
   a = (addr->u8[i] << 8) + addr->u8[i + 1];
   ADD("%x",a);
-  // for(i = 0, f = 0; i < sizeof(uip_ipaddr_t); i += 2) {
-  //   a = (addr->u8[i] << 8) + addr->u8[i + 1];
-  //   if(a == 0 && f >= 0) {
-  //     if(f++ == 0) {
-  //       ADD("::");
-  //     }
-  //   } else {
-  //     if(f > 0) {
-  //       f = -1;
-  //     } else if(i > 0) {
-  //       ADD(":");
-  //     }
-  //     ADD("%x", a);
-  //   }
-  // }
+
 }
 /*---------------------------------------------------------------------------*/
+
 static
 PT_THREAD(set_routes(struct httpd_state *s))
 {
-  // FILE *fp;
-  // char dst[20];
-  // char via[20];
-  // uip_ipaddr_t * dst_addr = malloc(sizeof(uip_ipaddr_t));
-  // printf("Thread started\n");
-  // fp=fopen("pdao.json", "r");
 
-  // PSOCK_BEGIN(&s->sout);
-  // SEND_STRING(&s->sout, "sending PDAO");
+  PSOCK_BEGIN(&s->sout);
+  SEND_STRING(&s->sout, TOP);
+  SEND_STRING(&s->sout, "SENDING PDAO\n");
+  SEND_STRING(&s->sout, BOTTOM);
 
-  // fscanf(fp,"%s via %s",dst,via);
-  // printf(dst);
-  // uiplib_ipaddrconv(dst,dst_addr);
-  // printf(via);
-  // fclose(fp);
-  // LOG_INFO_6ADDR(dst_addr);
-  // rpl_icmp6_pdao_output(dst_addr,100);
+  PSOCK_END(&s->sout);
 
-  // PSOCK_END(&s->sout);
 }
 /*---------------------------------------------------------------------------*/
 static
@@ -124,21 +69,6 @@ PT_THREAD(generate_routes(struct httpd_state *s))
   PSOCK_BEGIN(&s->sout);
   SEND_STRING(&s->sout, TOP);
 
-  // ADD("{\"nodes\": [\n");
-  // SEND(&s->sout);
-  // for(nbr = uip_ds6_nbr_head();
-  //     nbr != NULL;
-  //     nbr = uip_ds6_nbr_next(nbr)) {
-  //   ADD("    {\"id\":\"");
-  //   ipaddr_add(&nbr->ipaddr);
-  //   ADD("\",\"group\":1}");
-  //   if(uip_ds6_nbr_next(nbr)!=NULL)
-  //     ADD(",");
-  //   ADD("\n");
-  //   SEND(&s->sout);
-  // }
-  // ADD("  ],\n");
-  // SEND(&s->sout);
 
 #if (UIP_MAX_ROUTES != 0)
   {
@@ -222,41 +152,95 @@ httpd_simple_get_script(const char *name)
     return generate_routes;
 }
 /*---------------------------------------------------------------------------*/
+
+static FILE *fil;
+static FILE *fp;
+
 PROCESS(controller, "Controller");
 PROCESS_THREAD(controller, ev, data)
 {
   PROCESS_BEGIN();
 
   static struct etimer periodic_timer;
-  FILE *fp;
-  char via2_str[20];
-  char via1_str[20];
-  char dst_str[20];
+  
+  char flow_src_str[30];
+  char flow_dst_str[30];
+  uip_ipaddr_t flow_dst_addr;
+  uip_ipaddr_t flow_src_addr;
+      char * line = NULL;
+    size_t len = 0;
+    ssize_t read;
+    
+    char via2_str[20];
+    char via1_str[20];
+    char dst_str[20];
+
+    char track_egress_str[20];
+    char track_ingress_str[20];
+    uip_ipaddr_t track_egress_addr;
+    uip_ipaddr_t track_ingress_addr;
+
+    uip_ipaddr_t  dst_addr;
+    uip_ipaddr_t  via1_addr;
+    uip_ipaddr_t  via2_addr;
+    int index;
+    int interm_nodes;
 
 
-  etimer_set(&periodic_timer, CLOCK_SECOND);
-  while(1) {
+  fil=fopen("flow.txt","r");
+  if(fil==NULL)
+  {
+    printf("FILE not opened\n");
+  }
+
+  simple_udp_register(&flow_conn, 5678, NULL,
+                      5678, NULL);
+    
+  etimer_set(&periodic_timer, 300 * CLOCK_SECOND);
+  while(fscanf(fil,"%s to %s",flow_src_str,flow_dst_str)!=EOF) {
+
+    printf("flow start: %s %s\n",flow_src_str,flow_dst_str);
+    uiplib_ipaddrconv(flow_src_str,&flow_src_addr);
+    uiplib_ipaddrconv(flow_dst_str,&flow_dst_addr);
+    // LOG_INFO_6ADDR(&flow_dest_addr);
+    
+    simple_udp_sendto(&flow_conn, flow_dst_str, strlen(flow_dst_str), &flow_src_addr);
+
+    simple_udp_sendto(&flow_conn, flow_dst_str, strlen(flow_dst_str), &flow_src_addr);
+
+    fp=fopen("pdao.json", "r");
+    while(fscanf(fp,"%s to %s %d",track_ingress_str,track_egress_str,&interm_nodes)>0){
+      printf("%s %s--",track_egress_str,track_ingress_str);
+      uiplib_ipaddrconv(track_egress_str,&track_egress_addr);
+      uiplib_ipaddrconv(track_ingress_str,&track_ingress_addr);
+      // LOG_INFO("interm nodes: %d\n",interm_nodes);
+      // LOG_INFO_6ADDR(track_egress_addr);
+    
+
+      for(index=0;index<interm_nodes;index++){
+        fscanf(fp,"%s via %s in %s",via2_str,via1_str,dst_str);
+        // LOG_INFO("%s %s\n",dst_str,track_egress_str);
+        if(uip_ipaddr_cmp(&flow_dst_addr,&track_egress_addr)){
+          
+          uiplib_ipaddrconv(dst_str,&dst_addr);
+          uiplib_ipaddrconv(via2_str,&via2_addr);
+          uiplib_ipaddrconv(via1_str,&via1_addr);
+          // LOG_INFO_6ADDR(&via2_addr);
+          // LOG_INFO_6ADDR(&via1_addr);
+          // LOG_INFO_6ADDR(&dst_addr);
+
+          rpl_icmp6_pdao_output(&dst_addr,&via1_addr,&via2_addr);
+          // rpl_icmp6_pdao_output(&dst_addr,&via1_addr,&via2_addr);
+        }
+      }
+    }
+    fclose(fp);
+
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
+    etimer_set(&periodic_timer, 30*CLOCK_SECOND);
 
-  uip_ipaddr_t * dst_addr = malloc(sizeof(uip_ipaddr_t));
-  uip_ipaddr_t * via1_addr = malloc(sizeof(uip_ipaddr_t));
-  uip_ipaddr_t * via2_addr = malloc(sizeof(uip_ipaddr_t));
-  printf("Thread started\n");
-  fp=fopen("pdao.json", "r");
-  while(fscanf(fp,"%s via %s in %s",via2_str,via1_str,dst_str)>0){
-    
-    uiplib_ipaddrconv(dst_str,dst_addr);
-    uiplib_ipaddrconv(via2_str,via2_addr);
-    uiplib_ipaddrconv(via1_str,via1_addr);
-    
-    LOG_INFO("SENDING to:");
-    LOG_INFO_6ADDR(dst_addr);
-    LOG_INFO("\n");
-    rpl_icmp6_pdao_output(dst_addr,via1_addr,via2_addr);
   }
-  fclose(fp);
-  etimer_set(&periodic_timer, 10*CLOCK_SECOND);
-  }
+  fclose(fil);
 
   PROCESS_END();
 }

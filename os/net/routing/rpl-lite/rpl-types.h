@@ -209,6 +209,7 @@ struct rpl_dag {
   struct ctimer dio_timer;
   struct ctimer unicast_dio_timer;
   struct ctimer dao_timer;
+  struct ctimer pdao_timer;
   rpl_nbr_t *unicast_dio_target;
 #if RPL_WITH_PROBING
   struct ctimer probing_timer;

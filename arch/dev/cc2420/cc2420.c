@@ -351,6 +351,14 @@ strobe(enum cc2420_register regname)
   SPI_WRITE(regname);
   CC2420_SPI_DISABLE();
 }
+void
+cc2420_strobe(enum cc2420_register regname)
+{
+  CC2420_SPI_ENABLE();
+  SPI_WRITE(regname);
+  CC2420_SPI_DISABLE();
+}
+
 /*---------------------------------------------------------------------------*/
 /* Reads a register */
 static uint16_t
@@ -379,6 +387,18 @@ getreg(enum cc2420_register regname)
  */
 static void
 setreg(enum cc2420_register regname, uint16_t value)
+{
+  CC2420_SPI_ENABLE();
+  SPI_WRITE_FAST(regname);
+  SPI_WRITE_FAST((uint8_t) (value >> 8));
+  SPI_WRITE_FAST((uint8_t) (value & 0xff));
+  SPI_WAITFORTx_ENDED();
+  SPI_WRITE(0);
+  CC2420_SPI_DISABLE();
+}
+
+void
+cc2420_setreg(enum cc2420_register regname, uint16_t value)
 {
   CC2420_SPI_ENABLE();
   SPI_WRITE_FAST(regname);

@@ -96,8 +96,10 @@
 #define RPL_CODE_DIO                   0x01   /* DAG Information Option */
 #define RPL_CODE_DAO                   0x02   /* Destination Advertisement Option */
 #define RPL_CODE_DAO_ACK               0x03   /* DAO acknowledgment */
-#define RPL_CODE_PDAO                  0x80   /* Projected DAO  iliar*/
-// #define RPL_CODE_SEC_DIS               0x80   /* Secure DIS */
+#define RPL_CODE_PDAO                  0x70   /* Projected DAO  iliar*/
+#define RPL_CODE_PDR                  0x71   /* Projected DAO  iliar*/
+#define RPL_CODE_PDAO_ACK              0x72   /* Projected DAO  iliar*/
+#define RPL_CODE_SEC_DIS               0x80   /* Secure DIS */
 #define RPL_CODE_SEC_DIO               0x81   /* Secure DIO */
 #define RPL_CODE_SEC_DAO               0x82   /* Secure DAO */
 #define RPL_CODE_SEC_DAO_ACK           0x83   /* Secure DAO-ACK */

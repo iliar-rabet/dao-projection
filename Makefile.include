@@ -414,8 +414,8 @@ endif
 ifndef CUSTOM_RULE_LINK
 $(BUILD_DIR_BOARD)/%.$(TARGET): %.o $(PROJECT_OBJECTFILES) $(PROJECT_LIBRARIES) $(CONTIKI_NG_TARGET_LIB)
 	$(TRACE_LD)
-	$(Q)$(LD) $(LDFLAGS) $(TARGET_STARTFILES) ${filter-out %.a,$^} \
-	    ${filter %.a,$^} $(TARGET_LIBFILES) -o $@
+	echo $(LDFLAGS)
+	$(Q)$(LD) $(LDFLAGS) -lm $(TARGET_STARTFILES) ${filter-out %.a,$^} ${filter %.a,$^} $(TARGET_LIBFILES) -o $@
 endif
 
 %.$(TARGET): $(BUILD_DIR_BOARD)/%.$(TARGET)

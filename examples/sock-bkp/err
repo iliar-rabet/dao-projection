@@ -1,0 +1,20 @@
+udpserver/udp-server.c: In function ‘process_thread_udp_server_process’:
+udpserver/udp-server.c:198:12: warning: unused variable ‘x’ [-Wunused-variable]
+  198 |     double x=sqrt(10);
+      |            ^
+At top level:
+udpserver/udp-server.c:93:13: warning: ‘read_func’ defined but not used [-Wunused-function]
+   93 | static void read_func(void *ptr){
+      |             ^~~~~~~~~
+udpserver/udp-server.c:91:22: warning: ‘read_timer’ defined but not used [-Wunused-variable]
+   91 | static struct ctimer read_timer;
+      |                      ^~~~~~~~~~
+udpserver/udp-server.c:41:23: warning: ‘buff’ defined but not used [-Wunused-variable]
+   41 | static char str[100], buff[100], curr_parent[100];
+      |                       ^~~~
+udpserver/udp-server.c:40:12: warning: ‘fd’ defined but not used [-Wunused-variable]
+   40 | static int fd, iter = 0;
+      |            ^~
+udpserver/udp-server.c:34:21: warning: ‘new_parent’ defined but not used [-Wunused-variable]
+   34 | static uip_ipaddr_t new_parent;
+      |                     ^~~~~~~~~~

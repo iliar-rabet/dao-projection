@@ -168,7 +168,7 @@ downward_callback(struct simple_udp_connection *c,
     // rpl_neighbor_print_list("Anchor's table when relaying downward");
     char buff[100];
     uip_ipaddr_t addr;
-    LOG_INFO("Received response: %s\n",data);// %c%c       ", seq_no[0], seq_no[1]);
+    printf("Received response: %s\n",data);// %c%c       ", seq_no[0], seq_no[1]);
     // strcpy(buf,replace_str((char *)data,"::",":0:0:0:"));
     sprintf(buff,"%s",data);
     uip_ipaddr_t rcvd_ip;

@@ -96,6 +96,10 @@ int cc2420_get_txpower(void);
 #define CC2420_TXPOWER_MAX  31
 #define CC2420_TXPOWER_MIN   0
 
+
+void cc2420_setreg(enum cc2420_register , uint16_t );
+void cc2420_strobe(enum cc2420_register);
+
 /**
  * Interrupt function, called from the simple-cc2420-arch driver.
  *

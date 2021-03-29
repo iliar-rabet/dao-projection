@@ -69,13 +69,28 @@ static void dis_input(void);
 static void dio_input(void);
 static void dao_input(void);
 static void pdao_input(void);
+static void pdao_ack_input(void);
+static void pdr_input(void);
 
+//iliar
+typedef struct pdao_ack
+{
+  uip_ipaddr_t * addr;
+  uint8_t flag;  
+  struct pdao_ack * next;
+  struct ctimer ct;
+
+} pdao_ack_t;
+
+static pdao_ack_t * pdao_list=NULL;
 /*---------------------------------------------------------------------------*/
 /* Initialize RPL ICMPv6 message handlers */
 UIP_ICMP6_HANDLER(dis_handler, ICMP6_RPL, RPL_CODE_DIS, dis_input);
 UIP_ICMP6_HANDLER(dio_handler, ICMP6_RPL, RPL_CODE_DIO, dio_input);
 UIP_ICMP6_HANDLER(dao_handler, ICMP6_RPL, RPL_CODE_DAO, dao_input);
 UIP_ICMP6_HANDLER(pdao_handler, ICMP6_RPL, RPL_CODE_PDAO, pdao_input);
+UIP_ICMP6_HANDLER(pdao_ack_handler, ICMP6_RPL, RPL_CODE_PDAO_ACK, pdao_ack_input);
+UIP_ICMP6_HANDLER(pdr_handler, ICMP6_RPL, RPL_CODE_PDR, pdr_input);
 
 #if RPL_WITH_DAO_ACK
 static void dao_ack_input(void);
@@ -135,6 +150,7 @@ rpl_icmp6_update_nbr_table(uip_ipaddr_t *from, nbr_table_reason_t reason, void *
 static void
 dis_input(void)
 {
+  printf("DIS:%u\n",uip_len);
   if(!curr_instance.used) {
     LOG_WARN("dis_input: not in an instance yet, discard\n");
     goto discard;
@@ -184,7 +200,8 @@ dio_input(void)
   uip_ipaddr_t from;
 
   memset(&dio, 0, sizeof(dio));
-
+  
+  printf("DIO:%u\n",uip_len);
   /* Set default values in case the DIO configuration option is missing. */
   dio.dag_intdoubl = RPL_DIO_INTERVAL_DOUBLINGS;
   dio.dag_intmin = RPL_DIO_INTERVAL_MIN;
@@ -467,6 +484,7 @@ dao_input(void)
   int i;
   uip_ipaddr_t from;
 
+  printf("DAO:%u %lu\n",uip_len,clock_seconds());
   memset(&dao, 0, sizeof(dao));
 
   dao.instance_id = UIP_ICMP_PAYLOAD[0];
@@ -537,11 +555,11 @@ dao_input(void)
         }
         break;
       case RPL_OPTION_SIO:
-        printf("\nfrom:");
+        LOG_INFO("\nfrom:");
         LOG_INFO_6ADDR(&from);
         num_nbr = buffer[i + 5];
         #ifdef CONTIKI_TARGET_NATIVE
-        printf("rec SIO_nbr: %d\n",num_nbr);
+        LOG_INFO("rec SIO_nbr: %d\n",num_nbr);
         fp=fopen("list","a");
         uiplib_ipaddr_snprint(str_from,40,&from);
         fprintf(fp,"%s\n",str_from);
@@ -577,7 +595,194 @@ dao_input(void)
     uipbuf_clear();
 }
 /*---------------------------------------------------------------------------*/
-//iliar
+
+
+rpl_icmp6_pdao_ack_output(uint8_t sequence, uint8_t status)
+{
+  unsigned char *buffer;
+
+  buffer = UIP_ICMP_PAYLOAD;
+  buffer[0] = curr_instance.instance_id;
+  buffer[1] = 0;
+  buffer[2] = sequence;
+  buffer[3] = status;
+
+  LOG_INFO("sending a PDAO-%s seqno %d to ",
+          status == 0  ? "ACK" : "NACK", sequence);
+  LOG_INFO_(" with status %d ", status);
+  LOG_INFO_6ADDR(&curr_instance.dag.dag_id);
+
+  uip_icmp6_send(&curr_instance.dag.dag_id, ICMP6_RPL, RPL_CODE_PDAO_ACK, 4);
+}
+
+void resend_pdao(void * input){
+  struct pdao_ack * pdao=input;
+  LOG_INFO("flag:%u",pdao->flag);
+  LOG_INFO_6ADDR(pdao->addr);
+}
+
+
+
+void push(pdao_ack_t ** head, uint8_t flag,uip_ipaddr_t * addr) {
+    pdao_ack_t * new_node;
+    new_node = (pdao_ack_t *) malloc(sizeof(pdao_ack_t));
+    uip_ipaddr_t *new_addr=(uip_ipaddr_t *) malloc(sizeof(uip_ipaddr_t));
+    new_node->addr=new_addr;
+    LOG_INFO("pusshing :");
+    LOG_INFO_6ADDR(addr);
+    // memcpy(new_addr,(const unsigned char *)addr,sizeof(uip_ipaddr_t));
+
+    new_node->flag = 0;
+    
+    new_node->next = *head;
+    *head = new_node;
+}
+
+static void
+pdao_ack_input(void)
+{
+  uint8_t *buffer;
+  uint8_t instance_id;
+  uint8_t sequence;
+  uint8_t status;
+  uint8_t ind;
+  clock_time_t resend = (CLOCK_SECOND * 1000);
+
+
+  printf("PDAO_ACK:%u %lu\n",uip_len,clock_seconds());
+  buffer = UIP_ICMP_PAYLOAD;
+
+  instance_id = buffer[0];
+  sequence = buffer[2];
+  status = buffer[3];
+
+  printf("PDAO:%u\n",uip_len);
+  LOG_INFO("received a PDAO-%s with seqno %d and status %d from ",
+         status == 0 ? "ACK" : "NACK", sequence, status);
+  LOG_INFO_6ADDR(&UIP_IP_BUF->srcipaddr);
+  LOG_INFO_("\n");
+
+  pdao_ack_t * current = pdao_list;
+  // while(current->next!=NULL && current!=NULL){
+  //   LOG_INFO("LOOOOOOOP:");
+  //   LOG_INFO_6ADDR(current->addr);
+  //   printf("%u",current->flag);
+  //   current->flag=1;
+  //   ctimer_stop(&current->ct);
+  //   printf("\n"); 
+  //   current=current->next;
+  // }
+
+  discard:
+    uipbuf_clear();
+}
+
+static void
+pdr_input(void)
+{
+  uint8_t *buffer;
+  uint8_t instance_id;
+  uint8_t sequence;
+  uint8_t lifetime;
+  
+  uip_ipaddr_t * pdr_addr = malloc(sizeof(uip_ipaddr_t));
+
+  printf("PDR:%u %lu\n",uip_len,clock_seconds());
+  buffer = UIP_ICMP_PAYLOAD;
+
+  printf("PDR:%u\n",uip_len);
+  instance_id = buffer[0];
+  sequence = buffer[1];
+  lifetime = buffer[2];
+
+  uip_ipaddr_copy(pdr_addr,(uip_ipaddr_t *)&buffer[3]);
+
+  LOG_INFO("received a PDR with lifetime %u from ",lifetime);
+  LOG_INFO_6ADDR(&UIP_IP_BUF->srcipaddr);
+  LOG_INFO_("dest:");
+  LOG_INFO_6ADDR(pdr_addr);
+  LOG_INFO_("\n");
+
+  #ifdef CONTIKI_TARGET_NATIVE
+  //   FILE *fp;
+  //   char via2_str[20];
+  //   char via1_str[20];
+  //   char dst_str[20];
+
+  //   char track_egress_str[20];
+  //   char track_ingress_str[20];
+  //   uip_ipaddr_t * track_egress_addr = malloc(sizeof(uip_ipaddr_t));
+  //   uip_ipaddr_t * track_ingress_addr = malloc(sizeof(uip_ipaddr_t));
+
+  //   uip_ipaddr_t * dst_addr = malloc(sizeof(uip_ipaddr_t));
+  //   uip_ipaddr_t * via1_addr = malloc(sizeof(uip_ipaddr_t));
+  //   uip_ipaddr_t * via2_addr = malloc(sizeof(uip_ipaddr_t));
+  //   int index;
+  //   int interm_nodes;
+
+  // pdao_ack_t * current = pdao_list;
+  // while(current!=NULL && current->next!=NULL ){
+  //   LOG_INFO("LOOOOOOOP:");
+  //   if(current->addr != NULL)
+  //     LOG_INFO_6ADDR(current->addr);
+  //   printf(" %u\n",current->flag);
+   
+  //   current=current->next;
+  // }
+
+    // fp=fopen("pdao.json", "r");
+    // while(fscanf(fp,"%s to %s %d",track_ingress_str,track_egress_str,&interm_nodes)>0){
+    //   uiplib_ipaddrconv(track_egress_str,track_egress_addr);
+    //   uiplib_ipaddrconv(track_ingress_str,track_ingress_addr);
+    //   // LOG_INFO("interm nodes: %d\n",interm_nodes);
+    
+
+    //   for(index=0;index<interm_nodes;index++){
+    //     fscanf(fp,"%s via %s in %s",via2_str,via1_str,dst_str);
+    //     // LOG_INFO("%s %s\n",dst_str,track_egress_str);
+    //     if(uip_ipaddr_cmp(pdr_addr,track_egress_addr)){
+          
+    //       uiplib_ipaddrconv(dst_str,dst_addr);
+    //       uiplib_ipaddrconv(via2_str,via2_addr);
+    //       uiplib_ipaddrconv(via1_str,via1_addr);
+    //       // LOG_INFO_6ADDR(via2_addr);
+    //       // LOG_INFO_6ADDR(via1_addr);
+    //       // LOG_INFO_6ADDR(dst_addr);
+
+    //       // rpl_icmp6_pdao_output(dst_addr,via1_addr,via2_addr);
+    //     }
+        
+    //   }
+    // }
+      
+  #endif
+
+  discard:
+    uipbuf_clear();
+}
+
+rpl_icmp6_pdr_output(uint8_t lifetime, uip_ipaddr_t * addr)
+{
+  unsigned char *buffer;
+
+  /* Make sure we're up-to-date before sending data out */
+  rpl_dag_update_state();
+
+  buffer = UIP_ICMP_PAYLOAD;
+  buffer[0] = curr_instance.instance_id;
+  buffer[1] = 0;
+  buffer[2] = lifetime;
+
+  memcpy(buffer + 3, ((const unsigned char *)addr), 16); /* Prefix */
+
+  LOG_INFO("sending a PDR lifetime %u to ",lifetime);
+  LOG_INFO_6ADDR(&curr_instance.dag.dag_id);
+  LOG_INFO_(" with lifetime %d\n", lifetime);
+
+  uip_icmp6_send(&curr_instance.dag.dag_id, ICMP6_RPL, RPL_CODE_PDR, 19);
+}
+
+
 void
 rpl_icmp6_pdao_output(uip_ipaddr_t * addr, uip_ipaddr_t * via1, uip_ipaddr_t * via2 )
 {
@@ -587,7 +792,7 @@ rpl_icmp6_pdao_output(uip_ipaddr_t * addr, uip_ipaddr_t * via1, uip_ipaddr_t * v
   pos=0;
   buffer = UIP_ICMP_PAYLOAD;
 
-  printf("SIZE=%d\n",sizeof(uip_ipaddr_t));
+  LOG_INFO("SIZE=%d\n",sizeof(uip_ipaddr_t));
   memcpy(buffer + pos, ((const unsigned char *)via1), 16); /* Prefix */
   pos += 16;
   memcpy(buffer + pos, ((const unsigned char *)via2), 16); /* Interface identifier */
@@ -595,7 +800,22 @@ rpl_icmp6_pdao_output(uip_ipaddr_t * addr, uip_ipaddr_t * via1, uip_ipaddr_t * v
 
 
   /* Send DAO to root (IPv6 address is DAG ID) */
-  printf("sending PDAO\n");
+  LOG_INFO("sending PDAO to ");
+  LOG_INFO_6ADDR(addr);
+
+    pdao_ack_t * new_node;
+    new_node = (pdao_ack_t *) malloc(sizeof(pdao_ack_t));
+    uip_ipaddr_t *new_addr=(uip_ipaddr_t *) malloc(sizeof(uip_ipaddr_t));
+    new_node->addr=new_addr;
+    LOG_INFO("pushing :");
+    LOG_INFO_6ADDR(addr);
+    memcpy(new_addr,(const unsigned char *)addr,sizeof(uip_ipaddr_t));
+
+    new_node->flag = 0;
+    ctimer_set(&new_node->ct, CLOCK_SECOND/10, resend_pdao, (void *)new_node);
+    new_node->next = pdao_list;
+    pdao_list = new_node;
+
   // LOG_INFO_6ADDR(&addr);
   uip_icmp6_send(addr, ICMP6_RPL, RPL_CODE_PDAO, pos);
 }
@@ -618,10 +838,11 @@ pdao_input(void)
   uint8_t buffer_length;
   int pos=0;
 
+  printf("PDAO:%u\n",uip_len);
   buffer = UIP_ICMP_PAYLOAD;
   buffer_length = uip_len - uip_l3_icmp_hdr_len;
 
-  printf("received a PDAO from \n");
+  LOG_INFO("received a PDAO from \n");
   LOG_INFO("VIA: ");
   LOG_INFO_6ADDR((uip_ipaddr_t *)&buffer[pos]);
   uip_ipaddr_copy(&VIA1,(uip_ipaddr_t *)&buffer[pos]);
@@ -633,6 +854,10 @@ pdao_input(void)
   LOG_INFO("\n");
 
   pdao_set();
+  
+  
+  rpl_icmp6_pdao_ack_output(0,0);
+  // rpl_icmp6_pdao_ack_output(0,0);
   discard:
     uipbuf_clear();
 }
@@ -717,7 +942,7 @@ rpl_icmp6_dao_output(uint8_t lifetime)
   /* Create a transit information sub-option. */
   buffer[pos++] = RPL_OPTION_SIO;
   uint8_t nbr_num=(uint8_t)uip_ds6_nbr_num();
-  printf("sending num_nbr:%d",nbr_num);
+  LOG_INFO("sending num_nbr:%d",nbr_num);
   buffer[pos++] = 20;
   buffer[pos++] = 0; /* flags - ignored */
   buffer[pos++] = 0; /* path control - ignored */
@@ -734,6 +959,7 @@ rpl_icmp6_dao_output(uint8_t lifetime)
 
   
   /* Send DAO to root (IPv6 address is DAG ID) */
+  printf("DAO:%u\n",uip_len);
   uip_icmp6_send(&curr_instance.dag.dag_id, ICMP6_RPL, RPL_CODE_DAO, pos);
 }
 #if RPL_WITH_DAO_ACK
@@ -795,11 +1021,14 @@ rpl_icmp6_dao_ack_output(uip_ipaddr_t *dest, uint8_t sequence, uint8_t status)
 void
 rpl_icmp6_init()
 {
+  pdao_list = NULL;
   uip_icmp6_register_input_handler(&dis_handler);
   uip_icmp6_register_input_handler(&dio_handler);
   uip_icmp6_register_input_handler(&dao_handler);
   uip_icmp6_register_input_handler(&pdao_handler);
-#if RPL_WITH_DAO_ACK
+  uip_icmp6_register_input_handler(&pdao_ack_handler);
+  uip_icmp6_register_input_handler(&pdr_handler);
+  #if RPL_WITH_DAO_ACK
   uip_icmp6_register_input_handler(&dao_ack_handler);
 #endif /* RPL_WITH_DAO_ACK */
 }

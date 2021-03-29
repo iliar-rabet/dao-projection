@@ -60,12 +60,12 @@
 
 
 #define SEND_INTERVAL CLOCK_SECOND
-#define CTRL_INTERVAL (CLOCK_SECOND*0.00)
+#define CTRL_INTERVAL (CLOCK_SECOND*0.3)
 
 
 static struct simple_udp_connection broadcast_connection;
 
-#define DATA_INTERVAL (CLOCK_SECOND*1.01)
+#define DATA_INTERVAL (CLOCK_SECOND*0.5)
 
 static struct simple_udp_connection udp_conn;
 static uip_ipaddr_t rcvd_ip;
@@ -188,7 +188,7 @@ PROCESS_THREAD(broadcast_example_process, ev, data)
 
 
     ctrl_wdw=true;
-    rpl_neighbor_print_list(string);
+    // rpl_neighbor_print_list(string);
     uip_create_linklocal_allnodes_mcast(&addr);
     simple_udp_sendto(&broadcast_connection, str, sizeof(str), &addr);
     etimer_set(&wdw_timer,CTRL_INTERVAL);
@@ -238,14 +238,14 @@ PROCESS_THREAD(udp_client_process, ev, data)
     else {
       printf("%d %d\n", NETSTACK_ROUTING.node_is_reachable(), NETSTACK_ROUTING.get_root_ipaddr(&dest_ipaddr));
       printf("could not send %d\n",count);
-      rpl_neighbor_print_list("could not send");
+      // rpl_neighbor_print_list("could not send");
 
-      if(curr_instance.dag.preferred_parent) {
-        LOG_INFO_6ADDR( rpl_neighbor_get_ipaddr(curr_instance.dag.preferred_parent));
+      // if(curr_instance.dag.preferred_parent) {
+      //   LOG_INFO_6ADDR( rpl_neighbor_get_ipaddr(curr_instance.dag.preferred_parent));
         
-      } else {
-        printf("None\n");
-      }   
+      // } else {
+      //   printf("None\n");
+      // }   
     }
     etimer_set(&data_timer, DATA_INTERVAL);
   

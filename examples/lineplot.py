@@ -14,9 +14,9 @@ for line in Lines2:
     proj.append(int(line))
 del pure[-11:-1]
 x=range(1,65)
-plt.xlabel('E2E delay (ms)', fontweight ='bold') 
-plt.ylabel('Packet number', fontweight ='bold') 
+plt.ylabel('E2E delay (millisecond)', fontweight ='bold') 
+plt.xlabel('Time (second)', fontweight ='bold') 
 plt.plot(x, pure,linestyle='dashed',label='RPL')
-plt.plot(x, proj,label='projected')
+plt.plot(x, proj,label='RPL-RP')
 plt.legend()
 plt.show()
