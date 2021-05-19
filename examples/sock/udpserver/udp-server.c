@@ -68,7 +68,7 @@ void encoding(const uint8_t *data, const uint8_t i)
             long_str[iter_enc] = (char) *data++;
         } else if ( iter_enc - 10*i == 5 ) {
             // Removing ' F fe80::212:7402:2:20'
-            data += 22;
+            data += 18;
             // Adding mobile ID to str
             long_str[iter_enc] = (char) *data++;
             // Removing ' T ' 
