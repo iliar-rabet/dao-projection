@@ -24,7 +24,7 @@ down_memory = sysv_ipc.SharedMemory(123457)
 
 data={}
 window={}
-filepath="lowlow.dat"
+filepath="grid"
 vel = {}
 position = {}
 Window=107
@@ -196,7 +196,9 @@ def veloc(ip,T):
 
 sensor_std_err=.1
 initial_x=None
-landmarks = np.array([[0,0],[0,0],[2,0],[4,0],[6,0],[8,0],[10,0],[12,0],[14,0],[16,0]]) #first one is dummy
+#landmarks = np.array([[0,0],[0,0],[2,0],[4,0],[6,0],[8,0],[10,0],[12,0],[14,0],[16,0]]) #first one is dummy
+landmarks = np.array([[0,0],[0,0],[0,3],[0,6],[0,9],[0,12],[3,0],[3,3],[3,6],[3,9],[3,12],[6,0],[6,3],[6,6],[6,9],[6,12],[9,0],[9,3],[9,6],[9,9],[9,12],[12,0],[12,3],[12,6],[12,9],[12,12]])
+
 #landmarks=np.array([[0, 0], [1, 6],[7 ,7],[4 ,6],[-1 ,8],[-3, 4],[-4 ,9],[-2, 4],[5, 1],[-4, 4],[5, 9],[0, 10],[2, 0],[2, 1]])
 
 # NL = len(landmarks)

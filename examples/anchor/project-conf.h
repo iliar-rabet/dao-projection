@@ -1,0 +1,2 @@
+#define RPL_CONF_WITH_PROBING 0
+#define ENERGEST_CONF_ON 1

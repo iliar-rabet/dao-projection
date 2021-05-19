@@ -1,0 +1,1740 @@
+00:00.354	ID:8	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.357	ID:8	[INFO: Main      ] - Routing: RPL Lite
+00:00.359	ID:8	[INFO: Main      ] - Net: sicslowpan
+00:00.361	ID:8	[INFO: Main      ] - MAC: CSMA
+00:00.365	ID:8	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.368	ID:8	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.370	ID:8	[INFO: Main      ] Node ID: 8
+00:00.376	ID:8	[INFO: Main      ] Link-layer address: 0012.7408.0008.0808
+00:00.387	ID:8	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7408:8:808
+00:00.391	ID:8	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.457	ID:11	[INFO: Main      ] Starting Contiki-NG-release/v4.4-109-g97868a138-dirty
+00:00.460	ID:11	[INFO: Main      ] - Routing: nullrouting
+00:00.462	ID:11	[INFO: Main      ] - Net: slipnet
+00:00.465	ID:11	[INFO: Main      ] - MAC: CSMA
+00:00.468	ID:11	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.472	ID:11	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.474	ID:11	[INFO: Main      ] Node ID: 11
+00:00.480	ID:11	[INFO: Main      ] Link-layer address: 0012.740b.000b.0b0b
+00:00.491	ID:11	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:740b:b:b0b
+00:00.494	ID:11	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.517	ID:2	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.520	ID:2	[INFO: Main      ] - Routing: RPL Lite
+00:00.523	ID:2	[INFO: Main      ] - Net: sicslowpan
+00:00.525	ID:2	[INFO: Main      ] - MAC: CSMA
+00:00.528	ID:2	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.532	ID:2	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.532	ID:6	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.534	ID:2	[INFO: Main      ] Node ID: 2
+00:00.535	ID:6	[INFO: Main      ] - Routing: RPL Lite
+00:00.537	ID:6	[INFO: Main      ] - Net: sicslowpan
+00:00.539	ID:2	[INFO: Main      ] Link-layer address: 0012.7402.0002.0202
+00:00.539	ID:6	[INFO: Main      ] - MAC: CSMA
+00:00.543	ID:6	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.546	ID:6	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.548	ID:6	[INFO: Main      ] Node ID: 6
+00:00.551	ID:2	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7402:2:202
+00:00.554	ID:6	[INFO: Main      ] Link-layer address: 0012.7406.0006.0606
+00:00.554	ID:2	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.565	ID:6	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7406:6:606
+00:00.569	ID:6	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.630	ID:4	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.632	ID:4	[INFO: Main      ] - Routing: RPL Lite
+00:00.635	ID:4	[INFO: Main      ] - Net: sicslowpan
+00:00.637	ID:4	[INFO: Main      ] - MAC: CSMA
+00:00.640	ID:4	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.644	ID:4	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.646	ID:4	[INFO: Main      ] Node ID: 4
+00:00.651	ID:4	[INFO: Main      ] Link-layer address: 0012.7404.0004.0404
+00:00.663	ID:4	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7404:4:404
+00:00.664	ID:1	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.666	ID:4	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.667	ID:1	[INFO: Main      ] - Routing: nullrouting
+00:00.670	ID:1	[INFO: Main      ] - Net: sicslowpan
+00:00.672	ID:1	[INFO: Main      ] - MAC: CSMA
+00:00.675	ID:1	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.679	ID:1	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.681	ID:1	[INFO: Main      ] Node ID: 1
+00:00.683	ID:7	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.686	ID:7	[INFO: Main      ] - Routing: RPL Lite
+00:00.686	ID:1	[INFO: Main      ] Link-layer address: 0012.7401.0001.0101
+00:00.688	ID:7	[INFO: Main      ] - Net: sicslowpan
+00:00.690	ID:7	[INFO: Main      ] - MAC: CSMA
+00:00.694	ID:7	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.697	ID:1	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7401:1:101
+00:00.697	ID:7	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.699	ID:7	[INFO: Main      ] Node ID: 7
+00:00.700	ID:1	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.705	ID:7	[INFO: Main      ] Link-layer address: 0012.7407.0007.0707
+00:00.716	ID:7	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7407:7:707
+00:00.720	ID:7	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.838	ID:10	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.840	ID:10	[INFO: Main      ] - Routing: RPL Lite
+00:00.843	ID:10	[INFO: Main      ] - Net: sicslowpan
+00:00.845	ID:10	[INFO: Main      ] - MAC: CSMA
+00:00.848	ID:10	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.852	ID:10	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.854	ID:10	[INFO: Main      ] Node ID: 10
+00:00.860	ID:10	[INFO: Main      ] Link-layer address: 0012.740a.000a.0a0a
+00:00.871	ID:10	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:740a:a:a0a
+00:00.875	ID:10	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.990	ID:9	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.992	ID:9	[INFO: Main      ] - Routing: RPL Lite
+00:00.995	ID:9	[INFO: Main      ] - Net: sicslowpan
+00:00.996	ID:5	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.997	ID:9	[INFO: Main      ] - MAC: CSMA
+00:00.999	ID:5	[INFO: Main      ] - Routing: RPL Lite
+00:01.000	ID:9	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:01.002	ID:5	[INFO: Main      ] - Net: sicslowpan
+00:01.004	ID:5	[INFO: Main      ] - MAC: CSMA
+00:01.004	ID:9	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:01.006	ID:9	[INFO: Main      ] Node ID: 9
+00:01.007	ID:5	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:01.011	ID:5	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:01.012	ID:9	[INFO: Main      ] Link-layer address: 0012.7409.0009.0909
+00:01.013	ID:5	[INFO: Main      ] Node ID: 5
+00:01.018	ID:5	[INFO: Main      ] Link-layer address: 0012.7405.0005.0505
+00:01.023	ID:9	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7409:9:909
+00:01.027	ID:9	[INFO: Sky       ] CC2420 CCA threshold -45
+00:01.030	ID:5	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7405:5:505
+00:01.033	ID:5	[INFO: Sky       ] CC2420 CCA threshold -45
+00:01.181	ID:3	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:01.183	ID:3	[INFO: Main      ] - Routing: RPL Lite
+00:01.186	ID:3	[INFO: Main      ] - Net: sicslowpan
+00:01.188	ID:3	[INFO: Main      ] - MAC: CSMA
+00:01.191	ID:3	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:01.195	ID:3	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:01.197	ID:3	[INFO: Main      ] Node ID: 3
+00:01.202	ID:3	[INFO: Main      ] Link-layer address: 0012.7403.0003.0303
+00:01.214	ID:3	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7403:3:303
+00:01.217	ID:3	[INFO: Sky       ] CC2420 CCA threshold -45
+00:01.700	ID:1	Sending control broadcast: 000
+00:02.700	ID:1	Sending control broadcast: 001
+00:03.700	ID:1	Sending control broadcast: 002
+00:04.415	ID:6	DIO:116
+00:04.415	ID:8	DIO:116
+00:04.415	ID:5	DIO:116
+00:04.415	ID:7	DIO:116
+00:04.415	ID:4	DIO:116
+00:04.700	ID:1	Sending control broadcast: 003
+00:05.700	ID:1	Sending control broadcast: 004
+00:06.700	ID:1	Sending control broadcast: 005
+00:06.765	ID:6	DAO:0
+00:06.767	ID:8	DAO:0
+00:06.768	ID:7	DAO:0
+00:06.769	ID:5	DAO:0
+00:06.770	ID:4	DAO:0
+00:07.700	ID:1	Sending control broadcast: 006
+00:08.700	ID:1	Sending control broadcast: 007
+00:09.700	ID:1	Sending control broadcast: 008
+00:09.838	ID:7	Received response: 
+00:09.838	ID:8	Received response: 
+00:09.838	ID:6	Received response: 
+00:09.838	ID:5	Received response: 
+00:09.838	ID:4	Received response: 
+00:10.405	ID:7	DIO:116
+00:10.405	ID:8	DIO:116
+00:10.405	ID:4	DIO:116
+00:10.405	ID:5	DIO:116
+00:10.700	ID:1	Sending control broadcast: 009
+00:10.704	ID:1	start send 1
+00:11.004	ID:1	now sending hello 1  
+00:11.186	ID:7	DAO:0
+00:11.188	ID:5	DAO:0
+00:11.192	ID:6	DIO:116
+00:11.192	ID:8	DIO:116
+00:11.193	ID:4	DIO:116
+00:11.195	ID:7	DIO:116
+00:11.197	ID:5	DIO:116
+00:11.700	ID:1	Sending control broadcast: 010
+00:11.931	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+00:11.931	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+00:11.931	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+00:11.931	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+00:11.931	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+00:12.700	ID:1	Sending control broadcast: 011
+00:13.700	ID:1	Sending control broadcast: 012
+00:13.743	ID:9	DIO:116
+00:13.743	ID:6	DIO:116
+00:13.743	ID:8	DIO:116
+00:13.744	ID:5	DIO:116
+00:14.038	ID:4	DAO:0
+00:14.700	ID:1	Sending control broadcast: 013
+00:14.939	ID:3	DIO:116
+00:14.940	ID:7	DIO:116
+00:14.940	ID:4	DIO:116
+00:14.940	ID:6	DIO:116
+00:15.700	ID:1	Sending control broadcast: 014
+00:15.743	ID:8	DAO:0
+00:15.804	ID:5	Received response: 
+00:15.804	ID:7	Received response: 
+00:15.804	ID:4	Received response: 
+00:15.808	ID:6	Received response: 
+00:15.811	ID:8	Received response: 
+00:16.036	ID:8	DIO:116
+00:16.037	ID:4	DIO:116
+00:16.037	ID:5	DIO:116
+00:16.037	ID:7	DIO:116
+00:16.053	ID:6	Received response: 
+00:16.054	ID:8	Received response: 
+00:16.057	ID:4	Received response: 
+00:16.057	ID:7	Received response: 
+00:16.058	ID:5	Received response: 
+00:16.098	ID:9	DAO:0
+00:16.700	ID:1	Sending control broadcast: 015
+00:16.804	ID:4	Received response: 
+00:16.804	ID:5	Received response: 
+00:16.804	ID:7	Received response: 
+00:16.804	ID:6	Received response: 
+00:16.810	ID:8	Received response: 
+00:16.949	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+00:16.949	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+00:16.949	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+00:16.949	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+00:16.949	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+00:17.290	ID:3	DAO:0
+00:17.455	ID:11	!Mt!Ratt~:cQttt!Ratt~c"="=r -90 f fe80::212:7401:1:101 t 007 p EUnknown commandatt~c"="=r -83 f fe80::212:7401:1:101 t 008 p !RAtz;:Qt<@@att~c"="=r -78 f fe80::212:7401:1:101 t 009 p EUnknown command!Ratt~:cb*ttttatt~:c^tttt!R!Ratt~c"="=r -61 f fe80::212:7401:1:101 t 010 p EUnknown commandatt~c"="=r -72 f fe80::212:7401:1:101 t 010 p !R	att~c"="=r -90 f fe80::212:7401:1:101 t 011 p att~c"="=r -61 f fe80::212:7401:1:101 t 011 p EUnknown commandEUnknown commandAtz;:t<@@att~c"="=r -83 f fe80::212:7401:1:101 t 012 p EUnknown commandatt~c"="=r -63 f fe80::212:7401:1:101 t 012 p EUnknown commandatt|?t:ci>tttt!Ratt~c"="=r -65 f fe80::212:7401:1:101 t 013 p EUnknown commandatt~c"="=r -78 f fe80::212:7401:1:101 t 013 p EUnknown commandatt|?tc"="=r -86 f fe80::212:7401:1:101 t 013 p EUnknown commandAtz;:t<@@att~c"="=r -72 f fe80::212:7401:1:101 t 014 p !Ratt~c"="=r -69 f fe80::212:7401:1:101 t 014 p att|?t:ctttttEUnknown commandatt|?tc"="=r -92 f fe80::212:7401:1:101 t 014 p !RAtz;:Qt<@@!Ratt|?t				:cWt				tt!Ratt~c"="=r -74 f fe80::212:7401:1:101 t 015 p !Ra	tt|?tc"="=r -90 f fe80::212:7401:1:101 t 015 p att~c"="=r -68 f fe80::212:7401:1:101 t 015 p EUnknown command!Ratt|?t:crttt!R
+00:17.700	ID:1	Sending control broadcast: 016
+00:17.799	ID:11	att~cf"="=r -80 f fe80::212:7401:1:101 t 016 p a
+00:17.822	ID:6	DIO:116
+00:17.823	ID:2	DIO:116
+00:17.823	ID:3	DIO:116
+00:17.823	ID:5	DIO:116
+00:17.949	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+00:17.949	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+00:17.949	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+00:17.949	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+00:17.950	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+00:18.700	ID:1	Sending control broadcast: 017
+00:19.700	ID:1	Sending control broadcast: 018
+00:19.792	ID:10	DIO:116
+00:19.792	ID:8	DIO:116
+00:19.796	ID:7	DIO:116
+00:19.953	ID:6	DIO:116
+00:19.953	ID:9	DIO:116
+00:19.953	ID:10	DIO:116
+00:19.954	ID:7	DIO:116
+00:19.996	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+00:19.996	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+00:19.996	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+00:19.996	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+00:19.996	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+00:20.010	ID:6	Received response: 
+00:20.010	ID:5	Received response: 
+00:20.010	ID:7	Received response: 
+00:20.010	ID:8	Received response: 
+00:20.010	ID:4	Received response: 
+00:20.173	ID:2	DAO:0
+00:20.700	ID:1	Sending control broadcast: 019
+00:20.902	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+00:20.902	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+00:20.902	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+00:20.902	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+00:20.903	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+00:20.998	ID:5	DIO:116
+00:20.999	ID:2	DIO:116
+00:20.999	ID:4	DIO:116
+00:21.003	ID:1	start send 2
+00:21.005	ID:1	now sending hello 2  
+00:21.018	ID:6	Received response: 
+00:21.018	ID:8	Received response: 
+00:21.018	ID:7	Received response: 
+00:21.030	ID:4	Received response: 
+00:21.033	ID:5	Received response: 
+00:21.036	ID:8	relaying hello 2  
+00:21.116	ID:11	tt~c"="=r -63 f fe80::212:7401:1:101 t 016 p EUnknown commandAtz;:Yt<@@att|?tc"="=r -83 f fe80::212:7401:1:101 t 016 p EUnknown command!Ratt~c{"="=r -62 f fe80::212:7401:1:101 t 017 p att~c["="=r -86 f fe80::212:7401:1:101 t 017 p EUnknown commandatt~c"="=r -65 f fe80::212:7401:1:101 t 017 p EUnknown commandEUnknown commanda	tt~cQ"="=r -92 f fe80::212:7401:1:101 t 018 p att~cn"="=r -61 f fe80::212:7401:1:101 t 018 p !Ratt~c"="=r -69 f fe80::212:7401:1:101 t 018 p Atz;:zt<@@!R!Ratt|>t:cttt!Ratt~c"="=r -74 f fe80::212:7401:1:101 t 019 p EUnknown commandatt~cc"="=r -61 f fe80::212:7401:1:101 t 019 p !Ra	tt|?t				cY"="=r -90 f fe80::212:7401:1:101 t 019 p !RA
+00:21.118	ID:3	DIO:116
+00:21.118	ID:6	DIO:116
+00:21.119	ID:4	DIO:116
+00:21.119	ID:7	DIO:116
+00:21.700	ID:1	Sending control broadcast: 020
+00:21.731	ID:11	tz;:Ht<@@att|?tcKhello 2  atta
+00:21.780	ID:5	Received response: 
+00:21.780	ID:4	Received response: 
+00:21.790	ID:6	Received response: 
+00:21.889	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:21.889	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:21.889	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:21.889	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:21.890	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:21.904	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:21.904	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:21.906	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+00:21.906	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+00:22.146	ID:10	DAO:0
+00:22.227	ID:11	tt~cP"="=r -63 f fe80::212:7401:1:101 t 020 p att~c"="=r -80 f fe80::212:7401:1:101 t 020 p !Ratt|?t				cH"="=r -83 f fe80::212:7401:1:101 t 020 p !R	EUnknown commandAt~;..Ifd00:0:0:0:212:7409:9:909 (null)att|>t
+00:22.227	ID:11	
+00:22.228	ID:11	
+00:22.228	ID:11	
+00:22.230	ID:11	:c@Zt
+00:22.230	ID:11	
+00:22.230	ID:11	
+00:22.230	ID:11	
+00:22.700	ID:1	Sending control broadcast: 021
+00:23.070	ID:5	DIO:116
+00:23.070	ID:4	DIO:116
+00:23.070	ID:8	DIO:116
+00:23.070	ID:7	DIO:116
+00:23.070	ID:6	DIO:116
+00:23.297	ID:9	DIO:116
+00:23.297	ID:8	DIO:116
+00:23.297	ID:6	DIO:116
+00:23.297	ID:5	DIO:116
+00:23.700	ID:1	Sending control broadcast: 022
+00:23.901	ID:4	DIO:116
+00:23.902	ID:3	DIO:116
+00:24.700	ID:1	Sending control broadcast: 023
+00:24.866	ID:11	t				t				t!Ratt~c"="=r -86 f fe80::212:7401:1:101 t 021 p EUnknown commandatt~c9"="=r -65 f fe80::212:7401:1:101 t 021 p EUnknown command!RAtz;:3t<@@att~c3"="=r -69 f fe80::212:7401:1:101 t 022 p att~c"="=r -92 f fe80::212:7401:1:101 t 022 p EUnknown commandEUnknown commandatt~c-"="=r -74 f fe80::212:7401:1:101 t 023 p EUnknown commandatt|>t
+00:24.866	ID:11	
+00:24.866	ID:11	
+00:24.866	ID:11	
+00:24.975	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:24.975	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:24.975	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:24.975	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:24.975	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:25.023	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:25.023	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:25.025	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+00:25.025	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+00:25.087	ID:2	DIO:116
+00:25.087	ID:3	DIO:116
+00:25.088	ID:6	DIO:116
+00:25.088	ID:5	DIO:116
+00:25.412	ID:9	DIO:116
+00:25.414	ID:8	DIO:116
+00:25.700	ID:1	Sending control broadcast: 024
+00:25.838	ID:4	Received response: 
+00:25.882	ID:11	c("="=r -90 f fe80::212:7401:1:101 t 023 p !RAt~;..Ifd00:0:0:0:212:7409:9:909 (null)Atz;:ft<@@att~c$"="=r -80 f fe80::212:7401:1:101 t 024 p !Ratt|>t
+00:25.882	ID:11	
+00:25.882	ID:11	
+00:25.882	ID:11	
+00:26.022	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:26.022	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:26.022	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:26.022	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:26.022	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:26.070	ID:10	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+00:26.070	ID:9	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+00:26.072	ID:6	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+00:26.072	ID:7	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+00:26.700	ID:1	Sending control broadcast: 025
+00:26.799	ID:5	Received response: 
+00:26.799	ID:4	Received response: 
+00:26.799	ID:6	Received response: 
+00:26.799	ID:8	Received response: 
+00:26.799	ID:7	Received response: 
+00:27.671	ID:9	DIO:116
+00:27.671	ID:10	DIO:116
+00:27.671	ID:6	DIO:116
+00:27.671	ID:7	DIO:116
+00:27.696	ID:10	DIO:116
+00:27.697	ID:8	DIO:116
+00:27.700	ID:1	Sending control broadcast: 026
+00:27.705	ID:7	DIO:116
+00:27.885	ID:5	Received response: 
+00:27.885	ID:4	Received response: 
+00:27.885	ID:6	Received response: 
+00:27.885	ID:8	Received response: 
+00:27.885	ID:7	Received response: 
+00:28.530	ID:2	DIO:116
+00:28.530	ID:5	DIO:116
+00:28.530	ID:4	DIO:116
+00:28.700	ID:1	Sending control broadcast: 027
+00:29.700	ID:1	Sending control broadcast: 028
+00:30.700	ID:1	Sending control broadcast: 029
+00:30.878	ID:6	Received response: 
+00:30.878	ID:8	Received response: 
+00:30.878	ID:7	Received response: 
+00:30.878	ID:5	Received response: 
+00:30.878	ID:4	Received response: 
+00:31.011	ID:1	start send 3
+00:31.013	ID:1	now sending hello 3  
+00:31.075	ID:10	relaying hello 3  
+00:31.075	ID:8	relaying hello 3  
+00:31.275	ID:11	c "="=r -83 f fe80::212:7401:1:101 t 024 p !RAt~;..fd00:0:0:0:212:740a:a:a0a (null)att~c)"="=r -86 f fe80::212:7401:1:101 t 025 p !Ratt|?t				c$"="=r -62 f fe80::212:7401:1:101 t 025 p EUnknown commandAtz;:t<@@att~c "="=r -92 f fe80::212:7401:1:101 t 026 p att|?t				c "="=r -61 f fe80::212:7401:1:101 t 026 p !REUnknown commandatt|?t				c"="=r -61 f fe80::212:7401:1:101 t 027 p EUnknown commandatt|?t				c"="=r -63 f fe80::212:7401:1:101 t 028 p EUnknown commandatt|?t				c"="=r -65 f fe80::212:7401:1:101 t 029 p !Ratt|?tcJhello 3  attatt|>t
+00:31.275	ID:11	
+00:31.275	ID:11	
+00:31.275	ID:11	
+00:31.439	ID:9	DIO:116
+00:31.439	ID:8	DIO:116
+00:31.471	ID:3	DIO:116
+00:31.471	ID:4	DIO:116
+00:31.513	ID:4	DIO:116
+00:31.513	ID:5	DIO:116
+00:31.513	ID:7	DIO:116
+00:31.513	ID:8	DIO:116
+00:31.700	ID:1	Sending control broadcast: 030
+00:32.700	ID:1	Sending control broadcast: 031
+00:32.854	ID:6	Received response: 
+00:32.854	ID:5	Received response: 
+00:32.854	ID:7	Received response: 
+00:32.854	ID:4	Received response: 
+00:32.854	ID:8	Received response: 
+00:33.700	ID:1	Sending control broadcast: 032
+00:34.258	ID:9	DIO:116
+00:34.258	ID:6	DIO:116
+00:34.258	ID:5	DIO:116
+00:34.258	ID:8	DIO:116
+00:34.700	ID:1	Sending control broadcast: 033
+00:34.854	ID:4	Received response: 
+00:34.854	ID:6	Received response: 
+00:34.854	ID:5	Received response: 
+00:34.854	ID:7	Received response: 
+00:34.854	ID:8	Received response: 
+00:35.700	ID:1	Sending control broadcast: 034
+00:35.829	ID:2	DIO:116
+00:35.829	ID:3	DIO:116
+00:35.830	ID:6	DIO:116
+00:35.830	ID:5	DIO:116
+00:36.700	ID:1	Sending control broadcast: 035
+00:36.928	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:36.928	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:36.928	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:36.928	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:36.928	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:36.953	ID:10	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+00:36.953	ID:9	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+00:36.955	ID:6	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+00:36.955	ID:7	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+00:37.610	ID:3	DIO:116
+00:37.611	ID:4	DIO:116
+00:37.611	ID:6	DIO:116
+00:37.611	ID:7	DIO:116
+00:37.700	ID:1	Sending control broadcast: 036
+00:38.591	ID:11	cHhello 3  attAtz;:Qt<@@att|?t				c"="=r -69 f fe80::212:7401:1:101 t 030 p EUnknown commandatt|?t				c"="=r -68 f fe80::212:7401:1:101 t 031 p !Ra tt|?t				c	"="=r -64 f fe80::212:7401:1:101 t 032 p !RA!tz;:Ft<@@a"tt|?t				c"="=r -62 f fe80::212:7401:1:101 t 033 p !RAtz;:ft<@@a#tt|?t				c"="=r -61 f fe80::212:7401:1:101 t 034 p EUnknown commanda$tt~c"="=r -90 f fe80::212:7401:1:101 t 035 p EUnknown commanda%tt|?t				c"="=r -61 f fe80::212:7401:1:101 t 035 p !RA	t~;..fd00:0:0:0:212:740a:a:a0a (null)Atz;:Ht<@@a&tt~c"="=r -83 f fe80::212:7401:1:101 t 036 p EUnknown commanda'tt|?t				c"="=r -63 f fe80::212:7401:1:101 t 036 p EUnknown commandA
+00:38.593	ID:9	DIO:116
+00:38.593	ID:10	DIO:116
+00:38.593	ID:6	DIO:116
+00:38.593	ID:7	DIO:116
+00:38.700	ID:1	Sending control broadcast: 037
+00:38.807	ID:5	Received response: 
+00:38.807	ID:8	Received response: 
+00:38.807	ID:4	Received response: 
+00:38.807	ID:6	Received response: 
+00:38.807	ID:7	Received response: 
+00:38.920	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:38.920	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:38.920	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:38.920	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:38.920	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:38.976	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:38.976	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:38.978	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+00:38.978	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+00:39.700	ID:1	Sending control broadcast: 038
+00:39.802	ID:2	DIO:116
+00:39.803	ID:4	DIO:116
+00:39.874	ID:11	tz;:t<@@a(tt~c"="=r -78 f fe80::212:7401:1:101 t 037 p !Ra)tt|?t				c"="=r -65 f fe80::212:7401:1:101 t 037 p !RAt~;..Ifd00:0:0:0:212:7409:9:909 (null)a*tt~c"="=r -72 f fe80::212:7401:1:101 t 038 p EUnknown commanda+tt|>t
+00:39.874	ID:11	
+00:39.874	ID:11	
+00:39.874	ID:11	
+00:40.700	ID:1	Sending control broadcast: 039
+00:41.019	ID:1	start send 4
+00:41.020	ID:1	now sending hello 4  
+00:41.098	ID:8	relaying hello 4  
+00:41.098	ID:9	relaying hello 4  
+00:41.700	ID:1	Sending control broadcast: 040
+00:42.700	ID:1	Sending control broadcast: 041
+00:42.717	ID:3	DIO:116
+00:42.718	ID:4	DIO:116
+00:43.619	ID:10	DIO:116
+00:43.619	ID:7	DIO:116
+00:43.620	ID:8	DIO:116
+00:43.700	ID:1	Sending control broadcast: 042
+00:44.700	ID:1	Sending control broadcast: 043
+00:44.895	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+00:44.895	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+00:44.895	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+00:44.895	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+00:44.895	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+00:44.932	ID:6	Received response: 
+00:44.932	ID:5	Received response: 
+00:44.932	ID:7	Received response: 
+00:44.932	ID:8	Received response: 
+00:44.932	ID:4	Received response: 
+00:45.700	ID:1	Sending control broadcast: 044
+00:45.879	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+00:45.879	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+00:45.879	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+00:45.879	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+00:45.880	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+00:46.700	ID:1	Sending control broadcast: 045
+00:46.914	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+00:46.914	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+00:46.914	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+00:46.914	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+00:46.914	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+00:46.963	ID:6	Received response: 
+00:46.963	ID:5	Received response: 
+00:46.963	ID:7	Received response: 
+00:46.963	ID:8	Received response: 
+00:46.963	ID:4	Received response: 
+00:47.700	ID:1	Sending control broadcast: 046
+00:47.794	ID:11	c"="=r -92 f fe80::212:7401:1:101 t 038 p att~c"="=r -90 f fe80::212:7401:1:101 t 039 p EUnknown commanda,tt~c"="=r -68 f fe80::212:7401:1:101 t 039 p EUnknown commanda-tt|?t				cHhello 4  a.ttatt|?tcIhello 4  atta/tt~c"="=r -64 f fe80::212:7401:1:101 t 040 p EUnknown commandatt~c"="=r -83 f fe80::212:7401:1:101 t 040 p EUnknown commandatt~c"="=r -78 f fe80::212:7401:1:101 t 041 p a0tt~c"="=r -62 f fe80::212:7401:1:101 t 041 p EUnknown commandatt~c"="=r -72 f fe80::212:7401:1:101 t 042 p EUnknown commanda1tt~c"="=r -61 f fe80::212:7401:1:101 t 042 p EUnknown commanda2tt~c"="=r -61 f fe80::212:7401:1:101 t 043 p att~c"="=r -68 f fe80::212:7401:1:101 t 043 p EUnknown commandatt~cH"="=r -90 f fe80::212:7401:1:101 t 043 p !R!Ra tt~c"="=r -64 f fe80::212:7401:1:101 t 044 p att~c@"="=r -83 f fe80::212:7401:1:101 t 044 p EUnknown commanda!tt|?tc"="=r -80 f fe80::212:7401:1:101 t 044 p EUnknown command!Ratt~c9"="=r -78 f fe80::212:7401:1:101 t 045 p a"tt~c"="=r -62 f fe80::212:7401:1:101 t 045 p EUnknown commanda#tt|?tc"="=r -86 f fe80::212:7401:1:101 t 045 p !R!R	att~c3"="=r -72 f fe80::212:7401:1:101 t 046 p a$tt~c"="=r -61 f fe80::212:7401:1:101 t 046 p !R
+00:47.800	ID:4	Received response: 
+00:47.800	ID:6	Received response: 
+00:47.800	ID:8	Received response: 
+00:47.800	ID:7	Received response: 
+00:47.800	ID:5	Received response: 
+00:47.934	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+00:47.934	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+00:47.934	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+00:47.934	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+00:47.934	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+00:48.700	ID:1	Sending control broadcast: 047
+00:49.241	ID:9	DIO:116
+00:49.241	ID:8	DIO:116
+00:49.700	ID:1	Sending control broadcast: 048
+00:49.971	ID:8	Received response: 
+00:49.971	ID:7	Received response: 
+00:49.971	ID:5	Received response: 
+00:49.972	ID:4	Received response: 
+00:49.972	ID:6	Received response: 
+00:50.700	ID:1	Sending control broadcast: 049
+00:50.812	ID:8	Received response: 
+00:50.812	ID:5	Received response: 
+00:50.812	ID:4	Received response: 
+00:50.812	ID:7	Received response: 
+00:50.823	ID:6	Received response: 
+00:51.026	ID:1	start send 5
+00:51.028	ID:1	now sending hello 5  
+00:51.106	ID:7	relaying hello 5  
+00:51.700	ID:1	Sending control broadcast: 050
+00:52.700	ID:1	Sending control broadcast: 051
+00:52.911	ID:11	a%tt|?tc"="=r -92 f fe80::212:7401:1:101 t 046 p EUnknown command!Ra&tt~c"="=r -61 f fe80::212:7401:1:101 t 047 p EUnknown commandatt~c-"="=r -68 f fe80::212:7401:1:101 t 047 p EUnknown commanda'tt|?tc"="=r -90 f fe80::212:7401:1:101 t 047 p EUnknown commanda(tt~c"="=r -63 f fe80::212:7401:1:101 t 048 p att~c("="=r -64 f fe80::212:7401:1:101 t 048 p EUnknown commanda)tt|?tc"="=r -83 f fe80::212:7401:1:101 t 048 p !Ra*tt~c"="=r -65 f fe80::212:7401:1:101 t 049 p a+tt|?tc"="=r -78 f fe80::212:7401:1:101 t 049 p !Ratt~c$"="=r -62 f fe80::212:7401:1:101 t 049 p EUnknown commandEUnknown commanda3tt~cIhello 5  a4tta,tt~c"="=r -69 f fe80::212:7401:1:101 t 050 p EUnknown commanda-tt|?tc"="=r -72 f fe80::212:7401:1:101 t 050 p att~c "="=r -61 f fe80::212:7401:1:101 t 050 p EUnknown commandEUnknown commanda.tt~c"="=r -74 f fe80::212:7401:1:101 t 051 p att~c"="=r -61 f fe80::212:7401:1:101 t 051 p EUnknown commanda/tt|?tc"="=r -68 f fe80::212:7401:1:101 t 051 p !R
+00:52.918	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+00:52.918	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+00:52.918	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+00:52.918	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+00:52.918	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+00:53.119	ID:6	Received response: 
+00:53.119	ID:5	Received response: 
+00:53.119	ID:7	Received response: 
+00:53.119	ID:8	Received response: 
+00:53.119	ID:4	Received response: 
+00:53.700	ID:1	Sending control broadcast: 052
+00:53.866	ID:7	Received response: 
+00:53.866	ID:8	Received response: 
+00:53.866	ID:4	Received response: 
+00:53.866	ID:6	Received response: 
+00:53.866	ID:5	Received response: 
+00:54.154	ID:5	DIO:116
+00:54.154	ID:4	DIO:116
+00:54.154	ID:7	DIO:116
+00:54.154	ID:8	DIO:116
+00:54.578	ID:6	DIO:116
+00:54.578	ID:5	DIO:116
+00:54.578	ID:7	DIO:116
+00:54.578	ID:8	DIO:116
+00:54.578	ID:4	DIO:116
+00:54.700	ID:1	Sending control broadcast: 053
+00:55.700	ID:1	Sending control broadcast: 054
+00:55.846	ID:8	Received response: 
+00:55.846	ID:7	Received response: 
+00:55.847	ID:4	Received response: 
+00:55.847	ID:6	Received response: 
+00:55.857	ID:5	Received response: 
+00:55.949	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+00:55.949	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+00:55.949	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+00:55.949	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+00:55.949	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+00:56.003	ID:6	Received response: 
+00:56.003	ID:8	Received response: 
+00:56.003	ID:7	Received response: 
+00:56.003	ID:5	Received response: 
+00:56.003	ID:4	Received response: 
+00:56.700	ID:1	Sending control broadcast: 055
+00:57.071	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+00:57.071	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+00:57.071	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+00:57.071	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+00:57.071	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+00:57.088	ID:6	Received response: 
+00:57.088	ID:5	Received response: 
+00:57.088	ID:7	Received response: 
+00:57.088	ID:8	Received response: 
+00:57.088	ID:4	Received response: 
+00:57.700	ID:1	Sending control broadcast: 056
+00:57.903	ID:11	EUnknown commandatt|?tc"="=r -90 f fe80::212:7401:1:101 t 051 p !Ra0tt|?tc"="=r -64 f fe80::212:7401:1:101 t 052 p !Ratt~c"="=r -63 f fe80::212:7401:1:101 t 052 p att|?tc"="=r -83 f fe80::212:7401:1:101 t 052 p EUnknown commandEUnknown commandA1tz;:Qt<@@!Ratt~c"="=r -65 f fe80::212:7401:1:101 t 053 p EUnknown commandatt|?tc"="=r -78 f fe80::212:7401:1:101 t 053 p a2tt|?tc"="=r -62 f fe80::212:7401:1:101 t 053 p EUnknown commandEUnknown commandatt~c"="=r -69 f fe80::212:7401:1:101 t 054 p att|?tc"="=r -72 f fe80::212:7401:1:101 t 054 p !Ra3tt|?tc"="=r -61 f fe80::212:7401:1:101 t 054 p !R!Ratt|?tc	"="=r -68 f fe80::212:7401:1:101 t 055 p EUnknown commanda4tt|?tc"="=r -61 f fe80::212:7401:1:101 t 055 p a5tt|>tc"="=r -90 f fe80::212:7401:1:101 t 055 p !R!R	att|?tc"="=r -64 f fe80::212:7401:1:101 t 056 p !R
+00:57.909	ID:8	Received response: 
+00:57.909	ID:7	Received response: 
+00:57.909	ID:5	Received response: 
+00:57.909	ID:6	Received response: 
+00:57.912	ID:4	Received response: 
+00:58.166	ID:5	Received response: 
+00:58.166	ID:7	Received response: 
+00:58.166	ID:8	Received response: 
+00:58.166	ID:4	Received response: 
+00:58.166	ID:6	Received response: 
+00:58.700	ID:1	Sending control broadcast: 057
+00:59.700	ID:1	Sending control broadcast: 058
+00:59.854	ID:7	Received response: 
+00:59.854	ID:8	Received response: 
+00:59.854	ID:6	Received response: 
+00:59.854	ID:5	Received response: 
+00:59.854	ID:4	Received response: 
+01:00.700	ID:1	Sending control broadcast: 059
+01:01.034	ID:1	start send 6
+01:01.036	ID:1	now sending hello 6  
+01:01.700	ID:1	Sending control broadcast: 060
+01:01.869	ID:7	Received response: 
+01:01.869	ID:8	Received response: 
+01:01.870	ID:5	Received response: 
+01:01.870	ID:6	Received response: 
+01:01.872	ID:4	Received response: 
+01:01.935	ID:6	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:01.935	ID:7	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:01.935	ID:8	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:01.935	ID:5	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:01.936	ID:4	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:01.979	ID:2	Received response: fd00:0:0:0:212:7402:2:202 (null)
+01:01.979	ID:3	Received response: fd00:0:0:0:212:7402:2:202 (null)
+01:01.980	ID:6	Received response: fd00:0:0:0:212:7402:2:202 (null):0:0:212:7402:2:202
+01:01.980	ID:5	Received response: fd00:0:0:0:212:7402:2:202 (null):0:0:212:7402:2:202
+01:02.700	ID:1	Sending control broadcast: 061
+01:02.981	ID:11	a6tt|?tc"="=r -63 f fe80::212:7401:1:101 t 056 p a7tt|>tc"="=r -83 f fe80::212:7401:1:101 t 056 p EUnknown command!Ratt|?tc"="=r -62 f fe80::212:7401:1:101 t 057 p a8tt|?tc"="=r -65 f fe80::212:7401:1:101 t 057 p EUnknown commandEUnknown commanda9tt|>tc"="=r -78 f fe80::212:7401:1:101 t 057 p EUnknown commanda:tt|?tc"="=r -69 f fe80::212:7401:1:101 t 058 p att|?tc"="=r -61 f fe80::212:7401:1:101 t 058 p !Ra;tt|>tc"="=r -72 f fe80::212:7401:1:101 t 058 p a tt|?tc"="=r -61 f fe80::212:7401:1:101 t 059 p a<tt|?tc"="=r -74 f fe80::212:7401:1:101 t 059 p a=tt|>tc"="=r -68 f fe80::212:7401:1:101 t 059 p EUnknown commandEUnknown commandEUnknown commanda!tt|?tc"="=r -63 f fe80::212:7401:1:101 t 060 p a>tt|?tc"="=r -80 f fe80::212:7401:1:101 t 060 p !Ra?tt|>tc"="=r -64 f fe80::212:7401:1:101 t 060 p EUnknown command!RAt~;..ifd00:0:0:0:212:7402:2:202 (null)a"tt|?tc"="=r -65 f fe80::212:7401:1:101 t 061 p EUnknown commanda@tt|?tc"="=r -86 f fe80::212:7401:1:101 t 061 p !R
+01:02.991	ID:8	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:02.991	ID:7	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:02.991	ID:6	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:02.991	ID:4	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:02.991	ID:5	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:03.049	ID:3	Received response: fd00:0:0:0:212:7402:2:202 (null)
+01:03.049	ID:2	Received response: fd00:0:0:0:212:7402:2:202 (null)
+01:03.050	ID:6	Received response: fd00:0:0:0:212:7402:2:202 (null):0:0:212:7402:2:202
+01:03.050	ID:5	Received response: fd00:0:0:0:212:7402:2:202 (null):0:0:212:7402:2:202
+01:03.700	ID:1	Sending control broadcast: 062
+01:04.022	ID:8	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:04.022	ID:7	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:04.022	ID:6	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:04.022	ID:4	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:04.022	ID:5	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:04.049	ID:3	Received response: fd00:0:0:0:212:7402:2:202 (null)
+01:04.049	ID:2	Received response: fd00:0:0:0:212:7402:2:202 (null)
+01:04.050	ID:6	Received response: fd00:0:0:0:212:7402:2:202 (null):0:0:212:7402:2:202
+01:04.050	ID:5	Received response: fd00:0:0:0:212:7402:2:202 (null):0:0:212:7402:2:202
+01:04.380	ID:2	DIO:116
+01:04.380	ID:5	DIO:116
+01:04.381	ID:4	DIO:116
+01:04.700	ID:1	Sending control broadcast: 063
+01:04.823	ID:7	Received response: 
+01:04.823	ID:8	Received response: 
+01:04.823	ID:6	Received response: 
+01:04.823	ID:5	Received response: 
+01:04.823	ID:4	Received response: 
+01:04.959	ID:6	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:04.959	ID:8	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:04.959	ID:7	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:04.959	ID:5	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:04.959	ID:4	Received response: fd00:0:0:0:212:7404:4:404+fd00:0:0:0:212:7402:2:202
+01:04.978	ID:3	Received response: fd00:0:0:0:212:7402:2:202 (null)
+01:04.979	ID:2	Received response: fd00:0:0:0:212:7402:2:202 (null)
+01:04.980	ID:6	Received response: fd00:0:0:0:212:7402:2:202 (null):0:0:212:7402:2:202
+01:04.980	ID:5	Received response: fd00:0:0:0:212:7402:2:202 (null):0:0:212:7402:2:202
+01:05.700	ID:1	Sending control broadcast: 064
+01:05.836	ID:7	Received response: 
+01:05.836	ID:8	Received response: 
+01:05.836	ID:6	Received response: 
+01:05.836	ID:4	Received response: 
+01:05.849	ID:5	Received response: 
+01:06.700	ID:1	Sending control broadcast: 065
+01:07.319	ID:3	DIO:116
+01:07.319	ID:4	DIO:116
+01:07.700	ID:1	Sending control broadcast: 066
+01:07.929	ID:9	DIO:116
+01:07.929	ID:10	DIO:116
+01:07.929	ID:6	DIO:116
+01:07.929	ID:7	DIO:116
+01:08.098	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+01:08.098	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+01:08.098	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+01:08.098	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+01:08.098	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+01:08.700	ID:1	Sending control broadcast: 067
+01:09.700	ID:1	Sending control broadcast: 068
+01:09.823	ID:6	Received response: 
+01:09.823	ID:7	Received response: 
+01:09.823	ID:8	Received response: 
+01:09.823	ID:4	Received response: 
+01:09.823	ID:5	Received response: 
+01:10.172	ID:9	DIO:116
+01:10.172	ID:6	DIO:116
+01:10.172	ID:8	DIO:116
+01:10.172	ID:5	DIO:116
+01:10.452	ID:9	DIO:116
+01:10.452	ID:8	DIO:116
+01:10.700	ID:1	Sending control broadcast: 069
+01:10.807	ID:7	Received response: 
+01:10.807	ID:6	Received response: 
+01:10.807	ID:4	Received response: 
+01:10.807	ID:8	Received response: 
+01:10.807	ID:5	Received response: 
+01:10.919	ID:11	At~;..ifd00:0:0:0:212:7402:2:202 (null)aAtt|?tc"="=r -92 f fe80::212:7401:1:101 t 062 p EUnknown commanda#tt|?tc"="=r -69 f fe80::212:7401:1:101 t 062 p !RAt~;..ifd00:0:0:0:212:7402:2:202 (null)a$tt|?tc"="=r -67 f fe80::212:7401:1:101 t 063 p !RaBtt|?tc"="=r -89 f fe80::212:7401:1:101 t 063 p !RAt~;..ifd00:0:0:0:212:7402:2:202 (null)aCtt|?tc"="=r -83 f fe80::212:7401:1:101 t 064 p a%tt|?tc"="=r -64 f fe80::212:7401:1:101 t 064 p !REUnknown commandaDtt|?tc"="=r -77 f fe80::212:7401:1:101 t 065 p a&tt|?tc"="=r -62 f fe80::212:7401:1:101 t 065 p EUnknown commandEUnknown commanda'tt|?tc"="=r -61 f fe80::212:7401:1:101 t 066 p EUnknown commandAtz;:t<@@aEtt|?tc"="=r -72 f fe80::212:7401:1:101 t 066 p !Ra(tt~c"="=r -89 f fe80::212:7401:1:101 t 067 p EUnknown commanda)tt|?tc"="=r -61 f fe80::212:7401:1:101 t 067 p EUnknown commanda*tt~c"="=r -83 f fe80::212:7401:1:101 t 068 p !Ra+tt|?tc"="=r -63 f fe80::212:7401:1:101 t 068 p A5tz;:Nt<@@a,tt~c"="=r -77 f fe80::212:7401:1:101 t 069 p !R	a-tt|?tc"="=r -66 f fe80::212:7401:1:101 t 069 p !R
+01:10.926	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+01:10.926	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+01:10.926	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+01:10.926	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+01:10.926	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+01:11.042	ID:1	start send 7
+01:11.044	ID:1	now sending hello 7  
+01:11.114	ID:2	relaying hello 7  
+01:11.114	ID:5	relaying hello 7  
+01:11.700	ID:1	Sending control broadcast: 070
+01:12.477	ID:3	DIO:116
+01:12.478	ID:6	DIO:116
+01:12.478	ID:4	DIO:116
+01:12.478	ID:7	DIO:116
+01:12.700	ID:1	Sending control broadcast: 071
+01:13.700	ID:1	Sending control broadcast: 072
+01:13.848	ID:8	Received response: 
+01:13.848	ID:7	Received response: 
+01:13.848	ID:5	Received response: 
+01:13.848	ID:6	Received response: 
+01:13.848	ID:4	Received response: 
+01:13.911	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+01:13.911	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+01:13.911	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+01:13.911	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+01:13.911	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+01:13.924	ID:6	Received response: 
+01:13.924	ID:5	Received response: 
+01:13.924	ID:7	Received response: 
+01:13.924	ID:8	Received response: 
+01:13.924	ID:4	Received response: 
+01:14.700	ID:1	Sending control broadcast: 073
+01:14.821	ID:8	Received response: 
+01:14.821	ID:7	Received response: 
+01:14.821	ID:4	Received response: 
+01:14.821	ID:6	Received response: 
+01:14.833	ID:5	Received response: 
+01:15.439	ID:2	DIO:116
+01:15.439	ID:6	DIO:116
+01:15.439	ID:3	DIO:116
+01:15.439	ID:5	DIO:116
+01:15.700	ID:1	Sending control broadcast: 074
+01:15.784	ID:7	Received response: 
+01:15.784	ID:8	Received response: 
+01:15.784	ID:4	Received response: 
+01:15.784	ID:5	Received response: 
+01:15.785	ID:6	Received response: 
+01:16.700	ID:1	Sending control broadcast: 075
+01:16.815	ID:8	Received response: 
+01:16.815	ID:5	Received response: 
+01:16.815	ID:4	Received response: 
+01:16.816	ID:6	Received response: 
+01:16.824	ID:7	Received response: 
+01:16.919	ID:11	a.tt~cIhello 7  a/ttaFtt|>tcLhello 7  aGtta0tt|?tc"="=r -70 f fe80::212:7401:1:101 t 070 p EUnknown commandaHtt|?tc"="=r -61 f fe80::212:7401:1:101 t 070 p EUnknown commandA1tz;:Tt<@@a2tt|?tc"="=r -75 f fe80::212:7401:1:101 t 071 p aItt~c"="=r -89 f fe80::212:7401:1:101 t 071 p EUnknown commandaJtt|?tc"="=r -61 f fe80::212:7401:1:101 t 071 p EUnknown commandEUnknown commandaKtt~c"="=r -83 f fe80::212:7401:1:101 t 072 p a3tt|?tc"="=r -80 f fe80::212:7401:1:101 t 072 p aLtt|?tc"="=r -63 f fe80::212:7401:1:101 t 072 p !R!R!Ra4tt~c"="=r -62 f fe80::212:7401:1:101 t 073 p aMtt|?tc"="=r -66 f fe80::212:7401:1:101 t 073 p a5tt|?tc"="=r -87 f fe80::212:7401:1:101 t 073 p !REUnknown commandA)tz;:t<@@a6tt~c"="=r -61 f fe80::212:7401:1:101 t 074 p !Ra7tt|?tc"="=r -93 f fe80::212:7401:1:101 t 074 p aNtt|?tc"="=r -70 f fe80::212:7401:1:101 t 074 p EUnknown commandEUnknown commanda8tt~c"="=r -61 f fe80::212:7401:1:101 t 075 p a6tt~c"="=r -89 f fe80::212:7401:1:101 t 075 p !R	aOtt|?tc"="=r -75 f fe80::212:7401:1:101 t 075 p !R
+01:16.926	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+01:16.926	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+01:16.926	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+01:16.926	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+01:16.926	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+01:17.119	ID:10	DIO:116
+01:17.120	ID:8	DIO:116
+01:17.120	ID:7	DIO:116
+01:17.700	ID:1	Sending control broadcast: 076
+01:17.807	ID:5	Received response: 
+01:17.807	ID:8	Received response: 
+01:17.807	ID:4	Received response: 
+01:17.807	ID:6	Received response: 
+01:17.807	ID:7	Received response: 
+01:17.932	ID:6	Received response: 
+01:17.932	ID:5	Received response: 
+01:17.932	ID:7	Received response: 
+01:17.932	ID:8	Received response: 
+01:17.932	ID:4	Received response: 
+01:18.700	ID:1	Sending control broadcast: 077
+01:18.879	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+01:18.880	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+01:18.880	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+01:18.880	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+01:18.880	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+01:19.700	ID:1	Sending control broadcast: 078
+01:19.879	ID:8	Received response: 
+01:19.879	ID:7	Received response: 
+01:19.879	ID:5	Received response: 
+01:19.879	ID:4	Received response: 
+01:19.879	ID:6	Received response: 
+01:19.934	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+01:19.934	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+01:19.934	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+01:19.934	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+01:19.934	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+01:19.940	ID:6	Received response: 
+01:19.941	ID:7	Received response: 
+01:19.941	ID:5	Received response: 
+01:19.941	ID:8	Received response: 
+01:19.941	ID:4	Received response: 
+01:20.700	ID:1	Sending control broadcast: 079
+01:20.791	ID:4	Received response: 
+01:20.791	ID:7	Received response: 
+01:20.791	ID:5	Received response: 
+01:20.791	ID:8	Received response: 
+01:20.799	ID:6	Received response: 
+01:20.828	ID:11	EUnknown commanda7tt~c"="=r -83 f fe80::212:7401:1:101 t 076 p a9tt~c"="=r -63 f fe80::212:7401:1:101 t 076 p !REUnknown commandaPtt|?tc"="=r -80 f fe80::212:7401:1:101 t 076 p !Ra8tt~c"="=r -77 f fe80::212:7401:1:101 t 077 p a:tt~c"="=r -66 f fe80::212:7401:1:101 t 077 p !R!RaQtt|?tc"="=r -87 f fe80::212:7401:1:101 t 077 p EUnknown commanda;tt~c"="=r -70 f fe80::212:7401:1:101 t 078 p aRtt~c"="=r -61 f fe80::212:7401:1:101 t 078 p aStt|?tc"="=r -93 f fe80::212:7401:1:101 t 078 p !R!R!RaTtt~c"="=r -61 f fe80::212:7401:1:101 t 079 p aUtt|?tc"="=r -89 f fe80::212:7401:1:101 t 079 p !Ra<tt~c
+01:21.050	ID:1	start send 8
+01:21.052	ID:1	now sending hello 8  
+01:21.098	ID:7	relaying hello 8  
+01:21.700	ID:1	Sending control broadcast: 080
+01:21.820	ID:4	Received response: 
+01:21.820	ID:7	Received response: 
+01:21.820	ID:5	Received response: 
+01:21.820	ID:6	Received response: 
+01:21.836	ID:8	Received response: 
+01:22.004	ID:11	"="=r -75 f fe80::212:7401:1:101 t 079 p a9tt~cFhello 8  a:ttaVtt~c"="=r -63 f fe80::212:7401:1:101 t 080 p !Ra=tt~c	"="=r -80 f fe80::212:7401:1:101 t 080 p EUnknown commandaWtt|?tc"="=r -83 f fe80::212:7401:1:101 t 080 p !R
+01:22.010	ID:6	Received response: 
+01:22.010	ID:5	Received response: 
+01:22.010	ID:7	Received response: 
+01:22.010	ID:8	Received response: 
+01:22.010	ID:4	Received response: 
+01:22.700	ID:1	Sending control broadcast: 081
+01:23.700	ID:1	Sending control broadcast: 082
+01:23.799	ID:4	Received response: 
+01:23.799	ID:5	Received response: 
+01:23.799	ID:7	Received response: 
+01:23.799	ID:8	Received response: 
+01:23.804	ID:6	Received response: 
+01:23.911	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+01:23.911	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+01:23.911	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+01:23.911	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+01:23.911	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+01:23.917	ID:6	Received response: 
+01:23.917	ID:8	Received response: 
+01:23.917	ID:5	Received response: 
+01:23.917	ID:7	Received response: 
+01:23.918	ID:4	Received response: 
+01:24.700	ID:1	Sending control broadcast: 083
+01:25.700	ID:1	Sending control broadcast: 084
+01:26.700	ID:1	Sending control broadcast: 085
+01:27.700	ID:1	Sending control broadcast: 086
+01:27.799	ID:5	Received response: 
+01:27.799	ID:4	Received response: 
+01:27.799	ID:6	Received response: 
+01:27.799	ID:7	Received response: 
+01:27.799	ID:8	Received response: 
+01:28.700	ID:1	Sending control broadcast: 087
+01:28.882	ID:11	a>tt~c"="=r -87 f fe80::212:7401:1:101 t 081 p aXtt~c"="=r -66 f fe80::212:7401:1:101 t 081 p !RaYtt|?tc"="=r -77 f fe80::212:7401:1:101 t 081 p EUnknown commandEUnknown commanda?tt~c"="=r -93 f fe80::212:7401:1:101 t 082 p aZtt~c"="=r -70 f fe80::212:7401:1:101 t 082 p !Ra[tt|?tc"="=r -72 f fe80::212:7401:1:101 t 082 p !R!Ra\tt~c"="=r -75 f fe80::212:7401:1:101 t 083 p a;tt~c	"="=r -61 f fe80::212:7401:1:101 t 083 p EUnknown commandEUnknown commanda<tt~c"="=r -63 f fe80::212:7401:1:101 t 084 p EUnknown commanda]tt~c"="=r -80 f fe80::212:7401:1:101 t 084 p a^tt~c"="=r -87 f fe80::212:7401:1:101 t 085 p a=tt~c"="=r -66 f fe80::212:7401:1:101 t 085 p !REUnknown commanda>tt~c"="=r -70 f fe80::212:7401:1:101 t 086 p a_tt~c"="=r -93 f fe80::212:7401:1:101 t 086 p !REUnknown commanda?tt~c"="=r -75 f fe80::212:7401:1:101 t 087 p EUnknown commanda@tt|>t
+01:28.882	ID:11	
+01:28.882	ID:11	
+01:28.882	ID:11	
+01:28.997	ID:11	c"="=~r -89 f fe80::212:7401:1:101 t 087 p !R
+01:29.006	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+01:29.006	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+01:29.006	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+01:29.006	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+01:29.006	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+01:29.023	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+01:29.023	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+01:29.025	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+01:29.025	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+01:29.700	ID:1	Sending control broadcast: 088
+01:29.866	ID:11	At~;..Ifd00:0:0:0:212:7409:9:909 (null)aAtt~c"="=r -80 f fe80::212:7401:1:101 t 088 p EUnknown commandaBtt|>t
+01:29.866	ID:11	
+01:29.866	ID:11	
+01:29.866	ID:11	
+01:30.700	ID:1	Sending control broadcast: 089
+01:30.819	ID:11	c"="=r -83 f fe80::212:7401:1:101 t 088 p EUnknown commandaCtt~c"="=r -87 f fe80::212:7401:1:101 t 089 p aDtt|>t
+01:30.819	ID:11	
+01:30.819	ID:11	
+01:30.819	ID:11	
+01:30.846	ID:5	Received response: 
+01:30.846	ID:4	Received response: 
+01:30.846	ID:6	Received response: 
+01:30.846	ID:8	Received response: 
+01:30.848	ID:7	Received response: 
+01:30.928	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+01:30.928	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+01:30.928	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+01:30.928	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+01:30.928	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+01:30.968	ID:10	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+01:30.969	ID:9	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+01:30.970	ID:6	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+01:30.970	ID:7	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+01:31.058	ID:1	start send 9
+01:31.059	ID:1	now sending hello 9  
+01:31.122	ID:10	relaying hello 9  
+01:31.122	ID:8	relaying hello 9  
+01:31.345	ID:11	c"="=r -77 f fe80::212:7401:1:101 t 089 p !R!RAt~;..fd00:0:0:0:212:740a:a:a0a (null)a`tt|?tcDhello 9  aattaEtt|>t
+01:31.346	ID:11	
+01:31.346	ID:11	
+01:31.346	ID:11	
+01:31.700	ID:1	Sending control broadcast: 090
+01:31.838	ID:5	Received response: 
+01:31.838	ID:4	Received response: 
+01:31.838	ID:6	Received response: 
+01:31.838	ID:8	Received response: 
+01:31.840	ID:7	Received response: 
+01:31.975	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+01:31.975	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+01:31.975	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+01:31.975	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+01:31.975	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+01:32.015	ID:10	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+01:32.015	ID:9	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+01:32.017	ID:6	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+01:32.017	ID:7	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+01:32.700	ID:1	Sending control broadcast: 091
+01:33.700	ID:1	Sending control broadcast: 092
+01:34.700	ID:1	Sending control broadcast: 093
+01:34.854	ID:5	Received response: 
+01:34.854	ID:4	Received response: 
+01:34.854	ID:6	Received response: 
+01:34.854	ID:8	Received response: 
+01:34.854	ID:7	Received response: 
+01:35.700	ID:1	Sending control broadcast: 094
+01:35.846	ID:6	Received response: 
+01:35.846	ID:5	Received response: 
+01:35.846	ID:4	Received response: 
+01:35.846	ID:7	Received response: 
+01:35.846	ID:8	Received response: 
+01:36.700	ID:1	Sending control broadcast: 095
+01:36.869	ID:6	Received response: 
+01:36.869	ID:5	Received response: 
+01:36.869	ID:4	Received response: 
+01:36.870	ID:7	Received response: 
+01:36.870	ID:8	Received response: 
+01:37.700	ID:1	Sending control broadcast: 096
+01:37.885	ID:6	Received response: 
+01:37.885	ID:5	Received response: 
+01:37.885	ID:4	Received response: 
+01:37.885	ID:7	Received response: 
+01:37.885	ID:8	Received response: 
+01:38.700	ID:1	Sending control broadcast: 097
+01:38.846	ID:6	Received response: 
+01:38.846	ID:5	Received response: 
+01:38.846	ID:4	Received response: 
+01:38.846	ID:7	Received response: 
+01:38.846	ID:8	Received response: 
+01:39.700	ID:1	Sending control broadcast: 098
+01:39.854	ID:6	Received response: 
+01:39.854	ID:5	Received response: 
+01:39.854	ID:4	Received response: 
+01:39.854	ID:7	Received response: 
+01:39.854	ID:8	Received response: 
+01:40.700	ID:1	Sending control broadcast: 099
+01:40.831	ID:6	Received response: 
+01:40.831	ID:5	Received response: 
+01:40.831	ID:4	Received response: 
+01:40.831	ID:8	Received response: 
+01:40.831	ID:7	Received response: 
+01:41.066	ID:1	start send 10
+01:41.068	ID:1	now sending hello 10  
+01:41.106	ID:10	relaying hello 10  
+01:41.106	ID:8	relaying hello 10  
+01:41.306	ID:11	cBhello 9  aFttaGtt~c"="=r -93 f fe80::212:7401:1:101 t 090 p aHtt|?t				c"="=r -61 f fe80::212:7401:1:101 t 090 p !R!RAt~;..fd00:0:0:0:212:740a:a:a0a (null)aItt|?t				c"="=r -61 f fe80::212:7401:1:101 t 091 p EUnknown commandaJtt|?t				c"="=r -63 f fe80::212:7401:1:101 t 092 p EUnknown commandaKtt|?t				c"="=r -66 f fe80::212:7401:1:101 t 093 p !RaLtt|?t				c"="=r -70 f fe80::212:7401:1:101 t 094 p !RaMtt|?t				c"="=r -67 f fe80::212:7401:1:101 t 095 p !RaNtt|?t				c"="=r -64 f fe80::212:7401:1:101 t 096 p !RaOtt|?t				c"="=r -62 f fe80::212:7401:1:101 t 097 p !RaPtt|?t				c"="=r -61 f fe80::212:7401:1:101 t 098 p !RaQtt~c"="=r -89 f fe80::212:7401:1:101 t 099 p !R	aRtt|?t				c"="=r -61 f fe80::212:7401:1:101 t 099 p EUnknown commandabtt|?tcL`hello 10  acttaStt|>t
+01:41.306	ID:11	
+01:41.306	ID:11	
+01:41.307	ID:11	
+01:41.700	ID:1	Sending control broadcast: 100
+01:41.982	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+01:41.982	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+01:41.982	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+01:41.982	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+01:41.983	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+01:42.023	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+01:42.023	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+01:42.025	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+01:42.025	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+01:42.700	ID:1	Sending control broadcast: 101
+01:42.799	ID:5	Received response: 
+01:42.799	ID:4	Received response: 
+01:42.799	ID:6	Received response: 
+01:42.799	ID:8	Received response: 
+01:42.800	ID:7	Received response: 
+01:42.827	ID:11	cJZhello 10  aTttaUtt~c"="=r -83 f fe80::212:7401:1:101 t 100 p EUnknown commandaVtt|?t				c"="=r -63 f fe80::212:7401:1:101 t 100 p !RAt~;..Ifd00:0:0:0:212:7409:9:909 (null)aWtt~c"="=r -77 f fe80::212:7401:1:101 t 101 p !RaXtt|>t
+01:42.827	ID:11	
+01:42.827	ID:11	
+01:42.827	ID:11	
+01:43.700	ID:1	Sending control broadcast: 102
+01:43.897	ID:11	c"="=r -87 f fe80::212:7401:1:101 t 101 p EUnknown commandaYtt~c"="=r -72 f fe80::212:7401:1:101 t 102 p !RaZtt|>t
+01:43.897	ID:11	
+01:43.898	ID:11	
+01:43.898	ID:11	
+01:44.700	ID:1	Sending control broadcast: 103
+01:44.846	ID:5	Received response: 
+01:44.847	ID:4	Received response: 
+01:44.847	ID:6	Received response: 
+01:44.847	ID:8	Received response: 
+01:44.847	ID:7	Received response: 
+01:45.700	ID:1	Sending control broadcast: 104
+01:45.846	ID:5	Received response: 
+01:45.846	ID:4	Received response: 
+01:45.846	ID:6	Received response: 
+01:45.846	ID:8	Received response: 
+01:45.846	ID:7	Received response: 
+01:46.700	ID:1	Sending control broadcast: 105
+01:46.807	ID:5	Received response: 
+01:46.807	ID:4	Received response: 
+01:46.807	ID:6	Received response: 
+01:46.807	ID:7	Received response: 
+01:46.807	ID:8	Received response: 
+01:46.918	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+01:46.918	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+01:46.918	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+01:46.918	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+01:46.918	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+01:47.700	ID:1	Sending control broadcast: 106
+01:48.700	ID:1	Sending control broadcast: 107
+01:49.700	ID:1	Sending control broadcast: 108
+01:49.856	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+01:49.856	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+01:49.856	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+01:49.856	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+01:49.856	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+01:49.893	ID:6	Received response: 
+01:49.893	ID:5	Received response: 
+01:49.893	ID:7	Received response: 
+01:49.893	ID:8	Received response: 
+01:49.893	ID:4	Received response: 
+01:50.700	ID:1	Sending control broadcast: 109
+01:51.073	ID:1	start send 11
+01:51.075	ID:1	now sending hello 11  
+01:51.121	ID:7	relaying hello 11  
+01:51.295	ID:4	DIO:116
+01:51.295	ID:5	DIO:116
+01:51.295	ID:7	DIO:116
+01:51.295	ID:8	DIO:116
+01:51.700	ID:1	Sending control broadcast: 110
+01:51.807	ID:4	Received response: 
+01:51.807	ID:6	Received response: 
+01:51.807	ID:5	Received response: 
+01:51.807	ID:7	Received response: 
+01:51.807	ID:8	Received response: 
+01:51.859	ID:11	c"="=r -93 f fe80::212:7401:1:101 t 102 p EUnknown commandadtt~c"="=r -89 f fe80::212:7401:1:101 t 103 p !Ra[tt~c"="=r -67 f fe80::212:7401:1:101 t 103 p aett~c"="=r -83 f fe80::212:7401:1:101 t 104 p a\tt~c"="=r -64 f fe80::212:7401:1:101 t 104 p !Ra]tt~c"="=r -62 f fe80::212:7401:1:101 t 105 p aftt~c"="=r -77 f fe80::212:7401:1:101 t 105 p !R!Ragtt~c"="=r -72 f fe80::212:7401:1:101 t 106 p a^tt~c"="=r -61 f fe80::212:7401:1:101 t 106 p EUnknown commandahtt~c"="=r -67 f fe80::212:7401:1:101 t 107 p a@tt~c"="=r -89 f fe80::212:7401:1:101 t 107 p EUnknown commanda_tt~c"="=r -61 f fe80::212:7401:1:101 t 107 p EUnknown commandEUnknown commanda`tt~c"="=r -63 f fe80::212:7401:1:101 t 108 p aAtt~c"="=r -83 f fe80::212:7401:1:101 t 108 p EUnknown commandaitt~c"="=r -64 f fe80::212:7401:1:101 t 108 p !R!RaBtt~c"="=r -77 f fe80::212:7401:1:101 t 109 p ajtt~c"="=r -62 f fe80::212:7401:1:101 t 109 p EUnknown commandaktt|?tc"="=r -87 f fe80::212:7401:1:101 t 109 p EUnknown commandEUnknown commandaatt~cMbhello 11  abttAltz;:Qt<@@amtt~c"="=r -61 f fe80::212:7401:1:101 t 110 p !Rantt|?tc"="=r -93 f fe80::212:7401:1:101 t 110 p aCtt~c
+01:51.931	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+01:51.931	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+01:51.931	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+01:51.931	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+01:51.931	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+01:51.971	ID:6	Received response: 
+01:51.971	ID:5	Received response: 
+01:51.971	ID:7	Received response: 
+01:51.971	ID:8	Received response: 
+01:51.971	ID:4	Received response: 
+01:52.700	ID:1	Sending control broadcast: 111
+01:52.887	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+01:52.887	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+01:52.887	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+01:52.887	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+01:52.888	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+01:52.987	ID:6	Received response: 
+01:52.987	ID:5	Received response: 
+01:52.987	ID:7	Received response: 
+01:52.987	ID:8	Received response: 
+01:52.987	ID:4	Received response: 
+01:53.700	ID:1	Sending control broadcast: 112
+01:53.846	ID:8	Received response: 
+01:53.846	ID:7	Received response: 
+01:53.846	ID:5	Received response: 
+01:53.847	ID:4	Received response: 
+01:53.847	ID:6	Received response: 
+01:53.918	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+01:53.918	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+01:53.918	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+01:53.918	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+01:53.918	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+01:54.700	ID:1	Sending control broadcast: 113
+01:54.854	ID:8	Received response: 
+01:54.854	ID:5	Received response: 
+01:54.854	ID:7	Received response: 
+01:54.854	ID:4	Received response: 
+01:54.854	ID:6	Received response: 
+01:55.700	ID:1	Sending control broadcast: 114
+01:55.825	ID:8	Received response: 
+01:55.825	ID:5	Received response: 
+01:55.825	ID:7	Received response: 
+01:55.825	ID:4	Received response: 
+01:55.838	ID:6	Received response: 
+01:56.700	ID:1	Sending control broadcast: 115
+01:56.790	ID:11	"="=r -72 f fe80::212:7401:1:101 t 110 p !R!Raott~c"="=r -61 f fe80::212:7401:1:101 t 111 p aDtt~c"="=r -67 f fe80::212:7401:1:101 t 111 p EUnknown command!Raptt|?tc"="=r -89 f fe80::212:7401:1:101 t 111 p !Ractt~c"="=r -80 f fe80::212:7401:1:101 t 112 p aEtt~c"="=r -64 f fe80::212:7401:1:101 t 112 p aqtt|?tc"="=r -83 f fe80::212:7401:1:101 t 112 p !R!R	EUnknown commandaFtt~c"="=r -62 f fe80::212:7401:1:101 t 113 p adtt~c"="=r -87 f fe80::212:7401:1:101 t 113 p artt|?tc"="=r -77 f fe80::212:7401:1:101 t 113 p !Raett~c"="=r -93 f fe80::212:7401:1:101 t 114 p aGtt~c"="=r -61 f fe80::212:7401:1:101 t 114 p astt|?tc"="=r -72 f fe80::212:7401:1:101 t 114 p !REUnknown commandEUnknown commandaHtt~c"="=r -61 f fe80::212:7401:1:101 t 115 p aItt|?tc
+01:56.805	ID:7	Received response: 
+01:56.805	ID:8	Received response: 
+01:56.805	ID:4	Received response: 
+01:56.805	ID:6	Received response: 
+01:56.818	ID:5	Received response: 
+01:56.957	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+01:56.957	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+01:56.957	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+01:56.958	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+01:56.958	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+01:57.700	ID:1	Sending control broadcast: 116
+01:58.118	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+01:58.118	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+01:58.118	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+01:58.118	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+01:58.118	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+01:58.151	ID:6	Received response: 
+01:58.151	ID:5	Received response: 
+01:58.151	ID:7	Received response: 
+01:58.151	ID:8	Received response: 
+01:58.151	ID:4	Received response: 
+01:58.290	ID:3	DIO:116
+01:58.290	ID:4	DIO:116
+01:58.290	ID:6	DIO:116
+01:58.290	ID:7	DIO:116
+01:58.700	ID:1	Sending control broadcast: 117
+01:59.096	ID:8	Received response: 
+01:59.096	ID:7	Received response: 
+01:59.097	ID:5	Received response: 
+01:59.097	ID:4	Received response: 
+01:59.097	ID:6	Received response: 
+01:59.700	ID:1	Sending control broadcast: 118
+01:59.918	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+01:59.918	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+01:59.918	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+01:59.918	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+01:59.918	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+01:59.971	ID:8	Received response: 
+01:59.971	ID:6	Received response: 
+01:59.971	ID:7	Received response: 
+01:59.971	ID:5	Received response: 
+01:59.971	ID:4	Received response: 
+02:00.700	ID:1	Sending control broadcast: 119
+02:01.081	ID:1	start send 12
+02:01.083	ID:1	now sending hello 12  
+02:01.137	ID:2	relaying hello 12  
+02:01.137	ID:5	relaying hello 12  
+02:01.700	ID:1	Sending control broadcast: 120
+02:01.918	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+02:01.918	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+02:01.918	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+02:01.918	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+02:01.918	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+02:02.700	ID:1	Sending control broadcast: 121
+02:02.862	ID:8	Received response: 
+02:02.862	ID:6	Received response: 
+02:02.862	ID:7	Received response: 
+02:02.862	ID:4	Received response: 
+02:02.862	ID:5	Received response: 
+02:02.946	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+02:02.946	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+02:02.946	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+02:02.946	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+02:02.946	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+02:02.984	ID:6	DIO:116
+02:02.984	ID:5	DIO:116
+02:02.984	ID:7	DIO:116
+02:02.984	ID:8	DIO:116
+02:02.984	ID:4	DIO:116
+02:03.700	ID:1	Sending control broadcast: 122
+02:03.934	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+02:03.934	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+02:03.934	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+02:03.934	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+02:03.934	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+02:04.700	ID:1	Sending control broadcast: 123
+02:05.540	ID:2	DIO:116
+02:05.540	ID:6	DIO:116
+02:05.540	ID:3	DIO:116
+02:05.541	ID:5	DIO:116
+02:05.700	ID:1	Sending control broadcast: 124
+02:06.700	ID:1	Sending control broadcast: 125
+02:07.700	ID:1	Sending control broadcast: 126
+02:07.805	ID:7	Received response: 
+02:07.805	ID:8	Received response: 
+02:07.805	ID:6	Received response: 
+02:07.805	ID:4	Received response: 
+02:07.805	ID:5	Received response: 
+02:08.700	ID:1	Sending control broadcast: 127
+02:08.864	ID:11	"="=r -89 f fe80::212:7401:1:101 t 115 p !Rattt|?tc"="=r -67 f fe80::212:7401:1:101 t 115 p !R!RaJtt~c	"="=r -63 f fe80::212:7401:1:101 t 116 p autt|?tc"="=r -64 f fe80::212:7401:1:101 t 116 p aKtt|?tc"="=r -83 f fe80::212:7401:1:101 t 116 p !R!RALtz;:Mt<@@avtt~c"="=r -87 f fe80::212:7401:1:101 t 117 p !RaMtt|?tc"="=r -77 f fe80::212:7401:1:101 t 117 p awtt|?tc"="=r -62 f fe80::212:7401:1:101 t 117 p EUnknown command!R	axtt~c"="=r -93 f fe80::212:7401:1:101 t 118 p EUnknown commandaytt|?tc"="=r -61 f fe80::212:7401:1:101 t 118 p aNtt|?tc"="=r -72 f fe80::212:7401:1:101 t 118 p !R!RaOtt|?tc"="=r -67 f fe80::212:7401:1:101 t 119 p EUnknown commandaztt|?tc"="=r -61 f fe80::212:7401:1:101 t 119 p aPtt~cOghello 12  aQtta{tt|>tcRphello 12  a|ttaRtt|?tc"="=r -64 f fe80::212:7401:1:101 t 120 p a}tt|?tc"="=r -63 f fe80::212:7401:1:101 t 120 p EUnknown command!RaStt~c"="=r -87 f fe80::212:7401:1:101 t 121 p aTtt|?tc"="=r -62 f fe80::212:7401:1:101 t 121 p !R!R!RaUtt~c"="=r -93 f fe80::212:7401:1:101 t 122 p EUnknown commandaVtt|?tc"="=r -61 f fe80::212:7401:1:101 t 122 p !RaWtt|?tc"="=r -61 f fe80::212:7401:1:101 t 123 p EUnknown commandA;tz;:t<@@aXtt|?tc"="=r -63 f fe80::212:7401:1:101 t 124 p EUnknown commandaYtt|?tc"="=r -66 f fe80::212:7401:1:101 t 125 p EUnknown commandaZtt|?tc"="=r -70 f fe80::212:7401:1:101 t 126 p !R	a[tt|?tc"="=r -67 f fe80::212:7401:1:101 t 127 p !R
+02:08.869	ID:6	Received response: 
+02:08.869	ID:7	Received response: 
+02:08.869	ID:8	Received response: 
+02:08.870	ID:5	Received response: 
+02:08.870	ID:4	Received response: 
+02:09.700	ID:1	Sending control broadcast: 128
+02:09.878	ID:6	Received response: 
+02:09.878	ID:8	Received response: 
+02:09.878	ID:7	Received response: 
+02:09.878	ID:5	Received response: 
+02:09.878	ID:4	Received response: 
+02:10.700	ID:1	Sending control broadcast: 129
+02:10.846	ID:6	Received response: 
+02:10.846	ID:8	Received response: 
+02:10.846	ID:7	Received response: 
+02:10.846	ID:5	Received response: 
+02:10.847	ID:4	Received response: 
+02:11.089	ID:1	start send 13
+02:11.091	ID:1	now sending hello 13  
+02:11.161	ID:4	relaying hello 13  
+02:11.161	ID:2	relaying hello 13  
+02:11.586	ID:9	DIO:116
+02:11.586	ID:6	DIO:116
+02:11.586	ID:8	DIO:116
+02:11.586	ID:5	DIO:116
+02:11.700	ID:1	Sending control broadcast: 130
+02:12.700	ID:1	Sending control broadcast: 131
+02:12.831	ID:8	Received response: 
+02:12.957	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+02:12.957	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+02:12.957	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+02:12.957	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+02:12.957	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+02:13.700	ID:1	Sending control broadcast: 132
+02:13.815	ID:6	Received response: 
+02:13.815	ID:7	Received response: 
+02:13.815	ID:8	Received response: 
+02:13.815	ID:4	Received response: 
+02:13.815	ID:5	Received response: 
+02:14.032	ID:11	a\tt|?tc"="=r -64 f fe80::212:7401:1:101 t 128 p !Ra]tt|?tc"="=r -61 f fe80::212:7401:1:101 t 129 p !Ra~tt|?tcPihello 13  attatt|>tcRohello 13  attAftz;:Nt<@@a^tt|?tc"="=r -61 f fe80::212:7401:1:101 t 130 p EUnknown commanda_tt~c"="=r -89 f fe80::212:7401:1:101 t 131 p !Ra`tt|?tc"="=r -61 f fe80::212:7401:1:101 t 131 p !Raatt~c"="=r -82 f fe80::212:7401:1:101 t 132 p !Rabtt|?tc
+02:14.264	ID:4	DIO:116
+02:14.264	ID:3	DIO:116
+02:14.700	ID:1	Sending control broadcast: 133
+02:14.931	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+02:14.931	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+02:14.931	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+02:14.931	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+02:14.931	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+02:15.700	ID:1	Sending control broadcast: 134
+02:16.004	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+02:16.004	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+02:16.004	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+02:16.004	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+02:16.005	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+02:16.700	ID:1	Sending control broadcast: 135
+02:16.934	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+02:16.934	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+02:16.934	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+02:16.934	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+02:16.934	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+02:16.979	ID:6	Received response: 
+02:16.979	ID:7	Received response: 
+02:16.979	ID:8	Received response: 
+02:16.979	ID:5	Received response: 
+02:16.979	ID:4	Received response: 
+02:17.700	ID:1	Sending control broadcast: 136
+02:17.805	ID:7	Received response: 
+02:17.805	ID:8	Received response: 
+02:17.805	ID:4	Received response: 
+02:17.805	ID:5	Received response: 
+02:17.806	ID:6	Received response: 
+02:17.916	ID:5	Received response: 
+02:17.916	ID:7	Received response: 
+02:17.916	ID:8	Received response: 
+02:17.916	ID:4	Received response: 
+02:17.916	ID:6	Received response: 
+02:18.054	ID:10	DIO:116
+02:18.054	ID:9	DIO:116
+02:18.054	ID:6	DIO:116
+02:18.054	ID:7	DIO:116
+02:18.700	ID:1	Sending control broadcast: 137
+02:18.949	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+02:18.949	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+02:18.949	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+02:18.949	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+02:18.950	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+02:18.971	ID:8	Received response: 
+02:18.971	ID:6	Received response: 
+02:18.971	ID:7	Received response: 
+02:18.971	ID:5	Received response: 
+02:18.971	ID:4	Received response: 
+02:19.700	ID:1	Sending control broadcast: 138
+02:19.772	ID:7	Received response: 
+02:19.772	ID:8	Received response: 
+02:19.772	ID:4	Received response: 
+02:19.772	ID:5	Received response: 
+02:19.772	ID:6	Received response: 
+02:19.945	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+02:19.945	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+02:19.945	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+02:19.945	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+02:19.945	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+02:19.952	ID:5	Received response: 
+02:19.952	ID:7	Received response: 
+02:19.952	ID:4	Received response: 
+02:19.952	ID:6	Received response: 
+02:19.952	ID:8	Received response: 
+02:20.549	ID:10	DIO:116
+02:20.549	ID:8	DIO:116
+02:20.549	ID:7	DIO:116
+02:20.700	ID:1	Sending control broadcast: 139
+02:21.097	ID:1	start send 14
+02:21.099	ID:1	now sending hello 14  
+02:21.176	ID:6	relaying hello 14  
+02:21.700	ID:1	Sending control broadcast: 140
+02:21.810	ID:2	DIO:116
+02:21.810	ID:5	DIO:116
+02:21.811	ID:4	DIO:116
+02:22.700	ID:1	Sending control broadcast: 141
+02:22.807	ID:8	Received response: 
+02:22.807	ID:6	Received response: 
+02:22.807	ID:5	Received response: 
+02:22.807	ID:7	Received response: 
+02:22.810	ID:4	Received response: 
+02:23.700	ID:1	Sending control broadcast: 142
+02:23.838	ID:8	Received response: 
+02:23.838	ID:7	Received response: 
+02:23.838	ID:5	Received response: 
+02:23.838	ID:4	Received response: 
+02:23.845	ID:6	Received response: 
+02:24.700	ID:1	Sending control broadcast: 143
+02:24.987	ID:4	Received response: 
+02:24.987	ID:7	Received response: 
+02:24.987	ID:8	Received response: 
+02:24.987	ID:5	Received response: 
+02:24.987	ID:6	Received response: 
+02:25.700	ID:1	Sending control broadcast: 144
+02:25.823	ID:4	Received response: 
+02:25.823	ID:7	Received response: 
+02:25.823	ID:8	Received response: 
+02:25.823	ID:5	Received response: 
+02:25.823	ID:6	Received response: 
+02:26.194	ID:9	DIO:116
+02:26.194	ID:8	DIO:116
+02:26.700	ID:1	Sending control broadcast: 145
+02:26.910	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+02:26.910	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+02:26.910	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+02:26.910	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+02:26.910	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+02:27.700	ID:1	Sending control broadcast: 146
+02:27.846	ID:4	Received response: 
+02:27.846	ID:6	Received response: 
+02:27.846	ID:8	Received response: 
+02:27.846	ID:7	Received response: 
+02:27.846	ID:5	Received response: 
+02:27.916	ID:6	Received response: 
+02:27.916	ID:5	Received response: 
+02:27.916	ID:7	Received response: 
+02:27.916	ID:8	Received response: 
+02:27.916	ID:4	Received response: 
+02:28.700	ID:1	Sending control broadcast: 147
+02:29.700	ID:1	Sending control broadcast: 148
+02:29.896	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:29.896	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:29.897	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:29.897	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:29.897	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:29.922	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+02:29.922	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+02:29.923	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+02:29.923	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+02:30.700	ID:1	Sending control broadcast: 149
+02:30.863	ID:5	Received response: 
+02:30.863	ID:4	Received response: 
+02:30.863	ID:8	Received response: 
+02:30.863	ID:7	Received response: 
+02:30.863	ID:6	Received response: 
+02:30.904	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:30.904	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:30.904	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:30.904	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:30.904	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:30.961	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+02:30.961	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+02:30.962	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+02:30.962	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+02:31.105	ID:1	start send 15
+02:31.107	ID:1	now sending hello 15  
+02:31.161	ID:8	relaying hello 15  
+02:31.161	ID:9	relaying hello 15  
+02:31.241	ID:11	"="=r -63 f fe80::212:7401:1:101 t 132 p EUnknown commandactt~c	"="=r -76 f fe80::212:7401:1:101 t 133 p !Radtt|?tc	"="=r -66 f fe80::212:7401:1:101 t 133 p !Raett|?tc"="=r -70 f fe80::212:7401:1:101 t 134 p EUnknown commandatt|?tc"="=r -61 f fe80::212:7401:1:101 t 134 p !Raftt|?tc"="=r -75 f fe80::212:7401:1:101 t 135 p att~c"="=r -89 f fe80::212:7401:1:101 t 135 p EUnknown commandatt|?tc"="=r -61 f fe80::212:7401:1:101 t 135 p !R!Ragtt|?tc"="=r -81 f fe80::212:7401:1:101 t 136 p att~c"="=r -82 f fe80::212:7401:1:101 t 136 p !R	EUnknown commandatt|?tc"="=r -63 f fe80::212:7401:1:101 t 136 p !RA tz;:t<@@att~c"="=r -76 f fe80::212:7401:1:101 t 137 p EUnknown commandatt|?tc"="=r -66 f fe80::212:7401:1:101 t 137 p ahtt|?tc"="=r -87 f fe80::212:7401:1:101 t 137 p !R!Raitt~c"="=r -61 f fe80::212:7401:1:101 t 138 p !Ratt|?tc"="=r -70 f fe80::212:7401:1:101 t 138 p ajtt|?tc"="=r -94 f fe80::212:7401:1:101 t 138 p !R!Raktt~c"="=r -61 f fe80::212:7401:1:101 t 139 p EUnknown commandagtt~c"="=r -89 f fe80::212:7401:1:101 t 139 p att|?tc"="=r -75 f fe80::212:7401:1:101 t 139 p EUnknown commandEUnknown commandatt	~cNbhello 14  att	ahtt~c"="=r -82 f fe80::212:7401:1:101 t 140 p EUnknown commandatt|?tc"="=r -81 f fe80::212:7401:1:101 t 140 p altt~c"="=r -63 f fe80::212:7401:1:101 t 140 p EUnknown commandEUnknown commandamtt~c"="=r -66 f fe80::212:7401:1:101 t 141 p aitt~c"="=r -76 f fe80::212:7401:1:101 t 141 p !Ratt|?tc"="=r -87 f fe80::212:7401:1:101 t 141 p EUnknown commandEUnknown commandantt~c"="=r -70 f fe80::212:7401:1:101 t 142 p ajtt~c"="=r -71 f fe80::212:7401:1:101 t 142 p att|?tc"="=r -94 f fe80::212:7401:1:101 t 142 p !REUnknown commandEUnknown commandaktt~c"="=r -67 f fe80::212:7401:1:101 t 143 p EUnknown commandatt|?tc"="=r -89 f fe80::212:7401:1:101 t 143 p aott~c"="=r -75 f fe80::212:7401:1:101 t 143 p !Raptt~c"="=r -81 f fe80::212:7401:1:101 t 144 p altt~c"="=r -64 f fe80::212:7401:1:101 t 144 p att|?tc"="=r -82 f fe80::212:7401:1:101 t 144 p !Ramtt~c"="=r -61 f fe80::212:7401:1:101 t 145 p aqtt~c"="=r -87 f fe80::212:7401:1:101 t 145 p EUnknown commandatt|?tc"="=r -76 f fe80::212:7401:1:101 t 145 p !REUnknown commandantt~c"="=r -61 f fe80::212:7401:1:101 t 146 p att~c"="=r -70 f fe80::212:7401:1:101 t 146 p artt~c"="=r -94 f fe80::212:7401:1:101 t 146 p !REUnknown command!R	att~c"="=r -75 f fe80::212:7401:1:101 t 147 p aott~c"="=r -61 f fe80::212:7401:1:101 t 147 p EUnknown commandEUnknown commandatt~c"="=r -81 f fe80::212:7401:1:101 t 148 p aptt~c"="=r -63 f fe80::212:7401:1:101 t 148 p EUnknown command!RA$t~;..Ifd00:0:0:0:212:7409:9:909 (null)att~c"="=r -87 f fe80::212:7401:1:101 t 149 p aqtt~c"="=r -66 f fe80::212:7401:1:101 t 149 p !R!RA%t~;..Ifd00:0:0:0:212:7409:9:909 (null)att
+02:31.274	ID:11	|?tcL[hello 15  att
+02:31.700	ID:1	Sending control broadcast: 150
+02:31.807	ID:5	Received response: 
+02:31.807	ID:4	Received response: 
+02:31.807	ID:8	Received response: 
+02:31.807	ID:6	Received response: 
+02:31.807	ID:7	Received response: 
+02:32.700	ID:1	Sending control broadcast: 151
+02:32.823	ID:6	Received response: 
+02:32.823	ID:5	Received response: 
+02:32.823	ID:4	Received response: 
+02:32.823	ID:7	Received response: 
+02:32.823	ID:8	Received response: 
+02:32.882	ID:11	artt|?t				cKXhello 15  asttatt~c"="=r -94 f fe80::212:7401:1:101 t 150 p attt~c"="=r -70 f fe80::212:7401:1:101 t 150 p !REUnknown commandautt~c"="=r -75 f fe80::212:7401:1:101 t 151 p !Ravtt|>t
+02:32.882	ID:11	
+02:32.882	ID:11	
+02:32.882	ID:11	
+02:32.998	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:32.998	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:32.998	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:32.998	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:32.998	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:33.054	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+02:33.054	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+02:33.056	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+02:33.056	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+02:33.700	ID:1	Sending control broadcast: 152
+02:33.819	ID:11	c"="=r -89 f fe80::212:7401:1:101 t 151 p !RA(t~;..Ifd00:0:0:0:212:7409:9:909 (null)awtt~c"="=r -81 f fe80::212:7401:1:101 t 152 p EUnknown commandaxtt|>t
+02:33.819	ID:11	
+02:33.819	ID:11	
+02:33.819	ID:11	
+02:33.944	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+02:33.944	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+02:33.944	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+02:33.944	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+02:33.944	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+02:33.968	ID:10	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+02:33.969	ID:9	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+02:33.970	ID:6	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+02:33.970	ID:7	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+02:34.700	ID:1	Sending control broadcast: 153
+02:34.904	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+02:34.904	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+02:34.904	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+02:34.904	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+02:34.905	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+02:34.937	ID:9	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+02:34.937	ID:10	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+02:34.939	ID:6	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+02:34.939	ID:7	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+02:35.700	ID:1	Sending control broadcast: 154
+02:35.807	ID:5	Received response: 
+02:35.807	ID:4	Received response: 
+02:35.807	ID:6	Received response: 
+02:35.807	ID:8	Received response: 
+02:35.807	ID:7	Received response: 
+02:36.700	ID:1	Sending control broadcast: 155
+02:36.864	ID:11	c"="=r -82 f fe80::212:7401:1:101 t 152 p !RA)t~;..fd00:0:0:0:212:740a:a:a0a (null)aytt~c"="=r -87 f fe80::212:7401:1:101 t 153 p EUnknown commandaztt|?t				c"="=r -61 f fe80::212:7401:1:101 t 153 p !RA*t~;..fd00:0:0:0:212:740a:a:a0a (null)a{tt~c"="=r -94 f fe80::212:7401:1:101 t 154 p a|tt|?t				c"="=r -61 f fe80::212:7401:1:101 t 154 p !REUnknown commanda}tt|?t				c"="=r -61 f fe80::212:7401:1:101 t 155 p !R
+02:36.869	ID:6	Received response: 
+02:36.869	ID:5	Received response: 
+02:36.869	ID:4	Received response: 
+02:36.870	ID:7	Received response: 
+02:36.870	ID:8	Received response: 
+02:37.700	ID:1	Sending control broadcast: 156
+02:37.924	ID:6	Received response: 
+02:37.925	ID:5	Received response: 
+02:37.925	ID:4	Received response: 
+02:37.925	ID:8	Received response: 
+02:37.925	ID:7	Received response: 
+02:38.700	ID:1	Sending control broadcast: 157
+02:39.700	ID:1	Sending control broadcast: 158
+02:40.700	ID:1	Sending control broadcast: 159
+02:40.838	ID:6	Received response: 
+02:40.838	ID:5	Received response: 
+02:40.838	ID:4	Received response: 
+02:40.838	ID:7	Received response: 
+02:40.838	ID:8	Received response: 
+02:41.112	ID:1	start send 16
+02:41.114	ID:1	now sending hello 16  
+02:41.176	ID:10	relaying hello 16  
+02:41.176	ID:8	relaying hello 16  
+02:41.416	ID:11	a~tt|?t				c"="=r -63 f fe80::212:7401:1:101 t 156 p !Ratt|?t				c"="=r -66 f fe80::212:7401:1:101 t 157 p EUnknown commandatt|?t				c"="=r -70 f fe80::212:7401:1:101 t 158 p EUnknown commandatt|?t				c"="=r -67 f fe80::212:7401:1:101 t 159 p !Ratt|?tcLZhello 16  attatt|>t
+02:41.416	ID:11	
+02:41.416	ID:11	
+02:41.416	ID:11	
+02:41.700	ID:1	Sending control broadcast: 160
+02:42.700	ID:1	Sending control broadcast: 161
+02:43.700	ID:1	Sending control broadcast: 162
+02:44.700	ID:1	Sending control broadcast: 163
+02:45.700	ID:1	Sending control broadcast: 164
+02:45.854	ID:5	Received response: 
+02:45.854	ID:4	Received response: 
+02:45.854	ID:6	Received response: 
+02:45.854	ID:8	Received response: 
+02:45.854	ID:7	Received response: 
+02:46.700	ID:1	Sending control broadcast: 165
+02:46.812	ID:4	Received response: 
+02:46.812	ID:6	Received response: 
+02:46.812	ID:5	Received response: 
+02:46.812	ID:8	Received response: 
+02:46.825	ID:7	Received response: 
+02:46.944	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:46.944	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:46.944	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:46.944	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:46.944	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:46.992	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+02:46.992	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+02:46.993	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+02:46.994	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+02:47.700	ID:1	Sending control broadcast: 166
+02:47.835	ID:11	cJThello 16  attatt|?t				c"="=r -64 f fe80::212:7401:1:101 t 160 p EUnknown commandatt|?t				c"="=r -61 f fe80::212:7401:1:101 t 161 p EUnknown commandatt|?t				c"="=r -61 f fe80::212:7401:1:101 t 162 p EUnknown commandatt~c"="=r -89 f fe80::212:7401:1:101 t 163 p EUnknown commandatt|?t				c"="=r -61 f fe80::212:7401:1:101 t 163 p EUnknown commandatt~c"="=r -82 f fe80::212:7401:1:101 t 164 p att|?t				c"="=r -63 f fe80::212:7401:1:101 t 164 p !REUnknown commandatt~c"="=r -76 f fe80::212:7401:1:101 t 165 p att|?t				c"="=r -66 f fe80::212:7401:1:101 t 165 p !R!RA-t~;..Ifd00:0:0:0:212:7409:9:909 (null)att~c"="=r -71 f fe80::212:7401:1:101 t 166 p EUnknown commandatt|>t
+02:47.835	ID:11	
+02:47.835	ID:11	
+02:47.835	ID:11	
+02:47.935	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:47.936	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:47.936	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:47.936	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:47.936	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+02:47.953	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+02:47.953	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+02:47.954	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+02:47.954	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+02:48.700	ID:1	Sending control broadcast: 167
+02:49.700	ID:1	Sending control broadcast: 168
+02:49.965	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+02:49.965	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+02:49.965	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+02:49.965	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+02:49.965	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+02:50.700	ID:1	Sending control broadcast: 169
+02:51.120	ID:1	start send 17
+02:51.122	ID:1	now sending hello 17  
+02:51.145	ID:8	relaying hello 17  
+02:51.145	ID:9	relaying hello 17  
+02:51.700	ID:1	Sending control broadcast: 170
+02:51.837	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+02:51.837	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+02:51.837	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+02:51.837	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+02:51.837	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+02:52.700	ID:1	Sending control broadcast: 171
+02:52.807	ID:4	Received response: 
+02:52.807	ID:6	Received response: 
+02:52.807	ID:5	Received response: 
+02:52.807	ID:7	Received response: 
+02:52.807	ID:8	Received response: 
+02:52.887	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+02:52.887	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+02:52.887	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+02:52.887	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+02:52.887	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+02:52.948	ID:6	Received response: 
+02:52.948	ID:5	Received response: 
+02:52.948	ID:7	Received response: 
+02:52.948	ID:8	Received response: 
+02:52.948	ID:4	Received response: 
+02:53.700	ID:1	Sending control broadcast: 172
+02:53.871	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+02:53.871	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+02:53.871	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+02:53.871	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+02:53.871	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+02:54.700	ID:1	Sending control broadcast: 173
+02:54.788	ID:4	Received response: 
+02:54.788	ID:7	Received response: 
+02:54.788	ID:8	Received response: 
+02:54.788	ID:6	Received response: 
+02:54.794	ID:5	Received response: 
+02:54.867	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+02:54.867	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+02:54.867	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+02:54.867	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+02:54.867	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+02:54.919	ID:11	c"="=r -94 f fe80::212:7401:1:101 t 166 p !R	A.t~;..Ifd00:0:0:0:212:7409:9:909 (null)att~c"="=r -89 f fe80::212:7401:1:101 t 167 p EUnknown commandatt~c"="=r -67 f fe80::212:7401:1:101 t 167 p att~c"="=r -64 f fe80::212:7401:1:101 t 168 p att~c"="=r -82 f fe80::212:7401:1:101 t 168 p !Ratt~c"="=r -76 f fe80::212:7401:1:101 t 169 p att~c"="=r -61 f fe80::212:7401:1:101 t 169 p EUnknown commandEUnknown commandatt	|?t				cKVhello 17  att	att|?tcLYhello 17  attatt~c"="=r -71 f fe80::212:7401:1:101 t 170 p att~c"="=r -61 f fe80::212:7401:1:101 t 170 p EUnknown command!Ratt~c"="=r -61 f fe80::212:7401:1:101 t 171 p astt~c"="=r -89 f fe80::212:7401:1:101 t 171 p att~c"="=r -67 f fe80::212:7401:1:101 t 171 p !R!R!Ratt~c"="=r -63 f fe80::212:7401:1:101 t 172 p att~c"="=r -64 f fe80::212:7401:1:101 t 172 p attt~c"="=r -82 f fe80::212:7401:1:101 t 172 p EUnknown command!REUnknown commandatt~c"="=r -61 f fe80::212:7401:1:101 t 173 p autt~c"="=r -76 f fe80::212:7401:1:101 t 173 p !Ratt|?tc"="=r -87 f fe80::212:7401:1:101 t 173 p !R	!R
+02:54.924	ID:6	Received response: 
+02:54.924	ID:8	Received response: 
+02:54.925	ID:7	Received response: 
+02:54.925	ID:5	Received response: 
+02:54.925	ID:4	Received response: 
+02:55.700	ID:1	Sending control broadcast: 174
+02:56.700	ID:1	Sending control broadcast: 175
+02:57.700	ID:1	Sending control broadcast: 176
+02:57.846	ID:5	Received response: 
+02:57.846	ID:7	Received response: 
+02:57.846	ID:8	Received response: 
+02:57.846	ID:4	Received response: 
+02:57.846	ID:6	Received response: 
+02:58.027	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+02:58.027	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+02:58.027	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+02:58.027	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+02:58.027	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+02:58.041	ID:6	Received response: 
+02:58.041	ID:5	Received response: 
+02:58.041	ID:7	Received response: 
+02:58.041	ID:8	Received response: 
+02:58.041	ID:4	Received response: 
+02:58.700	ID:1	Sending control broadcast: 177
+02:58.838	ID:8	Received response: 
+02:58.838	ID:7	Received response: 
+02:58.838	ID:5	Received response: 
+02:58.838	ID:4	Received response: 
+02:58.845	ID:6	Received response: 
+02:58.902	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+02:58.902	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+02:58.902	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+02:58.902	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+02:58.902	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+02:59.049	ID:6	Received response: 
+02:59.049	ID:5	Received response: 
+02:59.049	ID:7	Received response: 
+02:59.049	ID:8	Received response: 
+02:59.049	ID:4	Received response: 
+02:59.700	ID:1	Sending control broadcast: 178
+02:59.901	ID:6	Received response: 
+03:00.700	ID:1	Sending control broadcast: 179
+03:00.808	ID:11	att~c"="=r -61 f fe80::212:7401:1:101 t 174 p EUnknown commandavtt~c"="=r -71 f fe80::212:7401:1:101 t 174 p EUnknown commandatt|?tc"="=r -94 f fe80::212:7401:1:101 t 174 p EUnknown commandawtt~c"="=r -67 f fe80::212:7401:1:101 t 175 p EUnknown commandatt~c"="=r -61 f fe80::212:7401:1:101 t 175 p EUnknown commandatt|?tc"="=r -89 f fe80::212:7401:1:101 t 175 p EUnknown commandaxtt~c"="=r -64 f fe80::212:7401:1:101 t 176 p !Ratt~c"="=r -63 f fe80::212:7401:1:101 t 176 p att|?tc"="=r -82 f fe80::212:7401:1:101 t 176 p !R!Ratt~c"="=r -87 f fe80::212:7401:1:101 t 177 p att|?tc"="=r -76 f fe80::212:7401:1:101 t 177 p !R!Raytt~c"="=r -61 f fe80::212:7401:1:101 t 177 p !Raztt~c"="=r -61 f fe80::212:7401:1:101 t 178 p att~c"="=r -94 f fe80::212:7401:1:101 t 178 p !Ratt|?tc"="=r -71 f fe80::212:7401:1:101 t 178 p !R!R	a{tt~c"="=r -61 f fe80::212:7401:1:101 t 179 p a|tt|?tc"="=r -89 f fe80::212:7401:1:101 t 179 p !R
+03:00.813	ID:8	Received response: 
+03:00.814	ID:6	Received response: 
+03:00.814	ID:7	Received response: 
+03:00.814	ID:4	Received response: 
+03:00.827	ID:5	Received response: 
+03:00.887	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+03:00.887	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+03:00.887	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+03:00.887	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+03:00.905	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+03:01.128	ID:1	start send 18
+03:01.130	ID:1	now sending hello 18  
+03:01.200	ID:6	relaying hello 18  
+03:01.218	ID:11	!Ratt|?tc"="=r -67 f fe80::212:7401:1:101 t 179 p EUnknown commandatt~c
+03:01.700	ID:1	Sending control broadcast: 180
+03:01.895	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+03:01.895	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+03:01.895	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+03:01.895	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+03:01.895	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+03:02.700	ID:1	Sending control broadcast: 181
+03:02.843	ID:7	Received response: 
+03:02.843	ID:8	Received response: 
+03:02.843	ID:4	Received response: 
+03:02.843	ID:5	Received response: 
+03:02.853	ID:6	Received response: 
+03:02.946	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+03:02.946	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+03:02.946	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+03:02.946	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+03:02.946	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+03:02.987	ID:6	Received response: 
+03:02.987	ID:5	Received response: 
+03:02.987	ID:7	Received response: 
+03:02.987	ID:8	Received response: 
+03:02.987	ID:4	Received response: 
+03:03.700	ID:1	Sending control broadcast: 182
+03:04.700	ID:1	Sending control broadcast: 183
+03:04.949	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+03:04.949	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+03:04.949	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+03:04.949	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+03:04.949	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+03:05.700	ID:1	Sending control broadcast: 184
+03:05.816	ID:7	Received response: 
+03:05.816	ID:8	Received response: 
+03:05.816	ID:6	Received response: 
+03:05.816	ID:4	Received response: 
+03:05.829	ID:5	Received response: 
+03:05.902	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+03:05.902	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+03:05.902	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+03:05.902	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+03:05.902	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+03:06.700	ID:1	Sending control broadcast: 185
+03:06.895	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+03:06.895	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+03:06.895	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+03:06.895	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+03:06.895	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+03:07.700	ID:1	Sending control broadcast: 186
+03:07.846	ID:6	Received response: 
+03:07.846	ID:7	Received response: 
+03:07.846	ID:8	Received response: 
+03:07.846	ID:4	Received response: 
+03:07.858	ID:5	Received response: 
+03:08.700	ID:1	Sending control broadcast: 187
+03:09.700	ID:1	Sending control broadcast: 188
+03:09.838	ID:6	Received response: 
+03:09.838	ID:7	Received response: 
+03:09.838	ID:8	Received response: 
+03:09.838	ID:5	Received response: 
+03:09.838	ID:4	Received response: 
+03:10.700	ID:1	Sending control broadcast: 189
+03:11.136	ID:1	start send 19
+03:11.138	ID:1	now sending hello 19  
+03:11.184	ID:2	relaying hello 19  
+03:11.184	ID:4	relaying hello 19  
+03:11.700	ID:1	Sending control broadcast: 190
+03:11.830	ID:7	Received response: 
+03:11.830	ID:8	Received response: 
+03:11.830	ID:6	Received response: 
+03:11.831	ID:5	Received response: 
+03:11.831	ID:4	Received response: 
+03:12.700	ID:1	Sending control broadcast: 191
+03:12.807	ID:6	Received response: 
+03:12.807	ID:7	Received response: 
+03:12.807	ID:8	Received response: 
+03:12.807	ID:5	Received response: 
+03:12.807	ID:4	Received response: 
+03:13.700	ID:1	Sending control broadcast: 192
+03:13.878	ID:6	Received response: 
+03:13.878	ID:8	Received response: 
+03:13.878	ID:7	Received response: 
+03:13.878	ID:5	Received response: 
+03:13.878	ID:4	Received response: 
+03:14.700	ID:1	Sending control broadcast: 193
+03:14.807	ID:6	Received response: 
+03:14.807	ID:7	Received response: 
+03:14.807	ID:8	Received response: 
+03:14.807	ID:5	Received response: 
+03:14.807	ID:4	Received response: 
+03:15.700	ID:1	Sending control broadcast: 194
+03:16.700	ID:1	Sending control broadcast: 195
+03:16.820	ID:6	Received response: 
+03:16.820	ID:7	Received response: 
+03:16.820	ID:8	Received response: 
+03:16.821	ID:4	Received response: 
+03:16.821	ID:5	Received response: 
+03:16.918	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+03:16.918	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+03:16.918	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+03:16.918	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+03:16.918	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+03:17.700	ID:1	Sending control broadcast: 196
+03:17.852	ID:6	Received response: 
+03:17.852	ID:7	Received response: 
+03:17.852	ID:8	Received response: 
+03:17.852	ID:4	Received response: 
+03:17.865	ID:5	Received response: 
+03:18.700	ID:1	Sending control broadcast: 197
+03:18.781	ID:11	N^hello 18  atta}tt~c"="=r -63 f fe80::212:7401:1:101 t 180 p EUnknown commandatt|?tc"="=r -64 f fe80::212:7401:1:101 t 180 p a~tt|?tc"="=r -82 f fe80::212:7401:1:101 t 180 p !REUnknown commandatt|?tc"="=r -76 f fe80::212:7401:1:101 t 181 p att~c"="=r -87 f fe80::212:7401:1:101 t 181 p !Ratt|?tc"="=r -61 f fe80::212:7401:1:101 t 181 p !R!Ratt~c"="=r -94 f fe80::212:7401:1:101 t 182 p EUnknown commandatt|?tc"="=r -71 f fe80::212:7401:1:101 t 182 p EUnknown commandatt|?tc"="=r -61 f fe80::212:7401:1:101 t 182 p EUnknown commandatt|?tc"="=r -67 f fe80::212:7401:1:101 t 183 p EUnknown commandatt|?tc"="=r -61 f fe80::212:7401:1:101 t 183 p !Ratt~c"="=r -81 f fe80::212:7401:1:101 t 184 p att|?tc"="=r -64 f fe80::212:7401:1:101 t 184 p !R!R	att~c"="=r -87 f fe80::212:7401:1:101 t 185 p EUnknown commandatt|?tc"="=r -61 f fe80::212:7401:1:101 t 185 p !Ratt~c"="=r -94 f fe80::212:7401:1:101 t 186 p att|?tc"="=r -61 f fe80::212:7401:1:101 t 186 p !REUnknown commandatt|?tc"="=r -61 f fe80::212:7401:1:101 t 187 p EUnknown commandatt|?tc"="=r -63 f fe80::212:7401:1:101 t 188 p !Ratt|?tc"="=r -66 f fe80::212:7401:1:101 t 189 p EUnknown commandatt|?tcPchello 19  attatt|>tcRihello 19  attatt|?tc"="=r -71 f fe80::212:7401:1:101 t 190 p !Ratt|?tc"="=r -67 f fe80::212:7401:1:101 t 191 p !Ratt|?tc"="=r -63 f fe80::212:7401:1:101 t 192 p !Ratt|?tc"="=r -61 f fe80::212:7401:1:101 t 193 p !Ratt|?tc"="=r -61 f fe80::212:7401:1:101 t 194 p EUnknown commandatt~c"="=r -88 f fe80::212:7401:1:101 t 195 p !Ratt|?tc"="=r -61 f fe80::212:7401:1:101 t 195 p !Ratt~c"="=r -82 f fe80::212:7401:1:101 t 196 p att|?tc"="=r -63 f fe80::212:7401:1:101 t 196 p !REUnknown commandatt~c
+03:18.814	ID:11	"="=r -76 f fe80::212:7401:1:101 t 197 p att|?tc
+03:18.825	ID:11	"="=r -67 f fe80::212:7401:1:101 t 197 p !R
+03:18.830	ID:6	Received response: 
+03:18.830	ID:7	Received response: 
+03:18.830	ID:8	Received response: 
+03:18.831	ID:4	Received response: 
+03:18.842	ID:5	Received response: 
+03:19.700	ID:1	Sending control broadcast: 198
+03:19.831	ID:8	Received response: 
+03:20.700	ID:1	Sending control broadcast: 199
+03:20.815	ID:7	Received response: 
+03:20.815	ID:8	Received response: 
+03:20.815	ID:6	Received response: 
+03:20.815	ID:4	Received response: 
+03:20.815	ID:5	Received response: 
+03:20.902	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+03:20.902	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+03:20.902	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+03:20.902	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+03:20.902	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+03:21.144	ID:1	start send 20
+03:21.146	ID:1	now sending hello 20  
+03:21.192	ID:6	relaying hello 20  
+03:21.586	ID:8	DIO:116
+03:21.586	ID:7	DIO:116
+03:21.586	ID:6	DIO:116
+03:21.586	ID:5	DIO:116
+03:21.586	ID:4	DIO:116
+03:21.700	ID:1	Sending control broadcast: 200
+03:21.807	ID:7	Received response: 
+03:21.807	ID:8	Received response: 
+03:21.807	ID:4	Received response: 
+03:21.807	ID:6	Received response: 
+03:21.807	ID:5	Received response: 
+03:21.934	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+03:21.934	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+03:21.934	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+03:21.934	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+03:21.934	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+03:21.971	ID:6	Received response: 
+03:21.971	ID:5	Received response: 
+03:21.971	ID:7	Received response: 
+03:21.971	ID:8	Received response: 
+03:21.971	ID:4	Received response: 
+03:22.700	ID:1	Sending control broadcast: 201
+03:22.902	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+03:22.902	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+03:22.903	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+03:22.903	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+03:22.903	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+03:23.700	ID:1	Sending control broadcast: 202
+03:23.771	ID:11	EUnknown commandatt~c"="=r -71 f fe80::212:7401:1:101 t 198 p !Ratt|?tc"="=r -71 f fe80::212:7401:1:101 t 198 p EUnknown commandatt~c"="=r -67 f fe80::212:7401:1:101 t 199 p att~c"="=r -88 f fe80::212:7401:1:101 t 199 p !Ratt|?tc"="=r -76 f fe80::212:7401:1:101 t 199 p !REUnknown commandatt~cMfhello 20  att!Ratt~c"="=r -63 f fe80::212:7401:1:101 t 200 p !Ratt|?tc"="=r -63 f fe80::212:7401:1:101 t 200 p att|?tc"="=r -82 f fe80::212:7401:1:101 t 200 p !R!Ratt~c"="=r -61 f fe80::212:7401:1:101 t 201 p att|?tc"="=r -67 f fe80::212:7401:1:101 t 201 p EUnknown commandatt|?tc"="=r -88 f fe80::212:7401:1:101 t 201 p !REUnknown commandatt~c"="=r -61 f fe80::212:7401:1:101 t 202 p EUnknown commandatt|?tc
+03:24.700	ID:1	Sending control broadcast: 203
+03:24.757	ID:11	"="=r -71 f fe80::212:7401:1:101 t 202 p EUnknown commandatt~c
+03:24.882	ID:8	Received response: 
+03:24.882	ID:5	Received response: 
+03:24.882	ID:4	Received response: 
+03:24.882	ID:7	Received response: 
+03:24.882	ID:6	Received response: 
+03:25.700	ID:1	Sending control broadcast: 204
+03:25.879	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+03:25.879	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+03:25.879	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+03:25.879	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+03:25.879	ID:6	Received response: fd00:0:0:0:212:7407:7:707

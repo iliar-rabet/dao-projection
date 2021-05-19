@@ -1,0 +1,1127 @@
+00:00.354	ID:8	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.357	ID:8	[INFO: Main      ] - Routing: RPL Lite
+00:00.359	ID:8	[INFO: Main      ] - Net: sicslowpan
+00:00.361	ID:8	[INFO: Main      ] - MAC: CSMA
+00:00.365	ID:8	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.368	ID:8	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.370	ID:8	[INFO: Main      ] Node ID: 8
+00:00.376	ID:8	[INFO: Main      ] Link-layer address: 0012.7408.0008.0808
+00:00.387	ID:8	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7408:8:808
+00:00.391	ID:8	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.457	ID:11	[INFO: Main      ] Starting Contiki-NG-release/v4.4-109-g97868a138-dirty
+00:00.460	ID:11	[INFO: Main      ] - Routing: nullrouting
+00:00.462	ID:11	[INFO: Main      ] - Net: slipnet
+00:00.465	ID:11	[INFO: Main      ] - MAC: CSMA
+00:00.468	ID:11	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.472	ID:11	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.474	ID:11	[INFO: Main      ] Node ID: 11
+00:00.480	ID:11	[INFO: Main      ] Link-layer address: 0012.740b.000b.0b0b
+00:00.491	ID:11	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:740b:b:b0b
+00:00.494	ID:11	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.517	ID:2	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.520	ID:2	[INFO: Main      ] - Routing: RPL Lite
+00:00.523	ID:2	[INFO: Main      ] - Net: sicslowpan
+00:00.525	ID:2	[INFO: Main      ] - MAC: CSMA
+00:00.528	ID:2	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.532	ID:2	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.532	ID:6	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.534	ID:2	[INFO: Main      ] Node ID: 2
+00:00.535	ID:6	[INFO: Main      ] - Routing: RPL Lite
+00:00.537	ID:6	[INFO: Main      ] - Net: sicslowpan
+00:00.539	ID:2	[INFO: Main      ] Link-layer address: 0012.7402.0002.0202
+00:00.539	ID:6	[INFO: Main      ] - MAC: CSMA
+00:00.543	ID:6	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.546	ID:6	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.548	ID:6	[INFO: Main      ] Node ID: 6
+00:00.551	ID:2	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7402:2:202
+00:00.554	ID:6	[INFO: Main      ] Link-layer address: 0012.7406.0006.0606
+00:00.554	ID:2	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.565	ID:6	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7406:6:606
+00:00.569	ID:6	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.630	ID:4	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.632	ID:4	[INFO: Main      ] - Routing: RPL Lite
+00:00.635	ID:4	[INFO: Main      ] - Net: sicslowpan
+00:00.637	ID:4	[INFO: Main      ] - MAC: CSMA
+00:00.640	ID:4	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.644	ID:4	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.646	ID:4	[INFO: Main      ] Node ID: 4
+00:00.651	ID:4	[INFO: Main      ] Link-layer address: 0012.7404.0004.0404
+00:00.663	ID:4	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7404:4:404
+00:00.664	ID:1	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.666	ID:4	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.667	ID:1	[INFO: Main      ] - Routing: nullrouting
+00:00.670	ID:1	[INFO: Main      ] - Net: sicslowpan
+00:00.672	ID:1	[INFO: Main      ] - MAC: CSMA
+00:00.675	ID:1	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.679	ID:1	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.681	ID:1	[INFO: Main      ] Node ID: 1
+00:00.683	ID:7	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.686	ID:7	[INFO: Main      ] - Routing: RPL Lite
+00:00.686	ID:1	[INFO: Main      ] Link-layer address: 0012.7401.0001.0101
+00:00.688	ID:7	[INFO: Main      ] - Net: sicslowpan
+00:00.690	ID:7	[INFO: Main      ] - MAC: CSMA
+00:00.694	ID:7	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.697	ID:1	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7401:1:101
+00:00.697	ID:7	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.699	ID:7	[INFO: Main      ] Node ID: 7
+00:00.700	ID:1	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.705	ID:7	[INFO: Main      ] Link-layer address: 0012.7407.0007.0707
+00:00.716	ID:7	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7407:7:707
+00:00.720	ID:7	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.838	ID:10	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.840	ID:10	[INFO: Main      ] - Routing: RPL Lite
+00:00.843	ID:10	[INFO: Main      ] - Net: sicslowpan
+00:00.845	ID:10	[INFO: Main      ] - MAC: CSMA
+00:00.848	ID:10	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.852	ID:10	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.854	ID:10	[INFO: Main      ] Node ID: 10
+00:00.860	ID:10	[INFO: Main      ] Link-layer address: 0012.740a.000a.0a0a
+00:00.871	ID:10	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:740a:a:a0a
+00:00.875	ID:10	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.990	ID:9	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.992	ID:9	[INFO: Main      ] - Routing: RPL Lite
+00:00.995	ID:9	[INFO: Main      ] - Net: sicslowpan
+00:00.996	ID:5	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.997	ID:9	[INFO: Main      ] - MAC: CSMA
+00:00.999	ID:5	[INFO: Main      ] - Routing: RPL Lite
+00:01.000	ID:9	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:01.002	ID:5	[INFO: Main      ] - Net: sicslowpan
+00:01.004	ID:5	[INFO: Main      ] - MAC: CSMA
+00:01.004	ID:9	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:01.006	ID:9	[INFO: Main      ] Node ID: 9
+00:01.007	ID:5	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:01.011	ID:5	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:01.012	ID:9	[INFO: Main      ] Link-layer address: 0012.7409.0009.0909
+00:01.013	ID:5	[INFO: Main      ] Node ID: 5
+00:01.018	ID:5	[INFO: Main      ] Link-layer address: 0012.7405.0005.0505
+00:01.023	ID:9	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7409:9:909
+00:01.027	ID:9	[INFO: Sky       ] CC2420 CCA threshold -45
+00:01.030	ID:5	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7405:5:505
+00:01.033	ID:5	[INFO: Sky       ] CC2420 CCA threshold -45
+00:01.181	ID:3	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:01.183	ID:3	[INFO: Main      ] - Routing: RPL Lite
+00:01.186	ID:3	[INFO: Main      ] - Net: sicslowpan
+00:01.188	ID:3	[INFO: Main      ] - MAC: CSMA
+00:01.191	ID:3	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:01.195	ID:3	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:01.197	ID:3	[INFO: Main      ] Node ID: 3
+00:01.198	ID:1	start send 1
+00:01.202	ID:3	[INFO: Main      ] Link-layer address: 0012.7403.0003.0303
+00:01.214	ID:3	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7403:3:303
+00:01.217	ID:3	[INFO: Sky       ] CC2420 CCA threshold -45
+00:01.700	ID:1	Sending control broadcast: 000
+00:02.004	ID:1	now sending hello 1  
+00:02.503	ID:1	start send 2
+00:02.505	ID:1	now sending hello 2  
+00:02.700	ID:1	Sending control broadcast: 001
+00:03.011	ID:1	start send 3
+00:03.013	ID:1	now sending hello 3  
+00:03.519	ID:1	start send 4
+00:03.520	ID:1	now sending hello 4  
+00:03.700	ID:1	Sending control broadcast: 002
+00:04.026	ID:1	start send 5
+00:04.028	ID:1	now sending hello 5  
+00:04.534	ID:1	start send 6
+00:04.536	ID:1	now sending hello 6  
+00:04.700	ID:1	Sending control broadcast: 003
+00:05.042	ID:1	start send 7
+00:05.044	ID:1	now sending hello 7  
+00:05.259	ID:6	DIO:116
+00:05.259	ID:7	DIO:116
+00:05.259	ID:8	DIO:116
+00:05.259	ID:5	DIO:116
+00:05.259	ID:4	DIO:116
+00:05.550	ID:1	start send 8
+00:05.552	ID:1	now sending hello 8  
+00:05.700	ID:1	Sending control broadcast: 004
+00:06.058	ID:1	start send 9
+00:06.059	ID:1	now sending hello 9  
+00:06.566	ID:1	start send 10
+00:06.568	ID:1	now sending hello 10  
+00:06.700	ID:1	Sending control broadcast: 005
+00:07.073	ID:1	start send 11
+00:07.075	ID:1	now sending hello 11  
+00:07.581	ID:1	start send 12
+00:07.583	ID:1	now sending hello 12  
+00:07.609	ID:6	DAO:0
+00:07.611	ID:8	DAO:0
+00:07.612	ID:7	DAO:0
+00:07.613	ID:5	DAO:0
+00:07.614	ID:4	DAO:0
+00:07.700	ID:1	Sending control broadcast: 006
+00:08.089	ID:1	start send 13
+00:08.091	ID:1	now sending hello 13  
+00:08.597	ID:1	start send 14
+00:08.599	ID:1	now sending hello 14  
+00:08.700	ID:1	Sending control broadcast: 007
+00:08.893	ID:8	Received response: 
+00:08.893	ID:7	Received response: 
+00:08.893	ID:6	Received response: 
+00:08.893	ID:4	Received response: 
+00:08.893	ID:5	Received response: 
+00:09.105	ID:1	start send 15
+00:09.107	ID:1	now sending hello 15  
+00:09.612	ID:1	start send 16
+00:09.614	ID:1	now sending hello 16  
+00:09.700	ID:1	Sending control broadcast: 008
+00:10.120	ID:1	start send 17
+00:10.122	ID:1	now sending hello 17  
+00:10.628	ID:1	start send 18
+00:10.630	ID:1	now sending hello 18  
+00:10.700	ID:1	Sending control broadcast: 009
+00:10.869	ID:7	Received response: 
+00:10.869	ID:8	Received response: 
+00:10.870	ID:6	Received response: 
+00:10.870	ID:4	Received response: 
+00:10.870	ID:5	Received response: 
+00:11.136	ID:1	start send 19
+00:11.138	ID:1	now sending hello 19  
+00:11.169	ID:7	DIO:116
+00:11.169	ID:8	DIO:116
+00:11.169	ID:4	DIO:116
+00:11.169	ID:5	DIO:116
+00:11.644	ID:1	start send 20
+00:11.646	ID:1	now sending hello 20  
+00:11.700	ID:1	Sending control broadcast: 010
+00:11.788	ID:6	Received response: 
+00:11.788	ID:7	Received response: 
+00:11.788	ID:8	Received response: 
+00:11.788	ID:4	Received response: 
+00:11.788	ID:5	Received response: 
+00:12.030	ID:7	DAO:0
+00:12.032	ID:5	DAO:0
+00:12.062	ID:6	DIO:116
+00:12.062	ID:8	DIO:116
+00:12.062	ID:7	DIO:116
+00:12.062	ID:4	DIO:116
+00:12.062	ID:5	DIO:116
+00:12.152	ID:1	start send 21
+00:12.154	ID:1	now sending hello 21  
+00:12.659	ID:1	start send 22
+00:12.661	ID:1	now sending hello 22  
+00:12.700	ID:1	Sending control broadcast: 011
+00:13.004	ID:11	!Mt!Ratt~:cQttt!Ratt~c"="=r -90 f fe80::212:7401:1:101 t 007 p !Ratt~c"="=r -83 f fe80::212:7401:1:101 t 008 p EUnknown commandatt~c"="=r -78 f fe80::212:7401:1:101 t 009 p !RAtz;:Qt<@@att~c"="=r -72 f fe80::212:7401:1:101 t 010 p !R!Ratt~:c^tttt!Ratt~:cb*tttt!Ratt~c"="=r -68 f fe80::212:7401:1:101 t 011 p EUnknown commandatt~c"="=r -90 f fe80::212:7401:1:101 t 011 p !R
+00:13.012	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+00:13.012	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+00:13.012	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+00:13.012	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+00:13.012	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+00:13.167	ID:1	start send 23
+00:13.169	ID:1	now sending hello 23  
+00:13.223	ID:6	relaying hello 23  
+00:13.675	ID:1	start send 24
+00:13.677	ID:1	now sending hello 24  
+00:13.700	ID:1	Sending control broadcast: 012
+00:13.747	ID:6	relaying hello 24  
+00:13.867	ID:8	Received response: 
+00:13.867	ID:4	Received response: 
+00:13.867	ID:6	Received response: 
+00:13.867	ID:7	Received response: 
+00:13.867	ID:5	Received response: 
+00:14.183	ID:1	start send 25
+00:14.185	ID:1	now sending hello 25  
+00:14.270	ID:6	relaying hello 25  
+00:14.532	ID:9	DIO:116
+00:14.532	ID:6	DIO:116
+00:14.533	ID:8	DIO:116
+00:14.533	ID:5	DIO:116
+00:14.691	ID:1	start send 26
+00:14.693	ID:1	now sending hello 26  
+00:14.700	ID:1	Sending control broadcast: 013
+00:14.705	ID:3	DIO:116
+00:14.705	ID:6	DIO:116
+00:14.705	ID:7	DIO:116
+00:14.705	ID:4	DIO:116
+00:14.739	ID:6	relaying hello 26  
+00:14.803	ID:11	att~c"="=r -61 f fe80::212:7401:1:101 t 011 p att~cMchello 23  attatt~cMbhello 24  att~c"="=r -63 f fe80::212:7401:1:101 t 012 p att!Ratt~c"="=r -83 f fe80::212:7401:1:101 t 012 p EUnknown commandatt~cMahello 25  attAtz;:t<@@Atz;:t<@@a	tt~cM`hello 26  a
+00:14.810	ID:4	DAO:0
+00:14.877	ID:8	Received response: 
+00:14.878	ID:7	Received response: 
+00:14.878	ID:5	Received response: 
+00:14.878	ID:4	Received response: 
+00:14.878	ID:6	Received response: 
+00:15.198	ID:1	start send 27
+00:15.200	ID:1	now sending hello 27  
+00:15.239	ID:6	relaying hello 27  
+00:15.700	ID:1	Sending control broadcast: 014
+00:15.706	ID:1	start send 28
+00:15.831	ID:8	Received response: 
+00:15.831	ID:7	Received response: 
+00:15.831	ID:5	Received response: 
+00:15.831	ID:6	Received response: 
+00:15.831	ID:4	Received response: 
+00:15.914	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+00:15.914	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+00:15.914	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+00:15.914	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+00:15.914	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+00:16.004	ID:1	now sending hello 28  
+00:16.051	ID:7	relaying hello 28  
+00:16.503	ID:1	start send 29
+00:16.505	ID:1	now sending hello 29  
+00:16.509	ID:8	DAO:0
+00:16.606	ID:7	relaying hello 29  
+00:16.700	ID:1	Sending control broadcast: 015
+00:16.887	ID:9	DAO:0
+00:17.011	ID:1	start send 30
+00:17.013	ID:1	now sending hello 30  
+00:17.055	ID:3	DAO:0
+00:17.519	ID:1	start send 31
+00:17.521	ID:1	now sending hello 31  
+00:17.590	ID:7	relaying hello 31  
+00:17.630	ID:8	DIO:116
+00:17.630	ID:4	DIO:116
+00:17.630	ID:5	DIO:116
+00:17.630	ID:7	DIO:116
+00:17.700	ID:1	Sending control broadcast: 016
+00:17.701	ID:11	ttatt~c"="=r -78 f fe80::212:7401:1:101 t 013 p !Ratt~c"="=r -65 f fe80::212:7401:1:101 t 013 p att|?t:cttttt!Ratt~cM_hello 27  attatt~c"="=r -72 f fe80::212:7401:1:101 t 014 p att~c"="=r -69 f fe80::212:7401:1:101 t 014 p !Ratt|?tc"="=r -92 f fe80::212:7401:1:101 t 014 p !REUnknown commandatt~cL[hello 28  attatt~crLZhello 29  attatt~c"="=r -74 f fe80::212:7401:1:101 t 015 p EUnknown commandatt|?t:ctttttatt~c"="=r -61 f fe80::212:7401:1:101 t 015 p EUnknown command!Ratt|?t				:c[Wt				tt!Ratt|?t:cttt!RAtz;:Qt<@@a	tt~cQKbhello 31  a
+00:17.847	ID:4	Received response: 
+00:17.847	ID:6	Received response: 
+00:17.847	ID:8	Received response: 
+00:17.847	ID:7	Received response: 
+00:17.847	ID:5	Received response: 
+00:18.027	ID:1	start send 32
+00:18.029	ID:1	now sending hello 32  
+00:18.075	ID:7	relaying hello 32  
+00:18.534	ID:1	start send 33
+00:18.536	ID:1	now sending hello 33  
+00:18.614	ID:7	relaying hello 33  
+00:18.634	ID:6	DIO:116
+00:18.635	ID:2	DIO:116
+00:18.635	ID:3	DIO:116
+00:18.636	ID:5	DIO:116
+00:18.700	ID:1	Sending control broadcast: 017
+00:18.879	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+00:18.879	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+00:18.879	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+00:18.880	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+00:18.880	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+00:19.042	ID:1	start send 34
+00:19.044	ID:1	now sending hello 34  
+00:19.098	ID:8	relaying hello 34  
+00:19.405	ID:6	DIO:116
+00:19.406	ID:10	DIO:116
+00:19.407	ID:9	DIO:116
+00:19.407	ID:7	DIO:116
+00:19.550	ID:1	start send 35
+00:19.552	ID:1	now sending hello 35  
+00:19.575	ID:8	relaying hello 35  
+00:19.700	ID:1	Sending control broadcast: 018
+00:20.058	ID:1	start send 36
+00:20.060	ID:1	now sending hello 36  
+00:20.114	ID:8	relaying hello 36  
+00:20.275	ID:5	DIO:116
+00:20.276	ID:2	DIO:116
+00:20.276	ID:4	DIO:116
+00:20.566	ID:1	start send 37
+00:20.568	ID:1	now sending hello 37  
+00:20.620	ID:7	DIO:116
+00:20.620	ID:10	DIO:116
+00:20.621	ID:8	DIO:116
+00:20.648	ID:8	relaying hello 37  
+00:20.700	ID:1	Sending control broadcast: 019
+00:20.825	ID:4	Received response: 
+00:20.825	ID:8	Received response: 
+00:20.825	ID:5	Received response: 
+00:20.827	ID:6	Received response: 
+00:20.832	ID:7	Received response: 
+00:20.991	ID:2	DAO:0
+00:21.073	ID:1	start send 38
+00:21.075	ID:1	now sending hello 38  
+00:21.122	ID:8	relaying hello 38  
+00:21.581	ID:1	start send 39
+00:21.583	ID:1	now sending hello 39  
+00:21.684	ID:8	relaying hello 39  
+00:21.700	ID:1	Sending control broadcast: 020
+00:21.763	ID:10	DAO:0
+00:21.815	ID:5	Received response: 
+00:21.815	ID:7	Received response: 
+00:21.815	ID:4	Received response: 
+00:21.816	ID:6	Received response: 
+00:21.825	ID:8	Received response: 
+00:21.897	ID:11	ttatt~c"="=r -63 f fe80::212:7401:1:101 t 016 p att~cr"="=r -80 f fe80::212:7401:1:101 t 016 p att|?tc"="=r -83 f fe80::212:7401:1:101 t 016 p !R	EUnknown commandEUnknown commandatt~c@Kahello 32  attAtz;:kt<@@att~c3K`hello 33  attatt~c"="=r -65 f fe80::212:7401:1:101 t 017 p att~cf"="=r -86 f fe80::212:7401:1:101 t 017 p EUnknown commandatt|?tc"="=r -78 f fe80::212:7401:1:101 t 017 p !R!Ratt|?tcJ\hello 34  attAtz;:t<@@att|?tcJ[hello 35  attatt~c("="=r -61 f fe80::212:7401:1:101 t 018 p att~c["="=r -92 f fe80::212:7401:1:101 t 018 p att~c"="=r -69 f fe80::212:7401:1:101 t 018 p EUnknown commandEUnknown commandatt|?tcJZhello 36  attatt~c$"="=r -61 f fe80::212:7401:1:101 t 019 p att~c"="=r -74 f fe80::212:7401:1:101 t 019 p a tt|?tcJYhello 37  att|?t				c "="=r -90 f fe80::212:7401:1:101 t 019 p !Ra!tta"tt|>t:cyotttt!Ra$tt	|?tcJXhello 38  a%tt	a&tt~c"="=r -80 f fe80::212:7401:1:101 t 020 p !Ratt~c"="=r -63 f fe80::212:7401:1:101 t 020 p a'tt
+00:21.935	ID:11	|?tcJWhello 39  EUnknown commandatt|?t				c"="=r -83 f fe80::212:7401:1:101 t 020 p EUnknown commanda(tt
+00:21.974	ID:11	a)tt|>t
+00:21.975	ID:11	
+00:21.975	ID:11	
+00:21.975	ID:11	
+00:21.977	ID:11	:c[t
+00:21.977	ID:11	
+00:21.977	ID:11	
+00:21.977	ID:11	
+00:22.089	ID:1	start send 40
+00:22.091	ID:1	now sending hello 40  
+00:22.169	ID:8	relaying hello 40  
+00:22.422	ID:9	DIO:116
+00:22.422	ID:6	DIO:116
+00:22.422	ID:8	DIO:116
+00:22.422	ID:5	DIO:116
+00:22.597	ID:1	start send 41
+00:22.599	ID:1	now sending hello 41  
+00:22.637	ID:8	relaying hello 41  
+00:22.700	ID:1	Sending control broadcast: 021
+00:22.848	ID:11	ttt				!R	a+tt|?tcI`hello 40  a,ttAtz;:8t<@@att~c"="=r -65 f fe80::212:7401:1:101 t 021 p att|?t				c"="=r -78 f fe80::212:7401:1:101 t 021 p !R
+00:22.854	ID:4	Received response: 
+00:22.854	ID:5	Received response: 
+00:22.854	ID:6	Received response: 
+00:22.854	ID:8	Received response: 
+00:22.855	ID:7	Received response: 
+00:23.105	ID:1	start send 42
+00:23.107	ID:1	now sending hello 42  
+00:23.149	ID:3	DIO:116
+00:23.150	ID:6	DIO:116
+00:23.150	ID:7	DIO:116
+00:23.150	ID:4	DIO:116
+00:23.153	ID:8	relaying hello 42  
+00:23.612	ID:1	start send 43
+00:23.614	ID:1	now sending hello 43  
+00:23.676	ID:8	relaying hello 43  
+00:23.700	ID:1	Sending control broadcast: 022
+00:23.838	ID:4	Received response: 
+00:23.906	ID:4	DIO:116
+00:23.907	ID:5	DIO:116
+00:23.907	ID:8	DIO:116
+00:23.907	ID:6	DIO:116
+00:23.907	ID:7	DIO:116
+00:23.963	ID:6	Received response: 
+00:23.963	ID:7	Received response: 
+00:23.963	ID:8	Received response: 
+00:23.963	ID:4	Received response: 
+00:23.963	ID:5	Received response: 
+00:24.120	ID:1	start send 44
+00:24.122	ID:1	now sending hello 44  
+00:24.161	ID:8	relaying hello 44  
+00:24.237	ID:4	DIO:116
+00:24.238	ID:3	DIO:116
+00:24.628	ID:1	start send 45
+00:24.630	ID:1	now sending hello 45  
+00:24.700	ID:1	Sending control broadcast: 023
+00:24.716	ID:8	relaying hello 45  
+00:24.862	ID:5	Received response: 
+00:24.862	ID:6	Received response: 
+00:24.862	ID:4	Received response: 
+00:24.862	ID:8	Received response: 
+00:24.862	ID:7	Received response: 
+00:24.884	ID:2	DIO:116
+00:24.884	ID:3	DIO:116
+00:24.885	ID:5	DIO:116
+00:24.886	ID:6	DIO:116
+00:25.009	ID:11	EUnknown commanda-tt|?tcI_hello 41  a.tta/tt~c"="=r -86 f fe80::212:7401:1:101 t 021 p !RA	tz;:Qt<@@a0tt|?tcI^hello 42  a1ttatt~c"="=r -69 f fe80::212:7401:1:101 t 022 p a2tt~c"="=r -92 f fe80::212:7401:1:101 t 022 p a3tt|?tcI]hello 43  !Ratt|?t				c"="=r -72 f fe80::212:7401:1:101 t 022 p a4ttEUnknown command!R!Ra5tt|?tcI\hello 44  a6ttatt~c"="=r -74 f fe80::212:7401:1:101 t 023 p att|?t				c"="=r -68 f fe80::212:7401:1:101 t 023 p !REUnknown commandAtz;:t<@@a7tt|?tcI[hello 45  a8tta9tt|>t
+00:25.009	ID:11	
+00:25.010	ID:11	
+00:25.010	ID:11	
+00:25.065	ID:7	Received response: 
+00:25.065	ID:8	Received response: 
+00:25.065	ID:4	Received response: 
+00:25.065	ID:5	Received response: 
+00:25.065	ID:6	Received response: 
+00:25.108	ID:8	DIO:116
+00:25.109	ID:9	DIO:116
+00:25.136	ID:1	start send 46
+00:25.138	ID:1	now sending hello 46  
+00:25.192	ID:8	relaying hello 46  
+00:25.644	ID:1	start send 47
+00:25.646	ID:1	now sending hello 47  
+00:25.676	ID:8	relaying hello 47  
+00:25.700	ID:1	Sending control broadcast: 024
+00:25.836	ID:10	DIO:116
+00:25.836	ID:9	DIO:116
+00:25.838	ID:6	DIO:116
+00:25.847	ID:7	DIO:116
+00:25.925	ID:4	Received response: 
+00:25.925	ID:5	Received response: 
+00:25.925	ID:6	Received response: 
+00:25.925	ID:8	Received response: 
+00:25.925	ID:7	Received response: 
+00:25.935	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:25.935	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:25.935	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:25.935	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:25.935	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:25.968	ID:9	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+00:25.968	ID:10	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+00:25.970	ID:7	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+00:25.970	ID:6	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+00:26.116	ID:11	c"="=r -90 f fe80::212:7401:1:101 t 023 p !Ra:tt|?tcIZhello 46  a;ttatt~c"="=r -80 f fe80::212:7401:1:101 t 024 p att|?t				c"="=r -64 f fe80::212:7401:1:101 t 024 p A!tz;:t<@@!R!RA"t~;..fd00:0:0:0:212:740a:a:a0a (null)a<tt|?tcIYhello 47  a=tta>tt|>t
+00:26.116	ID:11	
+00:26.116	ID:11	
+00:26.116	ID:11	
+00:26.152	ID:1	start send 48
+00:26.154	ID:1	now sending hello 48  
+00:26.200	ID:10	relaying hello 48  
+00:26.200	ID:8	relaying hello 48  
+00:26.244	ID:10	DIO:116
+00:26.244	ID:7	DIO:116
+00:26.260	ID:8	DIO:116
+00:26.530	ID:11	c"="=r -83 f fe80::212:7401:1:101 t 024 p EUnknown commanda?tt|?tcIXhello 48  a@ttaAtt|>t
+00:26.530	ID:11	
+00:26.530	ID:11	
+00:26.530	ID:11	
+00:26.659	ID:1	start send 49
+00:26.661	ID:1	now sending hello 49  
+00:26.700	ID:1	Sending control broadcast: 025
+00:26.715	ID:10	relaying hello 49  
+00:26.716	ID:8	relaying hello 49  
+00:26.862	ID:4	Received response: 
+00:26.862	ID:5	Received response: 
+00:26.862	ID:6	Received response: 
+00:26.862	ID:8	Received response: 
+00:26.871	ID:7	Received response: 
+00:27.019	ID:11	cGRhello 48  aBttatt~c"="=r -86 f fe80::212:7401:1:101 t 025 p att|?t				c"="=r -62 f fe80::212:7401:1:101 t 025 p !REUnknown commandaCtt|?tcIWhello 49  aDttaEtt|>t
+00:27.019	ID:11	
+00:27.019	ID:11	
+00:27.019	ID:11	
+00:27.167	ID:1	start send 50
+00:27.169	ID:1	now sending hello 50  
+00:27.239	ID:10	relaying hello 50  
+00:27.239	ID:8	relaying hello 50  
+00:27.584	ID:11	cGQhello 49  aFttaGtt|?tcH`hello 50  aHttaItt|>t
+00:27.584	ID:11	
+00:27.584	ID:11	
+00:27.584	ID:11	
+00:27.675	ID:1	start send 51
+00:27.677	ID:1	now sending hello 51  
+00:27.700	ID:1	Sending control broadcast: 026
+00:27.762	ID:10	relaying hello 51  
+00:27.762	ID:8	relaying hello 51  
+00:27.875	ID:11	cFZhello 50  aJttatt~c"="=r -92 f fe80::212:7401:1:101 t 026 p EUnknown commanda tt|?t				c
+00:27.973	ID:11	"="=r -61 f fe80::212:7401:1:101 t 026 p aKtt|?tcH_hello 51  !R
+00:27.982	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:27.982	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:27.982	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:27.983	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:27.983	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:28.031	ID:9	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+00:28.031	ID:10	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+00:28.033	ID:6	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+00:28.033	ID:7	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+00:28.139	ID:11	aLttA3t~;..fd00:0:0:0:212:740a:a:a0a (null)aMtt|>t
+00:28.140	ID:11	
+00:28.140	ID:11	
+00:28.140	ID:11	
+00:28.183	ID:1	start send 52
+00:28.185	ID:1	now sending hello 52  
+00:28.254	ID:10	relaying hello 52  
+00:28.255	ID:8	relaying hello 52  
+00:28.349	ID:2	DIO:116
+00:28.349	ID:5	DIO:116
+00:28.350	ID:4	DIO:116
+00:28.459	ID:11	cFYhello 51  aNttaOtt|?tcH^hello 52  aPttaQtt|>t
+00:28.459	ID:11	
+00:28.459	ID:11	
+00:28.459	ID:11	
+00:28.691	ID:1	start send 53
+00:28.693	ID:1	now sending hello 53  
+00:28.708	ID:1	Sending control broadcast: 027
+00:28.747	ID:10	relaying hello 53  
+00:28.747	ID:8	relaying hello 53  
+00:29.014	ID:11	cFXhello 52  aRtta!tt|?t				c	"="=r -61 f fe80::212:7401:1:101 t 027 p EUnknown commandaStt|?tcH]hello 53  aTttaUtt|>t
+00:29.015	ID:11	
+00:29.015	ID:11	
+00:29.015	ID:11	
+00:29.198	ID:1	start send 54
+00:29.200	ID:1	now sending hello 54  
+00:29.278	ID:10	relaying hello 54  
+00:29.278	ID:8	relaying hello 54  
+00:29.522	ID:11	cFWhello 53  aVttaWtt|?tcH\hello 54  aXttaYtt |>t
+00:29.522	ID:11	
+00:29.522	ID:11	
+00:29.522	ID:11	
+00:29.700	ID:1	Sending control broadcast: 028
+00:29.706	ID:1	start send 55
+00:29.846	ID:6	Received response: 
+00:29.846	ID:5	Received response: 
+00:29.846	ID:4	Received response: 
+00:29.846	ID:7	Received response: 
+00:29.846	ID:8	Received response: 
+00:30.004	ID:1	now sending hello 55  
+00:30.036	ID:10	relaying hello 55  
+00:30.036	ID:8	relaying hello 55  
+00:30.241	ID:11	cFVhello 54  aZtt a"tt|?t				c"="=r -63 f fe80::212:7401:1:101 t 028 p !Ra[tt!|?tcH[hello 55  a\tt!a]tt"|>t
+00:30.241	ID:11	
+00:30.241	ID:11	
+00:30.241	ID:11	
+00:30.503	ID:1	start send 56
+00:30.505	ID:1	now sending hello 56  
+00:30.543	ID:10	relaying hello 56  
+00:30.543	ID:8	relaying hello 56  
+00:30.700	ID:1	Sending control broadcast: 029
+00:30.889	ID:11	cFUhello 55  a^tt"a_tt#|?tcHZhello 56  a`tt#aatt$|>t
+00:30.890	ID:11	
+00:30.890	ID:11	
+00:30.890	ID:11	
+00:31.011	ID:1	start send 57
+00:31.013	ID:1	now sending hello 57  
+00:31.083	ID:10	relaying hello 57  
+00:31.083	ID:8	relaying hello 57  
+00:31.156	ID:9	DIO:116
+00:31.519	ID:1	start send 58
+00:31.521	ID:1	now sending hello 58  
+00:31.575	ID:10	relaying hello 58  
+00:31.700	ID:1	Sending control broadcast: 030
+00:31.718	ID:11	cFThello 56  abtt$a#tt|?t				c"="=r -65 f fe80::212:7401:1:101 t 029 p EUnknown commandactt%|?tcHYhello 57  adtt%aett&|>t
+00:31.718	ID:11	
+00:31.718	ID:11	
+00:31.718	ID:11	
+00:32.027	ID:1	start send 59
+00:32.029	ID:1	now sending hello 59  
+00:32.030	ID:11	cFShello 57  aftt&a$tt|?t				c"="=r -69 f fe80::212:7401:1:101 t 030 p EUnknown commandagtt'|>t
+00:32.030	ID:11	
+00:32.030	ID:11	
+00:32.030	ID:11	
+00:32.052	ID:10	relaying hello 59  
+00:32.236	ID:3	DIO:116
+00:32.237	ID:4	DIO:116
+00:32.306	ID:11	cFRhello 58  ahtt'a%tt|>t
+00:32.306	ID:11	
+00:32.307	ID:11	
+00:32.307	ID:11	
+00:32.534	ID:1	start send 60
+00:32.536	ID:1	now sending hello 60  
+00:32.614	ID:10	relaying hello 60  
+00:32.614	ID:8	relaying hello 60  
+00:32.700	ID:1	Sending control broadcast: 031
+00:32.814	ID:11	cFQhello 59  a&tta'tt|?tcG`hello 60  a(tta)tt|>t
+00:32.814	ID:11	
+00:32.814	ID:11	
+00:32.814	ID:11	
+00:33.042	ID:1	start send 61
+00:33.044	ID:1	now sending hello 61  
+00:33.075	ID:10	relaying hello 61  
+00:33.075	ID:8	relaying hello 61  
+00:33.308	ID:11	cEZhello 60  a*tta+tt|?tcG_hello 61  a,tta-tt	|>t
+00:33.308	ID:11	
+00:33.309	ID:11	
+00:33.309	ID:11	
+00:33.550	ID:1	start send 62
+00:33.552	ID:1	now sending hello 62  
+00:33.622	ID:10	relaying hello 62  
+00:33.622	ID:8	relaying hello 62  
+00:33.700	ID:1	Sending control broadcast: 032
+00:33.704	ID:11	cEYhello 61  a.tt	a/tt
+00:33.737	ID:11	|?tcG^hello 62  a0tt
+00:33.869	ID:11	a1tt|>t
+00:33.869	ID:11	
+00:33.869	ID:11	
+00:33.869	ID:11	
+00:33.979	ID:5	Received response: 
+00:33.979	ID:6	Received response: 
+00:33.979	ID:4	Received response: 
+00:33.979	ID:7	Received response: 
+00:33.979	ID:8	Received response: 
+00:34.058	ID:1	start send 63
+00:34.060	ID:1	now sending hello 63  
+00:34.098	ID:10	relaying hello 63  
+00:34.098	ID:8	relaying hello 63  
+00:34.345	ID:11	cEXhello 62  a2tta3tt|?t				c"="=r -64 f fe80::212:7401:1:101 t 032 p !Ra4tt|?tcG]hello 63  a5tta6tt|>t
+00:34.345	ID:11	
+00:34.345	ID:11	
+00:34.346	ID:11	
+00:34.566	ID:1	start send 64
+00:34.568	ID:1	now sending hello 64  
+00:34.622	ID:10	relaying hello 64  
+00:34.622	ID:8	relaying hello 64  
+00:34.700	ID:1	Sending control broadcast: 033
+00:34.843	ID:11	cEWhello 63  a7tta8tt|?tcG\hello 64  a9tta:tt|>t
+00:34.844	ID:11	
+00:34.844	ID:11	
+00:34.844	ID:11	
+00:35.073	ID:1	start send 65
+00:35.075	ID:1	now sending hello 65  
+00:35.114	ID:10	relaying hello 65  
+00:35.114	ID:8	relaying hello 65  
+00:35.392	ID:11	cEVhello 64  a;tta<tt|?t				c"="=r -62 f fe80::212:7401:1:101 t 033 p EUnknown commanda=tt|?tcG[hello 65  a>tta?tt|>t
+00:35.392	ID:11	
+00:35.392	ID:11	
+00:35.392	ID:11	
+00:35.508	ID:9	DIO:116
+00:35.508	ID:5	DIO:116
+00:35.508	ID:8	DIO:116
+00:35.508	ID:6	DIO:116
+00:35.581	ID:1	start send 66
+00:35.583	ID:1	now sending hello 66  
+00:35.645	ID:10	relaying hello 66  
+00:35.645	ID:8	relaying hello 66  
+00:35.700	ID:1	Sending control broadcast: 034
+00:35.763	ID:4	DIO:116
+00:35.763	ID:5	DIO:116
+00:35.763	ID:7	DIO:116
+00:36.065	ID:11	cEUhello 65  a@ttAAtz;:Nt<@@aBtt|?tcGZhello 66  Aitz;:Qt<@@aCttaDtt|?t				c"="=r -61 f fe80::212:7401:1:101 t 034 p aEtt|>t
+00:36.065	ID:11	
+00:36.065	ID:11	
+00:36.065	ID:11	
+00:36.083	ID:4	Received response: 
+00:36.083	ID:6	Received response: 
+00:36.083	ID:5	Received response: 
+00:36.083	ID:8	Received response: 
+00:36.089	ID:1	start send 67
+00:36.091	ID:1	now sending hello 67  
+00:36.093	ID:7	Received response: 
+00:36.169	ID:10	relaying hello 67  
+00:36.169	ID:8	relaying hello 67  
+00:36.597	ID:1	start send 68
+00:36.599	ID:1	now sending hello 68  
+00:36.611	ID:11	cEThello 66  !RaFttaGtt|?tcGYhello 67  aHttaItt|>t
+00:36.611	ID:11	
+00:36.611	ID:11	
+00:36.611	ID:11	
+00:36.653	ID:10	relaying hello 68  
+00:36.653	ID:8	relaying hello 68  
+00:36.700	ID:1	Sending control broadcast: 035
+00:36.924	ID:6	Received response: 
+00:36.925	ID:4	Received response: 
+00:36.925	ID:5	Received response: 
+00:36.925	ID:7	Received response: 
+00:36.930	ID:8	DAO:0
+00:36.942	ID:8	Received response: 
+00:36.978	ID:11	cEShello 67  aJttaKtt|?tcGXhello 68  aLttaMtt~c"="=r -90 f fe80::212:7401:1:101 t 035 p !RaNtt|>t
+00:36.978	ID:11	
+00:36.978	ID:11	
+00:36.978	ID:11	
+00:37.105	ID:1	start send 69
+00:37.107	ID:1	now sending hello 69  
+00:37.169	ID:10	relaying hello 69  
+00:37.169	ID:8	relaying hello 69  
+00:37.326	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:37.326	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:37.326	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:37.326	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:37.336	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:740a:a:a0a
+00:37.386	ID:10	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+00:37.386	ID:9	Received response: fd00:0:0:0:212:740a:a:a0a (null)
+00:37.387	ID:6	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+00:37.387	ID:7	Received response: fd00:0:0:0:212:740a:a:a0a (null):0:0:212:740a:a:a0a
+00:37.483	ID:11	cERhello 68  aOttaPtt|?t				c"="=r -61 f fe80::212:7401:1:101 t 035 p !RaQtt|?t:cttttAzt~;..fd00:0:0:0:212:740a:a:a0a (null)aRtttt				t
+00:37.483	ID:11	
+00:37.483	ID:11	
+00:37.483	ID:11	
+00:37.612	ID:1	start send 70
+00:37.614	ID:1	now sending hello 70  
+00:37.623	ID:11	aStt|?tcGWhello 69  !RaTttaUtt|>t
+00:37.624	ID:11	
+00:37.624	ID:11	
+00:37.624	ID:11	
+00:37.700	ID:10	relaying hello 70  
+00:37.700	ID:8	relaying hello 70  
+00:37.700	ID:1	Sending control broadcast: 036
+00:37.994	ID:11	cEQhello 69  aVttaXtt|?tcF`hello 70  aYttaZtt|>t
+00:37.994	ID:11	
+00:37.994	ID:11	
+00:37.994	ID:11	
+00:38.120	ID:1	start send 71
+00:38.122	ID:1	now sending hello 71  
+00:38.176	ID:10	relaying hello 71  
+00:38.176	ID:8	relaying hello 71  
+00:38.416	ID:11	cDZhello 70  a[tta\tt~c"="=r -82 f fe80::212:7401:1:101 t 036 p a]tt|?t				c"="=r -63 f fe80::212:7401:1:101 t 036 p !Ra^tt|?tcF_hello 71  a_tta`tt|>t
+00:38.416	ID:11	
+00:38.416	ID:11	
+00:38.416	ID:11	
+00:38.628	ID:1	start send 72
+00:38.630	ID:1	now sending hello 72  
+00:38.700	ID:10	relaying hello 72  
+00:38.700	ID:8	relaying hello 72  
+00:38.700	ID:1	Sending control broadcast: 037
+00:38.819	ID:11	cDYhello 71  aattabtt~c"="=r -78 f fe80::212:7401:1:101 t 037 p actt|?t				c"="=r -65 f fe80::212:7401:1:101 t 037 p A
+00:38.821	ID:3	DIO:116
+00:38.821	ID:4	DIO:116
+00:38.822	ID:6	DIO:116
+00:38.822	ID:7	DIO:116
+00:38.838	ID:5	Received response: 
+00:38.855	ID:4	Received response: 
+00:38.897	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:38.897	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:38.897	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:38.897	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:38.914	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:38.961	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:38.961	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:38.962	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+00:38.962	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+00:39.136	ID:1	start send 73
+00:39.138	ID:1	now sending hello 73  
+00:39.144	ID:11	tz;:Qt<@@!R!RAt~;..Ifd00:0:0:0:212:7409:9:909 (null)adtt|?tcF^hello 72  aettaftt |>t
+00:39.144	ID:11	
+00:39.144	ID:11	
+00:39.144	ID:11	
+00:39.176	ID:8	relaying hello 73  
+00:39.176	ID:9	relaying hello 73  
+00:39.644	ID:1	start send 74
+00:39.646	ID:1	now sending hello 74  
+00:39.700	ID:1	Sending control broadcast: 038
+00:39.716	ID:8	relaying hello 74  
+00:39.716	ID:9	relaying hello 74  
+00:39.838	ID:4	Received response: 
+00:39.838	ID:5	Received response: 
+00:39.838	ID:6	Received response: 
+00:39.838	ID:8	Received response: 
+00:39.839	ID:7	Received response: 
+00:40.043	ID:11	cDXhello 72  agtt ahtt!|?t				cEZhello 73  aitt!ajtt"|?tcF]hello 73  aktt"altt~c"="=r -72 f fe80::212:7401:1:101 t 038 p !R	amtt#|?t				cEYhello 74  antt#aott$|?tcF\hello 74  aptt$aqtt|>t
+00:40.043	ID:11	
+00:40.043	ID:11	
+00:40.043	ID:11	
+00:40.152	ID:1	start send 75
+00:40.153	ID:11	c	"="=r -92 f fe80::212:7401:1:101 t 038 p !R
+00:40.154	ID:1	now sending hello 75  
+00:40.162	ID:6	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:40.162	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:40.162	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:40.162	ID:5	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:40.163	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:40.182	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:40.182	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:40.184	ID:6	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+00:40.184	ID:7	Received response: fd00:0:0:0:212:7409:9:909 (null):0:0:212:7409:9:909
+00:40.208	ID:8	relaying hello 75  
+00:40.208	ID:9	relaying hello 75  
+00:40.659	ID:1	start send 76
+00:40.661	ID:1	now sending hello 76  
+00:40.700	ID:1	Sending control broadcast: 039
+00:40.723	ID:8	relaying hello 76  
+00:40.723	ID:9	relaying hello 76  
+00:40.807	ID:5	Received response: 
+00:40.807	ID:4	Received response: 
+00:40.807	ID:8	Received response: 
+00:40.807	ID:6	Received response: 
+00:40.807	ID:7	Received response: 
+00:40.829	ID:2	DIO:116
+00:40.829	ID:3	DIO:116
+00:40.830	ID:5	DIO:116
+00:40.830	ID:6	DIO:116
+00:40.857	ID:4	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:40.858	ID:7	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:40.874	ID:8	Received response: fd00:0:0:0:212:7408:8:808+fd00:0:0:0:212:7409:9:909
+00:40.922	ID:10	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:40.922	ID:9	Received response: fd00:0:0:0:212:7409:9:909 (null)
+00:41.162	ID:2	DIO:116
+00:41.162	ID:4	DIO:116
+00:41.167	ID:1	start send 77
+00:41.169	ID:1	now sending hello 77  
+00:41.208	ID:8	relaying hello 77  
+00:41.208	ID:9	relaying hello 77  
+00:41.675	ID:1	start send 78
+00:41.677	ID:1	now sending hello 78  
+00:41.705	ID:1	Sending control broadcast: 040
+00:41.707	ID:8	relaying hello 78  
+00:41.707	ID:9	relaying hello 78  
+00:42.183	ID:1	start send 79
+00:42.185	ID:1	now sending hello 79  
+00:42.223	ID:8	relaying hello 79  
+00:42.223	ID:9	relaying hello 79  
+00:42.691	ID:1	start send 80
+00:42.693	ID:1	now sending hello 80  
+00:42.708	ID:1	Sending control broadcast: 041
+00:42.731	ID:8	relaying hello 80  
+00:42.731	ID:9	relaying hello 80  
+00:42.918	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+00:42.918	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+00:42.918	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+00:42.918	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+00:42.922	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+00:43.198	ID:1	start send 81
+00:43.200	ID:1	now sending hello 81  
+00:43.239	ID:8	relaying hello 81  
+00:43.239	ID:9	relaying hello 81  
+00:43.483	ID:3	DIO:116
+00:43.483	ID:4	DIO:116
+00:43.679	ID:10	DIO:116
+00:43.679	ID:9	DIO:116
+00:43.679	ID:7	DIO:116
+00:43.679	ID:6	DIO:116
+00:43.700	ID:1	Sending control broadcast: 042
+00:43.706	ID:1	start send 82
+00:43.804	ID:5	Received response: 
+00:43.804	ID:4	Received response: 
+00:43.804	ID:8	Received response: 
+00:43.804	ID:6	Received response: 
+00:43.808	ID:7	Received response: 
+00:43.830	ID:10	DIO:116
+00:43.830	ID:7	DIO:116
+00:43.830	ID:8	DIO:116
+00:43.926	ID:6	Received response: fd00:0:0:0:212:7408:8:808
+00:43.926	ID:4	Received response: fd00:0:0:0:212:7408:8:808
+00:43.926	ID:5	Received response: fd00:0:0:0:212:7408:8:808
+00:43.926	ID:7	Received response: fd00:0:0:0:212:7408:8:808
+00:43.926	ID:8	Received response: fd00:0:0:0:212:7408:8:808
+00:44.004	ID:1	now sending hello 82  
+00:44.036	ID:8	relaying hello 82  
+00:44.503	ID:1	start send 83
+00:44.505	ID:1	now sending hello 83  
+00:44.544	ID:8	relaying hello 83  
+00:44.700	ID:1	Sending control broadcast: 043
+00:44.834	ID:4	Received response: 
+00:44.834	ID:5	Received response: 
+00:44.834	ID:6	Received response: 
+00:44.834	ID:8	Received response: 
+00:44.834	ID:7	Received response: 
+00:45.011	ID:1	start send 84
+00:45.013	ID:1	now sending hello 84  
+00:45.059	ID:8	relaying hello 84  
+00:45.519	ID:1	start send 85
+00:45.521	ID:1	now sending hello 85  
+00:45.598	ID:8	relaying hello 85  
+00:45.700	ID:1	Sending control broadcast: 044
+00:45.799	ID:4	Received response: 
+00:45.799	ID:6	Received response: 
+00:45.799	ID:8	Received response: 
+00:45.799	ID:7	Received response: 
+00:45.803	ID:5	Received response: 
+00:45.899	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+00:45.899	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+00:45.899	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+00:45.899	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+00:45.899	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+00:45.932	ID:6	Received response: 
+00:45.932	ID:7	Received response: 
+00:45.932	ID:8	Received response: 
+00:45.932	ID:4	Received response: 
+00:45.932	ID:5	Received response: 
+00:46.027	ID:1	start send 86
+00:46.029	ID:1	now sending hello 86  
+00:46.098	ID:7	relaying hello 86  
+00:46.534	ID:1	start send 87
+00:46.536	ID:1	now sending hello 87  
+00:46.606	ID:7	relaying hello 87  
+00:46.700	ID:1	Sending control broadcast: 045
+00:46.738	ID:11	At~;..Ifd00:0:0:0:212:7409:9:909 (null)artt%|?tcF[hello 75  astt%attt&|?t				cEXhello 75  autt&avtt~c"="=r -68 f fe80::212:7401:1:101 t 039 p ajtt~c"="=r -90 f fe80::212:7401:1:101 t 039 p !RAtz;:t<@@!Rawtt'|?t				cEWhello 76  axtt'aytt(|?tcFZhello 76  aztt(a{tt)|?t				c	EVhello 77  a|tt)a}tt*|?tcFYhello 77  a~tt*att~c"="=r -64 f fe80::212:7401:1:101 t 040 p EUnknown commandaktt~c"="=r -83 f fe80::212:7401:1:101 t 040 p att+|?tcFXhello 78  att+EUnknown commandatt,|?t				cEUhello 78  att,att-|?t				cEThello 79  att-att.|?tcFWhello 79  att.att~c"="=r -62 f fe80::212:7401:1:101 t 041 p altt~c"="=r -78 f fe80::212:7401:1:101 t 041 p EUnknown commandatt/|?t				cD]hello 80  !Ratt/att0|?tcE`hello 80  att0att1|?tcE_hello 81  att1att2|?t				cD\hello 81  att2Atz;:t<@@amtt~c"="=r -72 f fe80::212:7401:1:101 t 042 p att~c"="=r -61 f fe80::212:7401:1:101 t 042 p !R!Ratt3|?tcE^hello 82  att3att4|?tcE]hello 83  att4att~cQ"="=r -90 f fe80::212:7401:1:101 t 043 p antt~c"="=r -68 f fe80::212:7401:1:101 t 043 p att~c"="=r -61 f fe80::212:7401:1:101 t 043 p !Ratt5|?tcE\hello 84  att5att6|?tc	E[hello 85  att6aott~c"="=r -64 f fe80::212:7401:1:101 t 044 p att~cH"="=r -83 f fe80::212:7401:1:101 t 044 p !Ratt~c"="=r -63 f fe80::212:7401:1:101 t 044 p !R!Ratt7~cF]hello 86  att7att8~cF\hello 87  att8aptt~c
+00:47.042	ID:1	start send 88
+00:47.044	ID:1	now sending hello 88  
+00:47.129	ID:7	relaying hello 88  
+00:47.550	ID:1	start send 89
+00:47.552	ID:1	now sending hello 89  
+00:47.614	ID:7	relaying hello 89  
+00:47.700	ID:1	Sending control broadcast: 046
+00:47.819	ID:4	Received response: 
+00:47.820	ID:5	Received response: 
+00:47.820	ID:6	Received response: 
+00:47.820	ID:8	Received response: 
+00:47.832	ID:7	Received response: 
+00:47.924	ID:6	Received response: 
+00:47.924	ID:8	Received response: 
+00:47.925	ID:7	Received response: 
+00:47.925	ID:4	Received response: 
+00:47.925	ID:5	Received response: 
+00:48.058	ID:1	start send 90
+00:48.060	ID:1	now sending hello 90  
+00:48.098	ID:7	relaying hello 90  
+00:48.566	ID:1	start send 91
+00:48.568	ID:1	now sending hello 91  
+00:48.614	ID:7	relaying hello 91  
+00:48.700	ID:1	Sending control broadcast: 047
+00:48.869	ID:8	Received response: 
+00:48.870	ID:7	Received response: 
+00:48.870	ID:4	Received response: 
+00:48.870	ID:5	Received response: 
+00:48.870	ID:6	Received response: 
+00:48.934	ID:6	Received response: fd00:0:0:0:212:7407:7:707
+00:48.934	ID:7	Received response: fd00:0:0:0:212:7407:7:707
+00:48.934	ID:8	Received response: fd00:0:0:0:212:7407:7:707
+00:48.934	ID:4	Received response: fd00:0:0:0:212:7407:7:707
+00:48.934	ID:5	Received response: fd00:0:0:0:212:7407:7:707
+00:49.006	ID:9	DIO:116
+00:49.007	ID:8	DIO:116
+00:49.073	ID:1	start send 92
+00:49.075	ID:1	now sending hello 92  
+00:49.106	ID:7	relaying hello 92  
+00:49.581	ID:1	start send 93
+00:49.583	ID:1	now sending hello 93  
+00:49.645	ID:7	relaying hello 93  
+00:49.700	ID:1	Sending control broadcast: 048
+00:49.914	ID:4	Received response: 
+00:49.914	ID:7	Received response: 
+00:49.914	ID:8	Received response: 
+00:49.914	ID:5	Received response: 
+00:49.914	ID:6	Received response: 
+00:49.965	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+00:49.965	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+00:49.965	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+00:49.965	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+00:49.965	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+00:49.994	ID:6	Received response: 
+00:49.994	ID:7	Received response: 
+00:49.994	ID:8	Received response: 
+00:49.994	ID:4	Received response: 
+00:49.994	ID:5	Received response: 
+00:50.089	ID:1	start send 94
+00:50.091	ID:1	now sending hello 94  
+00:50.145	ID:6	relaying hello 94  
+00:50.597	ID:1	start send 95
+00:50.599	ID:1	now sending hello 95  
+00:50.645	ID:6	relaying hello 95  
+00:50.700	ID:1	Sending control broadcast: 049
+00:50.776	ID:8	Received response: 
+00:50.776	ID:7	Received response: 
+00:50.776	ID:4	Received response: 
+00:50.777	ID:6	Received response: 
+00:50.779	ID:5	Received response: 
+00:50.895	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+00:50.895	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+00:50.895	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+00:50.895	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+00:50.895	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+00:51.105	ID:1	start send 96
+00:51.107	ID:1	now sending hello 96  
+00:51.176	ID:6	relaying hello 96  
+00:51.612	ID:1	start send 97
+00:51.614	ID:1	now sending hello 97  
+00:51.668	ID:6	relaying hello 97  
+00:51.700	ID:1	Sending control broadcast: 050
+00:51.973	ID:8	Received response: fd00:0:0:0:212:7406:6:606
+00:51.973	ID:7	Received response: fd00:0:0:0:212:7406:6:606
+00:51.973	ID:5	Received response: fd00:0:0:0:212:7406:6:606
+00:51.973	ID:4	Received response: fd00:0:0:0:212:7406:6:606
+00:51.973	ID:6	Received response: fd00:0:0:0:212:7406:6:606
+00:52.120	ID:1	start send 98
+00:52.122	ID:1	now sending hello 98  
+00:52.161	ID:6	relaying hello 98  
+00:52.628	ID:1	start send 99
+00:52.630	ID:1	now sending hello 99  
+00:52.661	ID:6	relaying hello 99  
+00:52.700	ID:1	Sending control broadcast: 051
+00:53.018	ID:7	Received response: 
+00:53.018	ID:8	Received response: 
+00:53.018	ID:4	Received response: 
+00:53.018	ID:6	Received response: 
+00:53.136	ID:1	start send 100
+00:53.138	ID:1	now sending hello 100  
+00:53.231	ID:6	relaying hello 100  
+00:53.644	ID:1	start send 101
+00:53.646	ID:1	now sending hello 101  
+00:53.684	ID:6	relaying hello 101  
+00:53.700	ID:1	Sending control broadcast: 052
+00:54.152	ID:1	start send 102
+00:54.154	ID:1	now sending hello 102  
+00:54.192	ID:6	relaying hello 102  
+00:54.659	ID:1	start send 103
+00:54.662	ID:1	now sending hello 103  
+00:54.692	ID:6	relaying hello 103  
+00:54.700	ID:1	Sending control broadcast: 053
+00:54.711	ID:8	DIO:116
+00:54.711	ID:7	DIO:116
+00:54.711	ID:4	DIO:116
+00:54.711	ID:6	DIO:116
+00:54.711	ID:5	DIO:116
+00:55.012	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+00:55.012	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+00:55.012	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+00:55.012	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+00:55.012	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+00:55.065	ID:8	Received response: 
+00:55.065	ID:6	Received response: 
+00:55.065	ID:7	Received response: 
+00:55.065	ID:4	Received response: 
+00:55.065	ID:5	Received response: 
+00:55.167	ID:1	start send 104
+00:55.169	ID:1	now sending hello 104  
+00:55.223	ID:5	relaying hello 104  
+00:55.675	ID:1	start send 105
+00:55.677	ID:1	now sending hello 105  
+00:55.707	ID:1	Sending control broadcast: 054
+00:55.731	ID:5	relaying hello 105  
+00:55.963	ID:7	Received response: 
+00:55.963	ID:8	Received response: 
+00:55.963	ID:4	Received response: 
+00:55.963	ID:5	Received response: 
+00:55.973	ID:6	Received response: 
+00:56.036	ID:8	Received response: fd00:0:0:0:212:7405:5:505
+00:56.036	ID:7	Received response: fd00:0:0:0:212:7405:5:505
+00:56.036	ID:4	Received response: fd00:0:0:0:212:7405:5:505
+00:56.036	ID:5	Received response: fd00:0:0:0:212:7405:5:505
+00:56.046	ID:6	Received response: fd00:0:0:0:212:7405:5:505
+00:56.065	ID:6	Received response: 
+00:56.065	ID:7	Received response: 
+00:56.065	ID:8	Received response: 
+00:56.065	ID:5	Received response: 
+00:56.065	ID:4	Received response: 
+00:56.183	ID:1	start send 106
+00:56.185	ID:1	now sending hello 106  
+00:56.270	ID:5	relaying hello 106  
+00:56.691	ID:1	start send 107
+00:56.693	ID:1	now sending hello 107  
+00:56.701	ID:1	Sending control broadcast: 055
+00:56.747	ID:5	relaying hello 107  
+00:57.098	ID:7	Received response: 
+00:57.098	ID:8	Received response: 
+00:57.098	ID:5	Received response: 
+00:57.098	ID:4	Received response: 
+00:57.106	ID:6	Received response: 
+00:57.199	ID:1	start send 108
+00:57.201	ID:1	now sending hello 108  
+00:57.254	ID:5	relaying hello 108  
+00:57.700	ID:1	Sending control broadcast: 056
+00:57.706	ID:1	start send 109
+00:58.004	ID:1	now sending hello 109  
+00:58.067	ID:5	relaying hello 109  
+00:58.503	ID:1	start send 110
+00:58.505	ID:1	now sending hello 110  
+00:58.583	ID:5	relaying hello 110  
+00:58.700	ID:1	Sending control broadcast: 057
+00:58.932	ID:7	Received response: 
+00:58.932	ID:8	Received response: 
+00:58.932	ID:5	Received response: 
+00:58.933	ID:6	Received response: 
+00:58.935	ID:4	Received response: 
+00:59.011	ID:1	start send 111
+00:59.013	ID:1	now sending hello 111  
+00:59.098	ID:5	DAO:0
+00:59.110	ID:5	relaying hello 111  
+00:59.519	ID:1	start send 112
+00:59.521	ID:1	now sending hello 112  
+00:59.700	ID:1	Sending control broadcast: 058
+01:00.027	ID:1	start send 113
+01:00.029	ID:1	now sending hello 113  
+01:00.043	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+01:00.043	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+01:00.043	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+01:00.043	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+01:00.043	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+01:00.065	ID:6	Received response: 
+01:00.065	ID:7	Received response: 
+01:00.065	ID:8	Received response: 
+01:00.065	ID:5	Received response: 
+01:00.065	ID:4	Received response: 
+01:00.122	ID:4	relaying hello 113  
+01:00.329	ID:6	DIO:116
+01:00.329	ID:2	DIO:116
+01:00.329	ID:3	DIO:116
+01:00.330	ID:5	DIO:116
+01:00.534	ID:1	start send 114
+01:00.537	ID:1	now sending hello 114  
+01:00.583	ID:4	relaying hello 114  
+01:00.700	ID:1	Sending control broadcast: 059
+01:01.020	ID:8	Received response: fd00:0:0:0:212:7404:4:404
+01:01.020	ID:7	Received response: fd00:0:0:0:212:7404:4:404
+01:01.020	ID:6	Received response: fd00:0:0:0:212:7404:4:404
+01:01.020	ID:4	Received response: fd00:0:0:0:212:7404:4:404
+01:01.020	ID:5	Received response: fd00:0:0:0:212:7404:4:404
+01:01.042	ID:1	start send 115
+01:01.044	ID:1	now sending hello 115  
+01:01.098	ID:4	relaying hello 115  
+01:01.550	ID:1	start send 116
+01:01.552	ID:1	now sending hello 116  
+01:01.614	ID:4	relaying hello 116  
+01:01.641	ID:9	DIO:116
+01:01.641	ID:8	DIO:116
+01:01.641	ID:6	DIO:116
+01:01.641	ID:5	DIO:116
+01:01.700	ID:1	Sending control broadcast: 060
+01:01.963	ID:7	Received response: 
+01:01.963	ID:8	Received response: 
+01:01.963	ID:4	Received response: 
+01:01.963	ID:5	Received response: 
+01:01.963	ID:6	Received response: 
+01:02.058	ID:1	start send 117
+01:02.060	ID:1	now sending hello 117  
+01:02.122	ID:4	relaying hello 117  
+01:02.566	ID:1	start send 118
+01:02.568	ID:1	now sending hello 118  
+01:02.606	ID:4	relaying hello 118  
+01:02.700	ID:1	Sending control broadcast: 061
+01:02.709	ID:5	DIO:116
+01:02.709	ID:4	DIO:116
+01:02.709	ID:7	DIO:116
+01:02.709	ID:8	DIO:116
+01:02.901	ID:7	Received response: 
+01:02.901	ID:8	Received response: 
+01:02.901	ID:5	Received response: 
+01:02.901	ID:4	Received response: 
+01:02.902	ID:6	Received response: 

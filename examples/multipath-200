@@ -1,0 +1,1477 @@
+00:00.353	ID:8	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.356	ID:8	[INFO: Main      ] - Routing: RPL Lite
+00:00.358	ID:8	[INFO: Main      ] - Net: sicslowpan
+00:00.360	ID:8	[INFO: Main      ] - MAC: CSMA
+00:00.364	ID:8	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.367	ID:8	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.369	ID:8	[INFO: Main      ] Node ID: 8
+00:00.375	ID:8	[INFO: Main      ] Link-layer address: 0012.7408.0008.0808
+00:00.386	ID:8	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7408:8:808
+00:00.390	ID:8	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.457	ID:11	[INFO: Main      ] Starting Contiki-NG-release/v4.4-109-g97868a138-dirty
+00:00.460	ID:11	[INFO: Main      ] - Routing: nullrouting
+00:00.462	ID:11	[INFO: Main      ] - Net: slipnet
+00:00.465	ID:11	[INFO: Main      ] - MAC: CSMA
+00:00.468	ID:11	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.472	ID:11	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.474	ID:11	[INFO: Main      ] Node ID: 11
+00:00.480	ID:11	[INFO: Main      ] Link-layer address: 0012.740b.000b.0b0b
+00:00.491	ID:11	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:740b:b:b0b
+00:00.494	ID:11	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.516	ID:2	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.519	ID:2	[INFO: Main      ] - Routing: RPL Lite
+00:00.521	ID:2	[INFO: Main      ] - Net: sicslowpan
+00:00.524	ID:2	[INFO: Main      ] - MAC: CSMA
+00:00.527	ID:2	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.531	ID:2	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.531	ID:6	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.533	ID:2	[INFO: Main      ] Node ID: 2
+00:00.533	ID:6	[INFO: Main      ] - Routing: RPL Lite
+00:00.536	ID:6	[INFO: Main      ] - Net: sicslowpan
+00:00.538	ID:2	[INFO: Main      ] Link-layer address: 0012.7402.0002.0202
+00:00.538	ID:6	[INFO: Main      ] - MAC: CSMA
+00:00.541	ID:6	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.545	ID:6	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.547	ID:6	[INFO: Main      ] Node ID: 6
+00:00.550	ID:2	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7402:2:202
+00:00.553	ID:6	[INFO: Main      ] Link-layer address: 0012.7406.0006.0606
+00:00.553	ID:2	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.564	ID:6	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7406:6:606
+00:00.568	ID:6	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.628	ID:4	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.631	ID:4	[INFO: Main      ] - Routing: RPL Lite
+00:00.634	ID:4	[INFO: Main      ] - Net: sicslowpan
+00:00.636	ID:4	[INFO: Main      ] - MAC: CSMA
+00:00.639	ID:4	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.643	ID:4	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.645	ID:4	[INFO: Main      ] Node ID: 4
+00:00.650	ID:4	[INFO: Main      ] Link-layer address: 0012.7404.0004.0404
+00:00.662	ID:4	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7404:4:404
+00:00.664	ID:1	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.665	ID:4	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.667	ID:1	[INFO: Main      ] - Routing: nullrouting
+00:00.670	ID:1	[INFO: Main      ] - Net: sicslowpan
+00:00.672	ID:1	[INFO: Main      ] - MAC: CSMA
+00:00.675	ID:1	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.679	ID:1	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.681	ID:1	[INFO: Main      ] Node ID: 1
+00:00.682	ID:7	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.685	ID:7	[INFO: Main      ] - Routing: RPL Lite
+00:00.686	ID:1	[INFO: Main      ] Link-layer address: 0012.7401.0001.0101
+00:00.687	ID:7	[INFO: Main      ] - Net: sicslowpan
+00:00.689	ID:7	[INFO: Main      ] - MAC: CSMA
+00:00.693	ID:7	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.696	ID:7	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.697	ID:1	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7401:1:101
+00:00.698	ID:7	[INFO: Main      ] Node ID: 7
+00:00.700	ID:1	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.704	ID:7	[INFO: Main      ] Link-layer address: 0012.7407.0007.0707
+00:00.715	ID:7	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7407:7:707
+00:00.719	ID:7	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.837	ID:10	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.839	ID:10	[INFO: Main      ] - Routing: RPL Lite
+00:00.842	ID:10	[INFO: Main      ] - Net: sicslowpan
+00:00.844	ID:10	[INFO: Main      ] - MAC: CSMA
+00:00.847	ID:10	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:00.851	ID:10	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:00.853	ID:10	[INFO: Main      ] Node ID: 10
+00:00.859	ID:10	[INFO: Main      ] Link-layer address: 0012.740a.000a.0a0a
+00:00.870	ID:10	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:740a:a:a0a
+00:00.874	ID:10	[INFO: Sky       ] CC2420 CCA threshold -45
+00:00.894	ID:1	start send 1
+00:00.989	ID:9	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.991	ID:9	[INFO: Main      ] - Routing: RPL Lite
+00:00.994	ID:9	[INFO: Main      ] - Net: sicslowpan
+00:00.995	ID:5	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:00.996	ID:9	[INFO: Main      ] - MAC: CSMA
+00:00.998	ID:5	[INFO: Main      ] - Routing: RPL Lite
+00:00.999	ID:9	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:01.000	ID:5	[INFO: Main      ] - Net: sicslowpan
+00:01.003	ID:5	[INFO: Main      ] - MAC: CSMA
+00:01.003	ID:9	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:01.005	ID:9	[INFO: Main      ] Node ID: 9
+00:01.006	ID:5	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:01.009	ID:5	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:01.010	ID:9	[INFO: Main      ] Link-layer address: 0012.7409.0009.0909
+00:01.012	ID:5	[INFO: Main      ] Node ID: 5
+00:01.017	ID:5	[INFO: Main      ] Link-layer address: 0012.7405.0005.0505
+00:01.022	ID:9	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7409:9:909
+00:01.025	ID:9	[INFO: Sky       ] CC2420 CCA threshold -45
+00:01.029	ID:5	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7405:5:505
+00:01.032	ID:5	[INFO: Sky       ] CC2420 CCA threshold -45
+00:01.179	ID:3	[INFO: Main      ] Starting Contiki-NG-release/v4.4-115-g38cbaec33-dirty
+00:01.182	ID:3	[INFO: Main      ] - Routing: RPL Lite
+00:01.185	ID:3	[INFO: Main      ] - Net: sicslowpan
+00:01.187	ID:3	[INFO: Main      ] - MAC: CSMA
+00:01.190	ID:3	[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+00:01.194	ID:3	[INFO: Main      ] - 802.15.4 Default channel: 26
+00:01.196	ID:3	[INFO: Main      ] Node ID: 3
+00:01.201	ID:3	[INFO: Main      ] Link-layer address: 0012.7403.0003.0303
+00:01.213	ID:3	[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7403:3:303
+00:01.216	ID:3	[INFO: Sky       ] CC2420 CCA threshold -45
+00:01.700	ID:1	Sending control broadcast: 000
+00:01.755	ID:4	str: r -83 f fe80::212:7401:1:101 t 000
+00:01.755	ID:2	str: r -63 f fe80::212:7401:1:101 t 000
+00:01.755	ID:3	str: r -64 f fe80::212:7401:1:101 t 000
+00:01.910	ID:1	now sending hello 1  
+00:02.105	ID:1	start send 2
+00:02.106	ID:1	now sending hello 2  
+00:02.308	ID:1	start send 3
+00:02.310	ID:1	now sending hello 3  
+00:02.511	ID:1	start send 4
+00:02.513	ID:1	now sending hello 4  
+00:02.700	ID:1	Sending control broadcast: 001
+00:02.714	ID:1	start send 5
+00:02.719	ID:3	str: r -62 f fe80::212:7401:1:101 t 001
+00:02.719	ID:2	str: r -65 f fe80::212:7401:1:101 t 001
+00:02.720	ID:4	str: r -78 f fe80::212:7401:1:101 t 001
+00:02.902	ID:1	now sending hello 5  
+00:03.097	ID:1	start send 6
+00:03.099	ID:1	now sending hello 6  
+00:03.300	ID:1	start send 7
+00:03.302	ID:1	now sending hello 7  
+00:03.503	ID:1	start send 8
+00:03.505	ID:1	now sending hello 8  
+00:03.700	ID:1	Sending control broadcast: 002
+00:03.706	ID:1	start send 9
+00:03.745	ID:3	str: r -61 f fe80::212:7401:1:101 t 002
+00:03.745	ID:4	str: r -72 f fe80::212:7401:1:101 t 002
+00:03.745	ID:2	str: r -69 f fe80::212:7401:1:101 t 002
+00:03.910	ID:1	now sending hello 9  
+00:04.105	ID:1	start send 10
+00:04.107	ID:1	now sending hello 10  
+00:04.308	ID:1	start send 11
+00:04.310	ID:1	now sending hello 11  
+00:04.511	ID:1	start send 12
+00:04.513	ID:1	now sending hello 12  
+00:04.700	ID:1	Sending control broadcast: 003
+00:04.714	ID:1	start send 13
+00:04.753	ID:2	str: r -74 f fe80::212:7401:1:101 t 003
+00:04.753	ID:4	str: r -68 f fe80::212:7401:1:101 t 003
+00:04.753	ID:3	str: r -61 f fe80::212:7401:1:101 t 003
+00:04.753	ID:5	str: r -90 f fe80::212:7401:1:101 t 003
+00:04.903	ID:1	now sending hello 13  
+00:05.097	ID:1	start send 14
+00:05.099	ID:1	now sending hello 14  
+00:05.243	ID:6	DIO:116
+00:05.243	ID:7	DIO:116
+00:05.243	ID:8	DIO:116
+00:05.243	ID:5	DIO:116
+00:05.243	ID:4	DIO:116
+00:05.300	ID:1	start send 15
+00:05.302	ID:1	now sending hello 15  
+00:05.503	ID:1	start send 16
+00:05.505	ID:1	now sending hello 16  
+00:05.700	ID:1	Sending control broadcast: 004
+00:05.706	ID:1	start send 17
+00:05.754	ID:2	str: r -80 f fe80::212:7401:1:101 t 004
+00:05.754	ID:3	str: r -63 f fe80::212:7401:1:101 t 004
+00:05.754	ID:4	str: r -64 f fe80::212:7401:1:101 t 004
+00:05.754	ID:5	str: r -83 f fe80::212:7401:1:101 t 004
+00:05.910	ID:1	now sending hello 17  
+00:06.105	ID:1	start send 18
+00:06.107	ID:1	now sending hello 18  
+00:06.308	ID:1	start send 19
+00:06.310	ID:1	now sending hello 19  
+00:06.511	ID:1	start send 20
+00:06.513	ID:1	now sending hello 20  
+00:06.700	ID:1	Sending control broadcast: 005
+00:06.714	ID:1	start send 21
+00:06.746	ID:2	str: r -86 f fe80::212:7401:1:101 t 005
+00:06.746	ID:3	str: r -65 f fe80::212:7401:1:101 t 005
+00:06.746	ID:4	str: r -62 f fe80::212:7401:1:101 t 005
+00:06.746	ID:5	str: r -78 f fe80::212:7401:1:101 t 005
+00:06.903	ID:1	now sending hello 21  
+00:07.097	ID:1	start send 22
+00:07.099	ID:1	now sending hello 22  
+00:07.300	ID:1	start send 23
+00:07.302	ID:1	now sending hello 23  
+00:07.503	ID:1	start send 24
+00:07.505	ID:1	now sending hello 24  
+00:07.592	ID:6	DAO:0
+00:07.594	ID:8	DAO:0
+00:07.595	ID:7	DAO:0
+00:07.596	ID:5	DAO:0
+00:07.597	ID:4	DAO:0
+00:07.700	ID:1	Sending control broadcast: 006
+00:07.711	ID:1	start send 25
+00:07.722	ID:2	str: r -92 f fe80::212:7401:1:101 t 006
+00:07.722	ID:3	str: r -69 f fe80::212:7401:1:101 t 006
+00:07.722	ID:4	str: r -61 f fe80::212:7401:1:101 t 006
+00:07.723	ID:5	str: r -72 f fe80::212:7401:1:101 t 006
+00:07.910	ID:1	now sending hello 25  
+00:08.105	ID:1	start send 26
+00:08.107	ID:1	now sending hello 26  
+00:08.308	ID:1	start send 27
+00:08.310	ID:1	now sending hello 27  
+00:08.511	ID:1	start send 28
+00:08.513	ID:1	now sending hello 28  
+00:08.700	ID:1	Sending control broadcast: 007
+00:08.714	ID:1	start send 29
+00:08.761	ID:3	str: r -74 f fe80::212:7401:1:101 t 007
+00:08.761	ID:5	str: r -68 f fe80::212:7401:1:101 t 007
+00:08.761	ID:4	str: r -61 f fe80::212:7401:1:101 t 007
+00:08.762	ID:6	str: r -90 f fe80::212:7401:1:101 t 007
+00:08.903	ID:1	now sending hello 29  
+00:09.097	ID:1	start send 30
+00:09.099	ID:1	now sending hello 30  
+00:09.192	ID:6	Received response: SET fe80::212:7401:1:101
+00:09.193	ID:6	NOW BEING BEST
+00:09.300	ID:1	start send 31
+00:09.302	ID:1	now sending hello 31  
+00:09.503	ID:1	start send 32
+00:09.505	ID:1	now sending hello 32  
+00:09.700	ID:1	Sending control broadcast: 008
+00:09.706	ID:1	start send 33
+00:09.761	ID:3	str: r -80 f fe80::212:7401:1:101 t 008
+00:09.761	ID:5	str: r -64 f fe80::212:7401:1:101 t 008
+00:09.761	ID:4	str: r -63 f fe80::212:7401:1:101 t 008
+00:09.910	ID:1	now sending hello 33  
+00:10.105	ID:1	start send 34
+00:10.107	ID:1	now sending hello 34  
+00:10.308	ID:1	start send 35
+00:10.310	ID:1	now sending hello 35  
+00:10.511	ID:1	start send 36
+00:10.513	ID:1	now sending hello 36  
+00:10.700	ID:1	Sending control broadcast: 009
+00:10.719	ID:1	start send 37
+00:10.730	ID:3	str: r -86 f fe80::212:7401:1:101 t 009
+00:10.730	ID:4	str: r -65 f fe80::212:7401:1:101 t 009
+00:10.730	ID:5	str: r -62 f fe80::212:7401:1:101 t 009
+00:10.903	ID:1	now sending hello 37  
+00:11.097	ID:1	start send 38
+00:11.099	ID:1	now sending hello 38  
+00:11.110	ID:6	Received response: SET fe80::212:7401:1:101
+00:11.111	ID:6	NOW BEING BEST
+00:11.185	ID:7	DIO:116
+00:11.185	ID:8	DIO:116
+00:11.185	ID:4	DIO:116
+00:11.185	ID:5	DIO:116
+00:11.204	ID:5	Received response: NOT fe80::212:7401:1:101
+00:11.262	ID:3	DIO:116
+00:11.262	ID:7	DIO:116
+00:11.262	ID:6	DIO:116
+00:11.262	ID:4	DIO:116
+00:11.300	ID:1	start send 39
+00:11.302	ID:1	now sending hello 39  
+00:11.431	ID:10	DIO:116
+00:11.431	ID:9	DIO:116
+00:11.431	ID:6	DIO:116
+00:11.431	ID:7	DIO:116
+00:11.503	ID:1	start send 40
+00:11.505	ID:1	now sending hello 40  
+00:11.700	ID:1	Sending control broadcast: 010
+00:11.706	ID:1	start send 41
+00:11.754	ID:3	str: r -92 f fe80::212:7401:1:101 t 010
+00:11.754	ID:4	str: r -69 f fe80::212:7401:1:101 t 010
+00:11.754	ID:5	str: r -61 f fe80::212:7401:1:101 t 010
+00:11.910	ID:1	now sending hello 41  
+00:12.023	ID:7	DAO:0
+00:12.056	ID:8	DIO:116
+00:12.057	ID:5	DIO:116
+00:12.057	ID:6	DIO:116
+00:12.057	ID:4	DIO:116
+00:12.058	ID:7	DIO:116
+00:12.105	ID:1	start send 42
+00:12.107	ID:1	now sending hello 42  
+00:12.110	ID:6	Received response: SET fe80::212:7401:1:101
+00:12.111	ID:6	NOW BEING BEST
+00:12.187	ID:11	!Mt!Ratt~:cQttt!Ratt~:cEtttatt~:cWttt!R!Ratt~c@"="="r -68 f fe80::212:7401:1:101 t 007att~c"="=r -90 f fe80::212:7401:1:101 t 007!Ratt~cM}hello 31  att~cM|hello 32  att~c9"="=!r -64 f fe80::212:7401:1:101 t 008att~cM{hello 33  att~cMzhello 34  att~cMyhello 35  att~cMxhello 36  att~c3"="= r -62 f fe80::212:7401:1:101 t 009att~cMwhello 37  !RAtz;:Qt<@@!Ratt~cMvhello 38  Atz;:'-t<@@att~cMuhello 39  Atz;:Kt<@@att~cL~hello 40  att~c-"="=)r -61 f fe80::212:7401:1:101 t 010a	tt~cL}hello 41  att~:cdtttttt!R!R!R	a
+00:12.308	ID:1	start send 43
+00:12.310	ID:1	now sending hello 43  
+00:12.511	ID:1	start send 44
+00:12.513	ID:1	now sending hello 44  
+00:12.700	ID:1	Sending control broadcast: 011
+00:12.719	ID:1	start send 45
+00:12.730	ID:4	str: r -74 f fe80::212:7401:1:101 t 011
+00:12.730	ID:5	str: r -61 f fe80::212:7401:1:101 t 011
+00:12.730	ID:7	str: r -90 f fe80::212:7401:1:101 t 011
+00:12.903	ID:1	now sending hello 45  
+00:13.097	ID:1	start send 46
+00:13.099	ID:1	now sending hello 46  
+00:13.167	ID:11	tt~cL|hello 42  att~cL{hello 43  att~cLzhello 44  att~c"="=r -90 f fe80::212:7401:1:101 t 011att~c("="=(r -61 f fe80::212:7401:1:101 t 011att~cLyhello 45  att~cLxhello 46  !R
+00:13.173	ID:6	Received response: SET fe80::212:7401:1:101
+00:13.174	ID:6	NOW BEING BEST
+00:13.300	ID:1	start send 47
+00:13.302	ID:1	now sending hello 47  
+00:13.503	ID:1	start send 48
+00:13.505	ID:1	now sending hello 48  
+00:13.617	ID:3	DAO:0
+00:13.700	ID:1	Sending control broadcast: 012
+00:13.706	ID:1	start send 49
+00:13.745	ID:4	str: r -80 f fe80::212:7401:1:101 t 012
+00:13.746	ID:5	str: r -63 f fe80::212:7401:1:101 t 012
+00:13.746	ID:7	str: r -83 f fe80::212:7401:1:101 t 012
+00:13.781	ID:10	DAO:0
+00:13.784	ID:9	DAO:0
+00:13.889	ID:11	att~cLwhello 47  att~cLvhello 48  att|?t:c$ttt!Ratt~c"="=r -83 f fe80::212:7401:1:101 t 012att|?t
+00:13.889	ID:11	
+00:13.889	ID:11	
+00:13.889	ID:11	
+00:13.891	ID:11	:cKt
+00:13.892	ID:11	
+00:13.892	ID:11	
+00:13.892	ID:11	
+00:13.910	ID:1	now sending hello 49  
+00:14.105	ID:1	start send 50
+00:14.107	ID:1	now sending hello 50  
+00:14.117	ID:6	Received response: SET fe80::212:7401:1:101
+00:14.119	ID:6	NOW BEING BEST
+00:14.308	ID:1	start send 51
+00:14.310	ID:1	now sending hello 51  
+00:14.511	ID:1	start send 52
+00:14.513	ID:1	now sending hello 52  
+00:14.700	ID:1	Sending control broadcast: 013
+00:14.719	ID:1	start send 53
+00:14.730	ID:4	str: r -86 f fe80::212:7401:1:101 t 013
+00:14.730	ID:5	str: r -65 f fe80::212:7401:1:101 t 013
+00:14.730	ID:7	str: r -78 f fe80::212:7401:1:101 t 013
+00:14.903	ID:1	now sending hello 53  
+00:15.097	ID:1	start send 54
+00:15.099	ID:1	now sending hello 54  
+00:15.153	ID:7	Received response: SET fe80::212:7401:1:101
+00:15.154	ID:7	NOW BEING BEST
+00:15.197	ID:6	Received response: NOT fe80::212:7401:1:101
+00:15.300	ID:1	start send 55
+00:15.302	ID:1	now sending hello 55  
+00:15.503	ID:1	start send 56
+00:15.505	ID:1	now sending hello 56  
+00:15.566	ID:4	DAO:0
+00:15.700	ID:1	Sending control broadcast: 014
+00:15.706	ID:1	start send 57
+00:15.738	ID:4	str: r -92 f fe80::212:7401:1:101 t 014
+00:15.738	ID:5	str: r -69 f fe80::212:7401:1:101 t 014
+00:15.910	ID:1	now sending hello 57  
+00:15.933	ID:4	DIO:116
+00:15.934	ID:5	DIO:116
+00:15.934	ID:8	DIO:116
+00:15.934	ID:7	DIO:116
+00:16.105	ID:1	start send 58
+00:16.107	ID:1	now sending hello 58  
+00:16.110	ID:7	Received response: SET fe80::212:7401:1:101
+00:16.111	ID:7	NOW BEING BEST
+00:16.273	ID:9	DIO:116
+00:16.274	ID:5	DIO:116
+00:16.274	ID:6	DIO:116
+00:16.274	ID:8	DIO:116
+00:16.308	ID:1	start send 59
+00:16.310	ID:1	now sending hello 59  
+00:16.511	ID:1	start send 60
+00:16.513	ID:1	now sending hello 60  
+00:16.700	ID:1	Sending control broadcast: 015
+00:16.714	ID:1	start send 61
+00:16.746	ID:5	str: r -74 f fe80::212:7401:1:101 t 015
+00:16.746	ID:8	str: r -90 f fe80::212:7401:1:101 t 015
+00:16.903	ID:1	now sending hello 61  
+00:16.920	ID:10	DIO:116
+00:16.920	ID:9	DIO:116
+00:16.920	ID:7	DIO:116
+00:16.920	ID:6	DIO:116
+00:17.050	ID:8	DIO:116
+00:17.051	ID:10	DIO:116
+00:17.052	ID:7	DIO:116
+00:17.097	ID:1	start send 62
+00:17.099	ID:1	now sending hello 62  
+00:17.180	ID:7	Received response: SET fe80::212:7401:1:101
+00:17.181	ID:7	NOW BEING BEST
+00:17.286	ID:5	DIO:116
+00:17.287	ID:2	DIO:116
+00:17.287	ID:4	DIO:116
+00:17.300	ID:1	start send 63
+00:17.302	ID:1	now sending hello 63  
+00:17.412	ID:8	DIO:116
+00:17.413	ID:9	DIO:116
+00:17.503	ID:1	start send 64
+00:17.505	ID:1	now sending hello 64  
+00:17.635	ID:11	ttatt~c "="='r -63 f fe80::212:7401:1:101 t 012!Ratt|?t				:cQt				tt!Ratt~cLuhello 49  !Ratt~cK~hello 50  att~cK}hello 51  att~cK|hello 52  att~c"="=&r -65 f fe80::212:7401:1:101 t 013att~c"="=r -78 f fe80::212:7401:1:101 t 013att~cK{hello 53  !R!Ratt~cKzhello 54  att~cKyhello 55  att~cJvhello 55  att~cJuhello 56  att~cKxhello 56  att|?t:ctttttatt~c"="=%r -69 f fe80::212:7401:1:101 t 014!RAtz;:Qt<@@att~cJthello 57  att~cKwhello 57  !Ratt~crJshello 58  att~cKvhello 58  Atz;:t<@@att~cKuhello 59  att~cfJrhello 59  att~c[I{hello 60  att~cJ~hello 60  att~c"="=#r -74 f fe80::212:7401:1:101 t 015att~c"="=r -90 f fe80::212:7401:1:101 t 015Atz;:t<@@a tt~cJ}hello 61  att~cQIzhello 61  !Ra	tt~cHIxhello 63  a!tt~cJ{hello 63  a"tt~cJzhello 64  a
+00:17.700	ID:1	Sending control broadcast: 016
+00:17.706	ID:1	start send 65
+00:17.745	ID:5	str: r -80 f fe80::212:7401:1:101 t 016
+00:17.746	ID:8	str: r -83 f fe80::212:7401:1:101 t 016
+00:17.910	ID:1	now sending hello 65  
+00:18.105	ID:1	start send 66
+00:18.107	ID:1	now sending hello 66  
+00:18.200	ID:7	Received response: SET fe80::212:7401:1:101
+00:18.201	ID:7	NOW BEING BEST
+00:18.297	ID:6	DIO:116
+00:18.298	ID:2	DIO:116
+00:18.298	ID:3	DIO:116
+00:18.298	ID:5	DIO:116
+00:18.308	ID:1	start send 67
+00:18.310	ID:1	now sending hello 67  
+00:18.511	ID:1	start send 68
+00:18.513	ID:1	now sending hello 68  
+00:18.700	ID:1	Sending control broadcast: 017
+00:18.714	ID:1	start send 69
+00:18.720	ID:5	str: r -86 f fe80::212:7401:1:101 t 017
+00:18.720	ID:8	str: r -78 f fe80::212:7401:1:101 t 017
+00:18.793	ID:11	tt~c@Iwhello 64  att~c"="=r -83 f fe80::212:7401:1:101 t 016a	tt~c"="=!r -80 f fe80::212:7401:1:101 t 016a#tt~cJyhello 65  att~c9Ivhello 65  att~c3Iuhello 66  a$tt~cJxhello 66  !RAtz;:Gt<@@att~c-Ithello 67  a%tt~cJwhello 67  att~c(Ishello 68  a&tt~cJvhello 68  att~c"="=r -78 f fe80::212:7401:1:101 t 017a
+00:18.903	ID:1	now sending hello 69  
+00:19.097	ID:1	start send 70
+00:19.099	ID:1	now sending hello 70  
+00:19.149	ID:8	Received response: SET fe80::212:7401:1:101
+00:19.150	ID:8	NOW BEING BEST
+00:19.173	ID:7	Received response: NOT fe80::212:7401:1:101
+00:19.300	ID:1	start send 71
+00:19.302	ID:1	now sending hello 71  
+00:19.503	ID:1	start send 72
+00:19.505	ID:1	now sending hello 72  
+00:19.646	ID:2	DAO:0
+00:19.700	ID:1	Sending control broadcast: 018
+00:19.706	ID:1	start send 73
+00:19.741	ID:5	str: r -92 f fe80::212:7401:1:101 t 018
+00:19.763	ID:3	DIO:116
+00:19.764	ID:4	DIO:116
+00:19.764	ID:6	DIO:116
+00:19.764	ID:7	DIO:116
+00:19.910	ID:1	now sending hello 73  
+00:20.105	ID:1	start send 74
+00:20.107	ID:1	now sending hello 74  
+00:20.188	ID:8	Received response: SET fe80::212:7401:1:101
+00:20.189	ID:8	NOW BEING BEST
+00:20.308	ID:1	start send 75
+00:20.310	ID:1	now sending hello 75  
+00:20.485	ID:11	tt~c"="= r -86 f fe80::212:7401:1:101 t 017a'tt~cJuhello 69  att~c$Irhello 69  !R!Ratt~c H{hello 70  a(tt~cI~hello 70  a)tt~cI}hello 71  att~cGwhello 71  att~cHzhello 71  att~cGvhello 72  a*tt~cI|hello 72  att~cHyhello 72  Atz;:.&t<@@att~c&"="=r -92 f fe80::212:7401:1:101 t 018att|>t:c&zrtttt!Ratt~cGuhello 73  att~cHxhello 73  a+tt~cI{hello 73  !Ra,tt~cIzhello 74  a	tt~c~Gthello 74  att~cHwhello 74  att~cHvhello 75  a-tt~cIyhello 75  a
+00:20.511	ID:1	start send 76
+00:20.513	ID:1	now sending hello 76  
+00:20.700	ID:1	Sending control broadcast: 019
+00:20.714	ID:1	start send 77
+00:20.738	ID:9	str: r -90 f fe80::212:7401:1:101 t 019
+00:20.903	ID:1	now sending hello 77  
+00:21.097	ID:1	start send 78
+00:21.099	ID:1	now sending hello 78  
+00:21.125	ID:8	Received response: SET fe80::212:7401:1:101
+00:21.127	ID:8	NOW BEING BEST
+00:21.300	ID:1	start send 79
+00:21.302	ID:1	now sending hello 79  
+00:21.503	ID:1	start send 80
+00:21.505	ID:1	now sending hello 80  
+00:21.700	ID:1	Sending control broadcast: 020
+00:21.706	ID:1	start send 81
+00:21.754	ID:9	str: r -83 f fe80::212:7401:1:101 t 020
+00:21.910	ID:1	now sending hello 81  
+00:22.105	ID:1	start send 82
+00:22.107	ID:1	now sending hello 82  
+00:22.277	ID:11	tt~cqGshello 75  att~cHuhello 76  att~ceGrhello 76  a.tt~cIxhello 76  att|?t				cZ"="=r -90 f fe80::212:7401:1:101 t 019a/tt~cIwhello 77  att~cHthello 77  att~cQGqhello 77  !R	att~cHshello 78  att~cHGphello 78  a0tt~cIvhello 78  att~c	Hrhello 79  a1tt~cIuhello 79  att~c@Gohello 79  att~c9Fxhello 80  att~cG{hello 80  a2tt~cH~hello 80  att|?t				c3"="=r -83 f fe80::212:7401:1:101 t 020att~cGzhello 81  a3tt~cH}hello 81  att~c-Fwhello 81  att~c(Fvhello 82  a4tt~cH|hello 82  att~cGyhello 82  !R
+00:22.282	ID:8	Received response: SET fe80::212:7401:1:101
+00:22.283	ID:8	NOW BEING BEST
+00:22.308	ID:1	start send 83
+00:22.310	ID:1	now sending hello 83  
+00:22.511	ID:1	start send 84
+00:22.513	ID:1	now sending hello 84  
+00:22.700	ID:1	Sending control broadcast: 021
+00:22.714	ID:1	start send 85
+00:22.738	ID:9	str: r -78 f fe80::212:7401:1:101 t 021
+00:22.903	ID:1	now sending hello 85  
+00:23.077	ID:9	DIO:116
+00:23.077	ID:6	DIO:116
+00:23.077	ID:5	DIO:116
+00:23.077	ID:8	DIO:116
+00:23.097	ID:1	start send 86
+00:23.099	ID:1	now sending hello 86  
+00:23.171	ID:9	Received response: SET fe80::212:7401:1:101
+00:23.172	ID:9	NOW BEING BEST
+00:23.204	ID:8	Received response: NOT fe80::212:7401:1:101
+00:23.300	ID:1	start send 87
+00:23.302	ID:1	now sending hello 87  
+00:23.503	ID:1	start send 88
+00:23.505	ID:1	now sending hello 88  
+00:23.513	ID:3	DIO:116
+00:23.514	ID:4	DIO:116
+00:23.680	ID:7	DIO:116
+00:23.680	ID:8	DIO:116
+00:23.680	ID:5	DIO:116
+00:23.680	ID:6	DIO:116
+00:23.680	ID:4	DIO:116
+00:23.700	ID:1	Sending control broadcast: 022
+00:23.706	ID:1	start send 89
+00:23.910	ID:1	now sending hello 89  
+00:23.936	ID:6	HANDOFF STARTED
+00:24.105	ID:1	start send 90
+00:24.107	ID:1	now sending hello 90  
+00:24.308	ID:1	start send 91
+00:24.310	ID:1	now sending hello 91  
+00:24.511	ID:1	start send 92
+00:24.513	ID:1	now sending hello 92  
+00:24.700	ID:1	Sending control broadcast: 023
+00:24.719	ID:1	start send 93
+00:24.730	ID:10	str: r -90 f fe80::212:7401:1:101 t 023
+00:24.817	ID:11	att~c$Fuhello 83  att~cGxhello 83  a5tt~cH{hello 83  att~cGwhello 84  a6tt~cHzhello 84  att~c Fthello 84  att|?t				c"="=r -78 f fe80::212:7401:1:101 t 021a7tt~cHyhello 85  att~cFshello 85  att~cGvhello 85  A tz;:Lt<@@!Ra!tt~cGuhello 86  !Ratt~cFrhello 86  a8tt~cHxhello 86  att~cFqhello 87  a9tt~cHwhello 87  att|?t				cEnhello 87  a"tt~cGthello 87  a#tt~cGshello 88  att~cFphello 88  a:tt~cHvhello 88  att|?t				cEmhello 88  !Ra$tt~cGrhello 89  a;tt~cHuhello 89  att~cFohello 89  att|?t				cElhello 89  a tt~cExhello 90  a%tt~cF{hello 90  a!tt|?t				cDuhello 90  a"tt~cEwhello 91  a&tt~cFzhello 91  a#tt|?t				cDthello 91  a$tt~cEvhello 92  a'tt~cFyhello 92  a%tt|?t				cDshello 92  a&tt|?t
+00:24.817	ID:11	
+00:24.817	ID:11	
+00:24.817	ID:11	
+00:24.867	ID:2	DIO:116
+00:24.867	ID:3	DIO:116
+00:24.868	ID:6	DIO:116
+00:24.868	ID:5	DIO:116
+00:24.903	ID:1	now sending hello 93  
+00:25.094	ID:8	DIO:116
+00:25.094	ID:10	DIO:116
+00:25.095	ID:7	DIO:116
+00:25.097	ID:1	start send 94
+00:25.099	ID:1	now sending hello 94  
+00:25.168	ID:2	DIO:116
+00:25.168	ID:4	DIO:116
+00:25.169	ID:5	DIO:116
+00:25.172	ID:9	Received response: SET fe80::212:7401:1:101
+00:25.173	ID:9	NOW BEING BEST
+00:25.274	ID:8	DIO:116
+00:25.274	ID:9	DIO:116
+00:25.300	ID:1	start send 95
+00:25.302	ID:1	now sending hello 95  
+00:25.503	ID:1	start send 96
+00:25.505	ID:1	now sending hello 96  
+00:25.700	ID:1	Sending control broadcast: 024
+00:25.706	ID:1	start send 97
+00:25.761	ID:10	str: r -83 f fe80::212:7401:1:101 t 024
+00:25.841	ID:11	c"="=r -90 f fe80::212:7401:1:101 t 023Atz;:Gt<@@a(tt~cFxhello 93  a'tt~cEuhello 93  a(tt|?t				cDrhello 93  !Ra)tt~cFwhello 94  a*tt~cEthello 94  a+tt|?t				cDqhello 94  a,tt~cEshello 95  a*tt~cFvhello 95  a-tt|?t				cDphello 95  a.tt~cErhello 96  a/tt|?t				cDohello 96  a+tt~cFuhello 96  a0tt|?t
+00:25.841	ID:11	
+00:25.841	ID:11	
+00:25.841	ID:11	
+00:25.910	ID:1	now sending hello 97  
+00:26.105	ID:1	start send 98
+00:26.107	ID:1	now sending hello 98  
+00:26.155	ID:9	Received response: SET fe80::212:7401:1:101
+00:26.157	ID:9	NOW BEING BEST
+00:26.308	ID:1	start send 99
+00:26.310	ID:1	now sending hello 99  
+00:26.511	ID:1	start send 100
+00:26.513	ID:1	now sending hello 100  
+00:26.700	ID:1	Sending control broadcast: 025
+00:26.714	ID:1	start send 101
+00:26.753	ID:10	str: r -78 f fe80::212:7401:1:101 t 025
+00:26.840	ID:11	c-"="=r -83 f fe80::212:7401:1:101 t 024a1tt~c(Eqhello 97  a,tt~c)Fthello 97  a2tt|?t				c$Dnhello 97  !Ra4tt~c Ephello 98  a-tt~c$Fshello 98  a5tt|?t				cDmhello 98  a6tt~cEohello 99  a.tt~c-Frhello 99  a7tt|?t				cDlhello 99  a/tt~c(yhello 100  a8tt~cvhello 100  a9tt|?t				cshello 100  a:tt|?t
+00:26.841	ID:11	
+00:26.841	ID:11	
+00:26.841	ID:11	
+00:26.903	ID:1	now sending hello 101  
+00:27.097	ID:1	start send 102
+00:27.099	ID:1	now sending hello 102  
+00:27.300	ID:1	start send 103
+00:27.302	ID:1	now sending hello 103  
+00:27.503	ID:1	start send 104
+00:27.505	ID:1	now sending hello 104  
+00:27.700	ID:1	Sending control broadcast: 026
+00:27.707	ID:1	start send 105
+00:27.730	ID:10	str: r -72 f fe80::212:7401:1:101 t 026
+00:27.755	ID:11	c"="=r -78 f fe80::212:7401:1:101 t 025a0tt~c$yhello 101  a;tt~cvhello 101  a<tt|?t				cshello 101  a1tt~c yhello 102  a=tt~c	vhello 102  EUnknown commanda>tt|?t				cshello 102  a?tt~cvhello 103  a@tt|?t				cshello 103  a2tt~cyhello 103  aAtt~cvhello 104  a3tt~c&yhello 104  aBtt|?t				cshello 104  aCtt|?t
+00:27.755	ID:11	
+00:27.755	ID:11	
+00:27.755	ID:11	
+00:27.911	ID:1	now sending hello 105  
+00:27.936	ID:7	HANDOFF STARTED
+00:28.105	ID:1	start send 106
+00:28.107	ID:1	now sending hello 106  
+00:28.132	ID:10	Received response: SET fe80::212:7401:1:101
+00:28.133	ID:10	NOW BEING BEST
+00:28.308	ID:1	start send 107
+00:28.310	ID:1	now sending hello 107  
+00:28.324	ID:11	c"="=r -72 f fe80::212:7401:1:101 t 026a4tt~c"yhello 105  aDtt~cvhello 105  aEtt|?t				c	shello 105  !RaGtt~cvhello 106  aHtt|?t
+00:28.324	ID:11	
+00:28.324	ID:11	
+00:28.324	ID:11	
+00:28.510	ID:11	cphello 106  aItt|?t				cshello 106  aJtt~cvhello 107  aKtt|?t				cshello 107  aLtt|?t
+00:28.510	ID:11	
+00:28.510	ID:11	
+00:28.510	ID:11	
+00:28.511	ID:1	start send 108
+00:28.513	ID:1	now sending hello 108  
+00:28.652	ID:11	cphello 107  aMtt~cvhello 108  aNtt|?t				cshello 108  aOtt|?t
+00:28.652	ID:11	
+00:28.652	ID:11	
+00:28.652	ID:11	
+00:28.700	ID:1	Sending control broadcast: 027
+00:28.714	ID:1	start send 109
+00:28.903	ID:1	now sending hello 109  
+00:29.050	ID:11	cphello 108  aPtt~cvhello 109  aQtt|?t
+00:29.050	ID:11	
+00:29.050	ID:11	
+00:29.050	ID:11	
+00:29.097	ID:1	start send 110
+00:29.099	ID:1	now sending hello 110  
+00:29.241	ID:11	cphello 109  aRtt|?t				cshello 109  aStt~cuhello 110  aTtt|?t
+00:29.241	ID:11	
+00:29.241	ID:11	
+00:29.241	ID:11	
+00:29.300	ID:1	start send 111
+00:29.302	ID:1	now sending hello 111  
+00:29.417	ID:11	cohello 110  aUtt|?t				crhello 110  aVtt~cuhello 111  aWtt|?t
+00:29.417	ID:11	
+00:29.417	ID:11	
+00:29.418	ID:11	
+00:29.503	ID:1	start send 112
+00:29.505	ID:1	now sending hello 112  
+00:29.602	ID:11	cohello 111  aXtt|?t				crhello 111  aYtt~cuhello 112  aZtt|?t
+00:29.602	ID:11	
+00:29.602	ID:11	
+00:29.602	ID:11	
+00:29.700	ID:1	Sending control broadcast: 028
+00:29.711	ID:1	start send 113
+00:29.911	ID:1	now sending hello 113  
+00:30.105	ID:1	start send 114
+00:30.107	ID:1	now sending hello 114  
+00:30.113	ID:11	cohello 112  a[tt|?t				crhello 112  a\tt~cuhello 113  a]tt|?t				crhello 113  a^tt|?t
+00:30.113	ID:11	
+00:30.113	ID:11	
+00:30.113	ID:11	
+00:30.244	ID:11	cohello 113  a_tt~cuhello 114  a`tt|?t
+00:30.244	ID:11	
+00:30.244	ID:11	
+00:30.244	ID:11	
+00:30.308	ID:1	start send 115
+00:30.310	ID:1	now sending hello 115  
+00:30.437	ID:11	cohello 114  aatt|?t				crhello 114  abtt~cuhello 115  actt|?t
+00:30.437	ID:11	
+00:30.437	ID:11	
+00:30.437	ID:11	
+00:30.511	ID:1	start send 116
+00:30.513	ID:1	now sending hello 116  
+00:30.624	ID:11	cohello 115  adtt|?t				crhello 115  aett~cuhello 116  aftt|?t
+00:30.624	ID:11	
+00:30.624	ID:11	
+00:30.624	ID:11	
+00:30.700	ID:1	Sending control broadcast: 029
+00:30.714	ID:1	start send 117
+00:30.903	ID:1	now sending hello 117  
+00:31.011	ID:11	cohello 116  agtt|?t				crhello 116  ahtt~cuhello 117  aitt|?t
+00:31.011	ID:11	
+00:31.011	ID:11	
+00:31.011	ID:11	
+00:31.097	ID:1	start send 118
+00:31.099	ID:1	now sending hello 118  
+00:31.253	ID:11	cohello 117  ajtt|?t				crhello 117  aktt~cuhello 118  altt|?t				crhello 118  amtt|?t
+00:31.254	ID:11	
+00:31.254	ID:11	
+00:31.254	ID:11	
+00:31.300	ID:1	start send 119
+00:31.302	ID:1	now sending hello 119  
+00:31.411	ID:3	DIO:116
+00:31.411	ID:4	DIO:116
+00:31.503	ID:1	start send 120
+00:31.505	ID:1	now sending hello 120  
+00:31.550	ID:11	cohello 118  antt~cuhello 119  aott|?t				crhello 119  aptt|?t
+00:31.550	ID:11	
+00:31.550	ID:11	
+00:31.550	ID:11	
+00:31.683	ID:11	cohello 119  aqtt~cthello 120  artt|?t				cqhello 120  astt|?t
+00:31.683	ID:11	
+00:31.683	ID:11	
+00:31.683	ID:11	
+00:31.700	ID:1	Sending control broadcast: 030
+00:31.707	ID:1	start send 121
+00:31.911	ID:1	now sending hello 121  
+00:31.968	ID:8	HANDOFF STARTED
+00:32.064	ID:11	cnhello 120  attt~cthello 121  autt|?t				cqhello 121  avtt|?t
+00:32.065	ID:11	
+00:32.065	ID:11	
+00:32.065	ID:11	
+00:32.105	ID:1	start send 122
+00:32.107	ID:1	now sending hello 122  
+00:32.269	ID:11	cnhello 121  awtt~cthello 122  axtt|?t
+00:32.269	ID:11	
+00:32.269	ID:11	
+00:32.269	ID:11	
+00:32.308	ID:1	start send 123
+00:32.310	ID:1	now sending hello 123  
+00:32.495	ID:11	cnhello 122  aytt|?t				cqhello 122  aztt~cthello 123  a{tt|?t				cqhello 123  a|tt|?t
+00:32.496	ID:11	
+00:32.496	ID:11	
+00:32.496	ID:11	
+00:32.511	ID:1	start send 124
+00:32.513	ID:1	now sending hello 124  
+00:32.700	ID:1	Sending control broadcast: 031
+00:32.714	ID:1	start send 125
+00:32.744	ID:11	cnhello 123  a}tt~cthello 124  a~tt|?t				cqhello 124  att|?t
+00:32.744	ID:11	
+00:32.744	ID:11	
+00:32.744	ID:11	
+00:32.903	ID:1	now sending hello 125  
+00:33.009	ID:11	cnhello 124  att~cthello 125  att|?t
+00:33.009	ID:11	
+00:33.009	ID:11	
+00:33.009	ID:11	
+00:33.097	ID:1	start send 126
+00:33.099	ID:1	now sending hello 126  
+00:33.292	ID:11	cnhello 125  att|?t				cqhello 125  att~cthello 126  att|?t				cqhello 126  att|?t
+00:33.292	ID:11	
+00:33.292	ID:11	
+00:33.293	ID:11	
+00:33.300	ID:1	start send 127
+00:33.302	ID:1	now sending hello 127  
+00:33.449	ID:11	cnhello 126  att~cthello 127  att|?t				cqhello 127  att|?t
+00:33.449	ID:11	
+00:33.449	ID:11	
+00:33.449	ID:11	
+00:33.503	ID:1	start send 128
+00:33.505	ID:1	now sending hello 128  
+00:33.650	ID:11	cnhello 127  att~cthello 128  att|?t
+00:33.650	ID:11	
+00:33.650	ID:11	
+00:33.650	ID:11	
+00:33.700	ID:1	Sending control broadcast: 032
+00:33.707	ID:1	start send 129
+00:33.864	ID:5	DIO:116
+00:33.864	ID:4	DIO:116
+00:33.864	ID:7	DIO:116
+00:33.864	ID:8	DIO:116
+00:33.911	ID:1	now sending hello 129  
+00:34.050	ID:11	cnhello 128  att|?t				cqhello 128  A<tz;:Qt<@@att~cthello 129  att|?t
+00:34.050	ID:11	
+00:34.050	ID:11	
+00:34.050	ID:11	
+00:34.105	ID:1	start send 130
+00:34.107	ID:1	now sending hello 130  
+00:34.292	ID:11	cnhello 129  att|?t				cqhello 129  att~cshello 130  att|?t
+00:34.292	ID:11	
+00:34.292	ID:11	
+00:34.293	ID:11	
+00:34.308	ID:1	start send 131
+00:34.310	ID:1	now sending hello 131  
+00:34.463	ID:11	cmhello 130  att|?t				cphello 130  att~cshello 131  att|?t				cphello 131  att|?t
+00:34.463	ID:11	
+00:34.463	ID:11	
+00:34.464	ID:11	
+00:34.511	ID:1	start send 132
+00:34.513	ID:1	now sending hello 132  
+00:34.667	ID:11	cmhello 131  att~cshello 132  att|?t
+00:34.667	ID:11	
+00:34.667	ID:11	
+00:34.668	ID:11	
+00:34.700	ID:1	Sending control broadcast: 033
+00:34.714	ID:1	start send 133
+00:34.903	ID:1	now sending hello 133  
+00:35.057	ID:11	cmhello 132  att|?t				cphello 132  att~cshello 133  att|?t				cphello 133  att|?t
+00:35.057	ID:11	
+00:35.057	ID:11	
+00:35.057	ID:11	
+00:35.097	ID:1	start send 134
+00:35.099	ID:1	now sending hello 134  
+00:35.260	ID:11	cmhello 133  att~cshello 134  att|?t				cphello 134  att|?t
+00:35.260	ID:11	
+00:35.260	ID:11	
+00:35.260	ID:11	
+00:35.300	ID:1	start send 135
+00:35.302	ID:1	now sending hello 135  
+00:35.481	ID:9	DIO:116
+00:35.481	ID:10	DIO:116
+00:35.481	ID:7	DIO:116
+00:35.481	ID:6	DIO:116
+00:35.503	ID:1	start send 136
+00:35.505	ID:1	now sending hello 136  
+00:35.558	ID:11	cmhello 134  att~cshello 135  att|?t				cphello 135  Atz;:Kt<@@att|?t
+00:35.558	ID:11	
+00:35.558	ID:11	
+00:35.558	ID:11	
+00:35.700	ID:1	Sending control broadcast: 034
+00:35.707	ID:1	start send 137
+00:35.735	ID:11	cmhello 135  att~cshello 136  att|?t				cphello 136  att|?t
+00:35.735	ID:11	
+00:35.735	ID:11	
+00:35.735	ID:11	
+00:35.911	ID:1	now sending hello 137  
+00:36.105	ID:1	start send 138
+00:36.107	ID:1	now sending hello 138  
+00:36.143	ID:11	cmhello 136  att~cshello 137  att|?t				cphello 137  att|?t
+00:36.143	ID:11	
+00:36.143	ID:11	
+00:36.143	ID:11	
+00:36.308	ID:1	start send 139
+00:36.310	ID:1	now sending hello 139  
+00:36.390	ID:3	DIO:116
+00:36.391	ID:4	DIO:116
+00:36.391	ID:6	DIO:116
+00:36.391	ID:7	DIO:116
+00:36.511	ID:1	start send 140
+00:36.513	ID:1	now sending hello 140  
+00:36.541	ID:11	cmhello 137  a5tt~cvhello 138  a6tt~cvhello 139  att~cshello 138  Atz;:6t<@@att|?t				cphello 138  att|?t
+00:36.542	ID:11	
+00:36.542	ID:11	
+00:36.542	ID:11	
+00:36.585	ID:10	DIO:116
+00:36.585	ID:7	DIO:116
+00:36.586	ID:8	DIO:116
+00:36.700	ID:1	Sending control broadcast: 035
+00:36.714	ID:1	start send 141
+00:36.774	ID:11	cmhello 138  a7tt~cuhello 140  att~cshello 139  att|?t
+00:36.774	ID:11	
+00:36.774	ID:11	
+00:36.774	ID:11	
+00:36.875	ID:11	cmhello 139  att|?t				cphello 139  att~crhello 140  att|?t
+00:36.876	ID:11	
+00:36.876	ID:11	
+00:36.876	ID:11	
+00:36.903	ID:1	now sending hello 141  
+00:37.049	ID:11	clhello 140  att|?t				cohello 140  att~crhello 141  a8tt~cuhello 141  att|?t				cohello 141  att|?t
+00:37.049	ID:11	
+00:37.049	ID:11	
+00:37.049	ID:11	
+00:37.097	ID:1	start send 142
+00:37.099	ID:1	now sending hello 142  
+00:37.218	ID:11	clhello 141  a9tt~cuhello 142  att~crhello 142  att|?t
+00:37.219	ID:11	
+00:37.219	ID:11	
+00:37.219	ID:11	
+00:37.300	ID:1	start send 143
+00:37.302	ID:1	now sending hello 143  
+00:37.503	ID:1	start send 144
+00:37.505	ID:1	now sending hello 144  
+00:37.691	ID:11	clhello 142  att|?t				cohello 142  att~crhello 143  a:tt~cuhello 143  att|?t				cohello 143  a;tt~cuhello 144  att~crhello 144  att|?t				cohello 144  att|?t
+00:37.691	ID:11	
+00:37.691	ID:11	
+00:37.691	ID:11	
+00:37.699	ID:2	DIO:116
+00:37.699	ID:5	DIO:116
+00:37.700	ID:4	DIO:116
+00:37.700	ID:1	Sending control broadcast: 036
+00:37.707	ID:1	start send 145
+00:37.810	ID:8	DIO:116
+00:37.810	ID:9	DIO:116
+00:37.911	ID:1	now sending hello 145  
+00:38.105	ID:1	start send 146
+00:38.107	ID:1	now sending hello 146  
+00:38.208	ID:11	clhello 144  a<tt~cuhello 145  att~crhello 145  att|?t				cohello 145  att|?t
+00:38.208	ID:11	
+00:38.208	ID:11	
+00:38.208	ID:11	
+00:38.223	ID:11	clhello 145  a=tt~c
+00:38.308	ID:1	start send 147
+00:38.310	ID:1	now sending hello 147  
+00:38.332	ID:11	uhello 146  att|?t
+00:38.333	ID:11	
+00:38.333	ID:11	
+00:38.333	ID:11	
+00:38.387	ID:9	DIO:116
+00:38.388	ID:5	DIO:116
+00:38.388	ID:6	DIO:116
+00:38.388	ID:8	DIO:116
+00:38.511	ID:1	start send 148
+00:38.513	ID:1	now sending hello 148  
+00:38.675	ID:11	c-lhello 146  A>tz;:E	t<@@a?tt~c	uhello 147  a@tt~cuhello 148  att|?t				c(ohello 148  att|?t
+00:38.675	ID:11	
+00:38.675	ID:11	
+00:38.675	ID:11	
+00:38.700	ID:1	Sending control broadcast: 037
+00:38.714	ID:1	start send 149
+00:38.903	ID:1	now sending hello 149  
+00:39.050	ID:11	c(lhello 148  aAtt~cuhello 149  att~c rhello 149  att|?t
+00:39.050	ID:11	
+00:39.050	ID:11	
+00:39.050	ID:11	
+00:39.097	ID:1	start send 150
+00:39.099	ID:1	now sending hello 150  
+00:39.191	ID:11	c lhello 149  att~cqhello 150  aBtt~cthello 150  att|?t
+00:39.191	ID:11	
+00:39.191	ID:11	
+00:39.191	ID:11	
+00:39.300	ID:1	start send 151
+00:39.302	ID:1	now sending hello 151  
+00:39.503	ID:1	start send 152
+00:39.505	ID:1	now sending hello 152  
+00:39.562	ID:2	DIO:116
+00:39.563	ID:3	DIO:116
+00:39.592	ID:11	ckhello 150  att|?t				cohello 149  att|?t				cnhello 150  aCtt~cthello 151  att~cqhello 151  att|?t				cnhello 151  att|?t
+00:39.592	ID:11	
+00:39.592	ID:11	
+00:39.592	ID:11	
+00:39.616	ID:10	HANDOFF STARTED
+00:39.695	ID:11	ckhello 151  aDtt~cthello 152  att~c	qhello 152  att|?t
+00:39.695	ID:11	
+00:39.695	ID:11	
+00:39.695	ID:11	
+00:39.700	ID:1	Sending control broadcast: 038
+00:39.707	ID:1	start send 153
+00:39.911	ID:1	now sending hello 153  
+00:40.097	ID:11	c	khello 152  att|?t				cnhello 152  aEtt~cthello 153  att~cqhello 153  att|?t				cnhello 153  att|?t
+00:40.097	ID:11	
+00:40.097	ID:11	
+00:40.097	ID:11	
+00:40.105	ID:1	start send 154
+00:40.107	ID:1	now sending hello 154  
+00:40.308	ID:1	start send 155
+00:40.310	ID:1	now sending hello 155  
+00:40.511	ID:1	start send 156
+00:40.513	ID:1	now sending hello 156  
+00:40.700	ID:1	Sending control broadcast: 039
+00:40.719	ID:1	start send 157
+00:40.903	ID:1	now sending hello 157  
+00:41.097	ID:1	start send 158
+00:41.099	ID:1	now sending hello 158  
+00:41.300	ID:1	start send 159
+00:41.302	ID:1	now sending hello 159  
+00:41.503	ID:1	start send 160
+00:41.505	ID:1	now sending hello 160  
+00:41.700	ID:1	Sending control broadcast: 040
+00:41.707	ID:1	start send 161
+00:41.911	ID:1	now sending hello 161  
+00:42.105	ID:1	start send 162
+00:42.107	ID:1	now sending hello 162  
+00:42.308	ID:1	start send 163
+00:42.310	ID:1	now sending hello 163  
+00:42.511	ID:1	start send 164
+00:42.513	ID:1	now sending hello 164  
+00:42.667	ID:11	ckhello 153  a=tt~cwhello 154  aFtt~cthello 154  att~cqhello 154  att|?t				cnhello 154  att~cqhello 155  aGtt~cthello 155  a>tt~cwhello 155  att|?t				cnhello 155  a?tt~cwhello 156  att~cqhello 156  aHtt~cthello 156  att|?t				cnhello 156  att~cqhello 157  aItt~cthello 157  a@tt~cwhello 157  aJtt~cthello 158  aAtt~cwhello 158  att|?t				cnhello 158  aKtt~cthello 159  aBtt~cwhello 159  att~cqhello 159  att|?t				cnhello 159  aLtt~cshello 160  att~cphello 160  aCtt~cvhello 160  att|?t				cmhello 160  aMtt~cshello 161  att~cphello 161  att|?t				cmhello 161  aDtt~cvhello 161  aNtt~cshello 162  aEtt~cvhello 162  att~cphello 162  att|?t				cmhello 162  aFtt~cvhello 163  aOtt~cshello 163  att~cphello 163  att|?t				cmhello 163  aPtt~cshello 164  aGtt~cvhello 164  att~c
+00:42.700	ID:1	Sending control broadcast: 041
+00:42.719	ID:1	start send 165
+00:42.903	ID:1	now sending hello 165  
+00:42.986	ID:11	phello 164  att|?t				c	mhello 164  aHtt~c
+00:43.097	ID:1	start send 166
+00:43.099	ID:1	now sending hello 166  
+00:43.300	ID:1	start send 167
+00:43.302	ID:1	now sending hello 167  
+00:43.503	ID:1	start send 168
+00:43.505	ID:1	now sending hello 168  
+00:43.700	ID:1	Sending control broadcast: 042
+00:43.707	ID:1	start send 169
+00:43.911	ID:1	now sending hello 169  
+00:43.968	ID:9	HANDOFF STARTED
+00:44.105	ID:1	start send 170
+00:44.107	ID:1	now sending hello 170  
+00:44.308	ID:1	start send 171
+00:44.310	ID:1	now sending hello 171  
+00:44.511	ID:1	start send 172
+00:44.513	ID:1	now sending hello 172  
+00:44.700	ID:1	Sending control broadcast: 043
+00:44.714	ID:1	start send 173
+00:44.738	ID:5	str: r -90 f fe80::212:7401:1:101 t 043
+00:44.903	ID:1	now sending hello 173  
+00:45.097	ID:1	start send 174
+00:45.099	ID:1	now sending hello 174  
+00:45.202	ID:10	Received response: SET fe80::212:7401:1:101
+00:45.203	ID:10	NOW BEING BEST
+00:45.300	ID:1	start send 175
+00:45.302	ID:1	now sending hello 175  
+00:45.503	ID:1	start send 176
+00:45.505	ID:1	now sending hello 176  
+00:45.700	ID:1	Sending control broadcast: 044
+00:45.707	ID:1	start send 177
+00:45.754	ID:5	str: r -83 f fe80::212:7401:1:101 t 044
+00:45.911	ID:1	now sending hello 177  
+00:46.105	ID:1	start send 178
+00:46.107	ID:1	now sending hello 178  
+00:46.170	ID:9	Received response: SET fe80::212:7401:1:101
+00:46.171	ID:9	NOW BEING BEST
+00:46.255	ID:3	DIO:116
+00:46.255	ID:4	DIO:116
+00:46.308	ID:1	start send 179
+00:46.310	ID:1	now sending hello 179  
+00:46.319	ID:10	Received response: NOT fe80::212:7401:1:101
+00:46.511	ID:1	start send 180
+00:46.513	ID:1	now sending hello 180  
+00:46.700	ID:1	Sending control broadcast: 045
+00:46.719	ID:1	start send 181
+00:46.730	ID:5	str: r -78 f fe80::212:7401:1:101 t 045
+00:46.903	ID:1	now sending hello 181  
+00:47.097	ID:1	start send 182
+00:47.099	ID:1	now sending hello 182  
+00:47.133	ID:8	Received response: SET fe80::212:7401:1:101
+00:47.134	ID:8	NOW BEING BEST
+00:47.223	ID:11	vhello 165  att~cphello 165  aQtt~cshello 165  att|?t				cmhello 165  aItt~c	vhello 166  aRtt~cshello 166  att|?t				c9mhello 166  aStt~cshello 167  att~c3phello 167  aJtt~cvhello 167  att|?t				c3mhello 167  aKtt~cvhello 168  att~c(phello 168  aTtt~cshello 168  att|?t				c(mhello 168  aUtt~cshello 169  att~c phello 169  att|?t				c mhello 169  aLtt~cvhello 169  att~cohello 170  aMtt~cuhello 170  aVtt~crhello 170  aWtt~crhello 171  aNtt~cuhello 171  att~cohello 171  att~cohello 172  aOtt~cuhello 172  aXtt~crhello 172  att~c"="=#r -90 f fe80::212:7401:1:101 t 043aYtt~crhello 173  att~cohello 173  aPtt~cuhello 173  !RaZtt~crhello 175  aQtt~cuhello 175  att~cohello 175  aRtt~cuhello 176  a[tt~crhello 176  att~cohello 176  att~c"="=#r -83 f fe80::212:7401:1:101 t 044att~cohello 177  aStt~cuhello 177  a\tt~crhello 177  !Ra]tt~crhello 178  att~c	ohello 178  aTtt~cuhello 178  !Ra^tt~crhello 179  aUtt~cuhello 179  att~cohello 179  att~cnhello 180  aVtt~cthello 180  a_tt~cqhello 180  att~c"="=#r -78 f fe80::212:7401:1:101 t 045att~cnhello 181  aWtt~cthello 181  a`tt~cqhello 181  !Ratt~cnhello 182  aatt~c
+00:47.300	ID:1	start send 183
+00:47.302	ID:1	now sending hello 183  
+00:47.319	ID:9	Received response: NOT fe80::212:7401:1:101
+00:47.503	ID:1	start send 184
+00:47.505	ID:1	now sending hello 184  
+00:47.700	ID:1	Sending control broadcast: 046
+00:47.707	ID:1	start send 185
+00:47.738	ID:5	str: r -72 f fe80::212:7401:1:101 t 046
+00:47.911	ID:1	now sending hello 185  
+00:47.960	ID:8	HANDOFF STARTED
+00:48.105	ID:1	start send 186
+00:48.107	ID:1	now sending hello 186  
+00:48.149	ID:8	Received response: SET fe80::212:7401:1:101
+00:48.150	ID:8	NOW BEING BEST
+00:48.308	ID:1	start send 187
+00:48.310	ID:1	now sending hello 187  
+00:48.511	ID:1	start send 188
+00:48.513	ID:1	now sending hello 188  
+00:48.700	ID:1	Sending control broadcast: 047
+00:48.714	ID:1	start send 189
+00:48.761	ID:5	str: r -68 f fe80::212:7401:1:101 t 047
+00:48.761	ID:4	str: r -90 f fe80::212:7401:1:101 t 047
+00:48.903	ID:1	now sending hello 189  
+00:49.097	ID:1	start send 190
+00:49.099	ID:1	now sending hello 190  
+00:49.165	ID:7	Received response: SET fe80::212:7401:1:101
+00:49.166	ID:7	NOW BEING BEST
+00:49.192	ID:11	qhello 182  aXtt~cthello 182  !Ratt~cnhello 183  aYtt~cthello 183  abtt~c	qhello 183  actt~cqhello 184  aZtt~cthello 184  att~cnhello 184  att~c"="="r -72 f fe80::212:7401:1:101 t 046att~cnhello 185  a[tt~cthello 185  adtt~cqhello 185  !Raett~cqhello 186  a\tt~cthello 186  aftt~cqhello 187  a]tt~cthello 187  agtt~cqhello 188  a^tt~cthello 188  att~c"="="r -68 f fe80::212:7401:1:101 t 047a_tt|?tc"="="r -90 f fe80::212:7401:1:101 t 047ahtt~cqhello 189  a`tt~cthello 189  !R	aitt~cphello 190  !R
+00:49.197	ID:8	Received response: NOT fe80::212:7401:1:101
+00:49.300	ID:1	start send 191
+00:49.302	ID:1	now sending hello 191  
+00:49.503	ID:1	start send 192
+00:49.505	ID:1	now sending hello 192  
+00:49.700	ID:1	Sending control broadcast: 048
+00:49.707	ID:1	start send 193
+00:49.745	ID:5	str: r -64 f fe80::212:7401:1:101 t 048
+00:49.745	ID:4	str: r -83 f fe80::212:7401:1:101 t 048
+00:49.911	ID:1	now sending hello 193  
+00:50.105	ID:1	start send 194
+00:50.107	ID:1	now sending hello 194  
+00:50.157	ID:7	Received response: SET fe80::212:7401:1:101
+00:50.158	ID:7	NOW BEING BEST
+00:50.308	ID:1	start send 195
+00:50.310	ID:1	now sending hello 195  
+00:50.511	ID:1	start send 196
+00:50.513	ID:1	now sending hello 196  
+00:50.700	ID:1	Sending control broadcast: 049
+00:50.719	ID:1	start send 197
+00:50.730	ID:5	str: r -62 f fe80::212:7401:1:101 t 049
+00:50.730	ID:4	str: r -78 f fe80::212:7401:1:101 t 049
+00:50.903	ID:1	now sending hello 197  
+00:51.097	ID:1	start send 198
+00:51.099	ID:1	now sending hello 198  
+00:51.149	ID:6	Received response: SET fe80::212:7401:1:101
+00:51.150	ID:6	NOW BEING BEST
+00:51.204	ID:7	Received response: NOT fe80::212:7401:1:101
+00:51.300	ID:1	start send 199
+00:51.302	ID:1	now sending hello 199  
+00:51.503	ID:1	start send 200
+00:51.505	ID:1	now sending hello 200  
+00:51.700	ID:1	Sending control broadcast: 050
+00:51.707	ID:1	start send 201
+00:51.738	ID:4	str: r -72 f fe80::212:7401:1:101 t 050
+00:51.738	ID:5	str: r -61 f fe80::212:7401:1:101 t 050
+00:51.911	ID:1	now sending hello 201  
+00:51.976	ID:7	HANDOFF STARTED
+00:52.105	ID:1	start send 202
+00:52.107	ID:1	now sending hello 202  
+00:52.158	ID:6	Received response: SET fe80::212:7401:1:101
+00:52.160	ID:6	NOW BEING BEST
+00:52.308	ID:1	start send 203
+00:52.310	ID:1	now sending hello 203  
+00:52.511	ID:1	start send 204
+00:52.513	ID:1	now sending hello 204  
+00:52.700	ID:1	Sending control broadcast: 051
+00:52.714	ID:1	start send 205
+00:52.746	ID:3	str: r -90 f fe80::212:7401:1:101 t 051
+00:52.746	ID:4	str: r -68 f fe80::212:7401:1:101 t 051
+00:52.746	ID:5	str: r -61 f fe80::212:7401:1:101 t 051
+00:52.787	ID:11	aatt~cshello 190  abtt~cshello 191  ajtt~cphello 191  aktt~cphello 192  actt~cshello 192  att~c"="=!r -64 f fe80::212:7401:1:101 t 048adtt|?tc"="="r -83 f fe80::212:7401:1:101 t 048aett~cshello 193  altt~cphello 193  !Ramtt~cphello 194  aftt~cshello 194  antt~cphello 195  agtt~cshello 195  aott~cphello 196  ahtt~cshello 196  att~c"="= r -62 f fe80::212:7401:1:101 t 049aitt|?tc"="="r -78 f fe80::212:7401:1:101 t 049aptt~cphello 197  ajtt~cshello 197  !R!Raqtt~cphello 199  aktt~cshello 199  altt~c|hello 200  artt~cyhello 200  att~c"="=)r -61 f fe80::212:7401:1:101 t 050amtt|?tc"="=+r -72 f fe80::212:7401:1:101 t 050antt~c|hello 201  astt~cyhello 201  !Raott~c|hello 202  aptt~c|hello 203  aqtt~c|hello 204  att~c
+00:52.903	ID:1	now sending hello 205  
+00:53.097	ID:1	start send 206
+00:53.099	ID:1	now sending hello 206  
+00:53.179	ID:6	Received response: SET fe80::212:7401:1:101
+00:53.180	ID:6	NOW BEING BEST
+00:53.300	ID:1	start send 207
+00:53.302	ID:1	now sending hello 207  
+00:53.503	ID:1	start send 208
+00:53.505	ID:1	now sending hello 208  
+00:53.700	ID:1	Sending control broadcast: 052
+00:53.709	ID:1	start send 209
+00:53.720	ID:3	str: r -83 f fe80::212:7401:1:101 t 052
+00:53.720	ID:4	str: r -64 f fe80::212:7401:1:101 t 052
+00:53.720	ID:5	str: r -63 f fe80::212:7401:1:101 t 052
+00:53.911	ID:1	now sending hello 209  
+00:54.105	ID:1	start send 210
+00:54.107	ID:1	now sending hello 210  
+00:54.205	ID:6	Received response: SET fe80::212:7401:1:101
+00:54.206	ID:6	NOW BEING BEST
+00:54.251	ID:11	"="=(r -61 f fe80::212:7401:1:101 t 051att|?tc	"="=+r -90 f fe80::212:7401:1:101 t 051artt|?tc"="=+r -68 f fe80::212:7401:1:101 t 051astt~c|hello 205  attt~c|hello 206  !Rautt~c|hello 207  avtt~c|hello 208  awtt|?tc"="=*r -64 f fe80::212:7401:1:101 t 052att~c"="='r -63 f fe80::212:7401:1:101 t 052att|?tc"="=+r -83 f fe80::212:7401:1:101 t 052axtt~c|hello 209  !Raytt~c
+00:54.308	ID:1	start send 211
+00:54.310	ID:1	now sending hello 211  
+00:54.511	ID:1	start send 212
+00:54.513	ID:1	now sending hello 212  
+00:54.633	ID:8	DIO:116
+00:54.633	ID:6	DIO:116
+00:54.633	ID:7	DIO:116
+00:54.633	ID:4	DIO:116
+00:54.633	ID:5	DIO:116
+00:54.700	ID:1	Sending control broadcast: 053
+00:54.714	ID:1	start send 213
+00:54.753	ID:3	str: r -78 f fe80::212:7401:1:101 t 053
+00:54.753	ID:4	str: r -62 f fe80::212:7401:1:101 t 053
+00:54.753	ID:5	str: r -65 f fe80::212:7401:1:101 t 053
+00:54.903	ID:1	now sending hello 213  
+00:55.097	ID:1	start send 214
+00:55.099	ID:1	now sending hello 214  
+00:55.118	ID:5	Received response: SET fe80::212:7401:1:101
+00:55.119	ID:5	NOW BEING BEST
+00:55.203	ID:6	Received response: NOT fe80::212:7401:1:101
+00:55.300	ID:1	start send 215
+00:55.302	ID:1	now sending hello 215  
+00:55.503	ID:1	start send 216
+00:55.505	ID:1	now sending hello 216  
+00:55.661	ID:11	{hello 210  aztt~c	{hello 211  a{tt~c{hello 212  !Ratt~c"="=&r -65 f fe80::212:7401:1:101 t 053att|?tc"="=+r -78 f fe80::212:7401:1:101 t 053a|tt|?tc"="=)r -62 f fe80::212:7401:1:101 t 053!Ra}tt~c{hello 214  !Ratt~c~hello 214  att~c~hello 215  a~tt~c{hello 215  att~c{hello 216  a tt~c
+00:55.700	ID:1	Sending control broadcast: 054
+00:55.707	ID:1	start send 217
+00:55.738	ID:3	str: r -72 f fe80::212:7401:1:101 t 054
+00:55.738	ID:4	str: r -61 f fe80::212:7401:1:101 t 054
+00:55.911	ID:1	now sending hello 217  
+00:55.991	ID:6	HANDOFF STARTED
+00:56.105	ID:1	start send 218
+00:56.107	ID:1	now sending hello 218  
+00:56.188	ID:5	Received response: SET fe80::212:7401:1:101
+00:56.189	ID:5	NOW BEING BEST
+00:56.308	ID:1	start send 219
+00:56.310	ID:1	now sending hello 219  
+00:56.511	ID:1	start send 220
+00:56.513	ID:1	now sending hello 220  
+00:56.700	ID:1	Sending control broadcast: 055
+00:56.714	ID:1	start send 221
+00:56.722	ID:3	str: r -68 f fe80::212:7401:1:101 t 055
+00:56.722	ID:2	str: r -90 f fe80::212:7401:1:101 t 055
+00:56.722	ID:4	str: r -61 f fe80::212:7401:1:101 t 055
+00:56.903	ID:1	now sending hello 221  
+00:57.097	ID:1	start send 222
+00:57.099	ID:1	now sending hello 222  
+00:57.290	ID:5	Received response: SET fe80::212:7401:1:101
+00:57.291	ID:5	NOW BEING BEST
+00:57.300	ID:1	start send 223
+00:57.302	ID:1	now sending hello 223  
+00:57.503	ID:1	start send 224
+00:57.505	ID:1	now sending hello 224  
+00:57.700	ID:1	Sending control broadcast: 056
+00:57.709	ID:1	start send 225
+00:57.720	ID:3	str: r -64 f fe80::212:7401:1:101 t 056
+00:57.720	ID:2	str: r -83 f fe80::212:7401:1:101 t 056
+00:57.720	ID:4	str: r -63 f fe80::212:7401:1:101 t 056
+00:57.911	ID:1	now sending hello 225  
+00:58.105	ID:1	start send 226
+00:58.107	ID:1	now sending hello 226  
+00:58.133	ID:5	Received response: SET fe80::212:7401:1:101
+00:58.134	ID:5	NOW BEING BEST
+00:58.308	ID:1	start send 227
+00:58.310	ID:1	now sending hello 227  
+00:58.511	ID:1	start send 228
+00:58.513	ID:1	now sending hello 228  
+00:58.700	ID:1	Sending control broadcast: 057
+00:58.714	ID:1	start send 229
+00:58.738	ID:2	str: r -78 f fe80::212:7401:1:101 t 057
+00:58.738	ID:3	str: r -62 f fe80::212:7401:1:101 t 057
+00:58.738	ID:4	str: r -65 f fe80::212:7401:1:101 t 057
+00:58.903	ID:1	now sending hello 229  
+00:59.097	ID:1	start send 230
+00:59.099	ID:1	now sending hello 230  
+00:59.146	ID:9	DIO:116
+00:59.146	ID:10	DIO:116
+00:59.147	ID:7	DIO:116
+00:59.147	ID:6	DIO:116
+00:59.224	ID:4	Received response: SET fe80::212:7401:1:101
+00:59.225	ID:4	NOW BEING BEST
+00:59.300	ID:1	start send 231
+00:59.302	ID:1	now sending hello 231  
+00:59.503	ID:1	start send 232
+00:59.505	ID:1	now sending hello 232  
+00:59.700	ID:1	Sending control broadcast: 058
+00:59.707	ID:1	start send 233
+00:59.730	ID:3	str: r -61 f fe80::212:7401:1:101 t 058
+00:59.730	ID:2	str: r -72 f fe80::212:7401:1:101 t 058
+00:59.911	ID:1	now sending hello 233  
+00:59.968	ID:5	HANDOFF STARTED
+01:00.029	ID:9	DIO:116
+01:00.029	ID:8	DIO:116
+01:00.105	ID:1	start send 234
+01:00.107	ID:1	now sending hello 234  
+01:00.132	ID:9	DIO:116
+01:00.132	ID:5	DIO:116
+01:00.132	ID:6	DIO:116
+01:00.132	ID:8	DIO:116
+01:00.308	ID:1	start send 235
+01:00.310	ID:1	now sending hello 235  
+01:00.511	ID:1	start send 236
+01:00.513	ID:1	now sending hello 236  
+01:00.676	ID:2	DIO:116
+01:00.676	ID:5	DIO:116
+01:00.676	ID:4	DIO:116
+01:00.700	ID:1	Sending control broadcast: 059
+01:00.714	ID:1	start send 237
+01:00.746	ID:3	str: r -61 f fe80::212:7401:1:101 t 059
+01:00.746	ID:2	str: r -68 f fe80::212:7401:1:101 t 059
+01:00.903	ID:1	now sending hello 237  
+01:01.097	ID:1	start send 238
+01:01.099	ID:1	now sending hello 238  
+01:01.183	ID:11	~hello 216  att|?tc"="=(r -61 f fe80::212:7401:1:101 t 054a!tt|?tc	"="=*r -72 f fe80::212:7401:1:101 t 054att~c{hello 217  a"tt~c~hello 217  !Ra#tt~c~hello 218  a$tt~c~hello 219  a%tt~c}hello 220  att|?tc"="='r -61 f fe80::212:7401:1:101 t 055a&tt|?tc"="=*r -68 f fe80::212:7401:1:101 t 055a'tt|>tc"="=*r -90 f fe80::212:7401:1:101 t 055a(tt~c}hello 221  a)tt~c}hello 222  !Ra*tt~c}hello 223  a+tt~c}hello 224  a,tt|?tc"="=)r -64 f fe80::212:7401:1:101 t 056att|?tc"="=&r -63 f fe80::212:7401:1:101 t 056a-tt|>tc"="=*r -83 f fe80::212:7401:1:101 t 056a.tt~c}hello 225  !Ra/tt~c}hello 226  a0tt~c}hello 227  a1tt~c}hello 228  att|?tc"="=%r -65 f fe80::212:7401:1:101 t 057a2tt|?tc"="=(r -62 f fe80::212:7401:1:101 t 057a3tt|>tc"="=*r -78 f fe80::212:7401:1:101 t 057a4tt~c}hello 229  Atz;:B	t<@@a5tt~c|hello 230  !R!Ra6tt~c|hello 231  att|?tchello 231  a7tt~c|hello 232  att|?tchello 232  a8tt|?tc"="='r -61 f fe80::212:7401:1:101 t 058a9tt|>tc"="=)r -72 f fe80::212:7401:1:101 t 058a:tt~c|hello 233  att|?tchello 233  Attz;:Nt<@@att|?tchello 234  att|?tchello 235  att|?tchello 236  a;tt|?tc"="=&r -61 f fe80::212:7401:1:101 t 059a<tt|>tc"="=)r -68 f fe80::212:7401:1:101 t 059att|?tchello 237  !R
+01:01.247	ID:4	Received response: SET fe80::212:7401:1:101
+01:01.248	ID:4	NOW BEING BEST
+01:01.300	ID:1	start send 239
+01:01.302	ID:1	now sending hello 239  
+01:01.503	ID:1	start send 240
+01:01.505	ID:1	now sending hello 240  
+01:01.700	ID:1	Sending control broadcast: 060
+01:01.707	ID:1	start send 241
+01:01.738	ID:2	str: r -64 f fe80::212:7401:1:101 t 060
+01:01.738	ID:3	str: r -63 f fe80::212:7401:1:101 t 060
+01:01.911	ID:1	now sending hello 241  
+01:02.105	ID:1	start send 242
+01:02.107	ID:1	now sending hello 242  
+01:02.222	ID:4	Received response: SET fe80::212:7401:1:101
+01:02.223	ID:4	NOW BEING BEST
+01:02.308	ID:1	start send 243
+01:02.310	ID:1	now sending hello 243  
+01:02.511	ID:1	start send 244
+01:02.513	ID:1	now sending hello 244  
+01:02.566	ID:4	DIO:116
+01:02.567	ID:5	DIO:116
+01:02.567	ID:7	DIO:116
+01:02.567	ID:8	DIO:116
+01:02.700	ID:1	Sending control broadcast: 061
+01:02.714	ID:1	start send 245
+01:02.761	ID:2	str: r -62 f fe80::212:7401:1:101 t 061
+01:02.761	ID:3	str: r -65 f fe80::212:7401:1:101 t 061
+01:02.903	ID:1	now sending hello 245  
+01:03.097	ID:1	start send 246
+01:03.099	ID:1	now sending hello 246  
+01:03.248	ID:2	Received response: SET fe80::212:7401:1:101
+01:03.249	ID:2	NOW BEING BEST
+01:03.263	ID:4	Received response: NOT fe80::212:7401:1:101
+01:03.300	ID:1	start send 247
+01:03.302	ID:1	now sending hello 247  
+01:03.503	ID:1	start send 248
+01:03.505	ID:1	now sending hello 248  
+01:03.678	ID:11	att|?tchello 238  att|?tchello 239  att|?tc ~hello 240  a=tt|?tc"="=/r -63 f fe80::212:7401:1:101 t 060a>tt|>tc"="=2r -64 f fe80::212:7401:1:101 t 060att|?tc~hello 241  !Ratt|?tc~hello 242  att|?tc~hello 243  Atz;:Qt<@@att|?tc~hello 244  a?tt|?tc"="=.r -65 f fe80::212:7401:1:101 t 061a@tt|>tc"="=1r -62 f fe80::212:7401:1:101 t 061att|?tc~hello 245  !R!RaBtt|>tchello 247  att|?tc~hello 247  att|?tc~hello 248  aCtt|>tc
+01:03.700	ID:1	Sending control broadcast: 062
+01:03.711	ID:1	start send 249
+01:03.722	ID:3	str: r -69 f fe80::212:7401:1:101 t 062
+01:03.911	ID:1	now sending hello 249  
+01:04.105	ID:1	start send 250
+01:04.107	ID:1	now sending hello 250  
+01:04.148	ID:4	HANDOFF STARTED
+01:04.308	ID:1	start send 251
+01:04.310	ID:1	now sending hello 251  
+01:04.318	ID:2	Received response: SET fe80::212:7401:1:101
+01:04.319	ID:2	NOW BEING BEST
+01:04.511	ID:1	start send 252
+01:04.513	ID:1	now sending hello 252  
+01:04.700	ID:1	Sending control broadcast: 063
+01:04.714	ID:1	start send 253
+01:04.720	ID:3	str: r -67 f fe80::212:7401:1:101 t 063
+01:04.734	ID:7	DIO:116
+01:04.903	ID:1	now sending hello 253  
+01:05.097	ID:1	start send 254
+01:05.099	ID:1	now sending hello 254  
+01:05.213	ID:2	Received response: SET fe80::212:7401:1:101
+01:05.214	ID:2	NOW BEING BEST
+01:05.300	ID:1	start send 255
+01:05.302	ID:1	now sending hello 255  
+01:05.503	ID:1	start send 256
+01:05.505	ID:1	now sending hello 256  
+01:05.700	ID:1	Sending control broadcast: 064
+01:05.709	ID:1	start send 257
+01:05.720	ID:3	str: r -64 f fe80::212:7401:1:101 t 064
+01:05.911	ID:1	now sending hello 257  
+01:06.105	ID:1	start send 258
+01:06.107	ID:1	now sending hello 258  
+01:06.251	ID:2	Received response: SET fe80::212:7401:1:101
+01:06.252	ID:2	NOW BEING BEST
+01:06.308	ID:1	start send 259
+01:06.310	ID:1	now sending hello 259  
+01:06.511	ID:1	start send 260
+01:06.513	ID:1	now sending hello 260  
+01:06.700	ID:1	Sending control broadcast: 065
+01:06.714	ID:1	start send 261
+01:06.720	ID:3	str: r -62 f fe80::212:7401:1:101 t 065
+01:06.903	ID:1	now sending hello 261  
+01:07.097	ID:1	start send 262
+01:07.099	ID:1	now sending hello 262  
+01:07.205	ID:2	Received response: SET fe80::212:7401:1:101
+01:07.206	ID:2	NOW BEING BEST
+01:07.300	ID:1	start send 263
+01:07.302	ID:1	now sending hello 263  
+01:07.503	ID:1	start send 264
+01:07.505	ID:1	now sending hello 264  
+01:07.700	ID:1	Sending control broadcast: 066
+01:07.707	ID:1	start send 265
+01:07.730	ID:3	str: r -61 f fe80::212:7401:1:101 t 066
+01:07.911	ID:1	now sending hello 265  
+01:08.105	ID:1	start send 266
+01:08.107	ID:1	now sending hello 266  
+01:08.146	ID:4	Received response: SET fe80::212:7401:1:101
+01:08.147	ID:4	NOW BEING BEST
+01:08.279	ID:2	Received response: NOT fe80::212:7401:1:101
+01:08.308	ID:1	start send 267
+01:08.310	ID:1	now sending hello 267  
+01:08.511	ID:1	start send 268
+01:08.513	ID:1	now sending hello 268  
+01:08.700	ID:1	Sending control broadcast: 067
+01:08.714	ID:1	start send 269
+01:08.722	ID:3	str: r -61 f fe80::212:7401:1:101 t 067
+01:08.903	ID:1	now sending hello 269  
+01:09.097	ID:1	start send 270
+01:09.099	ID:1	now sending hello 270  
+01:09.300	ID:1	start send 271
+01:09.302	ID:1	now sending hello 271  
+01:09.503	ID:1	start send 272
+01:09.505	ID:1	now sending hello 272  
+01:09.532	ID:10	DIO:116
+01:09.532	ID:8	DIO:116
+01:09.533	ID:7	DIO:116
+01:09.700	ID:1	Sending control broadcast: 068
+01:09.707	ID:1	start send 273
+01:09.761	ID:3	str: r -63 f fe80::212:7401:1:101 t 068
+01:09.911	ID:1	now sending hello 273  
+01:10.105	ID:1	start send 274
+01:10.107	ID:1	now sending hello 274  
+01:10.161	ID:4	Received response: SET fe80::212:7401:1:101
+01:10.163	ID:4	NOW BEING BEST
+01:10.308	ID:1	start send 275
+01:10.310	ID:1	now sending hello 275  
+01:10.511	ID:1	start send 276
+01:10.513	ID:1	now sending hello 276  
+01:10.700	ID:1	Sending control broadcast: 069
+01:10.714	ID:1	start send 277
+01:10.720	ID:3	str: r -66 f fe80::212:7401:1:101 t 069
+01:10.903	ID:1	now sending hello 277  
+01:11.097	ID:1	start send 278
+01:11.099	ID:1	now sending hello 278  
+01:11.263	ID:4	Received response: SET fe80::212:7401:1:101
+01:11.264	ID:4	NOW BEING BEST
+01:11.300	ID:1	start send 279
+01:11.302	ID:1	now sending hello 279  
+01:11.503	ID:1	start send 280
+01:11.505	ID:1	now sending hello 280  
+01:11.562	ID:2	HANDOFF STARTED
+01:11.700	ID:1	Sending control broadcast: 070
+01:11.707	ID:1	start send 281
+01:11.746	ID:3	str: r -70 f fe80::212:7401:1:101 t 070
+01:11.849	ID:3	DIO:116
+01:11.911	ID:1	now sending hello 281  
+01:12.105	ID:1	start send 282
+01:12.107	ID:1	now sending hello 282  
+01:12.165	ID:5	Received response: SET fe80::212:7401:1:101
+01:12.166	ID:5	NOW BEING BEST
+01:12.308	ID:1	start send 283
+01:12.310	ID:1	now sending hello 283  
+01:12.348	ID:4	Received response: NOT fe80::212:7401:1:101
+01:12.511	ID:1	start send 284
+01:12.513	ID:1	now sending hello 284  
+01:12.700	ID:1	Sending control broadcast: 071
+01:12.714	ID:1	start send 285
+01:12.738	ID:3	str: r -75 f fe80::212:7401:1:101 t 071
+01:12.903	ID:1	now sending hello 285  
+01:13.097	ID:1	start send 286
+01:13.099	ID:1	now sending hello 286  
+01:13.173	ID:5	Received response: SET fe80::212:7401:1:101
+01:13.174	ID:5	NOW BEING BEST
+01:13.300	ID:1	start send 287
+01:13.302	ID:1	now sending hello 287  
+01:13.503	ID:1	start send 288
+01:13.505	ID:1	now sending hello 288  
+01:13.700	ID:1	Sending control broadcast: 072
+01:13.707	ID:1	start send 289
+01:13.738	ID:3	str: r -80 f fe80::212:7401:1:101 t 072
+01:13.911	ID:1	now sending hello 289  
+01:14.105	ID:1	start send 290
+01:14.107	ID:1	now sending hello 290  
+01:14.183	ID:11	hello 248  aDtt|?tc	"="=-r -69 f fe80::212:7401:1:101 t 062aEtt|>tchello 249  att|?tc }hello 250  aFtt|>tc"hello 250  !Ratt|?tc}hello 251  aHtt|>tc!hello 251  aItt|>tc hello 252  aKtt|?tc"="=,r -67 f fe80::212:7401:1:101 t 063att|?tc}hello 252  aLtt|>tchello 253  att|?tc}hello 253  !RaNtt|>tchello 254  att|?tc}hello 254  att|?tc}hello 255  aOtt|>tchello 255  aPtt|>tchello 256  aQtt|?tc"="=+r -64 f fe80::212:7401:1:101 t 064att|?tc}hello 256  att|?tc}hello 257  aRtt|>tchello 257  !Ratt|?tc}hello 258  aTtt|>tchello 258  att|?tc}hello 259  aUtt|>tchello 259  aVtt|>tc"hello 260  aWtt|?tc"="=*r -62 f fe80::212:7401:1:101 t 065att|?tc |hello 260  att|?tc|hello 261  aXtt|>tc!hello 261  !RaZtt|>tc hello 262  att|?tc|hello 262  att|?tc|hello 263  a[tt|>tchello 263  att|?tc|hello 264  a\tt|>tchello 264  a]tt|?tc"="=)r -61 f fe80::212:7401:1:101 t 066att|?tc|hello 265  a^tt|>tchello 265  !R!Ra`tt|>tchello 266  aatt~cyhello 267  abtt|>tchello 267  att|?tc|hello 267  actt~cyhello 268  adtt|>tchello 268  aett|?tc"="=(r -61 f fe80::212:7401:1:101 t 067aftt~cyhello 269  att|?tc|hello 269  !Ragtt|>tchello 269  ahtt~cxhello 270  aitt|>tc"hello 270  att|?tc{hello 271  ajtt|>tc!hello 271  att|?tc{hello 272  aktt~cxhello 272  altt|>tc hello 272  amtt|?tc"="='r -63 f fe80::212:7401:1:101 t 068antt~cxhello 273  aott|>tchello 273  att|?tc{hello 273  !Raptt~cxhello 274  aqtt|>tchello 274  artt~cxhello 275  astt|>tchello 275  att|?tc{hello 275  att|?tc{hello 276  attt~cxhello 276  autt|>tchello 276  avtt|?tc"="=&r -66 f fe80::212:7401:1:101 t 069awtt~cxhello 277  axtt|>tchello 277  aytt~cxhello 278  !Raztt|>tchello 278  att|?tc{hello 278  a{tt~cxhello 279  att|?tc{hello 279  a|tt|>tchello 279  a}tt~cwhello 280  att|?tc zhello 280  a~tt|>tc"hello 280  att|?tc"="=.r -70 f fe80::212:7401:1:101 t 070att~cwhello 281  att|?tczhello 281  !R!Ratt~cthello 282  att|?tczhello 282  att~cwhello 282  att~cwhello 283  att~cthello 283  att~cwhello 284  att~cthello 284  att|?tczhello 284  att|?tc"="=-r -75 f fe80::212:7401:1:101 t 071att~cwhello 285  att~cthello 285  att|?tczhello 285  !R	att~cwhello 286  att~cthello 286  att|?tczhello 286  att~cwhello 287  att~cthello 287  att|?tczhello 287  att~cthello 288  att~cwhello 288  att|?tc"="=+r -80 f fe80::212:7401:1:101 t 072att~cwhello 289  att~cthello 289  att|?tczhello 289  !R
+01:14.196	ID:5	Received response: SET fe80::212:7401:1:101
+01:14.197	ID:5	NOW BEING BEST
+01:14.308	ID:1	start send 291
+01:14.310	ID:1	now sending hello 291  
+01:14.511	ID:1	start send 292
+01:14.513	ID:1	now sending hello 292  
+01:14.700	ID:1	Sending control broadcast: 073
+01:14.714	ID:1	start send 293
+01:14.722	ID:3	str: r -87 f fe80::212:7401:1:101 t 073
+01:14.903	ID:1	now sending hello 293  
+01:15.063	ID:5	Received response: SET fe80::212:7401:1:101
+01:15.064	ID:5	NOW BEING BEST
+01:15.097	ID:1	start send 294
+01:15.099	ID:1	now sending hello 294  
+01:15.300	ID:1	start send 295
+01:15.302	ID:1	now sending hello 295  
+01:15.503	ID:1	start send 296
+01:15.505	ID:1	now sending hello 296  
+01:15.700	ID:1	Sending control broadcast: 074
+01:15.709	ID:1	start send 297
+01:15.720	ID:3	str: r -93 f fe80::212:7401:1:101 t 074
+01:15.813	ID:6	DIO:116
+01:15.813	ID:2	DIO:116
+01:15.813	ID:3	DIO:116
+01:15.816	ID:5	DIO:116
+01:15.911	ID:1	now sending hello 297  
+01:16.105	ID:1	start send 298
+01:16.107	ID:1	now sending hello 298  
+01:16.133	ID:6	Received response: SET fe80::212:7401:1:101
+01:16.134	ID:6	NOW BEING BEST
+01:16.196	ID:5	Received response: NOT fe80::212:7401:1:101
+01:16.308	ID:1	start send 299
+01:16.310	ID:1	now sending hello 299  
+01:16.511	ID:1	start send 300
+01:16.513	ID:1	now sending hello 300  
+01:16.700	ID:1	Sending control broadcast: 075
+01:16.714	ID:1	start send 301
+01:16.903	ID:1	now sending hello 301  
+01:17.097	ID:1	start send 302
+01:17.099	ID:1	now sending hello 302  
+01:17.300	ID:1	start send 303
+01:17.302	ID:1	now sending hello 303  
+01:17.503	ID:1	start send 304
+01:17.505	ID:1	now sending hello 304  
+01:17.700	ID:1	Sending control broadcast: 076
+01:17.711	ID:1	start send 305
+01:17.911	ID:1	now sending hello 305  
+01:18.105	ID:1	start send 306
+01:18.107	ID:1	now sending hello 306  
+01:18.308	ID:1	start send 307
+01:18.310	ID:1	now sending hello 307  
+01:18.511	ID:1	start send 308
+01:18.513	ID:1	now sending hello 308  
+01:18.533	ID:11	att~cshello 290  att~cvhello 290  att|?tc yhello 290  att~cvhello 291  att~cshello 291  att|?tcyhello 291  att~cshello 292  att~cvhello 292  att|?tcyhello 292  att|?tc"="=*r -87 f fe80::212:7401:1:101 t 073att~cshello 293  att~cvhello 293  att|?tcyhello 293  !Ratt~cvhello 294  att~cshello 294  att|?tcyhello 294  att~cvhello 295  att|?tcyhello 295  att~cvhello 296  att~cshello 296  att|?tcyhello 296  att|?tc"="=(r -93 f fe80::212:7401:1:101 t 074AEtz;:t<@@att~cvhello 297  att~cshello 297  att|?tcyhello 297  !R!Ratt~cvhello 298  att~cshello 298  autt~cphello 298  att|?tcyhello 298  att~cshello 299  avtt~cphello 299  att~cvhello 299  att~chello 300  att~c|hello 300  att|?tchello 300  awtt~cyhello 300  att~c|hello 301  att~chello 301  att|?tchello 301  axtt~c-yhello 301  att~chello 302  att~c|hello 302  aytt~c(yhello 302  att|?tchello 302  aztt~c$yhello 303  att~c|hello 303  att~chello 303  att|?tchello 303  att~chello 304  a{tt~c yhello 304  att~c|hello 304  att|?tchello 304  att~chello 305  att~c|hello 305  a|tt~cyhello 305  att|?tchello 305  a}tt~c&yhello 306  att~c|hello 306  att~chello 306  att|?tchello 306  a~tt~cHyhello 307  att~chello 307  att~c
+01:18.580	ID:11	|hello 307  att|?tc
+01:18.669	ID:11	hello 307  att~c@yhello 308  att~c
+01:18.700	ID:1	Sending control broadcast: 077
+01:18.714	ID:1	start send 309
+01:18.903	ID:1	now sending hello 309  
+01:19.097	ID:1	start send 310
+01:19.099	ID:1	now sending hello 310  
+01:19.300	ID:1	start send 311
+01:19.302	ID:1	now sending hello 311  
+01:19.503	ID:1	start send 312
+01:19.505	ID:1	now sending hello 312  
+01:19.538	ID:4	HANDOFF STARTED
+01:19.700	ID:1	Sending control broadcast: 078
+01:19.707	ID:1	start send 313
+01:19.911	ID:1	now sending hello 313  
+01:20.105	ID:1	start send 314
+01:20.107	ID:1	now sending hello 314  
+01:20.155	ID:8	HANDOFF STARTED
+01:20.308	ID:1	start send 315
+01:20.310	ID:1	now sending hello 315  
+01:20.511	ID:1	start send 316
+01:20.513	ID:1	now sending hello 316  
+01:20.700	ID:1	Sending control broadcast: 079
+01:20.719	ID:1	start send 317
+01:20.903	ID:1	now sending hello 317  
+01:21.097	ID:1	start send 318
+01:21.099	ID:1	now sending hello 318  
+01:21.300	ID:1	start send 319
+01:21.302	ID:1	now sending hello 319  
+01:21.408	ID:11	hello 308  att~c|hello 308  att|?tchello 308  att~c9yhello 309  att~c|hello 309  att|?tchello 309  att~c	hello 309  att~c~hello 310  att~c3xhello 310  att~c{hello 310  att|?tchello 310  att~c~hello 311  att~c-xhello 311  att~c{hello 311  att~c~hello 312  att~c(xhello 312  att~c{hello 312  att|?tchello 312  att~c$xhello 313  att~c{hello 313  att~c~hello 313  att~c xhello 314  att~c{hello 314  att~c	uhello 314  att~c~hello 314  att~cxhello 315  att~c{hello 315  att~cuhello 315  att~cuhello 316  att~c~hello 316  att~c{hello 316  att~cxhello 316  att~c~hello 317  att~cuhello 317  att~c{hello 317  att~cxhello 317  att~c xhello 318  att~c{hello 318  att~cuhello 318  att~c~hello 318  att~cxhello 319  att~c
+01:21.503	ID:1	start send 320
+01:21.505	ID:1	now sending hello 320  
+01:21.700	ID:1	Sending control broadcast: 080
+01:21.707	ID:1	start send 321
+01:21.911	ID:1	now sending hello 321  
+01:22.105	ID:1	start send 322
+01:22.107	ID:1	now sending hello 322  
+01:22.111	ID:11	{hello 319  att~cuhello 319  att~c~hello 319  att~c	zhello 320  att~cwhello 320  att~c}hello 320  a	tt~c!thello 320  att~c#whello 321  att~czhello 321  att~c}hello 321  a
+01:22.308	ID:1	start send 323
+01:22.310	ID:1	now sending hello 323  
+01:22.511	ID:1	start send 324
+01:22.513	ID:1	now sending hello 324  
+01:22.700	ID:1	Sending control broadcast: 081
+01:22.714	ID:1	start send 325
+01:22.903	ID:1	now sending hello 325  
+01:23.097	ID:1	start send 326
+01:23.099	ID:1	now sending hello 326  
+01:23.300	ID:1	start send 327
+01:23.302	ID:1	now sending hello 327  
+01:23.503	ID:1	start send 328
+01:23.505	ID:1	now sending hello 328  
+01:23.593	ID:5	HANDOFF STARTED
+01:23.700	ID:1	Sending control broadcast: 082
+01:23.707	ID:1	start send 329
+01:23.911	ID:1	now sending hello 329  
+01:24.105	ID:1	start send 330
+01:24.107	ID:1	now sending hello 330  
+01:24.163	ID:9	HANDOFF STARTED
+01:24.184	ID:11	tt~cthello 321  att~cwhello 322  att~cthello 322  att~czhello 322  att~c}hello 322  att~czhello 323  att~cwhello 323  att~cthello 323  att~c}hello 323  att~czhello 324  att~c.thello 324  att~cwhello 324  att~c,}hello 324  att~cA}hello 325  att~cwhello 325  att~czhello 325  att~cCthello 325  att~czhello 326  att~cwhello 326  att~c:}hello 326  att~c<thello 326  att~c4}hello 327  att~c6thello 327  att~czhello 327  att~cwhello 327  att~czhello 328  att~c.}hello 328  att~c0thello 328  att~cwhello 328  att~c+thello 329  att~cwhello 329  att~czhello 329  att~cyhello 330  att~c
+01:24.308	ID:1	start send 331
+01:24.310	ID:1	now sending hello 331  
+01:24.511	ID:1	start send 332
+01:24.513	ID:1	now sending hello 332  
+01:24.650	ID:11	vhello 330  att~c&shello 330  att|?t				c&phello 330  att~cyhello 331  att~c*shello 331  att~c	vhello 331  att|?t				c%phello 331  att~cvhello 332  att~c!shello 332  att~c
+01:24.700	ID:1	Sending control broadcast: 083
+01:24.714	ID:1	start send 333
+01:24.903	ID:1	now sending hello 333  
+01:25.097	ID:1	start send 334
+01:25.099	ID:1	now sending hello 334  

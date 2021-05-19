@@ -3,6 +3,8 @@ from datetime import datetime
 import sys
 import numpy
 
+PKTS=100
+
 try:
 	if sys.argv[1]:
 		fileName = sys.argv[1]
@@ -17,11 +19,12 @@ f = open(fileName,"r")
 def test():
     list=[]
     summ=0
+    first=0
     txcounter=0.0
-    rxcounter=[0]*100
+    rxcounter=[0]*PKTS
     min=1000000
     max=0
-    for i in range(1,100):
+    for i in range(1,PKTS):
         f.seek(0)
         
         dTime=0
@@ -33,6 +36,9 @@ def test():
                     txcounter+=1
                     print (line+"\n")
                 if "ID:11" in line and hello in line:
+                    if(first==0):
+                        first=i
+
                     print (line)
                     rTime = datetime.strptime(line[0:9], '%M:%S.%f')
                     dTime=rTime-sTime
@@ -51,7 +57,8 @@ def test():
         rx+=el
     print("avg="+str(summ/rx)+"\n")
     print("max:"+str(max)+ " Min:"+str(min)," StdDev:"+str(numpy.std(list)))
-    print("PDR="+str(rx/txcounter)+"\n")
+    print(first)
+    print("PDR="+str((rx-first)/(txcounter-first))+"\n")
 
 
 if __name__ == '__main__' :

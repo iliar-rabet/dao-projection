@@ -17,6 +17,7 @@ f = open(fileName,"r")
 def test():
     ls=[]
     summ=0
+    first=0
     txcounter=0.0
     rxcounter=[0]*100
     min=1000000
@@ -34,6 +35,8 @@ def test():
                     txcounter+=1
                     # print (line+"\n")
                 if "Received response" in line and "hello "+numb+"'" in line:
+                    if(first==0):
+                        first=numb
                     # print (line)
                     # rTime = datetime.strptime(line[0:9], '%M:%S.%f')
                     rTime=int(line.split('\t')[0])
@@ -54,7 +57,9 @@ def test():
     print("avg="+str(np.average(ls)))    
     print("var="+str(np.var(ls)))
     # print("max:"+str(max)+ " Min:"+str(min)," StdDev:"+str(numpy.std(list)))
-    # print("PDR="+str(rx/txcounter)+"\n")
+    # print(txcounter)
+    # print(rx)
+    print("PDR="+str((rx-first)/(txcounter-first))+"\n")
 
 
 if __name__ == '__main__' :
