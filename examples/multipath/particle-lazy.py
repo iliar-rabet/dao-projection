@@ -24,11 +24,10 @@ down_memory = sysv_ipc.SharedMemory(123457)
 
 data={}
 window={}
-filepath="speed-0.5.dat"
+filepath="random-45.dat"
 mobile_nodes=1
 vel = {}
 position = {}
-Window=107
 lastx= 0
 lasty= 0
 time=0.0
@@ -257,39 +256,45 @@ try:
     oldWordList = []
     while True:
         timeP.sleep(0.001)
-        line= str(memory.read())
-        memory.write("x00x00x00x00x00x00x00x00x00x00x00x00x00x00x00x00")
-        line= line[2:]
-        if line != oldLine:
-            print("the whole line:::"+line)
-            wordList = []
-            for i in range(0, len(line), 10):
-                word = line[i:i+9]
-                if 'x00' not in word and word not in oldWordList:
-                    wordList.append(word)
-                else:
-                    pass
-            #print(wordList)
-            oldWordList = wordList
-            oldLine = line
-        else:
-            continue
+        line= memory.read().decode('UTF-8')
+        memory.write("\\")
+        # if line != oldLine:
+        #     print("the whole line:::"+line)
+        #     wordList = []
+        #     for i in range(0, len(line), 10):
+        #         word = line[i:i+9]
+        #         if 'x00' not in word and word not in oldWordList:
+        #             wordList.append(word)
+        #         else:
+        #             pass
+        #     #print(wordList)
+        #     oldWordList = wordList
+        #     oldLine = line
+        # else:
+        #     continue
 
-        line=line.split('\'')[1]
-        line = line.split(';')[0]
-        
+
+
+        line=line.rstrip('\x00').rstrip('\0').rstrip('-')
+        wordList=line.split('|')
         if len(wordList)==0:
             continue
-        if wordList[0]=="'":
+        if wordList[0].startswith('\\'):
             continue
 
         for word in wordList:
+            if(word==''):
+                continue
             print("Received encoded data: " + word)
-            time = int(word[6:9])
+
+            lw=word.split(' ')
+            print(lw)
+            time = int(lw[5])
             
-            ip=ip_to_id(word[5])
-            # print("------------\nip:")
-            # print(ip)
+            hex_id='0x'+lw[3][-1:]
+            ip=str(int(hex_id,16))
+            print("------------\nip:")
+            print(ip)
             if ip not in mnList:
                 mnList.append(ip)
                 particles[ip] = create_uniform_particles((x_min,x_max), (y_min,y_max), N)
@@ -302,10 +307,11 @@ try:
                 for mn in mnList:
                     data[mn].reset_meas()
             
-            dist = calculate_dist(int(word[2:5])) 
+            dist = calculate_dist(int(lw[1])) 
             # print("dist:")
             # print(dist)
-            anchor = int(word[0:2], 16)
+            print(lw[7])
+            anchor = int(lw[7].split(':')[-1], 16)
             anchor=anchor-2
             print("anchor"+str(anchor))
             print("anchor:")

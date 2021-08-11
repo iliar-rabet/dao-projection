@@ -15,8 +15,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "sys/energest.h"
-
 #define LOG_MODULE "App"
 #define LOG_LEVEL LOG_LEVEL_DBG
 #undef UIP_CONF_TCP
@@ -139,6 +137,7 @@ downward_callback(struct simple_udp_connection *c,
          const uint8_t *data,
          uint16_t datalen)
 {
+  LOG_INFO("Received response: %s\n", data);
   printf("Received response: %s\n", data);
   if ((int) *data == 'S') {
     data += 4;
@@ -175,8 +174,7 @@ data_relay(struct simple_udp_connection *c,
 }
 /*---------------------------Contiki Process---------------------------------*/
 PROCESS(sdmob_anchor_node_process, "SD-MOB anchor node process");
-PROCESS(energest_example_process, "SD-MOB anchor node process");
-AUTOSTART_PROCESSES(&sdmob_anchor_node_process,&energest_example_process);
+AUTOSTART_PROCESSES(&sdmob_anchor_node_process);
 
 
 
@@ -202,22 +200,3 @@ PROCESS_THREAD(sdmob_anchor_node_process, ev, data)
   PROCESS_END();
 }
 /*---------------------------------------------------------------------------*/
-
-PROCESS_THREAD(energest_example_process, ev, data)
-{
-  static struct etimer periodic_timer;
-  PROCESS_BEGIN();
-
-  etimer_set(&periodic_timer, CLOCK_SECOND * 30);
-  while(1) {
-    PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
-    etimer_reset(&periodic_timer);
-
-    /* Update all energest times. */
-    energest_flush();
-
-    printf("\nEnergest: %d\n",energest_type_time(ENERGEST_TYPE_TRANSMIT));
-    
-  }
-  PROCESS_END();
-}

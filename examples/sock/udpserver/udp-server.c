@@ -35,7 +35,7 @@
 
 static int up_shm_id, dn_shm_id, time_rsscallback, iter_rss, old_time_rsscallback,
     sephamore_drop_rss, totalRx = 0;
-static char addr_str[56], long_str[100],
+static char addr_str[56], long_str[500],
     *shared_memory_up, *shared_memory_down, *shared_memory_rflx;
 
 static struct ctimer read_timer;
@@ -54,43 +54,27 @@ void encoding(const uint8_t *data, const uint8_t i)
             // 76 -- RSSI value
             // 1 -- mobile node
             // 164 -- sequence number
+    printf("data:%s\n",data);
 
-    for (int iter_enc = 10*i; iter_enc < ( 10*i + 10 ) ; iter_enc++) {
-        // printf("LS:%s\n",long_str);
-        if ( iter_enc - 10*i < 2 ) {
-            // Adding only the node ID to str
-            long_str[iter_enc] = addr_str[ 18 + iter_enc - 10*i ];
-        } else if ( iter_enc - 10*i < 5 ) {
-            if ( iter_enc - 10*i == 2 )
-                // Removing 'R '
-                data += 2;
-            // Adding RSSI to str
-            long_str[iter_enc] = (char) *data++;
-        } else if ( iter_enc - 10*i == 5 ) {
-            // Removing ' F fe80::212:7402:2:20'
-            data += 18;
-            // Adding mobile ID to str
-            long_str[iter_enc] = (char) *data++;
-            // Removing ' T ' 
-            data += 3; 
-        } else if ( iter_enc - 10*i < 9 ) {
-            // Adding time to str
-            long_str[iter_enc] = (char) *data++;
-        } else {
-            long_str[iter_enc] = ';';
-        }
-    }
-    long_str[39] = '\0';
+    strcat(long_str,data);   
+    strcat(long_str," a ");
+    strcat(long_str,addr_str);            
+    strcat(long_str,"|");
+    long_str[strlen(long_str)]='\0';
+    printf("encoding %s\n",long_str);
+
 }
+
 
 // function to clean the buffer
 void clean(char *var) {
     int i = 0;
-    while(var[i] != '\0') {
+    for(;i<500;i++){
         var[i] = '\0';
-        i++;
     }
 }
+
+
 
 // function to write into shared memory after 300 ms
 static void ctimer_callback() {
@@ -119,11 +103,14 @@ static void ctimer_callback() {
         LOG_INFO("anchor_node = %s\tset_unset_value = %s\tmobile_node = %s\n", anchor_node, set_unset_value, mobile_node);
         strcat(set_unset_value, " ");
         strcat(set_unset_value, mobile_node);
-        simple_udp_sendto(&down_conn, set_unset_value, strlen(set_unset_value), &anchor_node_address);
+        int ret=simple_udp_sendto(&down_conn, set_unset_value, strlen(set_unset_value), &anchor_node_address);
+        
+        printf("%s\n",set_unset_value);
+        LOG_INFO_6ADDR(&anchor_node_address);
+        printf("send_to ret=%d\n",ret);
 
         if (nextLine) *nextLine = '\n';  // then restore newline-char, just to be tidy    
             curLine = nextLine ? (nextLine+1) : NULL;
-
     }
 }
 
@@ -154,22 +141,32 @@ rss_rx_callback(struct simple_udp_connection *c,
     }
     time_rsscallback = atoi(num_str);
 
+            uip_ipaddr_t  anchor_node_address;
+        uiplib_ipaddrconv("fe80::c30c:0:0:3", &anchor_node_address);
+        simple_udp_sendto(&down_conn, "TEST_DOWN", strlen("TEST_DOWN"), &anchor_node_address);
+
+
     if((sephamore_drop_rss == 0) && (time_rsscallback == old_time_rsscallback)) {
         // Appending string list
+        
         encoding(data, iter_rss++);
         //LOG_INFO("Encoded data: %s\n", long_str);
     } else if(time_rsscallback != old_time_rsscallback) {
         // Updating control variables
+        
         old_time_rsscallback = time_rsscallback;
         clean(long_str);
+        clean(shared_memory_up);
+        printf("encoding CLEANED\n");
+        
         iter_rss = 0;
         sephamore_drop_rss = 0;
 
+        
         encoding(data, iter_rss++);
         // LOG_INFO("Encoded data: %s\n", long_str);
-        // setting callback_timer for 200 ms
-        ctimer_set(&read_timer, 0.3*CLOCK_SECOND, ctimer_callback, NULL);
-
+        // setting two different callback_timer, the difference would be the multipath time
+        // ctimer_set(&read_timer, 0.3*CLOCK_SECOND, ctimer_callback, NULL);
     }
 }
 
@@ -199,7 +196,7 @@ PROCESS_THREAD(udp_server_process, ev, data)
     PROCESS_BEGIN();
 
     // Setup upward shared memory, 100 is the size
-    if ((up_shm_id = shmget(UP_SHM_KEY, 100, IPC_CREAT | 0666)) < 0) {
+    if ((up_shm_id = shmget(UP_SHM_KEY, 600, IPC_CREAT | 0666)) < 0) {
         printf("Error getting shared memory id");
         exit(1);
     }

@@ -34,7 +34,8 @@ static struct simple_udp_connection data_conn;
 static struct simple_udp_connection downward_conn;
 
 static int fd, iter = 0;
-static char str[100], buff[100], curr_parent[100];
+static char str[500], buff[500], curr_parent[100];
+static char addr_str[56];
 const char wait[4] = "WAIT";
 
 //, reply_control, first_run_only_if_65 = 0;
@@ -53,39 +54,15 @@ static void sum_list(){
 
 void encoding(const uint8_t *data)
 {
-    //    Example data :
-    //    R -59 F fe80::212:7402:2:202 T 41 P fe80::212:7403:3:303
-    for (iter = 0; iter < 56; iter++) {
-        if ( iter < 2 )
-            str[iter] = str[18+iter]; //    Adding only the node ID to str
-        else if ( iter < 5 ) {
-            if ( iter == 2 )
-                data += 2; // Removing 'R '
-            str[iter] = (char) *data++; //    Adding RSSI to str
-        }    else if ( iter == 5 ) {
-            data += 22; // Removing ' F fe80::212:7402:2:20'
-            str[iter] = (char) *data++; // Adding mobile ID to str
-            data += 3; // Removing ' T '
-        } else if ( iter < 9 )
-                str[iter] = (char) *data++; // Adding time to str
-        else if ( iter < 10 )
-            str[iter] = ';';
-        else
-            str[iter] = '\0';
-    }
+    printf("data:%s\n",data);
 
- 
+    strcat(str,data);   
+    strcat(str," a ");
+    strcat(str,addr_str);            
+    strcat(str,"|");
+    str[strlen(str)]='\0';
+    printf("encoding %s\n",str);
 
-    data += 3; // Removing ' P '
-
- 
-
-    if (((char) *data) == 'f') {
-        memset(curr_parent, 0, 25 * (sizeof curr_parent[0]));
-        for (iter = 0; iter < 20; iter++) 
-            curr_parent[iter] = (char) *data++;
-        curr_parent[20] = '\0';
-    }
 }
 
 PROCESS(udp_server_process, "UDP server");
@@ -104,6 +81,9 @@ rss_rx_callback(struct simple_udp_connection *c,
     LOG_INFO_("\n");
     // // static struct timer downward_resend_timer;
     
+    memset(addr_str, 0, 56 * (sizeof addr_str[0]));
+    uiplib_ipaddr_snprint(addr_str, sizeof(addr_str), sender_addr);
+
 	
 	// Erasing str everytime before reading
     memset(str, 0, 100 * (sizeof str[0]));
@@ -113,8 +93,8 @@ rss_rx_callback(struct simple_udp_connection *c,
     encoding(data);
 
 	fd = open(FIFO_FILE, O_WRONLY);
-	int bullshit=write(fd, str, sizeof(str));
-	if(bullshit);
+	int fl=write(fd, str, sizeof(str));
+	if(fl);
 	close(fd);
 
 	// Reading from named pipe for communication with python script

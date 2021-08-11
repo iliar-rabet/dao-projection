@@ -243,8 +243,8 @@ rpl_get_leaf_only(void)
   return rpl_leaf_only;
 }
 /*---------------------------------------------------------------------------*/
-const struct routing_driver rpl_lite_driver = {
-  "RPL Lite",
+const struct routing_driver trpl_driver = {
+  "T-RPL",
   init,
   rpl_dag_root_set_prefix,
   rpl_dag_root_start,

@@ -24,19 +24,30 @@ down_memory = sysv_ipc.SharedMemory(123457)
 
 data={}
 window={}
-filepath="low.dat"
+filepath="../position/rwp-20"
+# filepath="../../../pymobility/random-25.dat"
+mobile_nodes=1
 vel = {}
 position = {}
-Window=107
 lastx= 0
 lasty= 0
 time=0.0
+landmarks = np.array([[0,0]])
+
 with open(filepath) as fp:
    for line in fp:
         ip=str(int(line.split()[0])+1)
         time=float(line.split()[1])
         x=float(line.split()[2])
         y=float(line.split()[3])    
+        if(int(line.split()[0])+1>mobile_nodes):
+            print("adding landmark\n")
+            temp=np.array([[x,y]])
+            print(temp)
+            print(line)
+            # landmarks=np.concatenate((landmarks,temp))
+            landmarks=np.concatenate((landmarks,temp))
+            print(landmarks)
         position[(ip,time)]=(x,y)
         if time == 0:
             window[ip]=0
@@ -46,9 +57,11 @@ with open(filepath) as fp:
         lasty=y
 
 
-print(position)
+# print("position:")
+# print(position)
+print("window:")
 print(window)
-
+print(landmarks)
 rssfile="5m.dat"
 c=0
 rss={}
@@ -60,6 +73,7 @@ N = 20000  # number of points
 
 
 def actual(t,ip):
+    print("ip:"+ip)
     t=(t+1)%window[ip]
     return position[(ip,t)]
 
@@ -69,7 +83,6 @@ def RMSE(x,y,t,ip):
     Xerr=x-act[0]
     Yerr=y-act[1]
     error=math.sqrt(Xerr**2 + Yerr**2)
-    print("for IP:"+ip)
     data[ip].new_error(error)
 
 def create_uniform_particles(x_range, y_range, N):
@@ -161,27 +174,16 @@ def closest(x,y,mn):
     #return "SET fd00:0:0:0:212:7408:8:808 for fd00:0:0:0:212:7401:1:101 \n UNSET fd00:0:0:0:212:740a:a:a0a for fd00:0:0:0:212:740c:c:c0c\n"
 
     arg=np.argmin(dd)
-    if(arg==0): 
-        return "fd00:0:0:0:212:7402:2:202"
-    if(arg==1):
-        return "fd00:0:0:0:212:7403:3:303"
-    if(arg==2):
-        return "fd00:0:0:0:212:7404:4:404"
-    if(arg==3):
-        return "fd00:0:0:0:212:7405:5:505"
-    if(arg==4):
-        return "fd00:0:0:0:212:7406:6:606"
-    if(arg==5):
-        return "fd00:0:0:0:212:7407:7:707"
-    if(arg==6): 
-        return "fd00:0:0:0:212:7408:8:808"
-    if(arg==7): 
-        return "fd00:0:0:0:212:7409:9:909"        
-    if(arg==8): 
-        return "fd00:0:0:0:212:740a:a:a0a"
-    if(arg==9): 
-        return "fd00:0:0:0:212:740a:a:a0a"
-    return "None"
+    arg=arg+2
+    if(arg>16):
+        arg=hex(arg)[2:]
+        arg=str(arg)
+        ip_str="fd00::c30c:0:0:"+arg
+    else:
+        arg=hex(arg)[2:]
+        arg=str(arg)
+        ip_str="fd00::c30c:0:0:"+arg
+    return ip_str
 
 
 def veloc(ip,T):
@@ -191,13 +193,13 @@ def veloc(ip,T):
     return (position[(ip,T+1)][0]-position[(ip,T)][0],position[(ip,T+1)][1]-position[(ip,T)][1])
 
 
-sensor_std_err=.1
+sensor_std_err=.05
 initial_x=None
-landmarks = np.array([[0,0],[0,0],[2,0],[4,0],[6,0],[8,0],[10,0],[12,0],[14,0],[16,0]]) #first one is dummy
-#landmarks=np.array([[0, 0], [1, 6],[7 ,7],[4 ,6],[-1 ,8],[-3, 4],[-4 ,9],[-2, 4],[5, 1],[-4, 4],[5, 9],[0, 10],[2, 0],[2, 1]])
 
-# NL = len(landmarks)
-
+x_min=0
+x_max=20
+y_min=0
+y_max=20
 particles={}
 weights={}
 objects={}
@@ -231,8 +233,6 @@ class MN:
     
 
 
-IPC_FIFO_NAME = "MYFIFO"
-IPC_FIFO_DOWN_NAME = "DOWNFIFO"
 timeBase = 0
 iterWait = 0
 runs=0
@@ -249,54 +249,55 @@ def ip_to_id(ip):
 
 def id_to_ip(id):
     if id=='1':
-        return "fe80::212:7401:1:101"
+        return "fd00::c30c:0:0:1"
 
 
-try:
-    os.mkfifo(IPC_FIFO_NAME)
-except OSError:
-    print("File Exists")
 try:
     oldLine = "never"
     oldWordList = []
     while True:
         timeP.sleep(0.001)
-        line= str(memory.read())
-        memory.write("x00x00x00x00x00x00x00x00x00x00x00x00x00x00x00x00")
-        line= line[2:]
-        if line != oldLine:
-            # print("the whole line:::"+line)
-            wordList = []
-            for i in range(0, len(line), 10):
-                word = line[i:i+9]
-                if 'x00' not in word and word not in oldWordList:
-                    wordList.append(word)
-                else:
-                    pass
-            #print(wordList)
-            oldWordList = wordList
-            oldLine = line
-        else:
-            continue
+        line= memory.read().decode('UTF-8')
+        memory.write("\\")
+        # if line != oldLine:
+        #     print("the whole line:::"+line)
+        #     wordList = []
+        #     for i in range(0, len(line), 10):
+        #         word = line[i:i+9]
+        #         if 'x00' not in word and word not in oldWordList:
+        #             wordList.append(word)
+        #         else:
+        #             pass
+        #     #print(wordList)
+        #     oldWordList = wordList
+        #     oldLine = line
+        # else:
+        #     continue
 
-        line=line.split('\'')[1]
-        line = line.split(';')[0]
-        
+
+
+        line=line.rstrip('\x00').rstrip('\0').rstrip('-')
+        wordList=line.split('|')
         if len(wordList)==0:
             continue
-        if wordList[0]=="'":
+        if wordList[0].startswith('\\'):
             continue
 
         for word in wordList:
+            if(word==''):
+                continue
             print("Received encoded data: " + word)
-            time = int(word[6:9])
+
+            lw=word.split(' ')
+            print(lw)
+            time = int(lw[5])
             
-            ip=ip_to_id(word[5])
-            # print("------------\nip:")
-            # print(ip)
+            hex_id='0x'+lw[3][-1:]
+            ip=str(int(hex_id,16))
+            
             if ip not in mnList:
                 mnList.append(ip)
-                particles[ip] = create_uniform_particles((0,15), (2,3), N)
+                particles[ip] = create_uniform_particles((x_min,x_max), (y_min,y_max), N)
                 weights[ip] = np.ones(N) / N
                 data[ip]=MN()
 
@@ -306,17 +307,19 @@ try:
                 for mn in mnList:
                     data[mn].reset_meas()
             
-            dist = calculate_dist(int(word[2:5])) 
+            dist = calculate_dist(int(lw[1])) 
             # print("dist:")
             # print(dist)
-            anchor = int(word[0:2], 16)
+            # print(lw[7])
+            # print(lw[7].split(':'))
+            anchor = int(lw[7].split(':')[5], 16)
             anchor=anchor-1
-            # print("anchor"+str(anchor))
-            # print("anchor:")
-            # print(landmarks[int(anchor)])
+            print("anchor index"+str(anchor))
+            print("anchor:")
+            print(landmarks[int(anchor)])
             data[ip].new_meas(dist,landmarks[int(anchor)])
 
-    
+        response=""
         # incorporate measurements
         for mn in mnList:
             # print("for:"+mn)
@@ -328,6 +331,9 @@ try:
             mu, var = estimate(particles[mn], weights[mn])
             # print ("prior:" + str(mu))
             vx,vy = veloc(mn,time)
+            print("VELOC:")
+            print(vx)
+            print(vy)
             runs+=1
             # print("runs:"+str(runs))
             # print(vx)
@@ -341,16 +347,16 @@ try:
             data[mn].old_parent=data[mn].new_parent
             data[mn].new_parent=closest(mu[0],mu[1],data[mn])
 
-            print("new parent:"+data[mn].new_parent)  
-            print("old parent:"+data[mn].old_parent)  
-            
+            # print("new parent:"+data[mn].new_parent)  
+            # print("old parent:"+data[mn].old_parent)  
+
             if(data[mn].new_parent != data[mn].old_parent):
                 response = response + "NOT " + data[mn].old_parent + " for "+ id_to_ip(mn)+"\n"
             response = response + "SET " + data[mn].new_parent + " for "+ id_to_ip(mn) +"\0"
             print("resp"+response)
 
             #content=closest(mu[0],mu[1],data[mn])
-            #content= "SET fd00:0:0:0:212:7408:8:808 for fe80::212:740b:b:b0b\nSET fd00:0:0:0:212:7405:5:505 for fe80::212:740c:c:c0c\0"
+            #content= "SET fd00:0:0:0:212:7408:8:808 for fd00::212:740b:b:b0b\nSET fd00:0:0:0:212:7405:5:505 for fd00::212:740c:c:c0c\0"
             down_memory.write(response)
 
             # resample if too few effective particles
@@ -358,7 +364,7 @@ try:
                 # print("resapmling!!!!!!!!!!!!!")
                 indexes = systematic_resample(weights[mn])
                 resample_from_index(particles[mn], weights[mn], indexes)
-            
+       
 
 except KeyboardInterrupt:
     print("Exit deep here")

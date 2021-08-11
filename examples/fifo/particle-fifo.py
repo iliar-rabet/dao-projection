@@ -270,12 +270,18 @@ try:
         # print("reading from pipe")
         fifor = os.open(IPC_FIFO_NAME, os.O_RDONLY)
         line = os.read(fifor, 500).decode('utf8')
-        # print(line)
+        os.close(fifor)
+
+        print(line)
+
         line = line.split(';')
         line= line[0]
         time = int(line[6:9])
         # print("\n******************************\nAt "+ str(time) + "\nReceived encoded data: " + line)
-        os.close(fifor)
+
+        line=line.rstrip('\x00').rstrip('\0').rstrip('-')
+        wordList=line.split('|')
+
 
         if timeBase != time :
             timeBase = time

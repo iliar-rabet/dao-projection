@@ -116,7 +116,8 @@ nbr_path_cost(rpl_nbr_t *nbr)
     return 0xffff;
   }
   /* path cost upper bound: 0xffff */
-  return MIN((uint32_t)nbr->rank + nbr_link_metric(nbr), 0xffff);
+  uint32_t x=(uint32_t)nbr->rank + nbr_link_metric(nbr);
+  return MIN(x, 0xffff);
 }
 /*---------------------------------------------------------------------------*/
 static rpl_rank_t

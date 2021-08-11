@@ -201,7 +201,9 @@ dio_input(void)
 
   memset(&dio, 0, sizeof(dio));
   
-  printf("DIO:%u\n",uip_len);
+  printf("DIO:%u with RSS:%d\n",uip_len,sicslowpan_get_last_rssi());
+  if(sicslowpan_get_last_rssi()>-50)
+     cc2420_set_txpower(19);
   /* Set default values in case the DIO configuration option is missing. */
   dio.dag_intdoubl = RPL_DIO_INTERVAL_DOUBLINGS;
   dio.dag_intmin = RPL_DIO_INTERVAL_MIN;

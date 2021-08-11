@@ -50,6 +50,8 @@
 #else /* NETSTACK_CONF_ROUTING */
 #if ROUTING_CONF_RPL_LITE
 #define NETSTACK_ROUTING rpl_lite_driver
+#elif ROUTING_CONF_TRPL
+#define NETSTACK_ROUTING trpl_driver
 #elif ROUTING_CONF_RPL_CLASSIC
 #define NETSTACK_ROUTING rpl_classic_driver
 #elif ROUTING_CONF_NULLROUTING

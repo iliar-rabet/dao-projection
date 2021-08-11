@@ -51,7 +51,7 @@
 #include <stdio.h>
 
 #define LOG_MODULE "slip-radio"
-#define LOG_LEVEL LOG_LEVEL_NONE
+#define LOG_LEVEL LOG_LEVEL_DBG
 /*---------------------------------------------------------------------------*/
 #ifdef SLIP_RADIO_CONF_SENSORS
 extern const struct slip_radio_sensors SLIP_RADIO_CONF_SENSORS;
@@ -228,6 +228,7 @@ static void
 slip_input_callback(void)
 {
   LOG_DBG("SR-SIN: %u '%c%c'\n", uip_len, uip_buf[0], uip_buf[1]);
+  LOG_DBG("BUFF: %s'\n",uip_buf);
   if(!cmd_input(uip_buf, uip_len)) {
     cmd_send((uint8_t *)"EUnknown command", 16);
   }
