@@ -39,6 +39,7 @@ static char addr_str[56], long_str[500],
     *shared_memory_up, *shared_memory_down, *shared_memory_rflx;
 
 static struct ctimer read_timer;
+static struct ctimer read_timer2;
 static struct simple_udp_connection rssi_conn, data_conn, down_conn;
 
 PROCESS(udp_server_process, "UDP server");
@@ -78,14 +79,19 @@ void clean(char *var) {
 
 // function to write into shared memory after 300 ms
 static void ctimer_callback() {
-    char set_unset_value[40], anchor_node[26], mobile_node[26];
-    uip_ipaddr_t  anchor_node_address;
-    int i;
     
     // Entering data into shared memory
     memcpy(shared_memory_up, long_str, strlen(long_str));
-    //LOG_INFO("Sent buffer\n");
+    printf("Sent buffer\n");
     sephamore_drop_rss = 1;
+    
+}
+
+
+static void ctimer2_callback() {
+    char set_unset_value[40], anchor_node[26], mobile_node[26];
+    uip_ipaddr_t  anchor_node_address;
+    int i;
     
     // Now reading the response
     char * curLine = shared_memory_down;
@@ -97,22 +103,27 @@ static void ctimer_callback() {
         
         memset(anchor_node, 0, 26*sizeof(char));
         sscanf(curLine, "%s %s for %s", set_unset_value, anchor_node, mobile_node);
-        if(!uiplib_ipaddrconv(anchor_node, &anchor_node_address)) {
+        if(uiplib_ipaddrconv(anchor_node, &anchor_node_address) == 0) {
+            LOG_INFO("ERR: IP ADDR converting\n");
             return;
         }
-        LOG_INFO("anchor_node = %s\tset_unset_value = %s\tmobile_node = %s\n", anchor_node, set_unset_value, mobile_node);
-        strcat(set_unset_value, " ");
-        strcat(set_unset_value, mobile_node);
-        int ret=simple_udp_sendto(&down_conn, set_unset_value, strlen(set_unset_value), &anchor_node_address);
-        
-        printf("%s\n",set_unset_value);
-        LOG_INFO_6ADDR(&anchor_node_address);
-        printf("send_to ret=%d\n",ret);
+        else
+        {
+            LOG_INFO("set_unset_value = %s\tmobile_node = %s\t anchor_node = %s ->", set_unset_value, mobile_node, anchor_node);
+            LOG_INFO_6ADDR(&anchor_node_address);
+            LOG_INFO("\n");
 
+            strcat(set_unset_value, " ");
+            strcat(set_unset_value, mobile_node);
+            simple_udp_sendto(&down_conn, set_unset_value, strlen(set_unset_value), &anchor_node_address);
+        }
+        
         if (nextLine) *nextLine = '\n';  // then restore newline-char, just to be tidy    
             curLine = nextLine ? (nextLine+1) : NULL;
     }
 }
+
+
 
 static void
 rss_rx_callback(struct simple_udp_connection *c,
@@ -141,9 +152,10 @@ rss_rx_callback(struct simple_udp_connection *c,
     }
     time_rsscallback = atoi(num_str);
 
-            uip_ipaddr_t  anchor_node_address;
-        uiplib_ipaddrconv("fe80::c30c:0:0:3", &anchor_node_address);
-        simple_udp_sendto(&down_conn, "TEST_DOWN", strlen("TEST_DOWN"), &anchor_node_address);
+
+        //     uip_ipaddr_t  anchor_node_address;
+        // uiplib_ipaddrconv("fe80::c30c:0:0:3", &anchor_node_address);
+        // simple_udp_sendto(&down_conn, "TEST_DOWN", strlen("TEST_DOWN"), &anchor_node_address);
 
 
     if((sephamore_drop_rss == 0) && (time_rsscallback == old_time_rsscallback)) {
@@ -153,7 +165,6 @@ rss_rx_callback(struct simple_udp_connection *c,
         //LOG_INFO("Encoded data: %s\n", long_str);
     } else if(time_rsscallback != old_time_rsscallback) {
         // Updating control variables
-        
         old_time_rsscallback = time_rsscallback;
         clean(long_str);
         clean(shared_memory_up);
@@ -166,7 +177,8 @@ rss_rx_callback(struct simple_udp_connection *c,
         encoding(data, iter_rss++);
         // LOG_INFO("Encoded data: %s\n", long_str);
         // setting two different callback_timer, the difference would be the multipath time
-        // ctimer_set(&read_timer, 0.3*CLOCK_SECOND, ctimer_callback, NULL);
+        ctimer_set(&read_timer, 0.4*CLOCK_SECOND, ctimer_callback, NULL);
+        ctimer_set(&read_timer2, 0.45*CLOCK_SECOND, ctimer2_callback, NULL);
     }
 }
 
@@ -189,6 +201,8 @@ dp_rx_callback(struct simple_udp_connection *c,
 }
 
 /*---------------------------------------------------------------------------*/
+
+static struct etimer periodic_timer;
 
 PROCESS_THREAD(udp_server_process, ev, data)
 {

@@ -24,8 +24,9 @@ down_memory = sysv_ipc.SharedMemory(123457)
 
 data={}
 window={}
-filepath="../position/rwp-20"
-# filepath="../../../pymobility/random-25.dat"
+# filepath="../position/rwp-20"
+filepath="../../../pymobility/random-25.dat"
+# filepath="low.dat"
 mobile_nodes=1
 vel = {}
 position = {}
@@ -73,7 +74,7 @@ N = 20000  # number of points
 
 
 def actual(t,ip):
-    print("ip:"+ip)
+    # print("ip:"+ip)
     t=(t+1)%window[ip]
     return position[(ip,t)]
 
@@ -174,15 +175,17 @@ def closest(x,y,mn):
     #return "SET fd00:0:0:0:212:7408:8:808 for fd00:0:0:0:212:7401:1:101 \n UNSET fd00:0:0:0:212:740a:a:a0a for fd00:0:0:0:212:740c:c:c0c\n"
 
     arg=np.argmin(dd)
-    arg=arg+2
-    if(arg>16):
+    arg=arg+1
+    if(arg>=16):
         arg=hex(arg)[2:]
         arg=str(arg)
-        ip_str="fd00::c30c:0:0:"+arg
+        # ip_str="fe80::c30c:0:0:"+arg
+        ip_str="fd00::212:74"+arg+":"+arg+":"+arg+arg
     else:
         arg=hex(arg)[2:]
         arg=str(arg)
-        ip_str="fd00::c30c:0:0:"+arg
+        # ip_str="fe80::c30c:0:0:"+arg
+        ip_str="fd00::212:740"+arg+":"+arg+":"+arg+"0"+arg
     return ip_str
 
 
@@ -249,7 +252,8 @@ def ip_to_id(ip):
 
 def id_to_ip(id):
     if id=='1':
-        return "fd00::c30c:0:0:1"
+        # return "fd00::c30c:0:0:1"
+        return "fe80::212:7401:1:101"
 
 
 try:
@@ -286,10 +290,10 @@ try:
         for word in wordList:
             if(word==''):
                 continue
-            print("Received encoded data: " + word)
+            # print("Received encoded data: " + word)
 
             lw=word.split(' ')
-            print(lw)
+            # print(lw)
             time = int(lw[5])
             
             hex_id='0x'+lw[3][-1:]
@@ -312,11 +316,12 @@ try:
             # print(dist)
             # print(lw[7])
             # print(lw[7].split(':'))
-            anchor = int(lw[7].split(':')[5], 16)
+            # anchor = int(lw[7].split(':')[5], 16)
+            anchor = int(lw[7].split(':')[4], 16)
             anchor=anchor-1
-            print("anchor index"+str(anchor))
-            print("anchor:")
-            print(landmarks[int(anchor)])
+            # print("anchor index"+str(anchor))
+            # print("anchor:")
+            # print(landmarks[int(anchor)])
             data[ip].new_meas(dist,landmarks[int(anchor)])
 
         response=""
@@ -331,9 +336,9 @@ try:
             mu, var = estimate(particles[mn], weights[mn])
             # print ("prior:" + str(mu))
             vx,vy = veloc(mn,time)
-            print("VELOC:")
-            print(vx)
-            print(vy)
+            # print("VELOC:")
+            # print(vx)
+            # print(vy)
             runs+=1
             # print("runs:"+str(runs))
             # print(vx)
@@ -342,8 +347,8 @@ try:
 
             mu, var = estimate(particles[mn], weights[mn])
             RMSE(mu[0],mu[1],time,mn)
-            print("actual "+str(actual(int(time),mn)))
-            print("estimated "+str(mu))
+            # print("actual "+str(actual(int(time),mn)))
+            # print("estimated "+str(mu))
             data[mn].old_parent=data[mn].new_parent
             data[mn].new_parent=closest(mu[0],mu[1],data[mn])
 
@@ -352,7 +357,8 @@ try:
 
             if(data[mn].new_parent != data[mn].old_parent):
                 response = response + "NOT " + data[mn].old_parent + " for "+ id_to_ip(mn)+"\n"
-            response = response + "SET " + data[mn].new_parent + " for "+ id_to_ip(mn) +"\0"
+                response = response + "SET " + data[mn].new_parent + " for "+ id_to_ip(mn) +"\0"
+            response=""
             print("resp"+response)
 
             #content=closest(mu[0],mu[1],data[mn])

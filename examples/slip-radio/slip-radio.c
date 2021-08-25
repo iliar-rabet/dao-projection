@@ -51,7 +51,7 @@
 #include <stdio.h>
 
 #define LOG_MODULE "slip-radio"
-#define LOG_LEVEL LOG_LEVEL_DBG
+#define LOG_LEVEL LOG_LEVEL_NONE
 /*---------------------------------------------------------------------------*/
 #ifdef SLIP_RADIO_CONF_SENSORS
 extern const struct slip_radio_sensors SLIP_RADIO_CONF_SENSORS;
@@ -134,6 +134,7 @@ static int
 slip_radio_cmd_handler(const uint8_t *data, int len)
 {
   int i;
+
   if(data[0] == '!') {
     /* should send out stuff to the radio - ignore it as IP */
     /* --- s e n d --- */

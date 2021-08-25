@@ -22,19 +22,21 @@ def test():
     rxcounter=[0]*3000
     # min=1000000
     # max=0
-    for i in range(1,3000):
+    last=0.0
+    for i in range(1,1200):
         f.seek(0)
         
         
         for line in f.readlines():
             numb = str(i) 
             if numb in line:
-                if "sending hello "+numb +" "in line:
-                    # sTime = datetime.strptime(line[0:9], '%M:%S.%f')
-                    # sTime=int(line.split('\t')[0])
-                    txcounter+=1
-                    print (line+"\n")
-                if "ID:2" in line and "hello "+numb+" " in line:
+                # if "sending hello "+numb +" "in line:
+                #     # sTime = datetime.strptime(line[0:9], '%M:%S.%f')
+                #     # sTime=int(line.split('\t')[0])
+                #     txcounter+=1
+                #     print (line+"\n")
+                # if "ID:2" in line and "hello "+numb+" " in line:
+                if "\"hello "+numb+"\"" in line:
                     if(first==0):
                         first=int(numb)
                     # print (line)
@@ -42,7 +44,8 @@ def test():
                     # rTime=int(line.split('\t')[0])
                     # dTime=rTime-sTime
                     # dTime=dTime.seconds*1000000+dTime.microseconds
-                    rxcounter[i]=1
+                    rxcounter[i]=1.0
+                    last=numb
                     # if(min>dTime):
                     #     min=dTime
                     # if(max<dTime):
@@ -52,7 +55,7 @@ def test():
                     break
         # if(dTime is not None):
         #     summ=summ+dTime.microseconds
-    rx=0
+    rx=0.0
     for el in rxcounter:
         rx+=el
     # print("avg="+str(np.average(ls)))
@@ -61,9 +64,11 @@ def test():
     # print(txcounter)
     # print(rx)
     print(rx)
-    print(txcounter)
-    print(first)
-    print((rx)/(txcounter-first+1))
+    print(last)
+    print("PDR:")
+    print(rx/float(last))
+    # print(first)
+    # print((rx)/(txcounter-first+1))
 
 
 if __name__ == '__main__' :

@@ -15,8 +15,9 @@
 #include <string.h>
 #include <stdlib.h>
 
+
 #define LOG_MODULE "App"
-#define LOG_LEVEL LOG_LEVEL_DBG
+#define LOG_LEVEL LOG_LEVEL_INFO
 #undef UIP_CONF_TCP
 
 #define UP_DAT_MN_PT 4567
@@ -103,6 +104,7 @@ rss_callback(struct simple_udp_connection *c,
 {
   char src[21], str[100], time[4];
   int i;
+  static struct etimer cong_timer;
 
   memset(mobile_ip_addr, '\0', 21 * sizeof(char));
   uiplib_ipaddr_snprint(mobile_ip_addr, 21, sender_addr);
@@ -121,6 +123,14 @@ rss_callback(struct simple_udp_connection *c,
   uiplib_ipaddr_snprint(src, sizeof(src), sender_addr);
   snprintf(str, sizeof(str), "r %d f %s t %s", sicslowpan_get_last_rssi(), src, time);
   printf("str: %s\n", str);
+  
+
+  int cong_wait=random_rand()%5;
+  printf("rand %d\n",cong_wait);
+
+  etimer_set(&cong_timer, cong_wait);
+  PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&cong_timer));
+
   if(NETSTACK_ROUTING.node_is_reachable() && NETSTACK_ROUTING.get_root_ipaddr(&dest_ipaddr))
     // Flags in message sent: R = RSSI F = From or source T = Time
     simple_udp_sendto(&up_rss_an_conn, str, strlen(str), &dest_ipaddr);
@@ -137,7 +147,6 @@ downward_callback(struct simple_udp_connection *c,
          const uint8_t *data,
          uint16_t datalen)
 {
-  LOG_INFO("Received response: %s\n", data);
   printf("Received response: %s\n", data);
   if ((int) *data == 'S') {
     data += 4;
@@ -169,6 +178,10 @@ data_relay(struct simple_udp_connection *c,
       handoff_flag=1;
     }
     simple_udp_sendto(&up_dat_an_conn, data, strlen(data), &dest_ipaddr);
+    printf("relaying\n");
+  }
+  else{
+    printf("NOT relaying\n");
   }
   return;
 }
