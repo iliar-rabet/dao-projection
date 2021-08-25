@@ -93,6 +93,15 @@ LL_del_srch_node(int opt, struct node** head_ref, const char *key)
   return 1;
 }
 /*--------------------------Callback functions-------------------------------*/
+static char str[100];
+static void ctimer_callback() {
+    
+    if(NETSTACK_ROUTING.node_is_reachable() && NETSTACK_ROUTING.get_root_ipaddr(&dest_ipaddr))
+    // Flags in message sent: R = RSSI F = From or source T = Time
+    simple_udp_sendto(&up_rss_an_conn, str, strlen(str), &dest_ipaddr);
+
+}
+
 static void
 rss_callback(struct simple_udp_connection *c,
          const uip_ipaddr_t *sender_addr,
@@ -102,9 +111,9 @@ rss_callback(struct simple_udp_connection *c,
          const uint8_t *data,
          uint16_t datalen)
 {
-  char src[21], str[100], time[4];
+  char src[21], time[4];
   int i;
-  static struct etimer cong_timer;
+  static struct ctimer cong_timer;
 
   memset(mobile_ip_addr, '\0', 21 * sizeof(char));
   uiplib_ipaddr_snprint(mobile_ip_addr, 21, sender_addr);
@@ -129,11 +138,9 @@ rss_callback(struct simple_udp_connection *c,
   printf("rand %d\n",cong_wait);
 
   etimer_set(&cong_timer, cong_wait);
-  PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&cong_timer));
+  
+  ctimer_set(&cong_timer, cong_wait, ctimer_callback, NULL);
 
-  if(NETSTACK_ROUTING.node_is_reachable() && NETSTACK_ROUTING.get_root_ipaddr(&dest_ipaddr))
-    // Flags in message sent: R = RSSI F = From or source T = Time
-    simple_udp_sendto(&up_rss_an_conn, str, strlen(str), &dest_ipaddr);
   
   return;
 }
