@@ -1,0 +1,796 @@
+[INFO: Main      ] Starting Contiki-NG-release/v4.4-126-g445336ee9-dirty
+[INFO: Main      ] - Routing: RPL Lite
+[INFO: Main      ] - Net: sicslowpan
+[INFO: Main      ] - MAC: br-mac
+[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+[INFO: Main      ] - 802.15.4 Default channel: 26
+[INFO: Main      ] Node ID: 1800
+[INFO: Main      ] Link-layer address: 0102.0304.0506.0708
+[INFO: Main      ] Tentative link-local IPv6 address: fe80::302:304:506:708
+[INFO: Native    ] Added global IPv6 address fd00::302:304:506:708
+[INFO: RPL BR    ] Contiki-NG Border Router started
+[INFO: BR        ] RPL-Border router started
+ifconfig tun0 inet `hostname` up
+ifconfig tun0 add fd00::1/64
+ifconfig tun0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 127.0.1.1  netmask 255.255.255.255  destination 127.0.1.1
+        inet6 fe80::5914:c015:8598:5abd  prefixlen 64  scopeid 0x20<link>
+        inet6 fd00::1  prefixlen 64  scopeid 0x0<global>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[INFO: Main      ] Starting Contiki-NG-release/v4.4-125-g539dae3ad-dirty
+[INFO: Main      ] - Routing: nullrouting
+[INFO: Main      ] - Net: slipnet
+[INFO: Main      ] - MAC: CSMA
+[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+[INFO: Main      ] - 802.15.4 Default channel: 26
+[INFO: Main      ] Node ID: 2
+[INFO: Main      ] Link-layer address: 0012.7402.0002.0202
+[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7402:2:202
+[INFO: Sky       ] CC2420 CCA threshold -45
+[INFO: BR        ] Setting prefix fd00::1
+[INFO: RPL       ] reset DIO timer (Init root)
+[INFO: BR        ] Server IPv6 addresses:
+[INFO: BR        ]   fd00::212:7402:2:202
+[INFO: BR        ]   fe80::212:7402:2:202
+DAO:112 120151
+DIO:116
+DAO:112 120157
+DIO:116
+DAO:112 120164
+DAO:112 120170
+DAO:112 120176
+DAO:128 120177
+DAO:128 120177
+DIO:116
+DIS:46
+[INFO: RPL       ] reset DIO timer (Multicast DIS)
+DIS:46
+DIO:116
+DAO:136 120184
+DAO:112 120185
+DAO:112 120185
+DAO:112 120185
+DAO:112 120185
+DAO:112 120186
+DAO:136 120186
+DAO:128 120190
+DAO:136 120191
+DIO:116
+DAO:112 120193
+DAO:152 120193
+DAO:120 120193
+DAO:152 120194
+DAO:112 120194
+DAO:120 120194
+DAO:128 120195
+DAO:112 120195
+DAO:144 120196
+DAO:112 120196
+DAO:128 120197
+DIO:116
+DAO:136 120199
+DIO:116
+DAO:128 120200
+DAO:120 120202
+DAO:120 120203
+DIO:116
+DAO:128 120203
+DAO:136 120204
+nbr: fe80::212:7404:4:404  256,   132 =>   388 -- 16  baf  (last tx 0 min ago)
+nbr: fe80::212:7405:5:505 1070,   256 =>  1326 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303 1120,   256 =>  1376 --  0   a   (no tx)
+DAO:128 120205
+DAO:144 120206
+DIO:116
+DAO:128 120208
+DIO:116
+DAO:120 120212
+DAO:112 120213
+DAO:128 120215
+DIO:116
+DIO:116
+DAO:120 120229
+DIO:116
+DIO:116
+DIO:116
+nbr: fe80::212:7404:4:404  256,   128 =>   384 -- 16  baf  (last tx 0 min ago)
+nbr: fe80::212:7405:5:505  938,   256 =>  1194 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303  957,   256 =>  1213 --  0   a   (no tx)
+DIO:116
+DIO:116
+DIO:116
+nbr: fe80::212:7404:4:404  256,   128 =>   384 -- 16  baf  (last tx 1 min ago)
+nbr: fe80::212:7405:5:505  938,   256 =>  1194 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303  922,   256 =>  1178 --  0   a   (no tx)
+nbr: fe80::212:7404:4:404  256,   128 =>   384 -- 16  baf  (last tx 2 min ago)
+nbr: fe80::212:7405:5:505  938,   256 =>  1194 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303  922,   256 =>  1178 --  0   a   (no tx)
+DIO:116
+DIO:116
+DIO:116
+nbr: fe80::212:7404:4:404  256,   128 =>   384 -- 16  baf  (last tx 3 min ago)
+nbr: fe80::212:7405:5:505  917,   256 =>  1173 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303  922,   256 =>  1178 --  0   a   (no tx)
+[INFO: App       ] Received request 'r -65 f fe80::212:7401:1:101 t 300' from fd00::212:741e:1e:1e1e
+encoding CLEANED
+data:r -65 f fe80::212:7401:1:101 t 300
+encoding r -65 f fe80::212:7401:1:101 t 300 a fd00::212:741e:1e:1e1e|
+[INFO: App       ] Received request 'r -73 f fe80::212:7401:1:101 t 300' from fd00::212:741d:1d:1d1d
+data:r -73 f fe80::212:7401:1:101 t 300
+encoding r -65 f fe80::212:7401:1:101 t 300 a fd00::212:741e:1e:1e1e|r -73 f fe80::212:7401:1:101 t 300 a fd00::212:741d:1d:1d1d|
+Sent buffer
+Full Line=[NOT fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+token=[NOT fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+[INFO: App       ] Received request 'r -61 f fe80::212:7401:1:101 t 301' from fd00::212:741e:1e:1e1e
+encoding CLEANED
+data:r -61 f fe80::212:7401:1:101 t 301
+encoding r -61 f fe80::212:7401:1:101 t 301 a fd00::212:741e:1e:1e1e|
+[INFO: App       ] Received request 'r -92 f fe80::212:7401:1:101 t 301' from fd00::212:741f:1f:1f1f
+data:r -92 f fe80::212:7401:1:101 t 301
+encoding r -61 f fe80::212:7401:1:101 t 301 a fd00::212:741e:1e:1e1e|r -92 f fe80::212:7401:1:101 t 301 a fd00::212:741f:1f:1f1f|
+[INFO: App       ] Received request 'r -84 f fe80::212:7401:1:101 t 301' from fd00::212:741d:1d:1d1d
+data:r -84 f fe80::212:7401:1:101 t 301
+encoding r -61 f fe80::212:7401:1:101 t 301 a fd00::212:741e:1e:1e1e|r -92 f fe80::212:7401:1:101 t 301 a fd00::212:741f:1f:1f1f|r -84 f fe80::212:7401:1:101 t 301 a fd00::212:741d:1d:1d1d|
+Sent buffer
+Full Line=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101;1e1e for fe80::212:7401:1:101; fe80::212:7401:1:101]
+token=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741e:1e:1e1e ->fd00::212:741e:1e:1e1e[INFO: App       ] 
+token=[1e1e for fe80::212:7401:1:101]
+[INFO: App       ] ERR: IP ADDR converting
+[INFO: App       ] Received request 'r -79 f fe80::212:7401:1:101 t 302' from fd00::212:741f:1f:1f1f
+encoding CLEANED
+data:r -79 f fe80::212:7401:1:101 t 302
+encoding r -79 f fe80::212:7401:1:101 t 302 a fd00::212:741f:1f:1f1f|
+[INFO: App       ] Received request 'r -62 f fe80::212:7401:1:101 t 302' from fd00::212:741e:1e:1e1e
+data:r -62 f fe80::212:7401:1:101 t 302
+encoding r -79 f fe80::212:7401:1:101 t 302 a fd00::212:741f:1f:1f1f|r -62 f fe80::212:7401:1:101 t 302 a fd00::212:741e:1e:1e1e|
+Sent buffer
+Full Line=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101;1e1e for fe80::212:7401:1:101]
+token=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741e:1e:1e1e ->fd00::212:741e:1e:1e1e[INFO: App       ] 
+token=[1e1e for fe80::212:7401:1:101]
+[INFO: App       ] ERR: IP ADDR converting
+[INFO: App       ] Received data: "hello 3" from fd00::212:741e:1e:1e1e
+[INFO: App       ] num = 3	totalRx = 0
+[INFO: App       ] Received request 'r -68 f fe80::212:7401:1:101 t 303' from fd00::212:741e:1e:1e1e
+encoding CLEANED
+data:r -68 f fe80::212:7401:1:101 t 303
+encoding r -68 f fe80::212:7401:1:101 t 303 a fd00::212:741e:1e:1e1e|
+[INFO: App       ] Received request 'r -69 f fe80::212:7401:1:101 t 303' from fd00::212:741f:1f:1f1f
+data:r -69 f fe80::212:7401:1:101 t 303
+encoding r -68 f fe80::212:7401:1:101 t 303 a fd00::212:741e:1e:1e1e|r -69 f fe80::212:7401:1:101 t 303 a fd00::212:741f:1f:1f1f|
+Sent buffer
+Full Line=[NOT fd00::212:741e:1e:1e1e for fe80::212:7401:1:101;SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;]
+token=[NOT fd00::212:741e:1e:1e1e for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741e:1e:1e1e ->fd00::212:741e:1e:1e1e[INFO: App       ] 
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+[INFO: App       ] Received data: "hello 4" from fd00::212:741e:1e:1e1e
+[INFO: App       ] num = 4	totalRx = 1
+[INFO: App       ] Received request 'r -62 f fe80::212:7401:1:101 t 304' from fd00::212:741f:1f:1f1f
+encoding CLEANED
+data:r -62 f fe80::212:7401:1:101 t 304
+encoding r -62 f fe80::212:7401:1:101 t 304 a fd00::212:741f:1f:1f1f|
+[INFO: App       ] Received request 'r -78 f fe80::212:7401:1:101 t 304' from fd00::212:741e:1e:1e1e
+data:r -78 f fe80::212:7401:1:101 t 304
+encoding r -62 f fe80::212:7401:1:101 t 304 a fd00::212:741f:1f:1f1f|r -78 f fe80::212:7401:1:101 t 304 a fd00::212:741e:1e:1e1e|
+Sent buffer
+Full Line=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+[INFO: App       ] Received data: "hello 5" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 5	totalRx = 2
+[INFO: App       ] Received data: "hello 5" from fd00::212:741e:1e:1e1e
+[INFO: App       ] num = 5	totalRx = 3
+[INFO: App       ] Received request 'r -61 f fe80::212:7401:1:101 t 305' from fd00::212:741f:1f:1f1f
+encoding CLEANED
+data:r -61 f fe80::212:7401:1:101 t 305
+encoding r -61 f fe80::212:7401:1:101 t 305 a fd00::212:741f:1f:1f1f|
+[INFO: App       ] Received request 'r -85 f fe80::212:7401:1:101 t 305' from fd00::212:7420:20:2020
+data:r -85 f fe80::212:7401:1:101 t 305
+encoding r -61 f fe80::212:7401:1:101 t 305 a fd00::212:741f:1f:1f1f|r -85 f fe80::212:7401:1:101 t 305 a fd00::212:7420:20:2020|
+Sent buffer
+Full Line=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+[INFO: App       ] Received data: "hello 6" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 6	totalRx = 4
+[INFO: App       ] Received request 'r -74 f fe80::212:7401:1:101 t 306' from fd00::212:7420:20:2020
+encoding CLEANED
+data:r -74 f fe80::212:7401:1:101 t 306
+encoding r -74 f fe80::212:7401:1:101 t 306 a fd00::212:7420:20:2020|
+[INFO: App       ] Received request 'r -64 f fe80::212:7401:1:101 t 306' from fd00::212:741f:1f:1f1f
+data:r -64 f fe80::212:7401:1:101 t 306
+encoding r -74 f fe80::212:7401:1:101 t 306 a fd00::212:7420:20:2020|r -64 f fe80::212:7401:1:101 t 306 a fd00::212:741f:1f:1f1f|
+Sent buffer
+Full Line=[NOT fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;SET fd00::212:7420:20:2020 for fe80::212:7401:1:101;]
+token=[NOT fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+[INFO: App       ] Received data: "hello 7" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 7	totalRx = 5
+[INFO: App       ] Received request 'r -73 f fe80::212:7401:1:101 t 307' from fd00::212:741f:1f:1f1f
+encoding CLEANED
+data:r -73 f fe80::212:7401:1:101 t 307
+encoding r -73 f fe80::212:7401:1:101 t 307 a fd00::212:741f:1f:1f1f|
+[INFO: App       ] Received request 'r -65 f fe80::212:7401:1:101 t 307' from fd00::212:7420:20:2020
+data:r -65 f fe80::212:7401:1:101 t 307
+encoding r -73 f fe80::212:7401:1:101 t 307 a fd00::212:741f:1f:1f1f|r -65 f fe80::212:7401:1:101 t 307 a fd00::212:7420:20:2020|
+Sent buffer
+Full Line=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101;SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+[INFO: App       ] Received data: "hello 8" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 8	totalRx = 6
+[INFO: App       ] Received data: "hello 8" from fd00::212:7420:20:2020
+[INFO: App       ] num = 8	totalRx = 7
+[INFO: App       ] Received request 'r -92 f fe80::212:7401:1:101 t 308' from fd00::212:7421:21:2121
+encoding CLEANED
+data:r -92 f fe80::212:7401:1:101 t 308
+encoding r -92 f fe80::212:7401:1:101 t 308 a fd00::212:7421:21:2121|
+[INFO: App       ] Received request 'r -61 f fe80::212:7401:1:101 t 308' from fd00::212:7420:20:2020
+data:r -61 f fe80::212:7401:1:101 t 308
+encoding r -92 f fe80::212:7401:1:101 t 308 a fd00::212:7421:21:2121|r -61 f fe80::212:7401:1:101 t 308 a fd00::212:7420:20:2020|
+[INFO: App       ] Received request 'r -84 f fe80::212:7401:1:101 t 308' from fd00::212:741f:1f:1f1f
+data:r -84 f fe80::212:7401:1:101 t 308
+encoding r -92 f fe80::212:7401:1:101 t 308 a fd00::212:7421:21:2121|r -61 f fe80::212:7401:1:101 t 308 a fd00::212:7420:20:2020|r -84 f fe80::212:7401:1:101 t 308 a fd00::212:741f:1f:1f1f|
+Sent buffer
+Full Line=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101;SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+[INFO: App       ] Received data: "hello 9" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 9	totalRx = 8
+[INFO: App       ] Received data: "hello 9" from fd00::212:7420:20:2020
+[INFO: App       ] num = 9	totalRx = 9
+[INFO: App       ] Received request 'r -62 f fe80::212:7401:1:101 t 309' from fd00::212:7420:20:2020
+encoding CLEANED
+data:r -62 f fe80::212:7401:1:101 t 309
+encoding r -62 f fe80::212:7401:1:101 t 309 a fd00::212:7420:20:2020|
+[INFO: App       ] Received request 'r -79 f fe80::212:7401:1:101 t 309' from fd00::212:7421:21:2121
+data:r -79 f fe80::212:7401:1:101 t 309
+encoding r -62 f fe80::212:7401:1:101 t 309 a fd00::212:7420:20:2020|r -79 f fe80::212:7401:1:101 t 309 a fd00::212:7421:21:2121|
+[INFO: App       ] Received data: "hello 10" from fd00::212:7420:20:2020
+[INFO: App       ] num = 10	totalRx = 10
+Sent buffer
+Full Line=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101;SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+[INFO: App       ] Received request 'r -68 f fe80::212:7401:1:101 t 310' from fd00::212:7420:20:2020
+encoding CLEANED
+data:r -68 f fe80::212:7401:1:101 t 310
+encoding r -68 f fe80::212:7401:1:101 t 310 a fd00::212:7420:20:2020|
+Sent buffer
+Full Line=[NOT fd00::212:7420:20:2020 for fe80::212:7401:1:101;SET fd00::212:7421:21:2121 for fe80::212:7401:1:101;]
+token=[NOT fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+token=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+[INFO: App       ] Received data: "hello 11" from fd00::212:7420:20:2020
+[INFO: App       ] num = 11	totalRx = 11
+[INFO: App       ] Received request 'r -78 f fe80::212:7401:1:101 t 311' from fd00::212:7420:20:2020
+encoding CLEANED
+data:r -78 f fe80::212:7401:1:101 t 311
+encoding r -78 f fe80::212:7401:1:101 t 311 a fd00::212:7420:20:2020|
+[INFO: App       ] Received request 'r -62 f fe80::212:7401:1:101 t 311' from fd00::212:7421:21:2121
+data:r -62 f fe80::212:7401:1:101 t 311
+encoding r -78 f fe80::212:7401:1:101 t 311 a fd00::212:7420:20:2020|r -62 f fe80::212:7401:1:101 t 311 a fd00::212:7421:21:2121|
+Sent buffer
+Full Line=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101;SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+token=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+token=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+[INFO: App       ] Received data: "hello 12" from fd00::212:7420:20:2020
+[INFO: App       ] num = 12	totalRx = 12
+[INFO: App       ] Received data: "hello 12" from fd00::212:7421:21:2121
+[INFO: App       ] num = 12	totalRx = 13
+[INFO: App       ] Received request 'r -90 f fe80::212:7401:1:101 t 312' from fd00::212:7420:20:2020
+encoding CLEANED
+data:r -90 f fe80::212:7401:1:101 t 312
+encoding r -90 f fe80::212:7401:1:101 t 312 a fd00::212:7420:20:2020|
+[INFO: App       ] Received request 'r -61 f fe80::212:7401:1:101 t 312' from fd00::212:7421:21:2121
+data:r -61 f fe80::212:7401:1:101 t 312
+encoding r -90 f fe80::212:7401:1:101 t 312 a fd00::212:7420:20:2020|r -61 f fe80::212:7401:1:101 t 312 a fd00::212:7421:21:2121|
+[INFO: App       ] Received request 'r -85 f fe80::212:7401:1:101 t 312' from fd00::212:7422:22:2222
+data:r -85 f fe80::212:7401:1:101 t 312
+encoding r -90 f fe80::212:7401:1:101 t 312 a fd00::212:7420:20:2020|r -61 f fe80::212:7401:1:101 t 312 a fd00::212:7421:21:2121|r -85 f fe80::212:7401:1:101 t 312 a fd00::212:7422:22:2222|
+[INFO: App       ] Received data: "hello 13" from fd00::212:7421:21:2121
+[INFO: App       ] num = 13	totalRx = 14
+Sent buffer
+Full Line=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101;SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+token=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+token=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+[INFO: App       ] Received request 'r -74 f fe80::212:7401:1:101 t 313' from fd00::212:7422:22:2222
+encoding CLEANED
+data:r -74 f fe80::212:7401:1:101 t 313
+encoding r -74 f fe80::212:7401:1:101 t 313 a fd00::212:7422:22:2222|
+[INFO: App       ] Received request 'r -64 f fe80::212:7401:1:101 t 313' from fd00::212:7421:21:2121
+data:r -64 f fe80::212:7401:1:101 t 313
+encoding r -74 f fe80::212:7401:1:101 t 313 a fd00::212:7422:22:2222|r -64 f fe80::212:7401:1:101 t 313 a fd00::212:7421:21:2121|
+Sent buffer
+[INFO: App       ] Received data: "hello 14" from fd00::212:7421:21:2121
+[INFO: App       ] num = 14	totalRx = 15
+Full Line=[NOT fd00::212:7421:21:2121 for fe80::212:7401:1:101;SET fd00::212:7422:22:2222 for fe80::212:7401:1:101;]
+token=[NOT fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+token=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+[INFO: App       ] Received request 'r -73 f fe80::212:7401:1:101 t 314' from fd00::212:7421:21:2121
+encoding CLEANED
+data:r -73 f fe80::212:7401:1:101 t 314
+encoding r -73 f fe80::212:7401:1:101 t 314 a fd00::212:7421:21:2121|
+[INFO: App       ] Received request 'r -65 f fe80::212:7401:1:101 t 314' from fd00::212:7422:22:2222
+data:r -65 f fe80::212:7401:1:101 t 314
+encoding r -73 f fe80::212:7401:1:101 t 314 a fd00::212:7421:21:2121|r -65 f fe80::212:7401:1:101 t 314 a fd00::212:7422:22:2222|
+Sent buffer
+Full Line=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101;SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+token=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+token=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+[INFO: App       ] Received data: "hello 15" from fd00::212:7421:21:2121
+[INFO: App       ] num = 15	totalRx = 16
+[INFO: App       ] Received data: "hello 15" from fd00::212:7422:22:2222
+[INFO: App       ] num = 15	totalRx = 17
+[INFO: App       ] Received request 'r -92 f fe80::212:7401:1:101 t 315' from fd00::212:7423:23:2323
+encoding CLEANED
+data:r -92 f fe80::212:7401:1:101 t 315
+encoding r -92 f fe80::212:7401:1:101 t 315 a fd00::212:7423:23:2323|
+[INFO: App       ] Received request 'r -61 f fe80::212:7401:1:101 t 315' from fd00::212:7422:22:2222
+data:r -61 f fe80::212:7401:1:101 t 315
+encoding r -92 f fe80::212:7401:1:101 t 315 a fd00::212:7423:23:2323|r -61 f fe80::212:7401:1:101 t 315 a fd00::212:7422:22:2222|
+[INFO: App       ] Received request 'r -84 f fe80::212:7401:1:101 t 315' from fd00::212:7421:21:2121
+data:r -84 f fe80::212:7401:1:101 t 315
+encoding r -92 f fe80::212:7401:1:101 t 315 a fd00::212:7423:23:2323|r -61 f fe80::212:7401:1:101 t 315 a fd00::212:7422:22:2222|r -84 f fe80::212:7401:1:101 t 315 a fd00::212:7421:21:2121|
+Sent buffer
+Full Line=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101;SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+token=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+token=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+[INFO: App       ] Received data: "hello 16" from fd00::212:7422:22:2222
+[INFO: App       ] num = 16	totalRx = 18
+[INFO: App       ] Received data: "hello 16" from fd00::212:7421:21:2121
+[INFO: App       ] num = 16	totalRx = 19
+[INFO: App       ] Received request 'r -79 f fe80::212:7401:1:101 t 316' from fd00::212:7423:23:2323
+encoding CLEANED
+data:r -79 f fe80::212:7401:1:101 t 316
+encoding r -79 f fe80::212:7401:1:101 t 316 a fd00::212:7423:23:2323|
+[INFO: App       ] Received request 'r -62 f fe80::212:7401:1:101 t 316' from fd00::212:7422:22:2222
+data:r -62 f fe80::212:7401:1:101 t 316
+encoding r -79 f fe80::212:7401:1:101 t 316 a fd00::212:7423:23:2323|r -62 f fe80::212:7401:1:101 t 316 a fd00::212:7422:22:2222|
+[INFO: App       ] Received data: "hello 17" from fd00::212:7422:22:2222
+[INFO: App       ] num = 17	totalRx = 20
+Sent buffer
+Full Line=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101;SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+token=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+token=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+[INFO: App       ] Received request 'r -68 f fe80::212:7401:1:101 t 317' from fd00::212:7422:22:2222
+encoding CLEANED
+data:r -68 f fe80::212:7401:1:101 t 317
+encoding r -68 f fe80::212:7401:1:101 t 317 a fd00::212:7422:22:2222|
+[INFO: App       ] Received request 'r -69 f fe80::212:7401:1:101 t 317' from fd00::212:7423:23:2323
+data:r -69 f fe80::212:7401:1:101 t 317
+encoding r -68 f fe80::212:7401:1:101 t 317 a fd00::212:7422:22:2222|r -69 f fe80::212:7401:1:101 t 317 a fd00::212:7423:23:2323|
+Sent buffer
+Full Line=[NOT fd00::212:7422:22:2222 for fe80::212:7401:1:101;SET fd00::212:7423:23:2323 for fe80::212:7401:1:101;]
+token=[NOT fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+token=[SET fd00::212:7423:23:2323 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7423:23:2323 ->fd00::212:7423:23:2323[INFO: App       ] 
+[INFO: App       ] Received data: "hello 18" from fd00::212:7422:22:2222
+[INFO: App       ] num = 18	totalRx = 21
+[INFO: App       ] Received request 'r -78 f fe80::212:7401:1:101 t 318' from fd00::212:7422:22:2222
+encoding CLEANED
+data:r -78 f fe80::212:7401:1:101 t 318
+encoding r -78 f fe80::212:7401:1:101 t 318 a fd00::212:7422:22:2222|
+Sent buffer
+Full Line=[SET fd00::212:7423:23:2323 for fe80::212:7401:1:101;SET fd00::212:7423:23:2323 for fe80::212:7401:1:101]
+token=[SET fd00::212:7423:23:2323 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7423:23:2323 ->fd00::212:7423:23:2323[INFO: App       ] 
+token=[SET fd00::212:7423:23:2323 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7423:23:2323 ->fd00::212:7423:23:2323[INFO: App       ] 
+[INFO: App       ] Received request 'r -74 f fe80::212:7401:1:101 t 319' from fd00::212:7422:22:2222
+encoding CLEANED
+data:r -74 f fe80::212:7401:1:101 t 319
+encoding r -74 f fe80::212:7401:1:101 t 319 a fd00::212:7422:22:2222|
+[INFO: App       ] Received request 'r -64 f fe80::212:7401:1:101 t 319' from fd00::212:7423:23:2323
+data:r -64 f fe80::212:7401:1:101 t 319
+encoding r -74 f fe80::212:7401:1:101 t 319 a fd00::212:7422:22:2222|r -64 f fe80::212:7401:1:101 t 319 a fd00::212:7423:23:2323|
+Sent buffer
+Full Line=[SET fd00::212:7423:23:2323 for fe80::212:7401:1:101;SET fd00::212:7423:23:2323 for fe80::212:7401:1:101]
+token=[SET fd00::212:7423:23:2323 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7423:23:2323 ->fd00::212:7423:23:2323[INFO: App       ] 
+token=[SET fd00::212:7423:23:2323 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7423:23:2323 ->fd00::212:7423:23:2323[INFO: App       ] 
+[INFO: App       ] Received request 'r -92 f fe80::212:7401:1:101 t 321' from fd00::212:7421:21:2121
+encoding CLEANED
+data:r -92 f fe80::212:7401:1:101 t 321
+encoding r -92 f fe80::212:7401:1:101 t 321 a fd00::212:7421:21:2121|
+Sent buffer
+Full Line=[NOT fd00::212:7423:23:2323 for fe80::212:7401:1:101;SET fd00::212:7422:22:2222 for fe80::212:7401:1:101;]
+token=[NOT fd00::212:7423:23:2323 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7423:23:2323 ->fd00::212:7423:23:2323[INFO: App       ] 
+token=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+[INFO: App       ] Received data: "hello 22" from fd00::212:7421:21:2121
+[INFO: App       ] num = 22	totalRx = 22
+DAO:168 120492
+DIO:116
+[INFO: App       ] Received data: "hello 23" from fd00::212:7421:21:2121
+[INFO: App       ] num = 23	totalRx = 23
+[INFO: App       ] Received data: "hello 24" from fd00::212:7421:21:2121
+[INFO: App       ] num = 24	totalRx = 24
+[INFO: App       ] Received request 'r -62 f fe80::212:7401:1:101 t 322' from fd00::212:7422:22:2222
+encoding CLEANED
+data:r -62 f fe80::212:7401:1:101 t 322
+encoding r -62 f fe80::212:7401:1:101 t 322 a fd00::212:7422:22:2222|
+Sent buffer
+Full Line=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101;SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+token=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+token=[SET fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+DAO:160 120500
+[INFO: App       ] Received data: "hello 21" from fd00::212:7423:23:2323
+[INFO: App       ] num = 21	totalRx = 25
+[INFO: App       ] Received request 'r -85 f fe80::212:7401:1:101 t 325' from fd00::212:7420:20:2020
+encoding CLEANED
+data:r -85 f fe80::212:7401:1:101 t 325
+encoding r -85 f fe80::212:7401:1:101 t 325 a fd00::212:7420:20:2020|
+Sent buffer
+Full Line=[NOT fd00::212:7422:22:2222 for fe80::212:7401:1:101;SET fd00::212:7421:21:2121 for fe80::212:7401:1:101;]
+token=[NOT fd00::212:7422:22:2222 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7422:22:2222 ->fd00::212:7422:22:2222[INFO: App       ] 
+token=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+[INFO: App       ] Received data: "hello 23" from fd00::212:7422:22:2222
+[INFO: App       ] num = 23	totalRx = 26
+DAO:144 120503
+[INFO: App       ] Received request 'r -64 f fe80::212:7401:1:101 t 326' from fd00::212:7421:21:2121
+encoding CLEANED
+data:r -64 f fe80::212:7401:1:101 t 326
+encoding r -64 f fe80::212:7401:1:101 t 326 a fd00::212:7421:21:2121|
+Sent buffer
+nbr: fe80::212:7404:4:404  256,   128 =>   384 -- 16  baf  (last tx 0 min ago)
+nbr: fe80::212:7405:5:505 1242,   256 =>  1498 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303  922,   256 =>  1178 --  0   a   (no tx)
+Full Line=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101;SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+token=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+token=[SET fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+DAO:160 120508
+DIO:116
+DAO:144 120512
+[INFO: App       ] Received data: "hello 27" from fd00::212:7421:21:2121
+[INFO: App       ] num = 27	totalRx = 27
+[INFO: App       ] Received request 'r -61 f fe80::212:7401:1:101 t 328' from fd00::212:7420:20:2020
+encoding CLEANED
+data:r -61 f fe80::212:7401:1:101 t 328
+encoding r -61 f fe80::212:7401:1:101 t 328 a fd00::212:7420:20:2020|
+Sent buffer
+Full Line=[NOT fd00::212:7421:21:2121 for fe80::212:7401:1:101;SET fd00::212:7420:20:2020 for fe80::212:7401:1:101;]
+token=[NOT fd00::212:7421:21:2121 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7421:21:2121 ->fd00::212:7421:21:2121[INFO: App       ] 
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+DAO:144 120516
+DAO:168 120517
+DAO:168 120519
+[INFO: App       ] Received request 'r -79 f fe80::212:7401:1:101 t 329' from fd00::212:741f:1f:1f1f
+encoding CLEANED
+data:r -79 f fe80::212:7401:1:101 t 329
+encoding r -79 f fe80::212:7401:1:101 t 329 a fd00::212:741f:1f:1f1f|
+Sent buffer
+Full Line=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101;SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+DAO:160 120521
+DAO:168 120524
+[INFO: App       ] Received request 'r -69 f fe80::212:7401:1:101 t 330' from fd00::212:741f:1f:1f1f
+encoding CLEANED
+data:r -69 f fe80::212:7401:1:101 t 330
+encoding r -69 f fe80::212:7401:1:101 t 330 a fd00::212:741f:1f:1f1f|
+Sent buffer
+Full Line=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101;SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+token=[SET fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+[INFO: App       ] Received data: "hello 31" from fd00::212:7420:20:2020
+[INFO: App       ] num = 31	totalRx = 28
+[INFO: App       ] Received request 'r -62 f fe80::212:7401:1:101 t 331' from fd00::212:741f:1f:1f1f
+encoding CLEANED
+data:r -62 f fe80::212:7401:1:101 t 331
+encoding r -62 f fe80::212:7401:1:101 t 331 a fd00::212:741f:1f:1f1f|
+Sent buffer
+Full Line=[NOT fd00::212:7420:20:2020 for fe80::212:7401:1:101;SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;]
+token=[NOT fd00::212:7420:20:2020 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7420:20:2020 ->fd00::212:7420:20:2020[INFO: App       ] 
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+[INFO: App       ] Received request 'r -78 f fe80::212:7401:1:101 t 331' from fd00::212:7420:20:2020
+DAO:168 120549
+DIO:116
+DIO:116
+DAO:168 120556
+DAO:144 120557
+DAO:160 120561
+DAO:168 120563
+nbr: fe80::212:7404:4:404  267,   136 =>   403 -- 16  baf  (last tx 0 min ago)
+nbr: fe80::212:7405:5:505 1876,   256 =>  2132 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303 1457,   256 =>  1713 --  0   a   (no tx)
+DAO:160 120568
+DAO:168 120572
+DAO:120 120572
+[INFO: App       ] Received request 'r -65 f fe80::212:7401:1:101 t 334' from fd00::212:741e:1e:1e1e
+encoding CLEANED
+data:r -65 f fe80::212:7401:1:101 t 334
+encoding r -65 f fe80::212:7401:1:101 t 334 a fd00::212:741e:1e:1e1e|
+Sent buffer
+Full Line=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+DAO:168 120579
+DAO:168 120581
+DAO:136 120582
+[INFO: App       ] Received data: "hello 44" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 44	totalRx = 29
+[INFO: App       ] Received request 'r -62 f fe80::212:7401:1:101 t 342' from fd00::212:741e:1e:1e1e
+encoding CLEANED
+data:r -62 f fe80::212:7401:1:101 t 342
+encoding r -62 f fe80::212:7401:1:101 t 342 a fd00::212:741e:1e:1e1e|
+Sent buffer
+Full Line=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+DIO:116
+DAO:160 120586
+[INFO: App       ] Received request 'r -90 f fe80::212:7401:1:101 t 345' from fd00::212:741e:1e:1e1e
+encoding CLEANED
+data:r -90 f fe80::212:7401:1:101 t 345
+encoding r -90 f fe80::212:7401:1:101 t 345 a fd00::212:741e:1e:1e1e|
+Sent buffer
+Full Line=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+DAO:144 120589
+DAO:160 120593
+DAO:144 120594
+DAO:160 120596
+[INFO: App       ] Received data: "hello 47" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 47	totalRx = 30
+DAO:144 120598
+DAO:144 120599
+[INFO: App       ] Received data: "hello 48" from fd00::212:7420:20:2020
+[INFO: App       ] num = 48	totalRx = 31
+DAO:144 120600
+DAO:136 120600
+DAO:120 120601
+DAO:144 120602
+DAO:168 120604
+DAO:144 120605
+[INFO: App       ] Received data: "hello 50" from fd00::212:7420:20:2020
+[INFO: App       ] num = 50	totalRx = 32
+DAO:168 120607
+DAO:144 120608
+[INFO: App       ] Received data: "hello 50" from fd00::212:7421:21:2121
+[INFO: App       ] num = 50	totalRx = 33
+[INFO: App       ] Received data: "hello 51" from fd00::212:7421:21:2121
+[INFO: App       ] num = 51	totalRx = 34
+DAO:136 120610
+DAO:144 120611
+DAO:160 120613
+DAO:168 120617
+DAO:160 120618
+DAO:144 120620
+DAO:144 120621
+DIO:116
+DAO:144 120623
+[INFO: App       ] Received data: "hello 54" from fd00::212:7422:22:2222
+[INFO: App       ] num = 54	totalRx = 35
+DAO:136 120624
+nbr: fe80::212:7404:4:404  256,   142 =>   398 -- 16  baf  (last tx 0 min ago)
+nbr: fe80::212:7405:5:505 1950,   256 =>  2206 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303 1532,   256 =>  1788 --  0   a   (no tx)
+DAO:168 120628
+[INFO: App       ] Received data: "hello 54" from fd00::212:7421:21:2121
+[INFO: App       ] num = 54	totalRx = 36
+DAO:144 120630
+DAO:144 120633
+DIO:116
+DAO:144 120638
+DAO:168 120639
+DAO:144 120644
+DAO:136 120646
+DIO:116
+DAO:144 120653
+DAO:168 120654
+DAO:144 120655
+DAO:144 120658
+DAO:136 120660
+DAO:160 120663
+DAO:144 120663
+DAO:168 120665
+[INFO: App       ] Received data: "hello 65" from fd00::212:7420:20:2020
+[INFO: App       ] num = 65	totalRx = 37
+[INFO: App       ] Received request 'r -74 f fe80::212:7401:1:101 t 366' from fd00::212:7420:20:2020
+encoding CLEANED
+data:r -74 f fe80::212:7401:1:101 t 366
+encoding r -74 f fe80::212:7401:1:101 t 366 a fd00::212:7420:20:2020|
+Sent buffer
+Full Line=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+[INFO: App       ] Received data: "hello 66" from fd00::212:7420:20:2020
+[INFO: App       ] num = 66	totalRx = 38
+DIO:116
+DAO:120 120677
+[INFO: App       ] Received data: "hello 65" from fd00::212:7421:21:2121
+[INFO: App       ] num = 65	totalRx = 39
+DAO:168 120682
+[INFO: App       ] Received data: "hello 67" from fd00::212:7420:20:2020
+[INFO: App       ] num = 67	totalRx = 40
+[INFO: App       ] Received request 'r -61 f fe80::212:7401:1:101 t 368' from fd00::212:7420:20:2020
+encoding CLEANED
+data:r -61 f fe80::212:7401:1:101 t 368
+encoding r -61 f fe80::212:7401:1:101 t 368 a fd00::212:7420:20:2020|
+Sent buffer
+Full Line=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+[INFO: App       ] Received request 'r -92 f fe80::212:7401:1:101 t 368' from fd00::212:741f:1f:1f1f
+nbr: fe80::212:7404:4:404  256,   138 =>   394 -- 16  baf  (last tx 0 min ago)
+nbr: fe80::212:7405:5:505 2892,   256 =>  3148 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303 1244,   256 =>  1500 --  0   a   (no tx)
+DAO:144 120686
+[INFO: App       ] Received data: "hello 66" from fd00::212:7421:21:2121
+[INFO: App       ] num = 66	totalRx = 41
+[INFO: App       ] Received data: "hello 68" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 68	totalRx = 42
+[INFO: App       ] Received data: "hello 68" from fd00::212:7420:20:2020
+[INFO: App       ] num = 68	totalRx = 43
+[INFO: App       ] Received data: "hello 68" from fd00::212:7421:21:2121
+[INFO: App       ] num = 68	totalRx = 44
+[INFO: App       ] Received data: "hello 69" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 69	totalRx = 45
+[INFO: App       ] Received data: "hello 69" from fd00::212:7420:20:2020
+[INFO: App       ] num = 69	totalRx = 46
+DAO:144 120689
+[INFO: App       ] Received request 'r -69 f fe80::212:7401:1:101 t 370' from fd00::212:741f:1f:1f1f
+encoding CLEANED
+data:r -69 f fe80::212:7401:1:101 t 370
+encoding r -69 f fe80::212:7401:1:101 t 370 a fd00::212:741f:1f:1f1f|
+DAO:120 120690
+Sent buffer
+Full Line=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+token=[SET fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+DAO:144 120693
+DAO:160 120696
+[INFO: App       ] Received data: "hello 71" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 71	totalRx = 47
+DAO:144 120697
+[INFO: App       ] Received request 'r -78 f fe80::212:7401:1:101 t 371' from fd00::212:7420:20:2020
+encoding CLEANED
+data:r -78 f fe80::212:7401:1:101 t 371
+encoding r -78 f fe80::212:7401:1:101 t 371 a fd00::212:7420:20:2020|
+Sent buffer
+Full Line=[NOT fd00::212:741f:1f:1f1f for fe80::212:7401:1:101;SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101;]
+token=[NOT fd00::212:741f:1f:1f1f for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741f:1f:1f1f ->fd00::212:741f:1f:1f1f[INFO: App       ] 
+token=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741e:1e:1e1e ->fd00::212:741e:1e:1e1e[INFO: App       ] 
+[INFO: App       ] Received request 'r -61 f fe80::212:7401:1:101 t 372' from fd00::212:741f:1f:1f1f
+encoding CLEANED
+data:r -61 f fe80::212:7401:1:101 t 372
+encoding r -61 f fe80::212:7401:1:101 t 372 a fd00::212:741f:1f:1f1f|
+Sent buffer
+Full Line=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101;SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101]
+token=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741e:1e:1e1e ->fd00::212:741e:1e:1e1e[INFO: App       ] 
+token=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741e:1e:1e1e ->fd00::212:741e:1e:1e1e[INFO: App       ] 
+[INFO: App       ] Received request 'r -85 f fe80::212:7401:1:101 t 372' from fd00::212:741e:1e:1e1e
+DAO:144 120701
+[INFO: App       ] Received data: "hello 72" from fd00::212:741f:1f:1f1f
+[INFO: App       ] num = 72	totalRx = 48
+[INFO: App       ] Received request 'r -74 f fe80::212:7401:1:101 t 373' from fd00::212:741e:1e:1e1e
+encoding CLEANED
+data:r -74 f fe80::212:7401:1:101 t 373
+encoding r -74 f fe80::212:7401:1:101 t 373 a fd00::212:741e:1e:1e1e|
+Sent buffer
+Full Line=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101;SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101]
+token=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741e:1e:1e1e ->fd00::212:741e:1e:1e1e[INFO: App       ] 
+token=[SET fd00::212:741e:1e:1e1e for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:741e:1e:1e1e ->fd00::212:741e:1e:1e1e[INFO: App       ] 
+[INFO: App       ] Received data: "hello 71" from fd00::212:7420:20:2020
+[INFO: App       ] num = 71	totalRx = 49
+DAO:144 120704
+DIO:116
+DIO:116
+nbr: fe80::212:7404:4:404  256,   138 =>   394 -- 16  baf  (last tx 0 min ago)
+nbr: fe80::212:7405:5:505 2892,   256 =>  3148 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303 1893,   256 =>  2149 --  0   a   (no tx)
+nbr: fe80::212:7404:4:404  256,   138 =>   394 -- 16  baf  (last tx 1 min ago)
+nbr: fe80::212:7405:5:505 2892,   256 =>  3148 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303 1893,   256 =>  2149 --  0   a   (no tx)
+nbr: fe80::212:7404:4:404  256,   138 =>   394 -- 16  baf  (last tx 2 min ago)
+nbr: fe80::212:7405:5:505 2892,   256 =>  3148 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303 1893,   256 =>  2149 --  0   a   (no tx)
+DIO:116
+DIS:46
+[INFO: RPL       ] reset DIO timer (Multicast DIS)
+DIO:116
+DIS:46
+DIO:116
+DIO:116
+DIO:116
+DIS:46
+[INFO: RPL       ] reset DIO timer (Multicast DIS)
+DIO:116
+nbr: fe80::212:7404:4:404  256,   138 =>   394 -- 16  baf  (last tx 3 min ago)
+nbr: fe80::212:7405:5:505 2892,   256 =>  3148 --  0   a   (no tx)
+nbr: fe80::212:7403:3:303 1893,   256 =>  2149 --  0   a   (no tx)
+DIO:116
+DIS:46
+DIO:116
+DIS:46
+[INFO: RPL       ] reset DIO timer (Multicast DIS)
+DIO:116
+DIO:116
+DIS:46
+DIO:116
+DIO:116
+DIS:46
+[INFO: RPL       ] reset DIO timer (Multicast DIS)
+DIO:116
+DIO:116
+DIS:46
+DIO:116
+DIO:116
+DIO:116
+DIS:46
+[INFO: RPL       ] reset DIO timer (Multicast DIS)
+DIO:116
+ifconfig tun0 down
+netstat -nr | awk '{ if ($2 == "tun0") print "route delete -net "$1; }' | sh

@@ -95,14 +95,16 @@ static void ctimer2_callback() {
     
     // Now reading the response
     char * curLine = shared_memory_down;
-    while(curLine)
-    {
-        char * nextLine = strchr(curLine, '\n');
-        if (nextLine) *nextLine = '\0';  // temporarily terminate the current line
-        printf("curLine=[%s]\n", curLine);
+    printf("Full Line=[%s]\n", curLine);
+
+    char * token = strtok(curLine, ";");
+    // loop through the string to extract all other tokens
+    while( token != NULL ) {
+
+        printf("token=[%s]\n", token);
         
         memset(anchor_node, 0, 26*sizeof(char));
-        sscanf(curLine, "%s %s for %s", set_unset_value, anchor_node, mobile_node);
+        sscanf(token, "%s %s for %s", set_unset_value, anchor_node, mobile_node);
         if(uiplib_ipaddrconv(anchor_node, &anchor_node_address) == 0) {
             LOG_INFO("ERR: IP ADDR converting\n");
             return;
@@ -117,10 +119,10 @@ static void ctimer2_callback() {
             strcat(set_unset_value, mobile_node);
             simple_udp_sendto(&down_conn, set_unset_value, strlen(set_unset_value), &anchor_node_address);
         }
-        
-        if (nextLine) *nextLine = '\n';  // then restore newline-char, just to be tidy    
-            curLine = nextLine ? (nextLine+1) : NULL;
+
+        token = strtok(NULL, ";");
     }
+
 }
 
 
@@ -177,8 +179,8 @@ rss_rx_callback(struct simple_udp_connection *c,
         encoding(data, iter_rss++);
         // LOG_INFO("Encoded data: %s\n", long_str);
         // setting two different callback_timer, the difference would be the multipath time
-        ctimer_set(&read_timer, 0.4*CLOCK_SECOND, ctimer_callback, NULL);
-        ctimer_set(&read_timer2, 0.45*CLOCK_SECOND, ctimer2_callback, NULL);
+        ctimer_set(&read_timer, 0.5*CLOCK_SECOND, ctimer_callback, NULL);
+        ctimer_set(&read_timer2, 0.55*CLOCK_SECOND, ctimer2_callback, NULL);
     }
 }
 
@@ -221,7 +223,7 @@ PROCESS_THREAD(udp_server_process, ev, data)
     }
 
     // Setup downward shared memory, 100 is the size
-    if ((dn_shm_id = shmget(DN_SHM_KEY, 200, IPC_CREAT | 0666)) < 0) {
+    if ((dn_shm_id = shmget(DN_SHM_KEY, 400, IPC_CREAT | 0666)) < 0) {
     printf("Error getting shared memory id");
     exit(1);
     }

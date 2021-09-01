@@ -25,7 +25,7 @@ down_memory = sysv_ipc.SharedMemory(123457)
 data={}
 window={}
 # filepath="../position/rwp-20"
-filepath="../../../pymobility/random-25.dat"
+filepath="../../../pymobility/6tri"
 # filepath="low.dat"
 mobile_nodes=1
 vel = {}
@@ -191,8 +191,8 @@ def closest(x,y,mn):
 
 def veloc(ip,T):
     T=T%window[ip]
-    print(T)
-    print(window[ip])
+    # print(T)
+    # print(window[ip])
     return (position[(ip,T+1)][0]-position[(ip,T)][0],position[(ip,T+1)][1]-position[(ip,T)][1])
 
 
@@ -293,8 +293,11 @@ try:
             # print("Received encoded data: " + word)
 
             lw=word.split(' ')
-            # print(lw)
+            if(len(lw)<8):
+                continue
+            print(lw)
             time = int(lw[5])
+            print("timeBase:"+str(timeBase))
             
             hex_id='0x'+lw[3][-1:]
             ip=str(int(hex_id,16))
@@ -305,7 +308,9 @@ try:
                 weights[ip] = np.ones(N) / N
                 data[ip]=MN()
 
-            if timeBase != time :
+
+            if timeBase < time :
+                print("reseting measurements")
                 timeBase = time
                 response=""
                 for mn in mnList:
@@ -328,6 +333,9 @@ try:
         # incorporate measurements
         for mn in mnList:
             # print("for:"+mn)
+            if(len(data[mn].anchors)==0):
+                continue
+
             print(data[mn].anchors)
             print(data[mn].distances)
             update(particles[mn], weights[mn], data[mn].distances, R=sensor_std_err, 
@@ -340,25 +348,30 @@ try:
             # print(vx)
             # print(vy)
             runs+=1
-            # print("runs:"+str(runs))
+
+            print("runs:"+str(runs))
+            print("time:"+str(time))
             # print(vx)
 
             predict(particles[mn], u=(vx, vy), std=(.2, .5))
 
             mu, var = estimate(particles[mn], weights[mn])
             RMSE(mu[0],mu[1],time,mn)
-            # print("actual "+str(actual(int(time),mn)))
-            # print("estimated "+str(mu))
+            print("actual "+str(actual(int(time),mn)))
+            print("estimated "+str(mu))
             data[mn].old_parent=data[mn].new_parent
             data[mn].new_parent=closest(mu[0],mu[1],data[mn])
 
             # print("new parent:"+data[mn].new_parent)  
             # print("old parent:"+data[mn].old_parent)  
-
+            print("reseting measurements")
+            data[mn].reset_meas()
             if(data[mn].new_parent != data[mn].old_parent):
-                response = response + "NOT " + data[mn].old_parent + " for "+ id_to_ip(mn)+"\n"
-                response = response + "SET " + data[mn].new_parent + " for "+ id_to_ip(mn) +"\0"
-            response=""
+                response = response + "NOT " + data[mn].old_parent + " for "+ id_to_ip(mn)+";"
+                response = response + "SET " + data[mn].new_parent + " for "+ id_to_ip(mn) +";"
+            else:
+                response = response + "SET " + data[mn].new_parent + " for "+ id_to_ip(mn) +";"
+            
             print("resp"+response)
 
             #content=closest(mu[0],mu[1],data[mn])

@@ -1,0 +1,197 @@
+[INFO: Main      ] Starting Contiki-NG-release/v4.4-126-g445336ee9-dirty
+[INFO: Main      ] - Routing: RPL Lite
+[INFO: Main      ] - Net: sicslowpan
+[INFO: Main      ] - MAC: br-mac
+[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+[INFO: Main      ] - 802.15.4 Default channel: 26
+[INFO: Main      ] Node ID: 1800
+[INFO: Main      ] Link-layer address: 0102.0304.0506.0708
+[INFO: Main      ] Tentative link-local IPv6 address: fe80::302:304:506:708
+[INFO: Native    ] Added global IPv6 address fd00::302:304:506:708
+[INFO: RPL BR    ] Contiki-NG Border Router started
+[INFO: BR        ] RPL-Border router started
+ifconfig tun0 inet `hostname` up
+ifconfig tun0 add fd00::1/64
+ifconfig tun0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 127.0.1.1  netmask 255.255.255.255  destination 127.0.1.1
+        inet6 fe80::ead:61c8:5056:a180  prefixlen 64  scopeid 0x20<link>
+        inet6 fd00::1  prefixlen 64  scopeid 0x0<global>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[INFO: BR        ] Setting prefix fd00::1
+[INFO: RPL       ] reset DIO timer (Init root)
+[INFO: BR        ] Server IPv6 addresses:
+[INFO: BR        ]   fd00::212:7402:2:202
+[INFO: BR        ]   fe80::212:7402:2:202
+DAO:112 107154
+DIO:116
+DAO:112 107160
+DIO:116
+DAO:112 107167
+DAO:112 107173
+DAO:128 107173
+DAO:128 107173
+DIO:116
+DAO:128 107176
+DAO:136 107176
+DIO:116
+DAO:112 107179
+DAO:112 107179
+DAO:128 107180
+DAO:136 107180
+DIO:116
+DIO:116
+DIO:116
+DAO:120 107184
+DAO:128 107184
+DAO:128 107185
+DAO:120 107187
+DAO:120 107189
+DAO:120 107189
+DAO:120 107191
+DAO:120 107192
+DAO:128 107192
+DAO:136 107193
+DAO:120 107194
+DAO:144 107196
+DAO:144 107196
+DIO:116
+DIO:116
+DAO:120 107199
+nbr: fe80::212:7404:4:404  256,   136 =>   392 -- 16  baf  (last tx 0 min ago)
+nbr: fe80::212:7403:3:303  800,   256 =>  1056 --  0   a   (no tx)
+nbr: fe80::212:7405:5:505  800,   256 =>  1056 --  0   a   (no tx)
+DIO:116
+DIO:116
+DIO:116
+DIO:116
+nbr: fe80::212:7404:4:404  256,   136 =>   392 -- 16  baf  (last tx 1 min ago)
+nbr: fe80::212:7403:3:303  800,   256 =>  1056 --  0   a   (no tx)
+nbr: fe80::212:7405:5:505  800,   256 =>  1056 --  0   a   (no tx)
+DIO:116
+DIO:116
+nbr: fe80::212:7404:4:404  256,   136 =>   392 -- 16  baf  (last tx 2 min ago)
+nbr: fe80::212:7403:3:303  800,   256 =>  1056 --  0   a   (no tx)
+nbr: fe80::212:7405:5:505  800,   256 =>  1056 --  0   a   (no tx)
+DIO:116
+DIO:116
+DIO:116
+nbr: fe80::212:7404:4:404  256,   136 =>   392 -- 16  baf  (last tx 3 min ago)
+nbr: fe80::212:7403:3:303  800,   256 =>  1056 --  0   a   (no tx)
+nbr: fe80::212:7405:5:505  800,   256 =>  1056 --  0   a   (no tx)
+nbr: fe80::212:7404:4:404  256,   136 =>   392 -- 16  baf  (last tx 4 min ago)
+nbr: fe80::212:7403:3:303  800,   256 =>  1056 --  0   a   (no tx)
+nbr: fe80::212:7405:5:505  800,   256 =>  1056 --  0   a   (no tx)
+[INFO: App       ] Received request 'r -87 f fe80::212:7401:1:101 t 300' from fd00::212:740b:b:b0b
+encoding CLEANED
+data:r -87 f fe80::212:7401:1:101 t 300
+encoding r -87 f fe80::212:7401:1:101 t 300 a fd00::212:740b:b:b0b|
+[INFO: App       ] Received request 'r -93 f fe80::212:7401:1:101 t 300' from fd00::212:7415:15:1515
+data:r -93 f fe80::212:7401:1:101 t 300
+encoding r -87 f fe80::212:7401:1:101 t 300 a fd00::212:740b:b:b0b|r -93 f fe80::212:7401:1:101 t 300 a fd00::212:7415:15:1515|
+[INFO: App       ] Received request 'r -51 f fe80::212:7401:1:101 t 300' from fd00::212:7413:13:1313
+data:r -51 f fe80::212:7401:1:101 t 300
+encoding r -87 f fe80::212:7401:1:101 t 300 a fd00::212:740b:b:b0b|r -93 f fe80::212:7401:1:101 t 300 a fd00::212:7415:15:1515|r -51 f fe80::212:7401:1:101 t 300 a fd00::212:7413:13:1313|
+[INFO: App       ] Received request 'r -81 f fe80::212:7401:1:101 t 300' from fd00::212:740c:c:c0c
+data:r -81 f fe80::212:7401:1:101 t 300
+encoding r -87 f fe80::212:7401:1:101 t 300 a fd00::212:740b:b:b0b|r -93 f fe80::212:7401:1:101 t 300 a fd00::212:7415:15:1515|r -51 f fe80::212:7401:1:101 t 300 a fd00::212:7413:13:1313|r -81 f fe80::212:7401:1:101 t 300 a fd00::212:740c:c:c0c|
+[INFO: App       ] Received request 'r -37 f fe80::212:7401:1:101 t 300' from fd00::212:7414:14:1414
+data:r -37 f fe80::212:7401:1:101 t 300
+encoding r -87 f fe80::212:7401:1:101 t 300 a fd00::212:740b:b:b0b|r -93 f fe80::212:7401:1:101 t 300 a fd00::212:7415:15:1515|r -51 f fe80::212:7401:1:101 t 300 a fd00::212:7413:13:1313|r -81 f fe80::212:7401:1:101 t 300 a fd00::212:740c:c:c0c|r -37 f fe80::212:7401:1:101 t 300 a fd00::212:7414:14:1414|
+Sent buffer
+Full Line=[NOT  for fe80::212:7401:1:101;SET fd00::212:7414:14:1414 for fe80::212:7401:1:101; fe80::212:7401:1:101]
+token=[NOT  for fe80::212:7401:1:101]
+[INFO: App       ] ERR: IP ADDR converting
+[INFO: App       ] Received request 'r -78 f fe80::212:7401:1:101 t 301' from fd00::212:740c:c:c0c
+encoding CLEANED
+data:r -78 f fe80::212:7401:1:101 t 301
+encoding r -78 f fe80::212:7401:1:101 t 301 a fd00::212:740c:c:c0c|
+[INFO: App       ] Received request 'r -66 f fe80::212:7401:1:101 t 301' from fd00::212:7413:13:1313
+data:r -66 f fe80::212:7401:1:101 t 301
+encoding r -78 f fe80::212:7401:1:101 t 301 a fd00::212:740c:c:c0c|r -66 f fe80::212:7401:1:101 t 301 a fd00::212:7413:13:1313|
+Sent buffer
+Full Line=[SET fd00::212:7414:14:1414 for fe80::212:7401:1:101;1414 for fe80::212:7401:1:101; fe80::212:7401:1:101]
+token=[SET fd00::212:7414:14:1414 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7414:14:1414 ->fd00::212:7414:14:1414[INFO: App       ] 
+token=[1414 for fe80::212:7401:1:101]
+[INFO: App       ] ERR: IP ADDR converting
+[INFO: App       ] Received request 'r -27 f fe80::212:7401:1:101 t 301' from fd00::212:7414:14:1414
+[INFO: App       ] Received request 'r -76 f fe80::212:7401:1:101 t 301' from fd00::212:7415:15:1515
+[INFO: App       ] Received request 'r -79 f fe80::212:7401:1:101 t 302' from fd00::212:740c:c:c0c
+encoding CLEANED
+data:r -79 f fe80::212:7401:1:101 t 302
+encoding r -79 f fe80::212:7401:1:101 t 302 a fd00::212:740c:c:c0c|
+[INFO: App       ] Received request 'r -93 f fe80::212:7401:1:101 t 302' from fd00::212:740d:d:d0d
+data:r -93 f fe80::212:7401:1:101 t 302
+encoding r -79 f fe80::212:7401:1:101 t 302 a fd00::212:740c:c:c0c|r -93 f fe80::212:7401:1:101 t 302 a fd00::212:740d:d:d0d|
+Sent buffer
+Full Line=[SET fd00::212:7414:14:1414 for fe80::212:7401:1:101;1414 for fe80::212:7401:1:101]
+token=[SET fd00::212:7414:14:1414 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7414:14:1414 ->fd00::212:7414:14:1414[INFO: App       ] 
+token=[1414 for fe80::212:7401:1:101]
+[INFO: App       ] ERR: IP ADDR converting
+[INFO: App       ] Received request 'r -83 f fe80::212:7401:1:101 t 302' from fd00::212:7413:13:1313
+[INFO: App       ] Received request 'r -60 f fe80::212:7401:1:101 t 302' from fd00::212:7415:15:1515
+[INFO: App       ] Received request 'r -30 f fe80::212:7401:1:101 t 302' from fd00::212:7414:14:1414
+[INFO: App       ] Received data: "hello 3" from fd00::212:7414:14:1414
+[INFO: App       ] num = 3	totalRx = 0
+[INFO: App       ] Received request 'r -84 f fe80::212:7401:1:101 t 303' from fd00::212:740d:d:d0d
+encoding CLEANED
+data:r -84 f fe80::212:7401:1:101 t 303
+encoding r -84 f fe80::212:7401:1:101 t 303 a fd00::212:740d:d:d0d|
+[INFO: App       ] Received request 'r -83 f fe80::212:7401:1:101 t 303' from fd00::212:740c:c:c0c
+data:r -83 f fe80::212:7401:1:101 t 303
+encoding r -84 f fe80::212:7401:1:101 t 303 a fd00::212:740d:d:d0d|r -83 f fe80::212:7401:1:101 t 303 a fd00::212:740c:c:c0c|
+[INFO: App       ] Received request 'r -45 f fe80::212:7401:1:101 t 303' from fd00::212:7415:15:1515
+data:r -45 f fe80::212:7401:1:101 t 303
+encoding r -84 f fe80::212:7401:1:101 t 303 a fd00::212:740d:d:d0d|r -83 f fe80::212:7401:1:101 t 303 a fd00::212:740c:c:c0c|r -45 f fe80::212:7401:1:101 t 303 a fd00::212:7415:15:1515|
+Sent buffer
+Full Line=[NOT fd00::212:7414:14:1414 for fe80::212:7401:1:101;SET fd00::212:7415:15:1515 for fe80::212:7401:1:101;]
+token=[NOT fd00::212:7414:14:1414 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = NOT	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7414:14:1414 ->fd00::212:7414:14:1414[INFO: App       ] 
+token=[SET fd00::212:7415:15:1515 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7415:15:1515 ->fd00::212:7415:15:1515[INFO: App       ] 
+[INFO: App       ] Received request 'r -43 f fe80::212:7401:1:101 t 303' from fd00::212:7414:14:1414
+[INFO: App       ] Received data: "hello 4" from fd00::212:7414:14:1414
+[INFO: App       ] num = 4	totalRx = 1
+[INFO: App       ] Received request 'r -92 f fe80::212:7401:1:101 t 304' from fd00::212:740c:c:c0c
+encoding CLEANED
+data:r -92 f fe80::212:7401:1:101 t 304
+encoding r -92 f fe80::212:7401:1:101 t 304 a fd00::212:740c:c:c0c|
+[INFO: App       ] Received request 'r -79 f fe80::212:7401:1:101 t 304' from fd00::212:740d:d:d0d
+data:r -79 f fe80::212:7401:1:101 t 304
+encoding r -92 f fe80::212:7401:1:101 t 304 a fd00::212:740c:c:c0c|r -79 f fe80::212:7401:1:101 t 304 a fd00::212:740d:d:d0d|
+Sent buffer
+Full Line=[SET fd00::212:7415:15:1515 for fe80::212:7401:1:101;SET fd00::212:7415:15:1515 for fe80::212:7401:1:101]
+token=[SET fd00::212:7415:15:1515 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7415:15:1515 ->fd00::212:7415:15:1515[INFO: App       ] 
+token=[SET fd00::212:7415:15:1515 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7415:15:1515 ->fd00::212:7415:15:1515[INFO: App       ] 
+[INFO: App       ] Received request 'r -31 f fe80::212:7401:1:101 t 304' from fd00::212:7415:15:1515
+[INFO: App       ] Received request 'r -85 f fe80::212:7401:1:101 t 304' from fd00::212:7416:16:1616
+[INFO: App       ] Received request 'r -58 f fe80::212:7401:1:101 t 304' from fd00::212:7414:14:1414
+[INFO: App       ] Received data: "hello 5" from fd00::212:7414:14:1414
+[INFO: App       ] num = 5	totalRx = 2
+[INFO: App       ] Received request 'r -68 f fe80::212:7401:1:101 t 305' from fd00::212:7416:16:1616
+encoding CLEANED
+data:r -68 f fe80::212:7401:1:101 t 305
+encoding r -68 f fe80::212:7401:1:101 t 305 a fd00::212:7416:16:1616|
+Sent buffer
+Full Line=[SET fd00::212:7415:15:1515 for fe80::212:7401:1:101;SET fd00::212:7415:15:1515 for fe80::212:7401:1:101]
+token=[SET fd00::212:7415:15:1515 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7415:15:1515 ->fd00::212:7415:15:1515[INFO: App       ] 
+token=[SET fd00::212:7415:15:1515 for fe80::212:7401:1:101]
+[INFO: App       ] set_unset_value = SET	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7415:15:1515 ->fd00::212:7415:15:1515[INFO: App       ] 
+DIO:116
+nbr: fe80::212:7404:4:404  256,   132 =>   388 -- 16  baf  (last tx 0 min ago)
+nbr: fe80::212:7403:3:303 1311,   256 =>  1567 --  0   a   (no tx)
+nbr: fe80::212:7405:5:505  800,   256 =>  1056 --  0   a   (no tx)
+DIO:116
+ifconfig tun0 down
+netstat -nr | awk '{ if ($2 == "tun0") print "route delete -net "$1; }' | sh
