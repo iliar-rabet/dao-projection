@@ -323,7 +323,7 @@ rpl_dag_update_state(void)
           curr_instance.dag.last_advertised_rank, curr_instance.dag.rank);
       /* Update already here to avoid multiple resets in a row */
       curr_instance.dag.last_advertised_rank = curr_instance.dag.rank;
-      printf("old rank: %u, curr rank: %u", curr_instance.dag.last_advertised_rank, curr_instance.dag.rank);
+      printf("old rank: %u, curr rank: %u\n", curr_instance.dag.last_advertised_rank, curr_instance.dag.rank);
       rpl_timers_dio_reset("Significant rank update");
     }
 
