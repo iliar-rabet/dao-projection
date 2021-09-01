@@ -20,6 +20,7 @@
 #define LOG_MODULE "App"
 #define LOG_LEVEL LOG_LEVEL_INFO
 
+#define START 300
 #define CTR_PORT 4569
 #define WITH_SERVER_REPLY  1
 #define DP_PORT	4567
@@ -82,7 +83,7 @@ PROCESS_THREAD(broadcast_example_process, ev, data)
   uip_ipaddr_t addr;
   static char str[4 + UIPLIB_IPV6_MAX_STR_LEN];
   // static char buf[UIPLIB_IPV6_MAX_STR_LEN];
-  static int time = 120;
+  static int time = START;
   
   
   PROCESS_BEGIN();
@@ -91,7 +92,7 @@ PROCESS_THREAD(broadcast_example_process, ev, data)
                       NULL, CTR_PORT,
                       NULL);
 
-  etimer_set(&init_timer, 120* CLOCK_SECOND);
+  etimer_set(&init_timer, START* CLOCK_SECOND);
   PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&init_timer));
   
   etimer_set(&periodic_timer, SEND_INTERVAL);
@@ -100,7 +101,7 @@ PROCESS_THREAD(broadcast_example_process, ev, data)
     etimer_reset(&periodic_timer);
     // uiplib_ipaddr_snprint(buf, sizeof(buf), rpl_neighbor_get_ipaddr(curr_instance.dag.preferred_parent));
         // if ( buf[1] == 'N' ) {
-        snprintf(str, sizeof(str), "%03d", (time >= 999)? time = 120 : time++);
+        snprintf(str, sizeof(str), "%03d", (time >= 999)? time = START : time++);
         // } else {
         //     snprintf(str, sizeof(str), "%03d %s", (time >= 999)? time = 1 : time++, buf);
         // }
@@ -135,7 +136,7 @@ PROCESS_THREAD(udp_client_process, ev, data)
   simple_udp_register(&udp_conn, DP_PORT, NULL,
                       DP_PORT, NULL);
 
-  etimer_set(&init_timer2, 120* CLOCK_SECOND);
+  etimer_set(&init_timer2, START* CLOCK_SECOND);
   PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&init_timer2));
 
   etimer_set(&data_timer, DATA_INTERVAL);

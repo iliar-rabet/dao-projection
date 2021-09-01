@@ -99,6 +99,8 @@ static void ctimer_callback() {
     if(NETSTACK_ROUTING.node_is_reachable() && NETSTACK_ROUTING.get_root_ipaddr(&dest_ipaddr))
     // Flags in message sent: R = RSSI F = From or source T = Time
     simple_udp_sendto(&up_rss_an_conn, str, strlen(str), &dest_ipaddr);
+    printf("forwarding control packet now\n");
+
 
 }
 
@@ -117,13 +119,13 @@ rss_callback(struct simple_udp_connection *c,
 
   memset(mobile_ip_addr, '\0', 21 * sizeof(char));
   uiplib_ipaddr_snprint(mobile_ip_addr, 21, sender_addr);
-  if(LL_del_srch_node(0, &LL_head, (const char *) mobile_ip_addr)) {
-    /* Anchor node is already parent of mobile node not sending RSS value
-    */
-    return;
-  }
+  // if(LL_del_srch_node(0, &LL_head, (const char *) mobile_ip_addr)) {
+  //   /* Anchor node is already parent of mobile node not sending RSS value
+  //   */
+  //   return;
+  // }
   
-  for(i = 0; i < 3; i++) {
+  for(i = 0; i < 3; i++) {  
     time[i] = *data;
     data++;
   }
@@ -134,14 +136,11 @@ rss_callback(struct simple_udp_connection *c,
   printf("str: %s\n", str);
   
 
-  int cong_wait=random_rand()%5;
+  int cong_wait=random_rand()%4;
   printf("rand %d\n",cong_wait);
 
-  etimer_set(&cong_timer, cong_wait);
-  
   ctimer_set(&cong_timer, cong_wait, ctimer_callback, NULL);
 
-  
   return;
 }
 
