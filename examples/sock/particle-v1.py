@@ -25,8 +25,13 @@ down_memory = sysv_ipc.SharedMemory(123457)
 data={}
 window={}
 # filepath="../position/rwp-20"
-filepath="../../../pymobility/3tri"
+filepath="../../../pymobility/vel2.5"
 # filepath="low.dat"
+x_min=0
+x_max=20
+y_min=0
+y_max=20
+
 mobile_nodes=1
 vel = {}
 position = {}
@@ -193,16 +198,13 @@ def veloc(ip,T):
     T=T%window[ip]
     # print(T)
     # print(window[ip])
-    return (position[(ip,T+1)][0]-position[(ip,T)][0],position[(ip,T+1)][1]-position[(ip,T)][1])
+    step=1
+    return (position[(ip,T+step)][0]-position[(ip,T)][0],position[(ip,T+step)][1]-position[(ip,T)][1])
 
 
 sensor_std_err=.05
 initial_x=None
 
-x_min=0
-x_max=20
-y_min=0
-y_max=20
 particles={}
 weights={}
 objects={}
@@ -253,7 +255,13 @@ def ip_to_id(ip):
 def id_to_ip(id):
     if id=='1':
         # return "fd00::c30c:0:0:1"
-        return "fe80::212:7401:1:101"
+        return "fe80::212:7401:1:101 "
+    if id=='2':
+        # return "fd00::c30c:0:0:1"
+        return "fe80::212:7402:2:202 "
+    if id=='3':
+        # return "fd00::c30c:0:0:1"
+        return "fe80::212:7403:3:303 "
 
 
 try:
@@ -279,14 +287,14 @@ try:
         #     continue
 
 
-
+        
         line=line.rstrip('\x00').rstrip('\0').rstrip('-')
         wordList=line.split('|')
         if len(wordList)==0:
             continue
         if wordList[0].startswith('\\'):
             continue
-
+        print(line)
         for word in wordList:
             if(word==''):
                 continue
@@ -310,20 +318,21 @@ try:
 
 
             if timeBase < time :
-                print("reseting measurements")
+                print("reseting measurements for all MNs")
                 timeBase = time
                 response=""
                 for mn in mnList:
                     data[mn].reset_meas()
             
             dist = calculate_dist(int(lw[1])) 
+            print(lw)
             # print("dist:")
             # print(dist)
             # print(lw[7])
             # print(lw[7].split(':'))
             # anchor = int(lw[7].split(':')[5], 16)
             anchor = int(lw[7].split(':')[4], 16)
-            anchor=anchor-1
+            anchor=anchor-mobile_nodes
             # print("anchor index"+str(anchor))
             # print("anchor:")
             # print(landmarks[int(anchor)])
@@ -342,16 +351,15 @@ try:
             anchors=data[mn].anchors)
         
             mu, var = estimate(particles[mn], weights[mn])
-            # print ("prior:" + str(mu))
+            print ("prior:" + str(mu))
             vx,vy = veloc(mn,time)
-            # print("VELOC:")
-            # print(vx)
-            # print(vy)
+            print("VELOC:")
+            print(vx)
+            print(vy)
             runs+=1
 
             print("runs:"+str(runs))
             print("time:"+str(time))
-            # print(vx)
 
             predict(particles[mn], u=(vx, vy), std=(.2, .5))
 
@@ -364,7 +372,7 @@ try:
 
             # print("new parent:"+data[mn].new_parent)  
             # print("old parent:"+data[mn].old_parent)  
-            print("reseting measurements")
+            print("reseting measurements for:"+mn)
             data[mn].reset_meas()
             if(data[mn].new_parent != data[mn].old_parent):
                 response = response + "NOT " + data[mn].old_parent + " for "+ id_to_ip(mn)+";"
@@ -375,7 +383,7 @@ try:
             print("resp"+response)
 
             #content=closest(mu[0],mu[1],data[mn])
-            #content= "SET fd00:0:0:0:212:7408:8:808 for fd00::212:740b:b:b0b\nSET fd00:0:0:0:212:7405:5:505 for fd00::212:740c:c:c0c\0"
+            #content= "SET fd00:0:0:0:212:7408:8:808 for fd00::212:740b:b:b0b\nSET fd00:0:0:0:212:7405:5:505 for fd00::212:740c:c:c0c\0"s
             down_memory.write(response)
 
             # resample if too few effective particles

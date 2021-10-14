@@ -29,7 +29,7 @@ def test():
         for line in f.readlines():
             numb = str(i) 
             if numb in line:
-                if "Sending request "+numb+" to" in line:
+                if "now sending hello "+numb in line:
                     # sTime = datetime.strptime(line[0:9], '%H:%M:%S.%f')
                     sTime=int(line.split('\t')[0])
                     txcounter+=1

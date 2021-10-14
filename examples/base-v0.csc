@@ -8,6 +8,7 @@
   <project EXPORT="discard">[APPS_DIR]/mobility</project>
   <simulation>
     <title>base</title>
+    <speedlimit>1.0</speedlimit>
     <randomseed>123456</randomseed>
     <motedelay_us>1000000</motedelay_us>
     <radiomedium>

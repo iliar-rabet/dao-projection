@@ -259,12 +259,13 @@ PROCESS_THREAD(slip_radio_process, ev, data)
 #endif
   LOG_INFO("Slip Radio started\n");
 
-  etimer_set(&et, CLOCK_SECOND * 3);
+  etimer_set(&et, 3);
 
   while(1) {
     PROCESS_YIELD();
     if(etimer_expired(&et)) {
       etimer_reset(&et);
+      printf("\n");
 #ifdef SLIP_RADIO_CONF_SENSORS
       SLIP_RADIO_CONF_SENSORS.send();
 #endif

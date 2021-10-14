@@ -85,6 +85,7 @@ PROCESS_THREAD(broadcast_example_process, ev, data)
   // static char buf[UIPLIB_IPV6_MAX_STR_LEN];
   static int time = START;
   
+
   
   PROCESS_BEGIN();
   
@@ -92,6 +93,7 @@ PROCESS_THREAD(broadcast_example_process, ev, data)
                       NULL, CTR_PORT,
                       NULL);
 
+  // int random_init=random(0,32);
   etimer_set(&init_timer, START* CLOCK_SECOND);
   PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&init_timer));
   
@@ -101,7 +103,13 @@ PROCESS_THREAD(broadcast_example_process, ev, data)
     etimer_reset(&periodic_timer);
     // uiplib_ipaddr_snprint(buf, sizeof(buf), rpl_neighbor_get_ipaddr(curr_instance.dag.preferred_parent));
         // if ( buf[1] == 'N' ) {
-        snprintf(str, sizeof(str), "%03d", (time >= 999)? time = START : time++);
+          if(time >= 999){
+            time = START;
+          }
+          else{
+            time +=1;
+          }
+        snprintf(str, sizeof(str), "%03d", time);
         // } else {
         //     snprintf(str, sizeof(str), "%03d %s", (time >= 999)? time = 1 : time++, buf);
         // }
@@ -146,19 +154,24 @@ PROCESS_THREAD(udp_client_process, ev, data)
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&data_timer));
     // int reachable=NETSTACK_ROUTING.node_is_reachable();
     
+    uip_ds6_addr_t *my_addr;
+    char src[100];
+    my_addr = uip_ds6_get_link_local(ADDR_PREFERRED);
+    LOG_INFO_6ADDR(my_addr);
+    uiplib_ipaddr_snprint(src, sizeof(src), my_addr);
     
     printf("start send %d\n",count+1);    
     while(ctrl_wdw==true)
     {
       // printf("control_window\n");
-      etimer_set(&polling_timer, CLOCK_SECOND*0.02);
+      etimer_set(&polling_timer, CLOCK_SECOND*0.1);
       PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&polling_timer));
     }
     
     // int root_ip=NETSTACK_ROUTING.get_root_ipaddr(&dest_ipaddr);
     // if(root_ip) {
       count++;
-      snprintf(str, sizeof(str), "hello %d  ", count);
+      snprintf(str, sizeof(str), "hello %d from %s", count,src);
       printf("now sending %s\n",str);    
       uip_create_linklocal_allnodes_mcast(&dest_ipaddr);
       simple_udp_sendto(&udp_conn, str, sizeof(str), &dest_ipaddr);  

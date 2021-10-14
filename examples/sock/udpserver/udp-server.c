@@ -35,7 +35,7 @@
 
 static int up_shm_id, dn_shm_id, time_rsscallback, iter_rss, old_time_rsscallback,
     sephamore_drop_rss, totalRx = 0;
-static char addr_str[56], long_str[500],
+static char addr_str[56], long_str[1000],
     *shared_memory_up, *shared_memory_down, *shared_memory_rflx;
 
 static struct ctimer read_timer;
@@ -46,31 +46,31 @@ PROCESS(udp_server_process, "UDP server");
 
 /*---------------------------------------------------------------------------*/
 // function to encode incoming control string to condensed form
-void encoding(const uint8_t *data, const uint8_t i)
-{
-    // Example
-        // Input: r -76 f fe80::212:7401:1:101 t 164 p 
-        // Output: 05-761164;
-            // 05 -- from 5th anchor node
-            // 76 -- RSSI value
-            // 1 -- mobile node
-            // 164 -- sequence number
-    printf("data:%s\n",data);
+// void encoding(const uint8_t *data, const uint8_t i)
+// {
+//     // Example
+//         // Input: r -76 f fe80::212:7401:1:101 t 164 p 
+//         // Output: 05-761164;
+//             // 05 -- from 5th anchor node
+//             // 76 -- RSSI value
+//             // 1 -- mobile node
+//             // 164 -- sequence number
+//     printf("data:%s\n",data);
 
-    strcat(long_str,data);   
-    strcat(long_str," a ");
-    strcat(long_str,addr_str);            
-    strcat(long_str,"|");
-    long_str[strlen(long_str)]='\0';
-    printf("encoding %s\n",long_str);
+//     strcat(long_str,data);   
+//     strcat(long_str," a ");
+//     strcat(long_str,addr_str);            
+//     strcat(long_str,"|");
+//     long_str[strlen(long_str)]='\0';
+//     printf("encoding %s\n",long_str);
 
-}
+// }
 
 
 // function to clean the buffer
 void clean(char *var) {
     int i = 0;
-    for(;i<500;i++){
+    for(;i<1000;i++){
         var[i] = '\0';
     }
 }
@@ -89,12 +89,15 @@ static void ctimer_callback() {
 
 
 static void ctimer2_callback() {
-    char set_unset_value[40], anchor_node[26], mobile_node[26];
+    char set_unset_value[400], anchor_node[26], mobile_node[26];
     uip_ipaddr_t  anchor_node_address;
     int i;
     
     // Now reading the response
-    char * curLine = shared_memory_down;
+    char curLine[400];
+    strcpy(curLine,shared_memory_down);
+    memset(shared_memory_down, 0, 400*sizeof(char));
+
     printf("Full Line=[%s]\n", curLine);
 
     char * token = strtok(curLine, ";");
@@ -104,24 +107,33 @@ static void ctimer2_callback() {
         printf("token=[%s]\n", token);
         
         memset(anchor_node, 0, 26*sizeof(char));
+        memset(mobile_node, 0, 26*sizeof(char));
+        memset(set_unset_value, 0, 400*sizeof(char));
+
         sscanf(token, "%s %s for %s", set_unset_value, anchor_node, mobile_node);
+
         if(uiplib_ipaddrconv(anchor_node, &anchor_node_address) == 0) {
             LOG_INFO("ERR: IP ADDR converting\n");
             return;
         }
         else
         {
-            LOG_INFO("set_unset_value = %s\tmobile_node = %s\t anchor_node = %s ->", set_unset_value, mobile_node, anchor_node);
+            strcat(set_unset_value, " ");
+            strcat(set_unset_value, mobile_node);
+
+            LOG_INFO("set_unset_value = %s\tmobile_node = %s\t anchor_node = %s ->", 
+            set_unset_value, mobile_node, anchor_node);
+
             LOG_INFO_6ADDR(&anchor_node_address);
             LOG_INFO("\n");
 
-            strcat(set_unset_value, " ");
-            strcat(set_unset_value, mobile_node);
             simple_udp_sendto(&down_conn, set_unset_value, strlen(set_unset_value), &anchor_node_address);
         }
 
         token = strtok(NULL, ";");
     }
+    memset(curLine,0,400*sizeof(char));
+    printf("after clearning %s\n",curLine);
 
 }
 
@@ -146,6 +158,21 @@ rss_rx_callback(struct simple_udp_connection *c,
     memset(addr_str, 0, 56 * (sizeof addr_str[0]));
     uiplib_ipaddr_snprint(addr_str, sizeof(addr_str), sender_addr);
 
+
+
+        //     uip_ipaddr_t  anchor_node_address;
+        // uiplib_ipaddrconv("fe80::c30c:0:0:3", &anchor_node_address);
+        // simple_udp_sendto(&down_conn, "TEST_DOWN", strlen("TEST_DOWN"), &anchor_node_address);
+    // clean(long_str);
+    sprintf(long_str,"%s |%.*s a %s",long_str, datalen,(char *) data, addr_str);
+    // strcat(long_str,(char *)data);   
+    // strcat(long_str," a ");
+    // strcat(long_str,addr_str);            
+    // strcat(long_str,"|");
+    printf("long_str: %s",long_str);
+    // long_str[strlen(long_str)]='\0';
+
+
     // Delta time occurence
     temp_str = strstr((char *) data, "t");
     temp_str += 2;
@@ -153,17 +180,11 @@ rss_rx_callback(struct simple_udp_connection *c,
         num_str[i] = *temp_str++;
     }
     time_rsscallback = atoi(num_str);
-
-
-        //     uip_ipaddr_t  anchor_node_address;
-        // uiplib_ipaddrconv("fe80::c30c:0:0:3", &anchor_node_address);
-        // simple_udp_sendto(&down_conn, "TEST_DOWN", strlen("TEST_DOWN"), &anchor_node_address);
-
-
+ 
     if((sephamore_drop_rss == 0) && (time_rsscallback == old_time_rsscallback)) {
         // Appending string list
         
-        encoding(data, iter_rss++);
+        // encoding(data, iter_rss++);
         //LOG_INFO("Encoded data: %s\n", long_str);
     } else if(time_rsscallback != old_time_rsscallback) {
         // Updating control variables
@@ -176,7 +197,7 @@ rss_rx_callback(struct simple_udp_connection *c,
         sephamore_drop_rss = 0;
 
         
-        encoding(data, iter_rss++);
+        // encoding(data, iter_rss++);
         // LOG_INFO("Encoded data: %s\n", long_str);
         // setting two different callback_timer, the difference would be the multipath time
         ctimer_set(&read_timer, 0.5*CLOCK_SECOND, ctimer_callback, NULL);
@@ -212,7 +233,7 @@ PROCESS_THREAD(udp_server_process, ev, data)
     PROCESS_BEGIN();
 
     // Setup upward shared memory, 100 is the size
-    if ((up_shm_id = shmget(UP_SHM_KEY, 600, IPC_CREAT | 0666)) < 0) {
+    if ((up_shm_id = shmget(UP_SHM_KEY, 1000, IPC_CREAT | 0666)) < 0) {
         printf("Error getting shared memory id");
         exit(1);
     }

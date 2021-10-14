@@ -314,18 +314,18 @@ rpl_dag_update_state(void)
       curr_instance.dag.lowest_rank = curr_instance.dag.rank;
     }
 
-    printf("old rank: %d, curr rank: %d", curr_instance.dag.last_advertised_rank, curr_instance.dag.rank);
-    /* Reset DIO timer in case of significant rank update */
-    if(curr_instance.dag.last_advertised_rank != RPL_INFINITE_RANK
-        && curr_instance.dag.rank != RPL_INFINITE_RANK
-        && ABS((int32_t)curr_instance.dag.rank - curr_instance.dag.last_advertised_rank) > RPL_SIGNIFICANT_CHANGE_THRESHOLD) {
-      LOG_WARN("significant rank update %u->%u\n",
-          curr_instance.dag.last_advertised_rank, curr_instance.dag.rank);
-      /* Update already here to avoid multiple resets in a row */
-      curr_instance.dag.last_advertised_rank = curr_instance.dag.rank;
-      printf("old rank: %u, curr rank: %u\n", curr_instance.dag.last_advertised_rank, curr_instance.dag.rank);
-      rpl_timers_dio_reset("Significant rank update");
-    }
+    // printf("old rank: %d, curr rank: %d", curr_instance.dag.last_advertised_rank, curr_instance.dag.rank);
+    // /* Reset DIO timer in case of significant rank update */
+    // if(curr_instance.dag.last_advertised_rank != RPL_INFINITE_RANK
+    //     && curr_instance.dag.rank != RPL_INFINITE_RANK
+    //     && ABS((int32_t)curr_instance.dag.rank - curr_instance.dag.last_advertised_rank) > RPL_SIGNIFICANT_CHANGE_THRESHOLD) {
+    //   LOG_WARN("significant rank update %u->%u\n",
+    //       curr_instance.dag.last_advertised_rank, curr_instance.dag.rank);
+    //   /* Update already here to avoid multiple resets in a row */
+    //   curr_instance.dag.last_advertised_rank = curr_instance.dag.rank;
+    //   printf("old rank: %u, curr rank: %u\n", curr_instance.dag.last_advertised_rank, curr_instance.dag.rank);
+    //   rpl_timers_dio_reset("Significant rank update");
+    // }
 
     /* Parent switch */
     if(curr_instance.dag.unprocessed_parent_switch) {

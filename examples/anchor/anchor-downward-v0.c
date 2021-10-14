@@ -41,17 +41,27 @@ static struct node* LL_head = NULL;
 static void
 LL_append(struct node** head_ref, const char *new_addr)
 {
-  struct node *new_node = (struct node*) malloc(sizeof(struct node)), *last = *head_ref;
+  printf("in append\n");
+    
+  struct node *new_node = (struct node*) malloc(sizeof(struct node));
+  struct node *last = *head_ref;
+  printf("malloc node done\n");
   new_node->mob_addr = (char *) malloc(21 * sizeof(char));
+  printf("malloc string done\n");
 
   strcpy(new_node->mob_addr, (const char *) new_addr);
   new_node->next = NULL;
+  printf("before if\n");
   if (*head_ref == NULL) {
     *head_ref = new_node;
     return;
   }
-  while (last->next != NULL)
+  printf("before while\n");
+  while (last->next != NULL){
+    printf("%s\n",last->mob_addr);
     last = last->next;
+  }
+  printf("after while\n");
   last->next = new_node;
   return;
 }
@@ -59,6 +69,7 @@ LL_append(struct node** head_ref, const char *new_addr)
 static int
 LL_del_srch_node(int opt, struct node** head_ref, const char *key)
 {
+  
   struct node *temp = *head_ref, *prev = NULL;
   /* opt = 0 for search the node
            1 for delete the node
@@ -66,8 +77,13 @@ LL_del_srch_node(int opt, struct node** head_ref, const char *key)
            1 if node is  in list
            2   delete is success
   */
-  if (temp != NULL && !strcmp(temp->mob_addr, key)) {
+  if(temp==NULL)
+    return 0;
+  if(temp->mob_addr==NULL)
+    return 0;
+  if (temp != NULL && !strcmp(temp->mob_addr, key)) { //the first node is a match
     if (opt) {
+      // printf("in the first if statement");
       *head_ref = temp->next;
       memset(temp->mob_addr, '\0', 21 * sizeof(char));
       free(temp->mob_addr);
@@ -84,6 +100,7 @@ LL_del_srch_node(int opt, struct node** head_ref, const char *key)
     return 0;
 
   if (opt) {
+    printf("now removing\n");
     prev->next = temp->next;
     memset(temp->mob_addr, '\0', 21 * sizeof(char));
     free(temp->mob_addr);
@@ -153,15 +170,31 @@ downward_callback(struct simple_udp_connection *c,
          const uint8_t *data,
          uint16_t datalen)
 {
-  printf("Received response: %s\n", data);
-  if ((int) *data == 'S') {
-    data += 4;
-    LL_append(&LL_head, (const char *) data);
-    handoff_flag=0;
-    printf("NOW BEING BEST\n", data);
-  } else if ((int) *data == 'N') {
-    data += 4;
-    LL_del_srch_node(1, &LL_head, (const char *) data);
+  char mn[21];
+  char set_unset[3];  
+  int i;
+
+  
+  if(data[0]=='S')
+    strcpy(set_unset,"SET");
+  else if (data[0]=='N')
+    strcpy(set_unset,"NOT");
+  
+  sprintf(mn,"%.20s",data+4);
+  
+  printf("Received response: [%s] for [%s]\n", set_unset,mn);
+
+  if (strcmp(set_unset,"SET")==0) {
+    if(LL_del_srch_node(0,&LL_head, (const char *) mn)==0){
+      LL_append(&LL_head, (const char *) mn);
+      handoff_flag=0;
+      printf("NOW BEING BEST for %s\n", mn);
+    }
+    else{
+      printf("already BEST\n");
+    }
+  } else if (strcmp(set_unset,"NOT")==0) {
+    LL_del_srch_node(1, &LL_head, (const char *) mn);
   }
   return;
 }
