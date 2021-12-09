@@ -1,6 +1,7 @@
 This repository serves as the implementation for the following papers:
 
 [a link] https://github.com/iliar-rabet/dao-projection/SDMob.pdf
+
 [a link] https://github.com/iliar-rabet/dao-projection/RPL-RP.pdf
 
 To run the SDMob, you will need to install the mobility plugin for Cooja
@@ -13,6 +14,7 @@ For the border router you can run the example "sock" in native mode (not in cooj
 sudo ./border-router-udp-server.native fd00::1/64 -a 127.0.0.1
 
 You can also run different versions of the filter using the python script named particle-v1.py using python3. Make sure to configure the script to have the same mobility trace file as given to the cooja mobility plugin.
+
 -----------
 
 To access the RPL-RP which is inspired by a IETF draft titled "DAO projection" that extends RPL (a low-power routing protocol for Internet of Things) [a link] https://datatracker.ietf.org/doc/draft-ietf-roll-dao-projection/. 
