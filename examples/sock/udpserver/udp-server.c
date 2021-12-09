@@ -81,8 +81,13 @@ void clean(char *var) {
 static void ctimer_callback() {
     
     // Entering data into shared memory
-    memcpy(shared_memory_up, long_str, strlen(long_str));
-    printf("Sent buffer\n");
+    int ret;
+    ret=memcpy(shared_memory_up, long_str, strlen(long_str));
+    if(ret==0)
+        printf("Sent buffer %s\n",long_str);
+    else
+        printf("Sent buffer not %s\n",long_str);
+    
     sephamore_drop_rss = 1;
     
 }
@@ -164,12 +169,6 @@ rss_rx_callback(struct simple_udp_connection *c,
         // uiplib_ipaddrconv("fe80::c30c:0:0:3", &anchor_node_address);
         // simple_udp_sendto(&down_conn, "TEST_DOWN", strlen("TEST_DOWN"), &anchor_node_address);
     // clean(long_str);
-    sprintf(long_str,"%s |%.*s a %s",long_str, datalen,(char *) data, addr_str);
-    // strcat(long_str,(char *)data);   
-    // strcat(long_str," a ");
-    // strcat(long_str,addr_str);            
-    // strcat(long_str,"|");
-    printf("long_str: %s",long_str);
     // long_str[strlen(long_str)]='\0';
 
 
@@ -186,22 +185,26 @@ rss_rx_callback(struct simple_udp_connection *c,
         
         // encoding(data, iter_rss++);
         //LOG_INFO("Encoded data: %s\n", long_str);
+        sprintf(long_str,"%s |%.*s a %s",long_str, datalen,(char *) data, addr_str);
+        printf("long_str: %s",long_str);
+
     } else if(time_rsscallback != old_time_rsscallback) {
         // Updating control variables
         old_time_rsscallback = time_rsscallback;
         clean(long_str);
         clean(shared_memory_up);
         printf("encoding CLEANED\n");
+        sprintf(long_str,"%s |%.*s a %s",long_str, datalen,(char *) data, addr_str);
+        printf("long_str: %s",long_str);
         
         iter_rss = 0;
         sephamore_drop_rss = 0;
-
         
         // encoding(data, iter_rss++);
         // LOG_INFO("Encoded data: %s\n", long_str);
         // setting two different callback_timer, the difference would be the multipath time
-        ctimer_set(&read_timer, 0.5*CLOCK_SECOND, ctimer_callback, NULL);
-        ctimer_set(&read_timer2, 0.55*CLOCK_SECOND, ctimer2_callback, NULL);
+        ctimer_set(&read_timer, 0.2*CLOCK_SECOND, ctimer_callback, NULL);
+        ctimer_set(&read_timer2, 0.25*CLOCK_SECOND, ctimer2_callback, NULL);
     }
 }
 

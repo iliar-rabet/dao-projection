@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # set width of bar 
 barWidth = 0.25
-fig = plt.subplots(figsize =(12, 8)) 
+# fig = plt.subplots(figsize =(12, 8)) 
 
 # set height of bar 
 
@@ -29,53 +29,57 @@ plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
 
 # Make the plot 
 plt.bar(br1, Filter, width = barWidth, 
-		edgecolor ='black', label ='Filter Reseliency [#]', color=[next(colors)]) 
+		edgecolor ='black', label ='Control', color=[next(colors)]) 
 
 next(colors)
 
 
 plt.bar(br2, PDR,  width = barWidth, 
-		edgecolor ='black', label ='Data PDR [#]',color=[next(colors)],hatch = '/') 
+		edgecolor ='black', label ='Data',color=[next(colors)],hatch = '/') 
 
 
-plt.xlabel('Mobility Pattern', fontweight ='bold',fontsize=17) 
-plt.ylabel('Reception Ratio', fontweight ='bold',fontsize=17) 
+plt.xlabel('Mobility Pattern',fontweight ='bold', fontsize=15) 
+plt.ylabel('Reception Ratio [%]',fontweight ='bold', fontsize=15) 
 
 
 plt.xticks([r + barWidth for r in range(len(RPL))], 
-		['GM','RDM','TLW','RWP'],fontsize=17) 
+		['GM','RDM','TLW','RWP'],fontsize=15) 
 plt.yticks(fontsize=15)
-plt.legend(fontsize=15)
+plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.15),
+          ncol=3, fancybox=True, shadow=True,fontsize=15)
+
 
 plt.show()
 
 
 #-------------------------------------
 
-fig = plt.subplots(figsize =(12, 8)) 
+# fig = plt.subplots(figsize =(12, 8)) 
 RMSE=[1.3397689571856,2.24696197677873,0.903944417559751,2.50639613074245]
 
 plt.bar(br1, RMSE, width = barWidth, 
 		edgecolor ='black', label ='RMSE [m]', color=[next(colors)]) 
 plt.xticks([r for r in range(len(RPL))], 
-		['GM','RDM','TLW','RWP'],fontsize=17) 
+		['GM','RDM','TLW','RWP'],fontsize=15) 
 
 
-plt.xlabel('Mobility Pattern', fontweight ='bold',fontsize=17) 
-plt.ylabel('$Error_{Root Mean Squared} (m)$', fontweight ='bold',fontsize=17) 
+plt.xlabel('Mobility Pattern', fontweight ='bold',fontsize=15) 
+plt.ylabel('Localization Error [m]', fontweight ='bold',fontsize=15) 
+
+plt.yticks(fontsize=15)
 
 plt.show() 
 
 #----------------
-fig = plt.subplots(figsize =(12, 8)) 
+# fig = plt.subplots(figsize =(12, 8)) 
 delay=[155.476,166.925,123.690,134.327]
 plt.xticks([r for r in range(len(RPL))], 
-		['GM','RDM','TLW','RWP'],fontsize=17) 
+		['GM','RDM','TLW','RWP'],fontsize=15) 
 
-plt.bar(br1, RMSE, width = barWidth, 
+plt.bar(br1, delay, width = barWidth, 
 		edgecolor ='black', label ='E2E delay [ms]', color=[next(colors)]) 
-plt.xlabel('Mobility Pattern', fontweight ='bold',fontsize=17) 
-plt.ylabel('$Delay (ms)$', fontweight ='bold',fontsize=17) 
+plt.xlabel('Mobility Pattern', fontweight ='bold',fontsize=15) 
+plt.ylabel('Delay [ms]', fontweight ='bold',fontsize=15) 
 
-
+plt.yticks(fontsize=15)
 plt.show()

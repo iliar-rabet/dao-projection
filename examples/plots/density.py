@@ -25,53 +25,66 @@ colors = iter([plt.cm.tab20(i) for i in range(20)])
 # next(colors)
 # next(colors)
 
-plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
+# plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
 
 
 # Make the plot 
 plt.bar(br1, Filter, width = barWidth, 
-		edgecolor ='black', label ='Filter Reseliency [#]', color=[next(colors)]) 
+		edgecolor ='black', label ='Control', color=[next(colors)]) 
 
 next(colors)
 
 
 plt.bar(br2, PDR,  width = barWidth, 
-		edgecolor ='black', label ='Data PDR [#]',color=[next(colors)],hatch = '/') 
+		edgecolor ='black', label ='Data',color=[next(colors)],hatch = '/') 
 
 
 # plt.bar(br3, RPL,  width = barWidth, 
 # 		edgecolor ='black', label ='RPL PDR [#]',color=[next(colors)],hatch = '/') 
 
 # Adding Xticks 
-plt.xlabel('Number of neighbors [#]', fontweight ='bold',fontsize=17) 
-plt.ylabel('Reception Ratio [%]', fontweight ='bold',fontsize=17) 
-
-
+plt.xticks(fontsize=15) 
 plt.yticks(fontsize=15)
-plt.legend(fontsize=15)
+
+plt.xlabel('Number of neighbors', fontweight ='bold', fontsize=15) 
+plt.ylabel('Reception Ratio [%]', fontweight ='bold', fontsize=15) 
+
+
+# plt.yticks(fontsize=15)
+
+plt.legend(loc='upper center', bbox_to_anchor=(0.5, 1.1),
+          ncol=3, fancybox=True, shadow=True, fontsize=15)
+
+
 
 plt.show() 
 
 RMSE=[1.43394533652394,1.44394533652394,1.45860840464733,1.47824637203261,2.45796016765343]
 # fig = plt.subplots(figsize =(14, 8)) 
-plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
+# plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
 
 plt.bar(br1, RMSE, width = barWidth, 
 		edgecolor ='black', label ='RMSE [m]', color=[next(colors)]) 
-plt.xlabel('Number of neighbors [#]', fontweight ='bold',fontsize=17) 
-plt.ylabel('RMSE [m]', fontweight ='bold',fontsize=17) 
+plt.xlabel('Number of neighbors', fontweight ='bold', fontsize=15) 
+plt.ylabel('Localization Error [m]', fontweight ='bold', fontsize=15) 
+
+plt.xticks(fontsize=15) 
+plt.yticks(fontsize=15)
 
 plt.show() 
 
 # fig = plt.subplots(figsize =(14, 8)) 
-plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
+# plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
 
 delay=[191.863,200.1,209.961,218.996,	861.0759]
 
 plt.bar(br1, delay, width = barWidth, 
 		edgecolor ='black', label ='E2E delay [ms]', color=[next(colors)]) 
-plt.xlabel('Number of neighbors [#]', fontweight ='bold',fontsize=17) 
-plt.ylabel('E2E delay [ms]', fontweight ='bold',fontsize=17) 
+plt.xlabel('Number of neighbors', fontweight ='bold', fontsize=15) 
+plt.ylabel('E2E delay [ms]', fontweight ='bold', fontsize=15) 
+
+plt.xticks(fontsize=15) 
+plt.yticks(fontsize=15)
 
 
 plt.show()

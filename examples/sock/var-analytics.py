@@ -23,7 +23,7 @@ next(colors)
 next(colors)
 next(colors)
 
-plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
+# plt.grid(color='#95a5a6', linestyle='--', linewidth=1, axis='y', alpha=0.5)
 
 
 # Make the plot 
@@ -33,8 +33,8 @@ plt.bar(br1, particle_line, width = barWidth,
 
 
 # Adding Xticks 
-plt.xlabel('($\sigma$) Standard Deviation in RSSI(#)',fontsize=14) 
-plt.ylabel('Packet Loss Probability (#)', fontsize=14) 
+plt.xlabel('($\sigma$) Standard Deviation in RSSI[dB]',fontsize=14) 
+plt.ylabel('Packet Loss Probability', fontsize=14) 
 
 legend_properties = {'weight':'bold', 'size':'13'}
 
@@ -42,7 +42,9 @@ legend_properties = {'weight':'bold', 'size':'13'}
 plt.xticks([0,5,10,15], 
 		['0','5','10','15'],fontsize=14) 
 plt.yticks(fontsize=15)
-plt.legend(prop=legend_properties)
+plt.subplots_adjust(bottom=0.15,left=0.15)
+
+# plt.legend(prop=legend_properties)
 # plt.title("SDMob's Accuracy; Data Interval: 1 s,\n Path Loss Variance=0",fontsize=15)
 
 plt.show() 

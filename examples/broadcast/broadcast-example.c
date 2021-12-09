@@ -32,7 +32,7 @@
 
 static struct simple_udp_connection broadcast_connection;
 
-#define DATA_INTERVAL (CLOCK_SECOND)
+#define DATA_INTERVAL (CLOCK_SECOND * 0.05)
 
 static struct simple_udp_connection udp_conn;
 static uip_ipaddr_t rcvd_ip;

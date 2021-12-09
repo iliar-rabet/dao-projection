@@ -4,7 +4,7 @@ import sys
 import numpy
 
 PKTS=300
-slip=2
+slip=4
 try:
 	if sys.argv[1]:
 		fileName = sys.argv[1]
@@ -55,52 +55,53 @@ def test():
                     print("delay:"+str(dTime)+"\n")
                     break
                             
-                # if "sending "+hello+" from 100:fe80::212:7402:2" in line:
-                #     sTime = datetime.strptime(line[0:9], '%M:%S.%f')
-                #     txcounter+=1
-                #     print("add tx 2")
-                #     print (line)
-                # if "ID:"+str(slip) in line and hello + " from 100:fe80::212:7402:2" in line:
-                #     if(first==0):
-                #         first=i
-                #     print("add rx 2")
-                #     print (line)
-                #     rTime = datetime.strptime(line[0:9], '%M:%S.%f')
-                #     dTime=rTime-sTime
-                #     dTime=dTime.seconds*1000000+dTime.microseconds
-                #     rxcounter[i]+=1
-                #     if(min>dTime):
-                #         min=dTime
-                #     if(max<dTime):
-                #         max=dTime
-                #     list.append(dTime)
-                #     print("delay:"+str(dTime)+"\n")
+                if "sending "+hello+" from 100:fe80::212:7402:2" in line:
+                    sTime = datetime.strptime(line[0:9], '%M:%S.%f')
+                    txcounter+=1
+                    print("add tx 2")
+                    print (line)
+                if "ID:"+str(slip) in line and hello + " from 100:fe80::212:7402:2" in line:
+                    if(first==0):
+                        first=i
+                    print("add rx 2")
+                    print (line)
+                    rTime = datetime.strptime(line[0:9], '%M:%S.%f')
+                    dTime=rTime-sTime
+                    dTime=dTime.seconds*1000000+dTime.microseconds
+                    rxcounter[i]+=1
+                    if(min>dTime):
+                        min=dTime
+                    if(max<dTime):
+                        max=dTime
+                    list.append(dTime)
+                    print("delay:"+str(dTime)+"\n")
                     
-                # if "sending "+hello +" from 100:fe80::212:7403:3" in line:
-                #     sTime = datetime.strptime(line[0:9], '%M:%S.%f')
-                #     txcounter+=1
-                #     print("add tx 3")
-                #     print (line)
-                # if "ID:"+str(slip) in line and hello + " from 100:fe80::212:7403:3" in line:
-                #     if(first==0):
-                #         first=i
-                #     print("add rx 3")
-                #     print (line)
-                #     rTime = datetime.strptime(line[0:9], '%M:%S.%f')
-                #     dTime=rTime-sTime
-                #     dTime=dTime.seconds*1000000+dTime.microseconds
-                #     rxcounter[i]+=1
-                #     if(min>dTime):
-                #         min=dTime
-                #     if(max<dTime):
-                #         max=dTime
-                #     list.append(dTime)
-                #     print("delay:"+str(dTime)+"\n")
-                #     break
+                if "sending "+hello +" from 100:fe80::212:7403:3" in line:
+                    sTime = datetime.strptime(line[0:9], '%M:%S.%f')
+                    txcounter+=1
+                    print("add tx 3")
+                    print (line)
+                if "ID:"+str(slip) in line and hello + " from 100:fe80::212:7403:3" in line:
+                    if(first==0):
+                        first=i
+                    print("add rx 3")
+                    print (line)
+                    rTime = datetime.strptime(line[0:9], '%M:%S.%f')
+                    dTime=rTime-sTime
+                    dTime=dTime.seconds*1000000+dTime.microseconds
+                    rxcounter[i]+=1
+                    if(min>dTime):
+                        min=dTime
+                    if(max<dTime):
+                        max=dTime
+                    list.append(dTime)
+                    print("delay:"+str(dTime)+"\n")
+                    break
 
         summ=summ+int(dTime)
     rx=0
     for el in rxcounter:
+        print(el)
         rx+=el
     print("avg="+str(summ/rx)+"\n")
     print("max:"+str(max)+ " Min:"+str(min)," StdDev:"+str(numpy.std(list)))

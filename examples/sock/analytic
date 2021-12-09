@@ -1,0 +1,14540 @@
+[INFO: Main      ] Starting Contiki-NG-release/v4.4-126-g445336ee9-dirty
+[INFO: Main      ] - Routing: RPL Lite
+[INFO: Main      ] - Net: sicslowpan
+[INFO: Main      ] - MAC: br-mac
+[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+[INFO: Main      ] - 802.15.4 Default channel: 26
+[INFO: Main      ] Node ID: 1800
+[INFO: Main      ] Link-layer address: 0102.0304.0506.0708
+[INFO: Main      ] Tentative link-local IPv6 address: fe80::302:304:506:708
+[INFO: Native    ] Added global IPv6 address fd00::302:304:506:708
+[INFO: RPL BR    ] Contiki-NG Border Router started
+[INFO: BR        ] RPL-Border router started
+ifconfig tun0 inet `hostname` up
+ifconfig tun0 add fd00::1/64
+ifconfig tun0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 127.0.1.1  netmask 255.255.255.255  destination 127.0.1.1
+        inet6 fd00::1  prefixlen 64  scopeid 0x0<global>
+        inet6 fe80::b50c:748b:e016:dbfc  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (UNSPEC)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[INFO: Main      ] Starting Contiki-NG-release/v4.4-125-g539dae3ad-dirty
+[INFO: Main      ] - Routing: nullrouting
+[INFO: Main      ] - Net: slipnet
+[INFO: Main      ] - MAC: CSMA
+[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+[INFO: Main      ] - 802.15.4 Default channel: 26
+[INFO: Main      ] Node ID: 2
+[INFO: Main      ] Link-layer address: 0012.7402.0002.0202
+[INFO: Main      ] Tentative link-local IPv6 address: fe80::212:7402:2:202
+[INFO: Sky       ] CC2420 CCA threshold -45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: BR        ] Setting prefix fd00::1
+[INFO: RPL       ] reset DIO timer (Init root)
+[INFO: BR        ] Server IPv6 addresses:
+[INFO: BR        ]   fd00::212:7402:2:202
+[INFO: BR        ]   fe80::212:7402:2:202
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DAO:112 56263
+DAO:112 56263
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIO:116
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIO:116
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIO:116
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIO:116
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIO:116
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIO:116
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIO:116
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nbr: fe80::212:7403:3:303  448,   224 =>   672 --  1  ba   (last tx 0 min ago)
+nbr: fe80::212:7404:4:404  480,   224 =>   704 --  1   a   (last tx 0 min ago)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIO:116
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIO:116
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nbr: fe80::212:7403:3:303  448,   224 =>   672 --  1  ba   (last tx 1 min ago)
+nbr: fe80::212:7404:4:404  480,   224 =>   704 --  1   a   (last tx 1 min ago)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -29 f fe80::212:7401:1:101 t 121' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -29 f fe80::212:7401:1:101 t 121 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -29 f fe80::212:7401:1:101 t 121 a fd00::212:7403:3:303
+
+
+Full Line=[NOT  for fe80::212:7401:1:101 ;SET fd00::212:7403:3:303 for fe80::212:7401:1:101 ;]
+token=[NOT  for fe80::212:7401:1:101 ]
+[INFO: App       ] ERR: IP ADDR converting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -39 f fe80::212:7401:1:101 t 122' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -39 f fe80::212:7401:1:101 t 122 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -39 f fe80::212:7401:1:101 t 122 a fd00::212:7403:3:303
+
+
+Full Line=[SET fd00::212:7403:3:303 for fe80::212:7401:1:101 ;]
+token=[SET fd00::212:7403:3:303 for fe80::212:7401:1:101 ]
+[INFO: App       ] set_unset_value = SET fe80::212:7401:1:101	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7403:3:303 ->fd00::212:7403:3:303[INFO: App       ] 
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 6" from fd00::212:7403:3:303
+[INFO: App       ] num = 6	totalRx = 0
+
+
+
+
+[INFO: App       ] Received data: "hello 7" from fd00::212:7403:3:303
+[INFO: App       ] num = 7	totalRx = 1
+
+
+
+
+
+[INFO: App       ] Received data: "hello 8" from fd00::212:7403:3:303
+[INFO: App       ] num = 8	totalRx = 2
+
+
+
+[INFO: App       ] Received data: "hello 9" from fd00::212:7403:3:303
+[INFO: App       ] num = 9	totalRx = 3
+
+
+
+
+[INFO: App       ] Received data: "hello 10" from fd00::212:7403:3:303
+[INFO: App       ] num = 10	totalRx = 4
+
+
+
+
+[INFO: App       ] Received request 'r -55 f fe80::212:7401:1:101 t 123' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -55 f fe80::212:7401:1:101 t 123 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -55 f fe80::212:7401:1:101 t 123 a fd00::212:7403:3:303
+
+
+
+Full Line=[SET fd00::212:7403:3:303 for fe80::212:7401:1:101 ;]
+token=[SET fd00::212:7403:3:303 for fe80::212:7401:1:101 ]
+[INFO: App       ] set_unset_value = SET fe80::212:7401:1:101	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7403:3:303 ->fd00::212:7403:3:303[INFO: App       ] 
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 11" from fd00::212:7403:3:303
+[INFO: App       ] num = 11	totalRx = 5
+
+
+
+
+[INFO: App       ] Received data: "hello 12" from fd00::212:7403:3:303
+[INFO: App       ] num = 12	totalRx = 6
+
+
+
+
+[INFO: App       ] Received data: "hello 13" from fd00::212:7403:3:303
+[INFO: App       ] num = 13	totalRx = 7
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 14" from fd00::212:7403:3:303
+[INFO: App       ] num = 14	totalRx = 8
+
+
+
+
+
+[INFO: App       ] Received data: "hello 15" from fd00::212:7403:3:303
+[INFO: App       ] num = 15	totalRx = 9
+
+[INFO: App       ] Received request 'r -95 f fe80::212:7401:1:101 t 124' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -95 f fe80::212:7401:1:101 t 124 a fd00::212:7404:4:404
+[INFO: App       ] Received request 'r -87 f fe80::212:7401:1:101 t 124' from fd00::212:7403:3:303
+long_str:  |r -95 f fe80::212:7401:1:101 t 124 a fd00::212:7404:4:404 |r -87 f fe80::212:7401:1:101 t 124 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -95 f fe80::212:7401:1:101 t 124 a fd00::212:7404:4:404 |r -87 f fe80::212:7401:1:101 t 124 a fd00::212:7403:3:303
+
+
+Full Line=[SET fd00::212:7403:3:303 for fe80::212:7401:1:101 ;]
+token=[SET fd00::212:7403:3:303 for fe80::212:7401:1:101 ]
+[INFO: App       ] set_unset_value = SET fe80::212:7401:1:101	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7403:3:303 ->fd00::212:7403:3:303[INFO: App       ] 
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 16" from fd00::212:7403:3:303
+[INFO: App       ] num = 16	totalRx = 10
+
+
+
+
+
+[INFO: App       ] Received data: "hello 17" from fd00::212:7403:3:303
+[INFO: App       ] num = 17	totalRx = 11
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -79 f fe80::212:7401:1:101 t 125' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -79 f fe80::212:7401:1:101 t 125 a fd00::212:7404:4:404
+
+
+
+
+
+
+
+
+Sent buffer not  |r -79 f fe80::212:7401:1:101 t 125 a fd00::212:7404:4:404
+
+
+Full Line=[NOT fd00::212:7403:3:303 for fe80::212:7401:1:101 ;SET fd00::212:7404:4:404 for fe80::212:7401:1:101 ;]
+token=[NOT fd00::212:7403:3:303 for fe80::212:7401:1:101 ]
+[INFO: App       ] set_unset_value = NOT fe80::212:7401:1:101	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7403:3:303 ->fd00::212:7403:3:303[INFO: App       ] 
+token=[SET fd00::212:7404:4:404 for fe80::212:7401:1:101 ]
+[INFO: App       ] set_unset_value = SET fe80::212:7401:1:101	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7404:4:404 ->fd00::212:7404:4:404[INFO: App       ] 
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 21" from fd00::212:7404:4:404
+[INFO: App       ] num = 21	totalRx = 12
+
+
+[INFO: App       ] Received data: "hello 22" from fd00::212:7404:4:404
+[INFO: App       ] num = 22	totalRx = 13
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 23" from fd00::212:7404:4:404
+[INFO: App       ] num = 23	totalRx = 14
+
+
+DIO:116
+
+
+[INFO: App       ] Received data: "hello 24" from fd00::212:7404:4:404
+[INFO: App       ] num = 24	totalRx = 15
+
+
+
+
+[INFO: App       ] Received data: "hello 25" from fd00::212:7404:4:404
+[INFO: App       ] num = 25	totalRx = 16
+
+
+
+[INFO: App       ] Received request 'r -56 f fe80::212:7401:1:101 t 126' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -56 f fe80::212:7401:1:101 t 126 a fd00::212:7404:4:404
+
+
+
+
+
+
+
+
+Sent buffer not  |r -56 f fe80::212:7401:1:101 t 126 a fd00::212:7404:4:404
+
+
+Full Line=[SET fd00::212:7404:4:404 for fe80::212:7401:1:101 ;]
+token=[SET fd00::212:7404:4:404 for fe80::212:7401:1:101 ]
+[INFO: App       ] set_unset_value = SET fe80::212:7401:1:101	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7404:4:404 ->fd00::212:7404:4:404[INFO: App       ] 
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 26" from fd00::212:7404:4:404
+[INFO: App       ] num = 26	totalRx = 17
+
+
+
+
+
+[INFO: App       ] Received data: "hello 27" from fd00::212:7404:4:404
+[INFO: App       ] num = 27	totalRx = 18
+
+
+
+[INFO: App       ] Received data: "hello 28" from fd00::212:7404:4:404
+[INFO: App       ] num = 28	totalRx = 19
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 29" from fd00::212:7404:4:404
+[INFO: App       ] num = 29	totalRx = 20
+
+
+[INFO: App       ] Received request 'r -40 f fe80::212:7401:1:101 t 127' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -40 f fe80::212:7401:1:101 t 127 a fd00::212:7404:4:404
+
+
+
+
+
+
+
+Sent buffer not  |r -40 f fe80::212:7401:1:101 t 127 a fd00::212:7404:4:404
+
+
+
+Full Line=[SET fd00::212:7404:4:404 for fe80::212:7401:1:101 ;]
+token=[SET fd00::212:7404:4:404 for fe80::212:7401:1:101 ]
+[INFO: App       ] set_unset_value = SET fe80::212:7401:1:101	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7404:4:404 ->fd00::212:7404:4:404[INFO: App       ] 
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 30" from fd00::212:7404:4:404
+[INFO: App       ] num = 30	totalRx = 21
+
+
+
+
+[INFO: App       ] Received data: "hello 31" from fd00::212:7404:4:404
+[INFO: App       ] num = 31	totalRx = 22
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 32" from fd00::212:7404:4:404
+[INFO: App       ] num = 32	totalRx = 23
+
+
+
+
+[INFO: App       ] Received data: "hello 33" from fd00::212:7404:4:404
+[INFO: App       ] num = 33	totalRx = 24
+
+[INFO: App       ] Received request 'r -15 f fe80::212:7401:1:101 t 128' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -15 f fe80::212:7401:1:101 t 128 a fd00::212:7404:4:404
+
+
+
+
+
+
+
+
+Sent buffer not  |r -15 f fe80::212:7401:1:101 t 128 a fd00::212:7404:4:404
+
+
+Full Line=[SET fd00::212:7404:4:404 for fe80::212:7401:1:101 ;]
+token=[SET fd00::212:7404:4:404 for fe80::212:7401:1:101 ]
+[INFO: App       ] set_unset_value = SET fe80::212:7401:1:101	mobile_node = fe80::212:7401:1:101	 anchor_node = fd00::212:7404:4:404 ->fd00::212:7404:4:404[INFO: App       ] 
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 34" from fd00::212:7404:4:404
+[INFO: App       ] num = 34	totalRx = 25
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 35" from fd00::212:7404:4:404
+[INFO: App       ] num = 35	totalRx = 26
+
+
+
+
+
+[INFO: App       ] Received data: "hello 36" from fd00::212:7404:4:404
+[INFO: App       ] num = 36	totalRx = 27
+
+
+
+
+
+[INFO: App       ] Received data: "hello 37" from fd00::212:7404:4:404
+[INFO: App       ] num = 37	totalRx = 28
+
+
+[INFO: App       ] Received request 'r -18 f fe80::212:7401:1:101 t 129' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -18 f fe80::212:7401:1:101 t 129 a fd00::212:7404:4:404
+
+
+
+
+
+
+
+
+Sent buffer not  |r -18 f fe80::212:7401:1:101 t 129 a fd00::212:7404:4:404
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 130' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 130 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 130 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -20 f fe80::212:7401:1:101 t 131' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -20 f fe80::212:7401:1:101 t 131 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -20 f fe80::212:7401:1:101 t 131 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -11 f fe80::212:7401:1:101 t 132' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -11 f fe80::212:7401:1:101 t 132 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -11 f fe80::212:7401:1:101 t 132 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -12 f fe80::212:7401:1:101 t 133' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -12 f fe80::212:7401:1:101 t 133 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -12 f fe80::212:7401:1:101 t 133 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -19 f fe80::212:7401:1:101 t 134' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -19 f fe80::212:7401:1:101 t 134 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -19 f fe80::212:7401:1:101 t 134 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -17 f fe80::212:7401:1:101 t 135' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -17 f fe80::212:7401:1:101 t 135 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -17 f fe80::212:7401:1:101 t 135 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 136' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 136 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 136 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -15 f fe80::212:7401:1:101 t 137' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -15 f fe80::212:7401:1:101 t 137 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -15 f fe80::212:7401:1:101 t 137 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -18 f fe80::212:7401:1:101 t 138' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -18 f fe80::212:7401:1:101 t 138 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -18 f fe80::212:7401:1:101 t 138 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -13 f fe80::212:7401:1:101 t 139' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -13 f fe80::212:7401:1:101 t 139 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -13 f fe80::212:7401:1:101 t 139 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -11 f fe80::212:7401:1:101 t 140' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -11 f fe80::212:7401:1:101 t 140 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -11 f fe80::212:7401:1:101 t 140 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -13 f fe80::212:7401:1:101 t 141' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -13 f fe80::212:7401:1:101 t 141 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -13 f fe80::212:7401:1:101 t 141 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 142' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 142 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 142 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 143' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 143 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 143 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -12 f fe80::212:7401:1:101 t 144' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -12 f fe80::212:7401:1:101 t 144 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -12 f fe80::212:7401:1:101 t 144 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -13 f fe80::212:7401:1:101 t 145' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -13 f fe80::212:7401:1:101 t 145 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -13 f fe80::212:7401:1:101 t 145 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 146' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 146 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 146 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 147' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 147 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 147 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -11 f fe80::212:7401:1:101 t 148' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -11 f fe80::212:7401:1:101 t 148 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -11 f fe80::212:7401:1:101 t 148 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 149' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 149 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 149 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -12 f fe80::212:7401:1:101 t 150' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -12 f fe80::212:7401:1:101 t 150 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -12 f fe80::212:7401:1:101 t 150 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 151' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 151 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 151 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 152' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 152 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 152 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 153' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 153 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 153 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -23 f fe80::212:7401:1:101 t 154' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -23 f fe80::212:7401:1:101 t 154 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -23 f fe80::212:7401:1:101 t 154 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 155' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 155 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 155 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -13 f fe80::212:7401:1:101 t 156' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -13 f fe80::212:7401:1:101 t 156 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -13 f fe80::212:7401:1:101 t 156 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 157' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 157 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 157 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -19 f fe80::212:7401:1:101 t 158' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -19 f fe80::212:7401:1:101 t 158 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -19 f fe80::212:7401:1:101 t 158 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -15 f fe80::212:7401:1:101 t 159' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -15 f fe80::212:7401:1:101 t 159 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -15 f fe80::212:7401:1:101 t 159 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 160' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 160 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 160 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 161' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 161 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 161 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -17 f fe80::212:7401:1:101 t 162' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -17 f fe80::212:7401:1:101 t 162 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -17 f fe80::212:7401:1:101 t 162 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -17 f fe80::212:7401:1:101 t 163' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -17 f fe80::212:7401:1:101 t 163 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -17 f fe80::212:7401:1:101 t 163 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -14 f fe80::212:7401:1:101 t 164' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -14 f fe80::212:7401:1:101 t 164 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -14 f fe80::212:7401:1:101 t 164 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -9 f fe80::212:7401:1:101 t 165' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -9 f fe80::212:7401:1:101 t 165 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -9 f fe80::212:7401:1:101 t 165 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -9 f fe80::212:7401:1:101 t 166' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -9 f fe80::212:7401:1:101 t 166 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -9 f fe80::212:7401:1:101 t 166 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -12 f fe80::212:7401:1:101 t 167' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -12 f fe80::212:7401:1:101 t 167 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -12 f fe80::212:7401:1:101 t 167 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -20 f fe80::212:7401:1:101 t 168' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -20 f fe80::212:7401:1:101 t 168 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -20 f fe80::212:7401:1:101 t 168 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 169' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 169 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 169 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -13 f fe80::212:7401:1:101 t 170' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -13 f fe80::212:7401:1:101 t 170 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -13 f fe80::212:7401:1:101 t 170 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 171' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 171 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 171 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -25 f fe80::212:7401:1:101 t 172' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -25 f fe80::212:7401:1:101 t 172 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -25 f fe80::212:7401:1:101 t 172 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 173' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 173 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 173 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -19 f fe80::212:7401:1:101 t 174' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -19 f fe80::212:7401:1:101 t 174 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -19 f fe80::212:7401:1:101 t 174 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -14 f fe80::212:7401:1:101 t 175' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -14 f fe80::212:7401:1:101 t 175 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -14 f fe80::212:7401:1:101 t 175 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -13 f fe80::212:7401:1:101 t 176' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -13 f fe80::212:7401:1:101 t 176 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -13 f fe80::212:7401:1:101 t 176 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -23 f fe80::212:7401:1:101 t 177' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -23 f fe80::212:7401:1:101 t 177 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -23 f fe80::212:7401:1:101 t 177 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -23 f fe80::212:7401:1:101 t 178' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -23 f fe80::212:7401:1:101 t 178 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -23 f fe80::212:7401:1:101 t 178 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 179' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 179 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 179 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nbr: fe80::212:7403:3:303  448,   171 =>   619 --  5   af  (last tx 0 min ago)
+nbr: fe80::212:7404:4:404  364,   171 =>   535 --  5  baf  (last tx 0 min ago)
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -13 f fe80::212:7401:1:101 t 180' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -13 f fe80::212:7401:1:101 t 180 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -13 f fe80::212:7401:1:101 t 180 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -9 f fe80::212:7401:1:101 t 181' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -9 f fe80::212:7401:1:101 t 181 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -9 f fe80::212:7401:1:101 t 181 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -9 f fe80::212:7401:1:101 t 182' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -9 f fe80::212:7401:1:101 t 182 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -9 f fe80::212:7401:1:101 t 182 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -20 f fe80::212:7401:1:101 t 183' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -20 f fe80::212:7401:1:101 t 183 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -20 f fe80::212:7401:1:101 t 183 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 184' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 184 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 184 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -25 f fe80::212:7401:1:101 t 185' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -25 f fe80::212:7401:1:101 t 185 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -25 f fe80::212:7401:1:101 t 185 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -25 f fe80::212:7401:1:101 t 186' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -25 f fe80::212:7401:1:101 t 186 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -25 f fe80::212:7401:1:101 t 186 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 187' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 187 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 187 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -9 f fe80::212:7401:1:101 t 188' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -9 f fe80::212:7401:1:101 t 188 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -9 f fe80::212:7401:1:101 t 188 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 189' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 189 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 189 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 190' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 190 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 190 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -14 f fe80::212:7401:1:101 t 191' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -14 f fe80::212:7401:1:101 t 191 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -14 f fe80::212:7401:1:101 t 191 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -15 f fe80::212:7401:1:101 t 192' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -15 f fe80::212:7401:1:101 t 192 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+
+Sent buffer not  |r -15 f fe80::212:7401:1:101 t 192 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -11 f fe80::212:7401:1:101 t 193' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -11 f fe80::212:7401:1:101 t 193 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -11 f fe80::212:7401:1:101 t 193 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -13 f fe80::212:7401:1:101 t 194' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -13 f fe80::212:7401:1:101 t 194 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -13 f fe80::212:7401:1:101 t 194 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -14 f fe80::212:7401:1:101 t 195' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -14 f fe80::212:7401:1:101 t 195 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -14 f fe80::212:7401:1:101 t 195 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -11 f fe80::212:7401:1:101 t 196' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -11 f fe80::212:7401:1:101 t 196 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -11 f fe80::212:7401:1:101 t 196 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -20 f fe80::212:7401:1:101 t 197' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -20 f fe80::212:7401:1:101 t 197 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -20 f fe80::212:7401:1:101 t 197 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 198' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 198 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 198 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 199' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 199 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 199 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -19 f fe80::212:7401:1:101 t 200' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -19 f fe80::212:7401:1:101 t 200 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -19 f fe80::212:7401:1:101 t 200 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -23 f fe80::212:7401:1:101 t 201' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -23 f fe80::212:7401:1:101 t 201 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -23 f fe80::212:7401:1:101 t 201 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -25 f fe80::212:7401:1:101 t 202' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -25 f fe80::212:7401:1:101 t 202 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -25 f fe80::212:7401:1:101 t 202 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 203' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 203 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 203 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 204' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 204 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 204 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 205' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 205 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 205 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -23 f fe80::212:7401:1:101 t 206' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -23 f fe80::212:7401:1:101 t 206 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -23 f fe80::212:7401:1:101 t 206 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 207' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 207 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 207 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -20 f fe80::212:7401:1:101 t 208' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -20 f fe80::212:7401:1:101 t 208 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -20 f fe80::212:7401:1:101 t 208 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 209' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 209 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 209 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -11 f fe80::212:7401:1:101 t 210' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -11 f fe80::212:7401:1:101 t 210 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -11 f fe80::212:7401:1:101 t 210 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -9 f fe80::212:7401:1:101 t 211' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -9 f fe80::212:7401:1:101 t 211 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -9 f fe80::212:7401:1:101 t 211 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -23 f fe80::212:7401:1:101 t 212' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -23 f fe80::212:7401:1:101 t 212 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -23 f fe80::212:7401:1:101 t 212 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -18 f fe80::212:7401:1:101 t 213' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -18 f fe80::212:7401:1:101 t 213 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -18 f fe80::212:7401:1:101 t 213 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -17 f fe80::212:7401:1:101 t 214' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -17 f fe80::212:7401:1:101 t 214 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -17 f fe80::212:7401:1:101 t 214 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DIO:116
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 215' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 215 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 215 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 216' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 216 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 216 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -11 f fe80::212:7401:1:101 t 217' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -11 f fe80::212:7401:1:101 t 217 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -11 f fe80::212:7401:1:101 t 217 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -22 f fe80::212:7401:1:101 t 218' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -22 f fe80::212:7401:1:101 t 218 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -22 f fe80::212:7401:1:101 t 218 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -18 f fe80::212:7401:1:101 t 219' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -18 f fe80::212:7401:1:101 t 219 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -18 f fe80::212:7401:1:101 t 219 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 220' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 220 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 220 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -17 f fe80::212:7401:1:101 t 221' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -17 f fe80::212:7401:1:101 t 221 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -17 f fe80::212:7401:1:101 t 221 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -12 f fe80::212:7401:1:101 t 222' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -12 f fe80::212:7401:1:101 t 222 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -12 f fe80::212:7401:1:101 t 222 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -15 f fe80::212:7401:1:101 t 223' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -15 f fe80::212:7401:1:101 t 223 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -15 f fe80::212:7401:1:101 t 223 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -18 f fe80::212:7401:1:101 t 224' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -18 f fe80::212:7401:1:101 t 224 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -18 f fe80::212:7401:1:101 t 224 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -12 f fe80::212:7401:1:101 t 225' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -12 f fe80::212:7401:1:101 t 225 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -12 f fe80::212:7401:1:101 t 225 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 226' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 226 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 226 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 227' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 227 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 227 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -23 f fe80::212:7401:1:101 t 228' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -23 f fe80::212:7401:1:101 t 228 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -23 f fe80::212:7401:1:101 t 228 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -9 f fe80::212:7401:1:101 t 229' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -9 f fe80::212:7401:1:101 t 229 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -9 f fe80::212:7401:1:101 t 229 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -19 f fe80::212:7401:1:101 t 230' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -19 f fe80::212:7401:1:101 t 230 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -19 f fe80::212:7401:1:101 t 230 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -14 f fe80::212:7401:1:101 t 231' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -14 f fe80::212:7401:1:101 t 231 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -14 f fe80::212:7401:1:101 t 231 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -16 f fe80::212:7401:1:101 t 232' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -16 f fe80::212:7401:1:101 t 232 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -16 f fe80::212:7401:1:101 t 232 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -9 f fe80::212:7401:1:101 t 233' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -9 f fe80::212:7401:1:101 t 233 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -9 f fe80::212:7401:1:101 t 233 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -25 f fe80::212:7401:1:101 t 234' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -25 f fe80::212:7401:1:101 t 234 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -25 f fe80::212:7401:1:101 t 234 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 235' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 235 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 235 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -13 f fe80::212:7401:1:101 t 236' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -13 f fe80::212:7401:1:101 t 236 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -13 f fe80::212:7401:1:101 t 236 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 237' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 237 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 237 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 238' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 238 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 238 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 239' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 239 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 239 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  baf  (last tx 1 min ago)
+nbr: fe80::212:7404:4:404  364,   171 =>   535 --  5   af  (last tx 1 min ago)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -14 f fe80::212:7401:1:101 t 240' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -14 f fe80::212:7401:1:101 t 240 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -14 f fe80::212:7401:1:101 t 240 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -9 f fe80::212:7401:1:101 t 241' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -9 f fe80::212:7401:1:101 t 241 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -9 f fe80::212:7401:1:101 t 241 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -16 f fe80::212:7401:1:101 t 242' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -16 f fe80::212:7401:1:101 t 242 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -16 f fe80::212:7401:1:101 t 242 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -16 f fe80::212:7401:1:101 t 243' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -16 f fe80::212:7401:1:101 t 243 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -16 f fe80::212:7401:1:101 t 243 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -15 f fe80::212:7401:1:101 t 244' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -15 f fe80::212:7401:1:101 t 244 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -15 f fe80::212:7401:1:101 t 244 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -20 f fe80::212:7401:1:101 t 245' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -20 f fe80::212:7401:1:101 t 245 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -20 f fe80::212:7401:1:101 t 245 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -13 f fe80::212:7401:1:101 t 246' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -13 f fe80::212:7401:1:101 t 246 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -13 f fe80::212:7401:1:101 t 246 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -15 f fe80::212:7401:1:101 t 247' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -15 f fe80::212:7401:1:101 t 247 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -15 f fe80::212:7401:1:101 t 247 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -14 f fe80::212:7401:1:101 t 248' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -14 f fe80::212:7401:1:101 t 248 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -14 f fe80::212:7401:1:101 t 248 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -18 f fe80::212:7401:1:101 t 249' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -18 f fe80::212:7401:1:101 t 249 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -18 f fe80::212:7401:1:101 t 249 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -17 f fe80::212:7401:1:101 t 250' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -17 f fe80::212:7401:1:101 t 250 a fd00::212:7403:3:303
+
+
+DIO:116
+
+
+
+
+
+
+Sent buffer not  |r -17 f fe80::212:7401:1:101 t 250 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 251' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 251 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 251 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -40 f fe80::212:7401:1:101 t 252' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -40 f fe80::212:7401:1:101 t 252 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -40 f fe80::212:7401:1:101 t 252 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -68 f fe80::212:7401:1:101 t 253' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -68 f fe80::212:7401:1:101 t 253 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -68 f fe80::212:7401:1:101 t 253 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 537" from fd00::212:7404:4:404
+[INFO: App       ] num = 537	totalRx = 29
+
+
+
+[INFO: App       ] Received request 'r -88 f fe80::212:7401:1:101 t 254' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -88 f fe80::212:7401:1:101 t 254 a fd00::212:7404:4:404
+[INFO: App       ] Received request 'r -87 f fe80::212:7401:1:101 t 254' from fd00::212:7403:3:303
+long_str:  |r -88 f fe80::212:7401:1:101 t 254 a fd00::212:7404:4:404 |r -87 f fe80::212:7401:1:101 t 254 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -88 f fe80::212:7401:1:101 t 254 a fd00::212:7404:4:404 |r -87 f fe80::212:7401:1:101 t 254 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 538" from fd00::212:7404:4:404
+[INFO: App       ] num = 538	totalRx = 30
+
+
+
+
+[INFO: App       ] Received data: "hello 539" from fd00::212:7404:4:404
+[INFO: App       ] num = 539	totalRx = 31
+
+
+
+
+
+[INFO: App       ] Received data: "hello 540" from fd00::212:7404:4:404
+[INFO: App       ] num = 540	totalRx = 32
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 541" from fd00::212:7404:4:404
+[INFO: App       ] num = 541	totalRx = 33
+
+
+[INFO: App       ] Received request 'r -76 f fe80::212:7401:1:101 t 255' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -76 f fe80::212:7401:1:101 t 255 a fd00::212:7404:4:404
+
+
+
+
+
+
+
+
+Sent buffer not  |r -76 f fe80::212:7401:1:101 t 255 a fd00::212:7404:4:404
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 542" from fd00::212:7404:4:404
+[INFO: App       ] num = 542	totalRx = 34
+
+
+
+
+[INFO: App       ] Received data: "hello 543" from fd00::212:7404:4:404
+[INFO: App       ] num = 543	totalRx = 35
+
+
+
+
+[INFO: App       ] Received data: "hello 544" from fd00::212:7404:4:404
+[INFO: App       ] num = 544	totalRx = 36
+
+
+
+
+
+[INFO: App       ] Received data: "hello 545" from fd00::212:7404:4:404
+[INFO: App       ] num = 545	totalRx = 37
+
+
+[INFO: App       ] Received request 'r -62 f fe80::212:7401:1:101 t 256' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -62 f fe80::212:7401:1:101 t 256 a fd00::212:7404:4:404
+
+
+
+
+
+
+
+
+Sent buffer not  |r -62 f fe80::212:7401:1:101 t 256 a fd00::212:7404:4:404
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 546" from fd00::212:7404:4:404
+[INFO: App       ] num = 546	totalRx = 38
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 547" from fd00::212:7404:4:404
+[INFO: App       ] num = 547	totalRx = 39
+
+[INFO: App       ] Received data: "hello 548" from fd00::212:7404:4:404
+[INFO: App       ] num = 548	totalRx = 40
+
+
+
+[INFO: App       ] Received data: "hello 549" from fd00::212:7404:4:404
+[INFO: App       ] num = 549	totalRx = 41
+
+
+[INFO: App       ] Received request 'r -42 f fe80::212:7401:1:101 t 257' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -42 f fe80::212:7401:1:101 t 257 a fd00::212:7404:4:404
+
+
+
+
+
+
+
+Sent buffer not  |r -42 f fe80::212:7401:1:101 t 257 a fd00::212:7404:4:404
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 550" from fd00::212:7404:4:404
+[INFO: App       ] num = 550	totalRx = 42
+
+
+
+[INFO: App       ] Received data: "hello 551" from fd00::212:7404:4:404
+[INFO: App       ] num = 551	totalRx = 43
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 552" from fd00::212:7404:4:404
+[INFO: App       ] num = 552	totalRx = 44
+
+
+
+
+
+[INFO: App       ] Received data: "hello 553" from fd00::212:7404:4:404
+[INFO: App       ] num = 553	totalRx = 45
+
+[INFO: App       ] Received request 'r -25 f fe80::212:7401:1:101 t 258' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -25 f fe80::212:7401:1:101 t 258 a fd00::212:7404:4:404
+
+
+
+
+
+
+
+
+Sent buffer not  |r -25 f fe80::212:7401:1:101 t 258 a fd00::212:7404:4:404
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 554" from fd00::212:7404:4:404
+[INFO: App       ] num = 554	totalRx = 46
+
+
+[INFO: App       ] Received data: "hello 555" from fd00::212:7404:4:404
+[INFO: App       ] num = 555	totalRx = 47
+
+
+
+
+
+
+[INFO: App       ] Received data: "hello 556" from fd00::212:7404:4:404
+[INFO: App       ] num = 556	totalRx = 48
+
+
+
+[INFO: App       ] Received data: "hello 557" from fd00::212:7404:4:404
+[INFO: App       ] num = 557	totalRx = 49
+
+
+
+
+[INFO: App       ] Received request 'r -16 f fe80::212:7401:1:101 t 259' from fd00::212:7404:4:404
+encoding CLEANED
+long_str:  |r -16 f fe80::212:7401:1:101 t 259 a fd00::212:7404:4:404
+
+
+
+
+
+
+
+Sent buffer not  |r -16 f fe80::212:7401:1:101 t 259 a fd00::212:7404:4:404
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -18 f fe80::212:7401:1:101 t 260' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -18 f fe80::212:7401:1:101 t 260 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -18 f fe80::212:7401:1:101 t 260 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -11 f fe80::212:7401:1:101 t 261' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -11 f fe80::212:7401:1:101 t 261 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -11 f fe80::212:7401:1:101 t 261 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -25 f fe80::212:7401:1:101 t 262' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -25 f fe80::212:7401:1:101 t 262 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -25 f fe80::212:7401:1:101 t 262 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 263' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 263 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 263 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -11 f fe80::212:7401:1:101 t 264' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -11 f fe80::212:7401:1:101 t 264 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -11 f fe80::212:7401:1:101 t 264 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -22 f fe80::212:7401:1:101 t 265' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -22 f fe80::212:7401:1:101 t 265 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -22 f fe80::212:7401:1:101 t 265 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -22 f fe80::212:7401:1:101 t 266' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -22 f fe80::212:7401:1:101 t 266 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -22 f fe80::212:7401:1:101 t 266 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -17 f fe80::212:7401:1:101 t 267' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -17 f fe80::212:7401:1:101 t 267 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -17 f fe80::212:7401:1:101 t 267 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -16 f fe80::212:7401:1:101 t 268' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -16 f fe80::212:7401:1:101 t 268 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -16 f fe80::212:7401:1:101 t 268 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 269' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 269 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 269 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -20 f fe80::212:7401:1:101 t 270' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -20 f fe80::212:7401:1:101 t 270 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -20 f fe80::212:7401:1:101 t 270 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 271' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 271 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 271 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -12 f fe80::212:7401:1:101 t 272' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -12 f fe80::212:7401:1:101 t 272 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -12 f fe80::212:7401:1:101 t 272 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 273' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 273 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 273 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -12 f fe80::212:7401:1:101 t 274' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -12 f fe80::212:7401:1:101 t 274 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -12 f fe80::212:7401:1:101 t 274 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -18 f fe80::212:7401:1:101 t 275' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -18 f fe80::212:7401:1:101 t 275 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -18 f fe80::212:7401:1:101 t 275 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -11 f fe80::212:7401:1:101 t 276' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -11 f fe80::212:7401:1:101 t 276 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -11 f fe80::212:7401:1:101 t 276 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 277' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 277 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 277 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -20 f fe80::212:7401:1:101 t 278' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -20 f fe80::212:7401:1:101 t 278 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -20 f fe80::212:7401:1:101 t 278 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -16 f fe80::212:7401:1:101 t 279' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -16 f fe80::212:7401:1:101 t 279 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -16 f fe80::212:7401:1:101 t 279 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -20 f fe80::212:7401:1:101 t 280' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -20 f fe80::212:7401:1:101 t 280 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -20 f fe80::212:7401:1:101 t 280 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 281' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 281 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 281 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -25 f fe80::212:7401:1:101 t 282' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -25 f fe80::212:7401:1:101 t 282 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -25 f fe80::212:7401:1:101 t 282 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 283' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 283 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 283 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 284' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 284 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 284 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 285' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 285 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 285 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 286' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 286 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 286 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 287' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 287 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 287 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 288' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 288 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 288 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 289' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 289 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 289 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -28 f fe80::212:7401:1:101 t 290' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -28 f fe80::212:7401:1:101 t 290 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -28 f fe80::212:7401:1:101 t 290 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 291' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 291 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 291 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -17 f fe80::212:7401:1:101 t 292' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -17 f fe80::212:7401:1:101 t 292 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -17 f fe80::212:7401:1:101 t 292 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -27 f fe80::212:7401:1:101 t 293' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -27 f fe80::212:7401:1:101 t 293 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -27 f fe80::212:7401:1:101 t 293 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -27 f fe80::212:7401:1:101 t 294' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -27 f fe80::212:7401:1:101 t 294 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -27 f fe80::212:7401:1:101 t 294 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -21 f fe80::212:7401:1:101 t 295' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -21 f fe80::212:7401:1:101 t 295 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -21 f fe80::212:7401:1:101 t 295 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 296' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 296 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 296 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 297' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 297 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 297 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -26 f fe80::212:7401:1:101 t 298' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -26 f fe80::212:7401:1:101 t 298 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -26 f fe80::212:7401:1:101 t 298 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 299' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 299 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 299 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  baf  (last tx 2 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   af  (last tx 2 min ago)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -24 f fe80::212:7401:1:101 t 300' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -24 f fe80::212:7401:1:101 t 300 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -24 f fe80::212:7401:1:101 t 300 a fd00::212:7403:3:303
+
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -22 f fe80::212:7401:1:101 t 301' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -22 f fe80::212:7401:1:101 t 301 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -22 f fe80::212:7401:1:101 t 301 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -10 f fe80::212:7401:1:101 t 302' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -10 f fe80::212:7401:1:101 t 302 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -10 f fe80::212:7401:1:101 t 302 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -14 f fe80::212:7401:1:101 t 303' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -14 f fe80::212:7401:1:101 t 303 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -14 f fe80::212:7401:1:101 t 303 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -27 f fe80::212:7401:1:101 t 304' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -27 f fe80::212:7401:1:101 t 304 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+
+Sent buffer not  |r -27 f fe80::212:7401:1:101 t 304 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[INFO: App       ] Received request 'r -19 f fe80::212:7401:1:101 t 305' from fd00::212:7403:3:303
+encoding CLEANED
+long_str:  |r -19 f fe80::212:7401:1:101 t 305 a fd00::212:7403:3:303
+
+
+
+
+
+
+
+Sent buffer not  |r -19 f fe80::212:7401:1:101 t 305 a fd00::212:7403:3:303
+
+
+Full Line=[]
+after clearning 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  baf  (last tx 3 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   af  (last tx 3 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  baf  (last tx 4 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   af  (last tx 4 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  baf  (last tx 5 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   af  (last tx 5 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  baf  (last tx 6 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   af  (last tx 6 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  baf  (last tx 7 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   af  (last tx 7 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  baf  (last tx 8 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   af  (last tx 8 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  baf  (last tx 9 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   af  (last tx 9 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  ba   (last tx 10 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   a   (last tx 10 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  ba   (last tx 11 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   a   (last tx 11 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  5  ba   (last tx 12 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  5   a   (last tx 12 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 13 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 13 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 14 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 14 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 15 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 15 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 16 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 16 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 17 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 17 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 18 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 18 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 19 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 19 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 20 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 20 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 21 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 21 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 22 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 22 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 23 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 23 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 24 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 24 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 25 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 25 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 26 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 26 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  2  ba   (last tx 27 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  2   a   (last tx 27 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 28 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 28 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 29 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 29 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 30 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 30 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 31 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 31 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 32 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 32 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 33 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 33 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 34 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 34 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 35 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 35 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 36 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 36 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 37 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 37 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 38 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 38 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 39 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 39 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 40 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 40 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 41 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 41 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  1  ba   (last tx 42 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  1   a   (last tx 42 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 43 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 43 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 44 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 44 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 45 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 45 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 46 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 46 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 47 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 47 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 48 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 48 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 49 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 49 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 50 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 50 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 51 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 51 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 52 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 52 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 53 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 53 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 54 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 54 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 55 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 55 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 56 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 56 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 57 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 57 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 58 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 58 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 59 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 59 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 60 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 60 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 61 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 61 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 62 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 62 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 63 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 63 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 64 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 64 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 65 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 65 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 66 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 66 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 67 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 67 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 68 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 68 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 69 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 69 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 70 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 70 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 71 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 71 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 72 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 72 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 73 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 73 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 74 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 74 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 75 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 75 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 76 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 76 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 77 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 77 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 78 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 78 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 79 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 79 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 80 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 80 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 81 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 81 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 82 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 82 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 83 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 83 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 84 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 84 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 85 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 85 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 86 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 86 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 87 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 87 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 88 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 88 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 89 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 89 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 90 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 90 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 91 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 91 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 92 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 92 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 93 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 93 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 94 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 94 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 95 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 95 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 96 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 96 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 97 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 97 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 98 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 98 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 99 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 99 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 100 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 100 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 101 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 101 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 102 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 102 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 103 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 103 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 104 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 104 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 105 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 105 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 106 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 106 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 107 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 107 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 108 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 108 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 109 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 109 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 110 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 110 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 111 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 111 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 112 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 112 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 113 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 113 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 114 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 114 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 115 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 115 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 116 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 116 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 117 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 117 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 118 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 118 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 119 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 119 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 120 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 120 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 121 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 121 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 122 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 122 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 123 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 123 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 124 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 124 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 125 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 125 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 126 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 126 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 127 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 127 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 128 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 128 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 129 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 129 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 130 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 130 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 131 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 131 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 132 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 132 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 133 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 133 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 134 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 134 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 135 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 135 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 136 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 136 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 137 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 137 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 138 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 138 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 139 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 139 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 140 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 140 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 141 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 141 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 142 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 142 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 143 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 143 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 144 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 144 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 145 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 145 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 146 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 146 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 147 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 147 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 148 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 148 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 149 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 149 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 150 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 150 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 151 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 151 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 152 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 152 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 153 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 153 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 154 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 154 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 155 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 155 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 156 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 156 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 157 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 157 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 158 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 158 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 159 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 159 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 160 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 160 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 161 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 161 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 162 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 162 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 163 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 163 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 164 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 164 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 165 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 165 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 166 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 166 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 167 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 167 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 168 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 168 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 169 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 169 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 170 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 170 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 171 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 171 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 172 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 172 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 173 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 173 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 174 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 174 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 175 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 175 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 176 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 176 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 177 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 177 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 178 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 178 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 179 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 179 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 180 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 180 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 181 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 181 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 182 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 182 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 183 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 183 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 184 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 184 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 185 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 185 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 186 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 186 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 187 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 187 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 188 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 188 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 189 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 189 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 190 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 190 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 191 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 191 min ago)
+nbr: fe80::212:7403:3:303  256,   171 =>   427 --  0  ba   (last tx 192 min ago)
+nbr: fe80::212:7404:4:404  269,   171 =>   440 --  0   a   (last tx 192 min ago)
+ifconfig tun0 down
+netstat -nr | awk '{ if ($2 == "tun0") print "route delete -net "$1; }' | sh

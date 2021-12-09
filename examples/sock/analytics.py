@@ -10,12 +10,12 @@ fig, ax = plt.subplots(1, 1)
 
 
 x_axis=10
-Handoff_time=5
-sigma=10
+Handoff_time=2.5
+sigma=5
 TL=-90
 RSSD=-20
 eta=10
-v=1
+v=2
 # print(norm.ppf(0.01))
 # print(norm.ppf(0.99))
 t = np.linspace(0.1, x_axis/v-0.1, 150)
@@ -39,21 +39,30 @@ y1=PA(t)
 y2=PB(t)
 y3=PH(t)
 Ploss=loss(t)
-plt.xlabel('Time (s)', fontsize=14) 
-plt.ylabel('Probability (#)', fontsize=14) 
+# plt.xlabel('Time (s)', fontsize=14) 
+# plt.ylabel('Probability', fontsize=14) 
 
 # x = np.linspace(0, x_axis, 150)
 # # y1=norm.sf((-TL+RSSD-10*eta*np.log10(2*x))/sigma)
 # # y2=norm.sf((-TL+RSSD-10*eta*np.log10(0.5*x))/sigma)
 
 # ax.plot(x, 1-norm.sf((x-x_axis)/sigma),'k.', lw=2, alpha=0.6, label='$P(R_a<T_l)$')
+
+
 ax.plot(t, y1,'k-', lw=2, alpha=0.6, label='$P(R_b<T_l)$')
 
 ax.plot(t, y2,'r-', lw=2, alpha=0.6, label='$P(R_a<T_l)$')
 
-ax.plot(t, y2,'b+', lw=2, alpha=0.6, label='$P(R_b<T_l)$')
-ax.plot(t, y3,'g.', lw=2, alpha=0.6, label='$P_{Handoff}$')
-ax.plot(t, Ploss,'k-', lw=2, alpha=0.6, label='$P_{Loss}$')
+# ax.plot(t, y2,'b+', lw=2, alpha=0.6, label='$P(R_b<T_l)$')
+ax.plot(t, y3,'g.', lw=2, alpha=0.6, label='$P(t_{Handoff}<t)$')
+ax.plot(t, Ploss,'k-', lw=2, alpha=0.6, label='$P_{Loss}(t)$')
+
+plt.xlabel('Time (s)', fontsize=14) 
+plt.ylabel('Probability', fontsize=14) 
+
+
+plt.legend(fontsize=14)
+plt.show()
 
 
 
@@ -67,10 +76,6 @@ ax.plot(t, Ploss,'k-', lw=2, alpha=0.6, label='$P_{Loss}$')
 
 
 
-plt.legend()
-
-plt.show()
-
 # ls=[]
 # ran = np.linspace(4, 6, 100)
 # for k in ran:
@@ -80,5 +85,8 @@ plt.show()
 
 # print(ls)
 
-# ax.plot(ran,ls,lw=2, alpha=0.6, label='$P_{Loss}$')
+# plt.xlabel('Mean Handoff Time (s)', fontsize=14) 
+# plt.ylabel('Total Probability of Loss', fontsize=14) 
+
+# ax.plot(ran,ls,lw=2, alpha=0.6)
 # plt.show()
